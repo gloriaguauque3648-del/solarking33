@@ -1,0 +1,90 @@
+prefix: '&8[&dInfiniteGUI&8]'
+error: '&cERROR! %error%'
+no_permission: '&cYou don''t have the required permission to do that! &7(%permission%)'
+debug_message: '&7[&dDEBUG&7] &8%message%'
+plugin_reloaded: '&6InfiniteGUI has been successfully reloaded!'
+select_gui_id: '&6Gui Id !@! &7Please write the Gui id in the chat !@! 10 !@! 60 !@!
+  10'
+gui_id_already_exists: '&cThe GUI with the id %id% already exists.'
+exit_chat_fetcher: '&ePlease type &8exit &eto exit the chat fetcher.'
+modify_gui_title: '&6Gui Title !@! &7Please write the new title in the chat !@! 10
+  !@! 60 !@! 10'
+modify_scene_delay: '&6Scene Delay !@! &7Please write the new delay in the chat !@!
+  10 !@! 60 !@! 10'
+cant_modify_scene_delay: '&cSorry but you can''t modify the ''last delay'' of the
+  ending scene!'
+modify_gui_item_name: '&6Item Display Name !@! &7Please write the new name for the
+  item !@! 10 !@! 60 !@! 10'
+modify_gui_item_amount: '&6Item Amount !@! &7Please write the new amount, only integers!
+  !@! 10 !@! 60 !@! 10'
+search_query_gui_item_type: '&6Search Query !@! &7Please type the item name query
+  in the chat !@! 10 !@! 60 !@! 10'
+could_not_toggle_flag: '&cCould not toggle flag! Please try to add the effects require
+  for the item flag! such as adding enchantments for hide enchants'
+modify_enchant_level: '&6%enchant% Level !@! &7Please type the new enchant level in
+  chat !@! 10 !@! 60 !@! 10'
+new_lore_line: '&6New Line !@! &7Please type the new lore line in chat !@! 10 !@!
+  60 !@! 10'
+new_command: '&6New Command !@! &7Please type the new command in chat !@! 10 !@! 60
+  !@! 10'
+modify_player_head_texture: '&6Player Head Texture !@! &7Please type the new base64
+  for the new texture in chat !@! 10 !@! 60 !@! 10'
+invalid_base64: '&cInvalid base64! Please try again.'
+edit_lore_line: '&6Edit Lore Line !@! &7Please type the new lore line in chat !@!
+  10 !@! 60 !@! 10'
+edit_command: '&6Edit Command !@! &7Please type the new command in chat !@! 10 !@!
+  60 !@! 10'
+enabled_unbreakable: '&7Turned &eUnbreakable &aon&7!'
+disabled_unbreakable: '&7Turned &eUnbreakable &coff&7!'
+modify_custom_model_data: '&6Custom Model Data !@! &7Please type the new custom model
+  data in the chat !@! 10 !@! 60 !@! 10'
+modify_permission_condition: '&6Permission Condition !@! &7Please type the permission
+  required for the condition in the chat !@! 10 !@! 60 !@! 10'
+setup_message_click_event: '&6Setup Message For Click Event !@! &7Please type the
+  message in the chat !@! 10 !@! 60 !@! 10'
+setup_fail_condition_message: '&6Setup Fail Condition Message !@! &7Please type the
+  message in the chat !@! 10 !@! 60 !@! 10'
+setup_command_click_event: '&6Setup Command Click Event !@! &7Please type the command
+  to execute without ''/'' in the chat !@! 10 !@! 60 !@! 10'
+setup_title_click_event: '&6Setup Title Click Event !@! &7''title /?/ subtitle /?/
+  fadeIn /?/ stay /?/ fadeOut'' !@! 10 !@! 60 !@! 10'
+setup_money_give_click_event: '&6Setup Money Give Click Event !@! &7Please type the
+  money to give in the chat !@! 10 !@! 60 !@! 10'
+setup_money_remove_click_event: '&6Setup Money Remove Click Event !@! &7Please type
+  the money to remove in the chat !@! 10 !@! 60 !@! 10'
+setup_money_set_click_event: '&6Setup Money Set Click Event !@! &7Please type the
+  money to set in the chat !@! 10 !@! 60 !@! 10'
+setup_command_alias: '&6Setup Command Alias For Gui !@! &7Please type the command
+  alias for Gui in the chat !@! 20 !@! 60 !@! 20'
+setup_chat_fetcher_click_event_message: '&6Setup Chat Fetcher Message !@! &7Type the
+  message in chat, format used as in ''messages.yml'' !@! 10 !@! 60 !@! 10'
+search_player_picker: '&6Search Player !@! &7Please type your search query in chat
+  !@! 20 !@! 60 !@! 20'
+setup_save_format_click_event: '&6Setup Save Info Format Click Event !@! &7Please
+  type "myField:myValue,myField2:myValue2" in the chat !@! 10 !@! 60 !@! 10'
+setup_integer_condition: '&6Setup Integer Condition !@! &7Please type the parseable
+  string in the chat !@! 10 !@! 60 !@! 10'
+setup_double_condition: '&6Setup Double Condition !@! &7Please type the parseable
+  string in the chat !@! 10 !@! 60 !@! 10'
+setup_conditional_placeholder_condition: '&6Setup Conditional Placeholder Condition
+  !@! &7Please type the conditional placeholder in the chat !@! 10 !@! 60 !@! 10'
+setup_gui_permission: '&6Setup Gui Permission !@! &7Please type the permission in
+  the chat !@! 10 !@! 60 !@! 10'
+toggled_wait_for_complete: '&eToggled wait for complete to %status%&e!'
+setup_system_item_slots: '&6Setup System Item Slots !@! &7Please type the system item
+  slots in the chat !@! 10 !@! 60 !@! 10'
+click_to_get_current_slots: '&6Click this message to get the current slots for this
+  item!'
+setup_modifier_add_value: '&6Setup Modifier Add Value !@! &7Please type the value
+  to add in the chat !@! 10 !@! 60 !@! 10'
+cannot_use_commands_in_chat_fetcher: '&cSorry but, you can''t use commands while in
+  chat fetcher!'
+cannot_open_gui_in_chat_fetcher: '&cSorry but, you can''t open GUIs while in chat
+  fetcher!'
+cancelled: '&cCancelled!'
+saved_data: '&6Successfully saved the data!'
+bulk_edit_scene_delay: '&6Bulk Edit Scene Delay !@! &7Please type the new scene delay
+  in chat !@! 10 !@! 60 !@! 10'
+duplicate_scenes: '&6Duplicate Scenes !@! &7Please type in chat the amount of duplicate
+  scenes to add !@! 10 !@! 60 !@! 10'
+added_new_scenes: '&6Successfully added new duplicate scenes! &7(Scenes: %scenes%)'

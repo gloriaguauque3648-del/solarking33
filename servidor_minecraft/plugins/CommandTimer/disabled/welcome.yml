@@ -1,0 +1,10 @@
+displayName: "welcome"
+enabled: true
+description: "Mensaje de bienvenida al arrancar y cada 5 minutos"
+schedule:
+  type: "CRON"
+  value: "*/5 * * * *"
+commands:
+  - command: "say [CommandTimer] Servidor en linea! Bienvenidos."
+executionMode: "CONSOLE"
+runOnLoad: true

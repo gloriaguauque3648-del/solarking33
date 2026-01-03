@@ -1,0 +1,1339 @@
+[03:08:14] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.9+10-Ubuntu-124.04; Ubuntu null) on Linux 6.8.0-1030-azure (amd64)
+[03:08:14] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.10-117-ver/1.21.10@df4b668 (2025-11-30T22:37:28Z) for Minecraft 1.21.10
+[03:08:14] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[03:08:23] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins/AxKoth-2.16.5.jar'...
+[03:08:23] [Paper Plugin Remapper Thread - 3/INFO]: [PluginRemapper] Remapping plugin 'plugins/EcoArmor v8.78.0.jar'...
+[03:08:23] [Paper Plugin Remapper Thread - 4/INFO]: [PluginRemapper] Remapping plugin 'plugins/EcoPets v2.77.1.jar'...
+[03:08:23] [Paper Plugin Remapper Thread - 5/INFO]: [PluginRemapper] Remapping plugin 'plugins/Talismans v6.77.0.jar'...
+[03:08:24] [Paper Plugin Remapper Thread - 5/INFO]: [PluginRemapper] Done remapping plugin 'plugins/Talismans v6.77.0.jar' in 1647ms.
+[03:08:24] [Paper Plugin Remapper Thread - 3/INFO]: [PluginRemapper] Done remapping plugin 'plugins/EcoArmor v8.78.0.jar' in 1709ms.
+[03:08:25] [Paper Plugin Remapper Thread - 4/INFO]: [PluginRemapper] Done remapping plugin 'plugins/EcoPets v2.77.1.jar' in 1739ms.
+[03:08:26] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins/AxKoth-2.16.5.jar' in 2842ms.
+[03:08:29] [ServerMain/INFO]: [PluginInitializerManager] Initialized 44 plugins
+[03:08:29] [ServerMain/INFO]: [PluginInitializerManager] Paper plugins (4):
+ - AdvancedKits (1.21.29), FancyHolograms (2.9.0), FancyNpcs (2.9.0), UJobs (1.0.3)
+[03:08:29] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (40):
+ - AdvancedEnchantments (9.22.0), AdvancedMobs (1.18.6), AnimaBossBar (${project.version}), AuraSkills (2.3.10), AxKoth (2.16.5), AxRewards (3.7.0), BattlePass (5.0.3), BlockRegen (2.4), CommandTimer (8.16.3), DeepVoid (2.22.0), EcoArmor (8.78.0), EcoPets (2.77.1), EliteMobs (9.6.1), Essentials (2.22.0-dev+49-000e6c5), EssentialsChat (2.22.0-dev+49-000e6c5), EssentialsSpawn (2.22.0-dev+49-000e6c5), GHolo (2.2.6), InfiniteGUI (1.1.10), ItemEdit (3.7.8), LuckPerms (5.5.0), Multiverse-Core (5.3.0), PhoenixCrates (4.2.3), PlaceholderAPI (2.11.6), ProtectionStones (2.10.5), ProtocolLib (5.4.1-SNAPSHOT-1257506), RavenWelcome (1.0), RealScoreboard (1.5.7), Shopkeepers (2.25.0), Simple_RTP (1.0.2-BETA), SkinsRestorer (15.9.1), SpawnerMeta (25.5), TAB (5.4.0), Talismans (6.77.0), Vault (1.7.3-b131), VoidTeleport (2.4.5), WorldEdit (7.3.18+7298-4383852), WorldGuard (7.0.14+2339-43997ec), XVaults (2.1.2), zAuctionHouseV3 (3.2.4.0), zMenu (1.1.0.7)
+[03:08:34] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[03:08:37] [ServerMain/INFO]: Loaded 1461 recipes
+[03:08:37] [ServerMain/INFO]: Loaded 1574 advancements
+[03:08:37] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[03:08:37] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 430.9ms
+[03:08:37] [Server thread/INFO]: Starting minecraft server version 1.21.10
+[03:08:37] [Server thread/INFO]: Loading properties
+[03:08:37] [Server thread/INFO]: This server is running Paper version 1.21.10-117-ver/1.21.10@df4b668 (2025-11-30T22:37:28Z) (Implementing API version 1.21.10-R0.1-SNAPSHOT)
+[03:08:37] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[03:08:37] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[03:08:37] [Server thread/INFO]: Using 4 threads for Netty based IO
+[03:08:38] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[03:08:38] [Server thread/INFO]: Default game type: SURVIVAL
+[03:08:38] [Server thread/INFO]: Generating keypair
+[03:08:38] [Server thread/INFO]: Starting Minecraft server on *:25565
+[03:08:38] [Server thread/INFO]: Using epoll channel type
+[03:08:38] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[03:08:38] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[03:08:38] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load 'plugins/.paper-remapped/EcoArmor v8.78.0.jar' in 'plugins/.paper-remapped'
+org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [eco]. Please download and install these plugins to run 'EcoArmor'.
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:82) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:38) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:39) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:555) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:323) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1257) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:384) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[03:08:38] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load 'plugins/.paper-remapped/EcoPets v2.77.1.jar' in 'plugins/.paper-remapped'
+org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [eco]. Please download and install these plugins to run 'EcoPets'.
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:82) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:38) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:39) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:555) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:323) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1257) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:384) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[03:08:38] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load 'plugins/.paper-remapped/Talismans v6.77.0.jar' in 'plugins/.paper-remapped'
+org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [eco]. Please download and install these plugins to run 'Talismans'.
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:82) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:38) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:39) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:555) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:323) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1257) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:384) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[03:08:38] [Server thread/WARN]: [FancyAnalytics] Failed to move old config file: plugins/FancyAnalytics/config.json
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loading 5 libraries... please wait
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-api/4.20.0/adventure-api-4.20.0.jar
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-key/4.20.0/adventure-key-4.20.0.jar
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/org/jetbrains/annotations/26.0.2/annotations-26.0.2.jar
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.3.4/adventure-platform-bukkit-4.3.4.jar
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.3.4/adventure-platform-api-4.3.4.jar
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.4/adventure-text-serializer-bungeecord-4.3.4.jar
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.3.4/adventure-platform-facet-4.3.4.jar
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.3.4/adventure-platform-viaversion-4.3.4.jar
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-text-minimessage/4.20.0/adventure-text-minimessage-4.20.0.jar
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.20.0/adventure-text-serializer-gson-4.20.0.jar
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json/4.20.0/adventure-text-serializer-json-4.20.0.jar
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/option/1.1.0/option-1.1.0.jar
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-commons/4.20.0/adventure-text-serializer-commons-4.20.0.jar
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.20.0/adventure-text-serializer-legacy-4.20.0.jar
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [zMenu] Loading 1 libraries... please wait
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [zMenu] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/org/mariadb/jdbc/mariadb-java-client/3.5.6/mariadb-java-client-3.5.6.jar
+[03:08:39] [Server thread/INFO]: [SpigotLibraryLoader] [BattlePass] Loading 4 libraries... please wait
+[03:08:40] [Server thread/INFO]: [SpigotLibraryLoader] [BattlePass] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar
+[03:08:40] [Server thread/INFO]: [SpigotLibraryLoader] [BattlePass] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/com/zaxxer/HikariCP/7.0.2/HikariCP-7.0.2.jar
+[03:08:40] [Server thread/INFO]: [SpigotLibraryLoader] [BattlePass] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar
+[03:08:40] [Server thread/INFO]: [SpigotLibraryLoader] [BattlePass] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/com/j256/ormlite/ormlite-jdbc/6.1/ormlite-jdbc-6.1.jar
+[03:08:40] [Server thread/INFO]: [SpigotLibraryLoader] [BattlePass] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/org/postgresql/postgresql/42.7.5/postgresql-42.7.5.jar
+[03:08:40] [Server thread/INFO]: [SpigotLibraryLoader] [BattlePass] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/org/checkerframework/checker-qual/3.48.3/checker-qual-3.48.3.jar
+[03:08:40] [Server thread/INFO]: [SpigotLibraryLoader] [zAuctionHouseV3] Loading 1 libraries... please wait
+[03:08:40] [Server thread/INFO]: [SpigotLibraryLoader] [zAuctionHouseV3] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/org/mariadb/jdbc/mariadb-java-client/3.5.6/mariadb-java-client-3.5.6.jar
+[03:08:42] [Server thread/INFO]: [SpigotLibraryLoader] [AxKoth] Loading 1 libraries... please wait
+[03:08:42] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/club/minnced/discord-webhooks/0.8.4/discord-webhooks-0.8.4.pom
+[03:08:42] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.pom
+[03:08:43] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/slf4j/slf4j-parent/1.7.32/slf4j-parent-1.7.32.pom
+[03:08:43] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/com/squareup/okhttp3/okhttp/4.10.0/okhttp-4.10.0.pom
+[03:08:43] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/com/squareup/okio/okio-jvm/3.0.0/okio-jvm-3.0.0.pom
+[03:08:43] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.5.31/kotlin-stdlib-jdk8-1.5.31.pom
+[03:08:43] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.5.31/kotlin-stdlib-1.5.31.pom
+[03:08:43] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/annotations/13.0/annotations-13.0.pom
+[03:08:43] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.5.31/kotlin-stdlib-common-1.5.31.pom
+[03:08:44] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.5.31/kotlin-stdlib-jdk7-1.5.31.pom
+[03:08:44] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.6.20/kotlin-stdlib-1.6.20.pom
+[03:08:44] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.6.20/kotlin-stdlib-common-1.6.20.pom
+[03:08:44] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/json/json/20230618/json-20230618.pom
+[03:08:44] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+[03:08:44] [Server thread/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/club/minnced/discord-webhooks/0.8.4/discord-webhooks-0.8.4.jar
+[03:08:44] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-0/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar
+[03:08:44] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-1/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/com/squareup/okhttp3/okhttp/4.10.0/okhttp-4.10.0.jar
+[03:08:44] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-3/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.5.31/kotlin-stdlib-jdk8-1.5.31.jar
+[03:08:44] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-4/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.5.31/kotlin-stdlib-jdk7-1.5.31.jar
+[03:08:44] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-0/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib-common/1.5.31/kotlin-stdlib-common-1.5.31.jar
+[03:08:44] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-2/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/com/squareup/okio/okio-jvm/3.0.0/okio-jvm-3.0.0.jar
+[03:08:44] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-4/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/annotations/13.0/annotations-13.0.jar
+[03:08:44] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-3/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/jetbrains/kotlin/kotlin-stdlib/1.6.20/kotlin-stdlib-1.6.20.jar
+[03:08:44] [BasicRepositoryConnector-maven-central.storage-download.googleapis.com-0-0/INFO]: [SpigotLibraryLoader] Downloading https://maven-central.storage-download.googleapis.com/maven2/org/json/json/20230618/json-20230618.jar
+[03:08:45] [Server thread/INFO]: [SpigotLibraryLoader] [AxKoth] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/club/minnced/discord-webhooks/0.8.4/discord-webhooks-0.8.4.jar
+[03:08:45] [Server thread/INFO]: [SpigotLibraryLoader] [AxKoth] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/org/slf4j/slf4j-api/1.7.32/slf4j-api-1.7.32.jar
+[03:08:45] [Server thread/INFO]: [SpigotLibraryLoader] [AxKoth] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/com/squareup/okhttp3/okhttp/4.10.0/okhttp-4.10.0.jar
+[03:08:45] [Server thread/INFO]: [SpigotLibraryLoader] [AxKoth] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/com/squareup/okio/okio-jvm/3.0.0/okio-jvm-3.0.0.jar
+[03:08:45] [Server thread/INFO]: [SpigotLibraryLoader] [AxKoth] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.5.31/kotlin-stdlib-jdk8-1.5.31.jar
+[03:08:45] [Server thread/INFO]: [SpigotLibraryLoader] [AxKoth] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.5.31/kotlin-stdlib-jdk7-1.5.31.jar
+[03:08:45] [Server thread/INFO]: [SpigotLibraryLoader] [AxKoth] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/org/jetbrains/kotlin/kotlin-stdlib-common/1.5.31/kotlin-stdlib-common-1.5.31.jar
+[03:08:45] [Server thread/INFO]: [SpigotLibraryLoader] [AxKoth] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/org/jetbrains/kotlin/kotlin-stdlib/1.6.20/kotlin-stdlib-1.6.20.jar
+[03:08:45] [Server thread/INFO]: [SpigotLibraryLoader] [AxKoth] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/org/jetbrains/annotations/13.0/annotations-13.0.jar
+[03:08:45] [Server thread/INFO]: [SpigotLibraryLoader] [AxKoth] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/org/json/json/20230618/json-20230618.jar
+[03:08:49] [Server thread/ERROR]: [ModernPluginLoadingStrategy] Could not load plugin 'AxKoth-2.16.5.jar' in folder 'plugins/.paper-remapped'
+org.bukkit.plugin.InvalidPluginException: Exception initializing main class `com.artillexstudios.axkoth.AxKoth'
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:117) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:125) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at io.papermc.paper.plugin.provider.type.spigot.SpigotPluginProvider.createInstance(SpigotPluginProvider.java:35) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at io.papermc.paper.plugin.entrypoint.strategy.modern.ModernPluginLoadingStrategy.loadProviders(ModernPluginLoadingStrategy.java:116) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:38) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:39) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:555) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:323) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1257) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:384) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:109) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	... 10 more
+Caused by: java.lang.NoClassDefFoundError: com/artillexstudios/axkoth/libs/axapi/libs/caffeine/caffeine/cache/Caffeine
+	at AxKoth-2.16.5.jar/com.artillexstudios.axkoth.libs.axapi.utils.StringUtils.<clinit>(StringUtils.java:49) ~[AxKoth-2.16.5.jar:?]
+	at AxKoth-2.16.5.jar/com.artillexstudios.axkoth.libraries.Libraries.fetchLibrary(Libraries.java:51) ~[AxKoth-2.16.5.jar:?]
+	at AxKoth-2.16.5.jar/com.artillexstudios.axkoth.AxKoth.dependencies(AxKoth.java:90) ~[AxKoth-2.16.5.jar:?]
+	at AxKoth-2.16.5.jar/com.artillexstudios.axkoth.libs.axapi.AxPlugin.<init>(AxPlugin.java:58) ~[AxKoth-2.16.5.jar:?]
+	at AxKoth-2.16.5.jar/com.artillexstudios.axkoth.AxKoth.<init>(AxKoth.java:49) ~[AxKoth-2.16.5.jar:?]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:109) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	... 10 more
+Caused by: java.lang.ClassNotFoundException: com.artillexstudios.axkoth.libs.axapi.libs.caffeine.caffeine.cache.Caffeine
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:208) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:175) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at AxKoth-2.16.5.jar/com.artillexstudios.axkoth.libs.axapi.utils.StringUtils.<clinit>(StringUtils.java:49) ~[AxKoth-2.16.5.jar:?]
+	at AxKoth-2.16.5.jar/com.artillexstudios.axkoth.libraries.Libraries.fetchLibrary(Libraries.java:51) ~[AxKoth-2.16.5.jar:?]
+	at AxKoth-2.16.5.jar/com.artillexstudios.axkoth.AxKoth.dependencies(AxKoth.java:90) ~[AxKoth-2.16.5.jar:?]
+	at AxKoth-2.16.5.jar/com.artillexstudios.axkoth.libs.axapi.AxPlugin.<init>(AxPlugin.java:58) ~[AxKoth-2.16.5.jar:?]
+	at AxKoth-2.16.5.jar/com.artillexstudios.axkoth.AxKoth.<init>(AxKoth.java:49) ~[AxKoth-2.16.5.jar:?]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:109) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	... 10 more
+[03:08:49] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.0
+[03:08:50] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[03:08:50] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.6
+[03:08:50] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.18+7298-4383852
+[03:08:51] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@5f4bdc07]
+[03:08:51] [Server thread/INFO]: [FancyNpcs] Loading server plugin FancyNpcs v2.9.0
+[03:08:51] [Server thread/INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.14+2339-43997ec
+[03:08:51] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.4.1-SNAPSHOT-1257506
+[03:08:51] [Server thread/WARN]: [ProtocolLib] Version (MC: 1.21.10) has not yet been tested! Proceed with caution.
+[03:08:51] [Server thread/INFO]: [FancyHolograms] Loading server plugin FancyHolograms v2.9.0
+[03:08:51] [FancyLogger/INFO]: [FancyHolograms] (Server thread) INFO: Successfully loaded FancyHolograms version 2.9.0
+[03:08:51] [Server thread/INFO]: [CoreLogging] Loading server plugin Multiverse-Core v5.3.0
+[03:08:51] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.22.0-dev+49-000e6c5
+[03:08:51] [Server thread/INFO]: [ProtectionStones] Loading server plugin ProtectionStones v2.10.5
+[03:08:51] [Server thread/INFO]: [AuraSkills] Loading server plugin AuraSkills v2.3.10
+[03:08:51] [Server thread/INFO]: [ItemEdit] Loading server plugin ItemEdit v3.7.8
+[03:08:51] [Server thread/INFO]: [EliteMobs] Loading server plugin EliteMobs v9.6.1
+[03:08:51] [Server thread/INFO]: [EliteMobs] MagmaCore v1.13-SNAPSHOT initialized!
+[03:08:51] [Server thread/INFO]: [EliteMobs] Registered /logify command
+[03:08:51] [Server thread/INFO]: [EliteMobs]  WorldGuard detected.
+[03:08:51] [Server thread/INFO]: [AdvancedEnchantments] Loading server plugin AdvancedEnchantments v9.22.0
+[03:08:51] [Server thread/INFO]: [zMenu] Loading server plugin zMenu v1.1.0.7
+[03:08:51] [Server thread/INFO]: [BattlePass] Loading server plugin BattlePass v5.0.3
+[03:08:51] [Server thread/INFO]: [AdvancedKits] Loading server plugin AdvancedKits v1.21.29
+[03:08:51] [Server thread/INFO]: [VoidTeleport] Loading server plugin VoidTeleport v2.4.5
+[03:08:51] [Server thread/INFO]: [DeepVoid] Loading server plugin DeepVoid v2.22.0
+[03:08:51] [Server thread/INFO]: [zAuctionHouseV3] Loading server plugin zAuctionHouseV3 v3.2.4.0
+[03:08:51] [Server thread/INFO]: [AxRewards] Loading server plugin AxRewards v3.7.0
+[03:08:51] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.9.1
+[03:08:51] [Server thread/INFO]: [EssentialsChat] Loading server plugin EssentialsChat v2.22.0-dev+49-000e6c5
+[03:08:51] [Server thread/INFO]: [AdvancedMobs] Loading server plugin AdvancedMobs v1.18.6
+[03:08:51] [Server thread/INFO]: [GHolo] Loading server plugin GHolo v2.2.6
+[03:08:52] [Server thread/INFO]: [InfiniteGUI] Loading server plugin InfiniteGUI v1.1.10
+[03:08:52] [Server thread/INFO]: [RavenWelcome] Loading server plugin RavenWelcome v1.0
+[03:08:52] [Server thread/INFO]: [SpawnerMeta] Loading server plugin SpawnerMeta v25.5
+[03:08:52] [Server thread/INFO]: [BlockRegen] Loading server plugin BlockRegen v2.4
+[03:08:52] [Server thread/INFO]: [EssentialsSpawn] Loading server plugin EssentialsSpawn v2.22.0-dev+49-000e6c5
+[03:08:52] [Server thread/INFO]: [PhoenixCrates] Loading server plugin PhoenixCrates v4.2.3
+[03:08:52] [Server thread/INFO]: [Shopkeepers] Loading server plugin Shopkeepers v2.25.0
+[03:08:52] [Server thread/INFO]: [Shopkeepers] Loaded all plugin classes (512 ms).
+[03:08:52] [Server thread/INFO]: [Shopkeepers] Compatibility provider loaded: 1_21_R8_paper
+[03:08:52] [Server thread/INFO]: [Shopkeepers] Loading config.
+[03:08:52] [Server thread/INFO]: [Shopkeepers] Loading language file: language-en-default.yml
+[03:08:52] [Server thread/INFO]: [Shopkeepers] Registering WorldGuard flag 'allow-shop'.
+[03:08:52] [Server thread/INFO]: [Shopkeepers] Registering defaults.
+[03:08:52] [Server thread/INFO]: [CommandTimer] Loading server plugin CommandTimer v8.16.3
+[03:08:52] [Server thread/INFO]: [Simple_RTP] Loading server plugin Simple_RTP v1.0.2-BETA
+[03:08:52] [Server thread/INFO]: [RealScoreboard] Loading server plugin RealScoreboard v1.5.7
+[03:08:52] [Server thread/INFO]: [XVaults] Loading server plugin XVaults v2.1.2
+[03:08:52] [Server thread/INFO]: [UJobs] Loading server plugin UJobs v1.0.3
+[03:08:52] [Server thread/INFO]: [TAB] Loading server plugin TAB v5.4.0
+[03:08:52] [Server thread/INFO]: [AnimaBossBar] Loading server plugin AnimaBossBar v${project.version}
+[03:08:52] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[03:08:52] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.0
+[03:08:53] [Server thread/INFO]:         __    
+[03:08:53] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.0
+[03:08:53] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[03:08:53] [Server thread/INFO]: 
+[03:08:53] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[03:08:53] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[03:08:54] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[03:08:54] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[03:08:54] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1892ms)
+[03:08:54] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[03:08:54] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[03:08:54] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[03:08:54] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[03:08:54] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[03:08:54] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.18+7298-4383852
+[03:08:55] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[03:08:55] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
+[03:08:55] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_21_9.PaperweightAdapter as the Bukkit adapter
+[03:08:57] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.4.1-SNAPSHOT-1257506
+[03:08:57] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.9.1
+[03:08:57] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.21.10.
+[03:08:58] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
+[03:08:58] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: skinsrestorer [15.9.1]
+[03:08:58] [Server thread/INFO]: [SkinsRestorer] PlaceholderAPI expansion registered!
+[03:08:58] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[03:08:58] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[03:08:58] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[03:08:58] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[03:08:58] [Server thread/INFO]: Preparing level "world"
+[03:08:58] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[03:08:58] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[03:08:58] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
+[03:08:58] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
+[03:08:58] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
+[03:08:58] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[03:08:58] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[03:08:58] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.9.1
+[03:08:58] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: ee713cb
+[03:08:58] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
+[03:08:58] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[03:08:58] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
+[03:08:58] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Want to support SkinsRestorer? Consider donating: https://skinsrestorer.net/donate
+[03:08:59] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
+[03:08:59] [Server thread/INFO]: Preparing spawn area: 100%
+[03:08:59] [Server thread/INFO]: Prepared spawn area in 3 ms
+[03:08:59] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[03:08:59] [Server thread/INFO]: Prepared spawn area in 0 ms
+[03:08:59] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[03:08:59] [Server thread/INFO]: Prepared spawn area in 1 ms
+[03:08:59] [Server thread/INFO]: Done preparing level "world" (0.961s)
+[03:08:59] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.6
+[03:08:59] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[03:08:59] [Server thread/INFO]: [FancyNpcs] Enabling FancyNpcs v2.9.0
+[03:08:59] [Server thread/WARN]: [org.mineskin.MineSkinClient] Creating MineSkinClient without API key
+[03:09:00] [FancyLogger/INFO]: [FancyNpcs] (Server thread) INFO: FancyNpcs (2.9.0) has been enabled.
+[03:09:00] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v7.0.14+2339-43997ec
+[03:09:00] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[03:09:00] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[03:09:00] [Server thread/INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
+[03:09:00] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[03:09:00] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[03:09:00] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+[03:09:00] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
+[03:09:00] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is PERMITTED.
+[03:09:00] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+[03:09:00] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
+[03:09:00] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[03:09:00] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[03:09:00] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is PERMITTED.
+[03:09:00] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+[03:09:00] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[03:09:00] [Server thread/INFO]: [WorldGuard] Loading region data...
+[03:09:00] [Server thread/INFO]: [FancyHolograms] Enabling FancyHolograms v2.9.0
+[03:09:00] [Server thread/WARN]: [FancyAnalytics] Failed to move old config file: plugins/FancyAnalytics/config.json
+[03:09:00] [FancyLogger/INFO]: [FancyHolograms] (Server thread) INFO: Successfully enabled FancyHolograms version 2.9.0
+[03:09:00] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v5.3.0
+[03:09:01] [Server thread/INFO]: Could not set generator for world 'spawn2': Plugin 'DeepVoid v2.22.0' is not enabled
+[03:09:01] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:spawn2'...
+[03:09:01] [Server thread/INFO]: Prepared spawn area in 1 ms
+[03:09:01] [Server thread/INFO]: [WorldGuard] (spawn2) TNT ignition is PERMITTED.
+[03:09:01] [Server thread/INFO]: [WorldGuard] (spawn2) Lighters are PERMITTED.
+[03:09:01] [Server thread/INFO]: [WorldGuard] (spawn2) Lava fire is PERMITTED.
+[03:09:01] [Server thread/INFO]: [WorldGuard] (spawn2) Fire spread is UNRESTRICTED.
+[03:09:01] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'spawn2'
+[03:09:01] [FancyLogger/INFO]: [FancyHolograms] (FancyHolograms-Holograms) INFO: Loading holograms for world spawn2
+[03:09:01] [Server thread/INFO]: Could not set generator for world 'lobby': Plugin 'DeepVoid v2.22.0' is not enabled
+[03:09:01] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:lobby'...
+[03:09:01] [Server thread/INFO]: Prepared spawn area in 2 ms
+[03:09:01] [Server thread/INFO]: [WorldGuard] (lobby) TNT ignition is PERMITTED.
+[03:09:01] [Server thread/INFO]: [WorldGuard] (lobby) Lighters are PERMITTED.
+[03:09:01] [Server thread/INFO]: [WorldGuard] (lobby) Lava fire is PERMITTED.
+[03:09:01] [Server thread/INFO]: [WorldGuard] (lobby) Fire spread is UNRESTRICTED.
+[03:09:01] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'lobby'
+[03:09:01] [FancyLogger/INFO]: [FancyHolograms] (FancyHolograms-Holograms) INFO: Loading holograms for world lobby
+[03:09:01] [Server thread/INFO]: Could not set generator for world 'spawn': Plugin 'DeepVoid v2.22.0' is not enabled
+[03:09:01] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:spawn'...
+[03:09:01] [Server thread/INFO]: Preparing spawn area: 100%
+[03:09:01] [Server thread/INFO]: Prepared spawn area in 1 ms
+[03:09:01] [Server thread/INFO]: [WorldGuard] (spawn) TNT ignition is PERMITTED.
+[03:09:01] [Server thread/INFO]: [WorldGuard] (spawn) Lighters are PERMITTED.
+[03:09:01] [Server thread/INFO]: [WorldGuard] (spawn) Lava fire is PERMITTED.
+[03:09:01] [Server thread/INFO]: [WorldGuard] (spawn) Fire spread is UNRESTRICTED.
+[03:09:01] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'spawn'
+[03:09:01] [FancyLogger/INFO]: [FancyHolograms] (FancyHolograms-Holograms) INFO: Loading holograms for world spawn
+[03:09:01] [Server thread/INFO]: Could not set generator for world 'dungeon2': Plugin 'DeepVoid v2.22.0' is not enabled
+[03:09:01] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:dungeon2'...
+[03:09:01] [Server thread/INFO]: Preparing spawn area: 100%
+[03:09:01] [Server thread/INFO]: Prepared spawn area in 4 ms
+[03:09:01] [Server thread/INFO]: [WorldGuard] (dungeon2) TNT ignition is PERMITTED.
+[03:09:01] [Server thread/INFO]: [WorldGuard] (dungeon2) Lighters are PERMITTED.
+[03:09:01] [Server thread/INFO]: [WorldGuard] (dungeon2) Lava fire is PERMITTED.
+[03:09:01] [Server thread/INFO]: [WorldGuard] (dungeon2) Fire spread is UNRESTRICTED.
+[03:09:01] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'dungeon2'
+[03:09:01] [FancyLogger/INFO]: [FancyHolograms] (FancyHolograms-Holograms) INFO: Loading holograms for world dungeon2
+[03:09:01] [Server thread/INFO]: Could not set generator for world 'dungeon': Plugin 'DeepVoid v2.22.0' is not enabled
+[03:09:01] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:dungeon'...
+[03:09:01] [Server thread/INFO]: Prepared spawn area in 1 ms
+[03:09:01] [Server thread/INFO]: [WorldGuard] (dungeon) TNT ignition is PERMITTED.
+[03:09:01] [Server thread/INFO]: [WorldGuard] (dungeon) Lighters are PERMITTED.
+[03:09:01] [Server thread/INFO]: [WorldGuard] (dungeon) Lava fire is PERMITTED.
+[03:09:01] [Server thread/INFO]: [WorldGuard] (dungeon) Fire spread is UNRESTRICTED.
+[03:09:01] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'dungeon'
+[03:09:01] [FancyLogger/INFO]: [FancyHolograms] (FancyHolograms-Holograms) INFO: Loading holograms for world dungeon
+[03:09:02] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: multiverse-core [5.3.0]
+[03:09:02] [Server thread/INFO]: [Multiverse-Core] API service loaded!
+[03:09:02] [Server thread/INFO]: [Multiverse-Core] Version 5.3.0 (API v5.3) Enabled - By dumptruckman, Rigby, fernferret, lithium3141, main--, benwoo1110 and Zax71
+[03:09:02] [Server thread/INFO]: [Multiverse-Core] Loving Multiverse-Core? Please consider supporting the project with a small donation: https://github.com/sponsors/Multiverse
+[03:09:02] [Server thread/INFO]: [Essentials] Enabling Essentials v2.22.0-dev+49-000e6c5
+[03:09:02] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
+[03:09:02] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[03:09:02] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[03:09:02] [Server thread/INFO]: [Essentials] Selected 1.21+ InventoryView Interface ABI Provider as the provider for InventoryViewProvider
+[03:09:02] [Server thread/INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
+[03:09:02] [Server thread/INFO]: [Essentials] Selected Paper Tick Count Provider as the provider for TickCountProvider
+[03:09:02] [Server thread/INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
+[03:09:02] [Server thread/INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
+[03:09:02] [Server thread/INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
+[03:09:02] [Server thread/INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
+[03:09:02] [Server thread/INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
+[03:09:02] [Server thread/INFO]: [Essentials] Selected 1.21.4+ Sync Commands Provider as the provider for SyncCommandsProvider
+[03:09:02] [Server thread/INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
+[03:09:02] [Server thread/INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
+[03:09:02] [Server thread/INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
+[03:09:02] [Server thread/INFO]: [Essentials] Selected 1.20.4+ Damage Event Provider as the provider for DamageEventProvider
+[03:09:02] [Server thread/INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
+[03:09:02] [Server thread/INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
+[03:09:02] [Server thread/INFO]: [Essentials] Selected 1.20.6+ Potion Meta Provider as the provider for PotionMetaProvider
+[03:09:02] [Server thread/INFO]: [Essentials] Selected Legacy Biome Name Provider as the provider for BiomeNameProvider
+[03:09:02] [Server thread/INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
+[03:09:02] [Server thread/INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
+[03:09:02] [Server thread/INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
+[03:09:02] [Server thread/INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
+[03:09:02] [Server thread/INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
+[03:09:02] [Server thread/INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
+[03:09:03] [Server thread/INFO]: [Essentials] Loaded 46309 items from items.json.
+[03:09:03] [Server thread/INFO]: [Essentials] Using locale en
+[03:09:03] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[03:09:03] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[03:09:03] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[03:09:03] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[03:09:03] [Server thread/INFO]: [ProtectionStones] Enabling ProtectionStones v2.10.5
+[03:09:03] [Server thread/INFO]: [WorldGuard] Registering session handler dev.espi.protectionstones.flags.GreetingFlagHandler
+[03:09:03] [Server thread/INFO]: [WorldGuard] Registering session handler dev.espi.protectionstones.flags.FarewellFlagHandler
+[03:09:03] [Server thread/INFO]: [ProtectionStones] PlaceholderAPI support enabled!
+[03:09:03] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: protectionstones [2.10.5]
+[03:09:03] [Server thread/INFO]: [ProtectionStones] LuckPerms support enabled!
+[03:09:03] [Server thread/INFO]: [ProtectionStones] Protection Stone Blocks:
+[03:09:03] [Server thread/INFO]: [ProtectionStones] - EMERALD_ORE (64)
+[03:09:03] [Server thread/INFO]: [ProtectionStones] Building region cache...
+[03:09:03] [Server thread/INFO]: [ProtectionStones] Building UUID cache... (if slow change async-load-uuid-cache in the config to true)
+[03:09:03] [Server thread/INFO]: [ProtectionStones] Checking if PS regions have been updated to UUIDs...
+[03:09:03] [Server thread/INFO]: [ProtectionStones] §fProtectionStones has successfully started!
+[03:09:03] [Server thread/INFO]: [AuraSkills] Enabling AuraSkills v2.3.10
+[03:09:04] [Server thread/INFO]: [AuraSkills] Loaded 21 message files
+[03:09:05] [Server thread/INFO]: [AuraSkills] Successfully registered hook LuckPerms
+[03:09:05] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: auraskills [2.3.10]
+[03:09:05] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: aureliumskills [2.3.10]
+[03:09:05] [Server thread/INFO]: [AuraSkills] Successfully registered hook PlaceholderAPI
+[03:09:05] [Server thread/INFO]: [AuraSkills] Successfully registered hook ProtocolLib
+[03:09:05] [Server thread/INFO]: [AuraSkills] Successfully registered hook Vault
+[03:09:05] [Server thread/INFO]: [AuraSkills] Successfully registered hook WorldGuard
+[03:09:05] [Server thread/INFO]: [AuraSkills] Loaded 160 config options in 66 ms
+[03:09:05] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: 1.21.10! Trying to find NMS support
+[03:09:05] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_21_R6' loaded!
+[03:09:05] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'AuraSkills' to create a bStats instance!
+[03:09:05] [Server thread/INFO]: [AuraSkills] Loaded 3 blocked/disabled worlds
+[03:09:05] [Server thread/INFO]: [AuraSkills] [ACF] Enabled Asynchronous Tab Completion Support!
+[03:09:06] [Server thread/INFO]: [ItemEdit] Enabling ItemEdit v3.7.8
+[03:09:06] [Server thread/INFO]: [ItemEdit] Hooking into MiniMessageAPI see https://webui.advntr.dev/
+[03:09:06] [Server thread/INFO]: [ItemEdit] Selected Storage Type: YAML
+[03:09:06] [Server thread/INFO]: [ItemEdit] Hooking into Vault
+[03:09:06] [Server thread/INFO]: [ItemEdit] Hooking into PlaceHolderAPI
+[03:09:06] [Server thread/INFO]: [ItemEdit] placeholders:
+[03:09:06] [Server thread/INFO]: [ItemEdit]   %itemedit_amount_<{itemid}>_[{slot}]_[{player}]%
+[03:09:06] [Server thread/INFO]: [ItemEdit]     shows how many itemid player has on slot
+[03:09:06] [Server thread/INFO]: [ItemEdit]     <{itemid}> for item id on serveritem
+[03:09:06] [Server thread/INFO]: [ItemEdit]     [{slot}] for the slot where the item should be counted, by default inventory
+[03:09:06] [Server thread/INFO]: [ItemEdit]       Values: inventory (include offhand), equip (include offhand), inventoryandequip (include offhand), hand, offhand, head, chest, legs, feet
+[03:09:06] [Server thread/INFO]: [ItemEdit]     [{player}] for the player, by default self
+[03:09:06] [Server thread/INFO]: [ItemEdit]     example: %itemedit_amount_{my_item_id}_{hand}%
+[03:09:06] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: itemedit [1.0]
+[03:09:06] [Server thread/INFO]: [ItemEdit] # Enabled (took 344 ms)
+[03:09:06] [Server thread/INFO]: [EliteMobs] Enabling EliteMobs v9.6.1
+[03:09:06] [Server thread/INFO]:  _____ _     _____ _____ ________  ______________  _____
+[03:09:06] [Server thread/INFO]: |  ___| |   |_   _|_   _|  ___|  \/  |  _  | ___ \/  ___|
+[03:09:06] [Server thread/INFO]: | |__ | |     | |   | | | |__ | .  . | | | | |_/ /\ `--.
+[03:09:06] [Server thread/INFO]: |  __|| |     | |   | | |  __|| |\/| | | | | ___ \ `--. \
+[03:09:06] [Server thread/INFO]: | |___| |_____| |_  | | | |___| |  | \ \_/ / |_/ //\__/ /
+[03:09:06] [Server thread/INFO]: \____/\_____/\___/  \_/ \____/\_|  |_/\___/\____/ \____/
+[03:09:06] [Server thread/INFO]: By MagmaGuy - v. 9.6.1
+[03:09:06] [Server thread/INFO]: [EliteMobs] Supported server version detected: v1_21_R6
+[03:09:06] [Server thread/INFO]: [EliteMobs] Language set to English - using plugin defaults
+[03:09:06] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 200 ms to scan 1 urls, producing 1 keys and 60 values
+[03:09:07] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 11 ms to scan 1 urls, producing 1 keys and 16 values
+[03:09:12] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 8 ms to scan 1 urls, producing 1 keys and 71 values
+[03:09:12] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 26 ms to scan 1 urls, producing 10 keys and 220 values
+[03:09:12] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 4 ms to scan 1 urls, producing 1 keys and 15 values
+[03:09:12] [Server thread/INFO]: [EliteMobs] WorldGuard compatibility is enabled!
+[03:09:12] [Server thread/INFO]: [EliteMobs] [(EliteMobs] Vault detected.
+[03:09:13] [Server thread/INFO]: [EliteMobs] Opened database successfully
+[03:09:13] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: elitemobs [9.6.1]
+[03:09:13] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 9 ms to scan 1 urls, producing 1 keys and 116 values
+[03:09:15] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 6 ms to scan 1 urls, producing 1 keys and 74 values
+[03:09:15] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 10 ms to scan 1 urls, producing 1 keys and 134 values
+[03:09:16] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 3 ms to scan 1 urls, producing 1 keys and 1 values
+[03:09:16] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 5 ms to scan 1 urls, producing 1 keys and 34 values
+[03:09:16] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 6 ms to scan 1 urls, producing 1 keys and 24 values
+[03:09:16] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 3 ms to scan 1 urls, producing 1 keys and 1 values
+[03:09:16] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 3 ms to scan 1 urls, producing 1 keys and 8 values
+[03:09:16] [Server thread/INFO]: [org.reflections.Reflections] Reflections took 3 ms to scan 1 urls, producing 1 keys and 4 values
+[03:09:16] [Server thread/INFO]: [AdvancedEnchantments] Enabling AdvancedEnchantments v9.22.0
+[03:09:16] [Server thread/WARN]: You are using invalid version of Minecraft [1.21.10-R0.1-SNAPSHOT]! Disabling...
+[03:09:16] [Server thread/INFO]: [AdvancedEnchantments] Loading Minecraft Version Unknown
+[03:09:16] [Server thread/INFO]: [AdvancedEnchantments] Loaded 7 armor sets.
+[03:09:16] [Server thread/INFO]: [AdvancedEnchantments] Loaded 5 weapons.
+[03:09:17] [Server thread/WARN]: [org.bukkit.craftbukkit.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[03:09:28] [Server thread/INFO]: [AdvancedEnchantments] Successfully hooked into economy plugin (Vault)
+[03:09:28] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: advancedenchantments [1.0.0]
+[03:09:28] [Server thread/INFO]: [zMenu] Enabling zMenu v1.1.0.7
+[03:09:28] [Server thread/INFO]: [zMenu v1.1.0.7] === ENABLE START ===
+[03:09:28] [Server thread/INFO]: [zMenu v1.1.0.7] Plugin Version V1.1.0.7
+[03:09:28] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: zmenu [1.1.0.7]
+[03:09:28] [Server thread/INFO]: [zMenu] The database connection is valid ! (SQLITE)
+[03:09:28] [Server thread/INFO]: [zMenu] Use ComponentMeta
+[03:09:28] [Server thread/INFO]: [zMenu v1.1.0.7] Paper server detected, loading Dialogs support
+[03:09:28] [Server thread/INFO]: [zMenu v1.1.0.7] zMenu Config
+[03:09:28] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zMenu/patterns/pattern_example.yml loaded successfully !
+[03:09:28] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zMenu/inventories/examples/cookies.yml loaded successfully !
+[03:09:28] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zMenu/inventories/examples/switch.yml loaded successfully !
+[03:09:29] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zMenu/inventories/examples/playtimes.yml loaded successfully !
+[03:09:29] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zMenu/inventories/advanced_inventory.yml loaded successfully !
+[03:09:29] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zMenu/inventories/basic_inventory.yml loaded successfully !
+[03:09:29] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zMenu/inventories/pro_inventory.yml loaded successfully !
+[03:09:29] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zMenu/inventories/INVENTORY-WARPS.yml loaded successfully !
+[03:09:29] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zMenu/inventories/recompensas.yml loaded successfully !
+[03:09:29] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zMenu/inventories/example_punish.yml loaded successfully !
+[03:09:29] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zMenu/website/inventories.yml loaded successfully !
+[03:09:29] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zMenu/dialogs/confirmation-dialog.yml loaded successfully!
+[03:09:29] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zMenu/dialogs/multi_action-dialog.yml loaded successfully!
+[03:09:29] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zMenu/dialogs/default-dialog.yml loaded successfully!
+[03:09:29] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zMenu/dialogs/server_link-dialog.yml loaded successfully!
+[03:09:29] [Server thread/INFO]: [zMenu v1.1.0.7] Command /basic_command successfully register.
+[03:09:29] [Server thread/INFO]: [zMenu v1.1.0.7] Command /advanced_command successfully register.
+[03:09:29] [Server thread/INFO]: [zMenu v1.1.0.7] Command /pro_command successfully register.
+[03:09:29] [Server thread/INFO]: [zMenu v1.1.0.7] Command /openbook successfully register.
+[03:09:29] [Server thread/INFO]: [zMenu v1.1.0.7] Command /punish successfully register.
+[03:09:29] [Server thread/INFO]: [zMenu v1.1.0.7] 
+[03:09:29] [Server thread/INFO]: [zMenu v1.1.0.7] You can support zMenu by upgrading your account here: https://minecraft-inventory-builder.com/account-upgrade
+[03:09:29] [Server thread/INFO]: [zMenu v1.1.0.7] zMenu’s site includes an inventory editor (under development), a marketplace (already available) is a forum (under development)
+[03:09:29] [Server thread/INFO]: [zMenu v1.1.0.7] 
+[03:09:29] [Server thread/INFO]: [zMenu v1.1.0.7] Loading 6 commands
+[03:09:29] [Server thread/INFO]: [zMenu v1.1.0.7] === ENABLE DONE (740ms) ===
+[03:09:29] [Server thread/INFO]: [BattlePass] Enabling BattlePass v5.0.3
+[03:09:30] [Server thread/INFO]: [BattlePass] Finished loading the week-2 quests. All quests loaded successfully.
+[03:09:30] [Server thread/INFO]: [BattlePass] Finished loading the event-easter quests. All quests loaded successfully.
+[03:09:30] [Server thread/INFO]: [BattlePass] Finished loading the week-1 quests. All quests loaded successfully.
+[03:09:30] [Server thread/INFO]: [BattlePass] Finished loading the week-4 quests. All quests loaded successfully.
+[03:09:30] [Server thread/INFO]: [BattlePass] Finished loading the week-3 quests. All quests loaded successfully.
+[03:09:30] [Server thread/INFO]: [BattlePass] Finished loading the week-pool quests. All quests loaded successfully.
+[03:09:30] [Server thread/INFO]: [BattlePass] Finished loading the daily quests. All quests loaded successfully.
+[03:09:30] [Server thread/INFO]: [BattlePass] Successfully loaded the pass type with the id: free
+[03:09:30] [Server thread/INFO]: [BattlePass] Successfully loaded the pass type with the id: premium
+[03:09:30] [Server thread/INFO]: [BattlePass] Register PlaceholderAPI placeholders
+[03:09:30] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: battlepass [1.1]
+[03:09:30] [Server thread/INFO]: [AdvancedKits] Enabling AdvancedKits v1.21.29
+[03:09:30] [Server thread/INFO]: [AdvancedKits] Bootstrapping runtime (libraries & configuration)...
+[03:09:30] [Server thread/INFO]: [AdvancedKits] Loading library boosted-yaml
+[03:09:30] [Server thread/INFO]: [AdvancedKits] Loading library YamlAssist
+[03:09:31] [Server thread/INFO]: [AdvancedKits] Loading library gson
+[03:09:31] [Server thread/INFO]: [AdvancedKits] Loading library XSeries
+[03:09:31] [Server thread/INFO]: [AdvancedKits] Loading library fast-uuid
+[03:09:31] [Server thread/INFO]: [AdvancedKits] Loading library bstats-bukkit
+[03:09:32] [Server thread/INFO]: [AdvancedKits] Loading library bstats-base
+[03:09:32] [Server thread/INFO]: [AdvancedKits] Loading library adventure-api
+[03:09:32] [Server thread/INFO]: [AdvancedKits] Loading library adventure-key
+[03:09:32] [Server thread/INFO]: [AdvancedKits] Loading library examination-api
+[03:09:32] [Server thread/INFO]: [AdvancedKits] Loading library examination-string
+[03:09:32] [Server thread/INFO]: [AdvancedKits] Loading library adventure-text-serializer-legacy
+[03:09:32] [Server thread/INFO]: [AdvancedKits] Loading library adventure-text-minimessage
+[03:09:32] [Server thread/INFO]: [AdvancedKits] Bootstrap completed successfully in 1,575 ms!
+[03:09:32] [Server thread/INFO]: [AdvancedKits] [NBTAPI] Found Minecraft: 1.21.10! Trying to find NMS support
+[03:09:32] [Server thread/INFO]: [AdvancedKits] [NBTAPI] NMS support 'MC1_21_R6' loaded!
+[03:09:32] [Server thread/INFO]: [AdvancedKits] [NBTAPI] Using the plugin 'AdvancedKits' to create a bStats instance!
+[03:09:32] [Server thread/INFO]: [AdvancedKits] Successfully connected to the YAML database!
+[03:09:32] [Server thread/INFO]: [AdvancedKits] Successfully registered economy with ID EXP!
+[03:09:32] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: advancedkits [1.21.29]
+[03:09:32] [Server thread/INFO]: [AdvancedKits] Successfully hooked into PlaceholderAPI (EXPANSION)!
+[03:09:32] [Server thread/INFO]: [AdvancedKits] Successfully hooked into PlaceholderAPI (PLACEHOLDER)!
+[03:09:32] [Server thread/INFO]: [AdvancedKits] Successfully registered economy with ID VAULT!
+[03:09:32] [Server thread/INFO]: [AdvancedKits] Successfully hooked into Vault (ECONOMY) [EssentialsX Economy]!
+[03:09:32] [Server thread/INFO]: [AdvancedKits] Successfully hooked into ItemEdit (ITEM)!
+[03:09:32] [Server thread/INFO]: [AdvancedKits] Successfully registered economy with ID ESSENTIALS!
+[03:09:32] [Server thread/INFO]: [AdvancedKits] Successfully hooked into Essentials (ECONOMY)!
+[03:09:32] [Server thread/INFO]: [AdvancedKits] Successfully registered economy with ID ELITEMOBS!
+[03:09:32] [Server thread/INFO]: [AdvancedKits] Successfully hooked into EliteMobs (ECONOMY)!
+[03:09:32] [Server thread/INFO]: [AdvancedKits] Enabled asynchronous tab completion support with PaperSpigot!
+[03:09:32] [Server thread/INFO]: [AdvancedKits] Successfully enabled in 2,002 ms!
+[03:09:32] [Server thread/INFO]: [VoidTeleport] Enabling VoidTeleport v2.4.5
+[03:09:32] [/INFO]: [AdvancedKits] There is not a new update available.
+[03:09:32] [Server thread/INFO]: 
+
+                ===================================================
+                                    VoidTeleport
+                ===================================================
+
+                              Current version: 2.4.5
+                        You are running the latest version!
+
+                ===================================================
+
+[03:09:32] [Server thread/INFO]: [VoidTeleport] Developed by EndlessGames.
+[03:09:32] [Server thread/INFO]: [DeepVoid] Enabling DeepVoid v2.22.0
+[03:09:32] [Server thread/INFO]: [DeepVoid] Database tables initialized
+[03:09:32] [Server thread/INFO]: [DeepVoid] Loaded 3 managed worlds and 0 DeepVoid worlds from database
+[03:09:32] [Server thread/INFO]: [DeepVoid] Saved world data to database
+[03:09:32] [Server thread/INFO]: [DeepVoid] Saved world data to database
+[03:09:32] [Server thread/INFO]: [DeepVoid] DeepVoid successfully enabled.
+[03:09:32] [Server thread/INFO]: [zAuctionHouseV3] Enabling zAuctionHouseV3 v3.2.4.0
+[03:09:32] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: zauctionhouse [3.2.4.0]
+[03:09:32] [Server thread/INFO]: [zAuctionHouseV3 v3.2.4.0] === ENABLE START ===
+[03:09:32] [Server thread/INFO]: [zAuctionHouseV3 v3.2.4.0] Plugin Version V3.2.4.0
+[03:09:32] [Server thread/INFO]: [zAuctionHouseV3 v3.2.4.0] Loading of 4 price items
+[03:09:32] [Server thread/INFO]: [zAuctionHouseV3 v3.2.4.0] /workspaces/solarking33/servidor_minecraft/plugins/zAuctionHouseV3/blacklistplayers.json loaded successfully !
+[03:09:32] [Server thread/INFO]: [zAuctionHouseV3 v3.2.4.0] Loaded config.yml
+[03:09:32] [Server thread/INFO]: [zAuctionHouseV3 v3.2.4.0] Loading of 3 tax items
+[03:09:32] [Server thread/INFO]: [zAuctionHouseV3 v3.2.4.0] Loaded 4 blacklist items
+[03:09:32] [Server thread/INFO]: [zAuctionHouseV3 v3.2.4.0] Loaded 0 whitelist items
+[03:09:32] [Server thread/INFO]: [zAuctionHouseV3 v3.2.4.0] Loading the Examples category with 4 materials
+[03:09:32] [Server thread/INFO]: [zAuctionHouseV3 v3.2.4.0] Loading the Blocks category with 1166 materials
+[03:09:32] [Server thread/INFO]: [zAuctionHouseV3 v3.2.4.0] Loading the Potions category with 17 materials
+[03:09:32] [Server thread/INFO]: [zAuctionHouseV3 v3.2.4.0] Loading the Tools category with 20 materials
+[03:09:32] [Server thread/INFO]: [zAuctionHouseV3 v3.2.4.0] Loading the Weapons category with 13 materials
+[03:09:32] [Server thread/INFO]: [zAuctionHouseV3 v3.2.4.0] Loading 3 inventories
+[03:09:32] [Server thread/INFO]: [zAuctionHouseV3 v3.2.4.0] Loading 0 commands
+[03:09:32] [Server thread/INFO]: [zAuctionHouseV3] Using SQLITE for storage
+[03:09:32] [Server thread/INFO]: [zAuctionHouseV3 v3.2.4.0] Load SQL...
+[03:09:32] [Server thread/INFO]: [zAuctionHouseV3] /workspaces/solarking33/servidor_minecraft/plugins/zAuctionHouseV3/logs/2026-01-02.log has been successfully created !
+[03:09:33] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zAuctionHouseV3/patterns/pagination.yml loaded successfully !
+[03:09:33] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zAuctionHouseV3/patterns/auction.yml loaded successfully !
+[03:09:33] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zAuctionHouseV3/patterns/back.yml loaded successfully !
+[03:09:33] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zAuctionHouseV3/patterns/decoration.yml loaded successfully !
+[03:09:33] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zAuctionHouseV3/inventories/category.yml loaded successfully !
+[03:09:33] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zAuctionHouseV3/inventories/economy.yml loaded successfully !
+[03:09:33] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zAuctionHouseV3/inventories/buyconfirminventory.yml loaded successfully !
+[03:09:33] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zAuctionHouseV3/inventories/categories.yml loaded successfully !
+[03:09:33] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zAuctionHouseV3/inventories/sellshow.yml loaded successfully !
+[03:09:33] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zAuctionHouseV3/inventories/adminremove.yml loaded successfully !
+[03:09:33] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zAuctionHouseV3/inventories/buying.yml loaded successfully !
+[03:09:33] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zAuctionHouseV3/inventories/removeconfirm.yml loaded successfully !
+[03:09:33] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zAuctionHouseV3/inventories/search.yml loaded successfully !
+[03:09:33] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zAuctionHouseV3/inventories/expire.yml loaded successfully !
+[03:09:33] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zAuctionHouseV3/inventories/auction.yml loaded successfully !
+[03:09:33] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zAuctionHouseV3/inventories/buyconfirm.yml loaded successfully !
+[03:09:33] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zAuctionHouseV3/inventories/sell.yml loaded successfully !
+[03:09:33] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zAuctionHouseV3/inventories/show.yml loaded successfully !
+[03:09:33] [Server thread/INFO]: [zMenu v1.1.0.7] plugins/zAuctionHouseV3/inventories/items.yml loaded successfully !
+[03:09:33] [Server thread/WARN]: [CurrenciesAPI] The framework is not up to date, the latest version is 1.0.7
+[03:09:33] [Server thread/INFO]: [zAuctionHouseV3 v3.2.4.0] Register VAULT economy with name vault
+[03:09:33] [Server thread/INFO]: [zAuctionHouseV3 v3.2.4.0] Register ProtocolLib implementation
+[03:09:33] [Server thread/INFO]: [zAuctionHouseV3 v3.2.4.0] === ENABLE DONE (1192ms) ===
+[03:09:33] [Server thread/INFO]: [AxRewards] Enabling AxRewards v3.7.0
+[03:09:34] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: axrewards [1.0.0]
+[03:09:34] [Server thread/INFO]: [AxRewards] Hooked into PlaceholderAPI!
+[03:09:34] [Server thread/INFO]: [AxRewards] Loaded plugin! Using H2 database to store data!
+[03:09:34] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.22.0-dev+49-000e6c5
+[03:09:34] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
+[03:09:34] [Server thread/INFO]: [AdvancedMobs] Enabling AdvancedMobs v1.18.6
+[03:09:34] [Server thread/WARN]: You are using invalid version of Minecraft [1.21.10-R0.1-SNAPSHOT]! Disabling...
+[03:09:35] [Server thread/INFO]: [AdvancedMobs] Loaded 24,661 custom heads
+[03:09:35] [Server thread/INFO]: [AdvancedMobs] Otter.amob model wasn't loaded - it requires ModelEngine: https://mobs.advancedplugins.net/supported-plugins/modelengine 
+[03:09:35] [Server thread/INFO]: [AdvancedMobs] Reindeer.amob model wasn't loaded - it requires ModelEngine: https://mobs.advancedplugins.net/supported-plugins/modelengine 
+[03:09:35] [Server thread/INFO]: [AdvancedMobs] Mammoth.amob model wasn't loaded - it requires ModelEngine: https://mobs.advancedplugins.net/supported-plugins/modelengine 
+[03:09:35] [Server thread/INFO]: [AdvancedMobs] Bear.amob model wasn't loaded - it requires ModelEngine: https://mobs.advancedplugins.net/supported-plugins/modelengine 
+[03:09:35] [Server thread/INFO]: [AdvancedMobs] Loaded 20 mob configurations.
+[03:09:35] [Server thread/INFO]: [AdvancedMobs] Loaded 7 breed-able Mobs
+[03:09:35] [Server thread/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[03:09:35] [Server thread/WARN]: [AdvancedMobs] Loaded 87 mob heads
+[03:09:35] [Server thread/INFO]: [GHolo] Enabling GHolo v2.2.6
+[03:09:35] [Server thread/INFO]: [GHolo] The plugin was successfully enabled.
+[03:09:35] [Server thread/INFO]: [GHolo] Link with PlaceholderAPI successful!
+[03:09:35] [Server thread/INFO]: [InfiniteGUI] Enabling InfiniteGUI v1.1.10
+[03:09:35] [Server thread/INFO]: [InfiniteGUI]    
+   ####   ###  ##  ### ###    ####   ###  ##    ####   #### ##  ### ###            ## ##   ##  ###    ####   
+    ##      ## ##   ##  ##     ##      ## ##     ##    # ## ##   ##  ##           ##   ##  ##   ##     ##    
+    ##     # ## #   ##         ##     # ## #     ##      ##      ##               ##       ##   ##     ##    
+    ##     ## ##    ## ##      ##     ## ##      ##      ##      ## ##            ##  ###  ##   ##     ##    
+    ##     ##  ##   ##         ##     ##  ##     ##      ##      ##               ##   ##  ##   ##     ##    
+    ##     ##  ##   ##         ##     ##  ##     ##      ##      ##  ##           ##   ##  ##   ##     ##    
+   ####   ###  ##  ####       ####   ###  ##    ####    ####    ### ###            ## ##    ## ##     ####
+ 
+[03:09:35] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: 1.21.10! Trying to find NMS support
+[03:09:35] [Server thread/WARN]: [NBTAPI] [NBTAPI] This Server-Version(1.21.10-R0.1-SNAPSHOT) is not supported by this NBT-API Version(2.13.1) located in InfiniteGUI. The NBT-API will try to work as good as it can! Some functions may not work!
+[03:09:35] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'InfiniteGUI' to create a bStats instance!
+[03:09:35] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: infinitegui [1.1.1]
+[03:09:35] [Server thread/INFO]: [RavenWelcome] Enabling RavenWelcome v1.0
+[03:09:35] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: ravenwelcome [1.0]
+[03:09:35] [Server thread/INFO]: [RavenWelcome] PlaceholderAPI expansion registered!
+[03:09:35] [Server thread/INFO]: [SpawnerMeta] Enabling SpawnerMeta v25.5
+[03:09:35] [Server thread/INFO]: [SpawnerMeta v25.4] enabled!
+[03:09:35] [Server thread/INFO]: [SpawnerMeta] Vault has been found, economy enabled!
+[03:09:36] [Server thread/INFO]: [BlockRegen] Enabling BlockRegen v2.4
+[03:09:36] [Server thread/ERROR]: [BlockRegen] Multiplier profile 'default' not found in multiplier.yml! The multiplier system will be disabled.
+[03:09:36] [Server thread/INFO]: [BlockRegen] Loaded 11 block configurations from blocks.yml.
+[03:09:36] [Server thread/INFO]: [BlockRegen] BlockRegen has been enabled successfully!
+[03:09:36] [Server thread/INFO]: [EssentialsSpawn] Enabling EssentialsSpawn v2.22.0-dev+49-000e6c5
+[03:09:36] [Server thread/INFO]: [EssentialsSpawn] Starting Metrics. Opt-out using the global bStats config.
+[03:09:36] [Server thread/INFO]: [PhoenixCrates] Enabling PhoenixCrates v4.2.3
+[03:09:36] [Server thread/INFO]: Loading cross version adapter...
+[03:09:36] [Server thread/INFO]: CraftLegacy not found, skipping. (v1_21_R1)
+[03:09:36] [Server thread/INFO]:   ____    ____                               
+[03:09:36] [Server thread/INFO]:  |  _ \  / ___|                              
+[03:09:36] [Server thread/INFO]:  | |_) || |       Phoenix Crates v4.2.3      
+[03:09:36] [Server thread/INFO]:  |  __/ | |___    https://phoenixplugins.com/
+[03:09:36] [Server thread/INFO]:  |_|     \____|                             
+[03:09:36] [Server thread/INFO]:                                                  
+[03:09:36] [Server thread/INFO]: Loading settings...
+[03:09:36] [Server thread/INFO]: Loading file "config.yml".
+[03:09:36] [Server thread/INFO]: File "config.yml" is up to date. Importing configurations.
+[03:09:36] [Server thread/INFO]: Validating license...
+[03:09:36] [Server thread/INFO]: Great news! Your license is valid and active. Enjoy full access to all the features and benefits of this plugin.
+[03:09:36] [Server thread/INFO]: No new version available!
+[03:09:36] [Server thread/INFO]: MiniMessage founded. Preparing hook...
+[03:09:36] [Server thread/INFO]: Checking for internal patchs...
+[03:09:36] [Server thread/INFO]: [PhoenixCrates] Current patch: #202506251725
+[03:09:36] [Server thread/INFO]: [PhoenixCrates] No patches to run.
+[03:09:36] [Server thread/INFO]: Vault founded. Preparing Economy...
+[03:09:36] [Server thread/INFO]: Placeholder API founded. Preparing placeholders...
+[03:09:36] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: phoenixcrates [1.0.0]
+[03:09:36] [Server thread/INFO]: Model Engine is not installed. If you want to support custom models in this plugin install it.
+[03:09:36] [Server thread/INFO]: -> (Meg 3) See more at: https://www.spigotmc.org/resources/conxeptworks-legacy-model-engine-1-16-5-1-20.79477/
+[03:09:36] [Server thread/INFO]: -> (Meg 4) See more at: https://mythiccraft.io/index.php?resources/20-off-model-engine%E2%80%94ultimate-entity-model-manager-1-19-4-1-20-1.1213/
+[03:09:36] [Server thread/INFO]: Loading components...
+[03:09:36] [Server thread/INFO]: Loading database...
+[03:09:36] [Server thread/INFO]: Initializing sqlite database provider...
+[03:09:36] [Server thread/WARN]: 5 [Server thread] INFO com.phoenixplugins.phoenixcrates.lib.hikari.HikariDataSource - CyberSQLitePool - Starting...
+[03:09:36] [Server thread/WARN]: 25 [Server thread] INFO com.phoenixplugins.phoenixcrates.lib.hikari.HikariDataSource - CyberSQLitePool - Start completed.
+[03:09:36] [Server thread/INFO]: Loading menus...
+[03:09:36] [Server thread/INFO]: Loading file "menus/default_rewards_preview.yml".
+[03:09:36] [Server thread/INFO]: File "menus/default_rewards_preview.yml" is up to date. Importing configurations.
+[03:09:36] [Server thread/INFO]: Loading file "menus/default_crate_reroll.yml".
+[03:09:36] [Server thread/INFO]: File "menus/default_crate_reroll.yml" is up to date. Importing configurations.
+[03:09:36] [Server thread/INFO]: Loading file "menus/default_select_reward.yml".
+[03:09:36] [Server thread/INFO]: File "menus/default_select_reward.yml" is up to date. Importing configurations.
+[03:09:36] [Server thread/INFO]: Loading players data...
+[03:09:36] [Server thread/INFO]: Loading keys...
+[03:09:36] [Server thread/INFO]: No resource with the name "key.yml" founded.
+[03:09:36] [Server thread/INFO]: Loading file "keys/example2.yml".
+[03:09:36] [Server thread/INFO]: File "keys/example2.yml" is up to date. Importing configurations.
+[03:09:36] [Server thread/INFO]: No resource with the name "key.yml" founded.
+[03:09:36] [Server thread/INFO]: Loading file "keys/example3.yml".
+[03:09:36] [Server thread/INFO]: File "keys/example3.yml" is up to date. Importing configurations.
+[03:09:36] [Server thread/INFO]: No resource with the name "key.yml" founded.
+[03:09:36] [Server thread/INFO]: Loading file "keys/example1.yml".
+[03:09:36] [Server thread/INFO]: File "keys/example1.yml" is up to date. Importing configurations.
+[03:09:36] [Server thread/INFO]: Loaded 3 keys.
+[03:09:36] [Server thread/INFO]: Loading crates...
+[03:09:36] [Server thread/INFO]: Loading file "locations.yml".
+[03:09:36] [Server thread/INFO]: File "locations.yml" is up to date. Importing configurations.
+[03:09:36] [Server thread/INFO]: Loaded 4 types.
+[03:09:36] [Server thread/INFO]: Loaded 0 crates.
+[03:09:36] [Server thread/INFO]: Loading commands...
+[03:09:36] [Server thread/INFO]: Enabling extension Extension-933b869e-77d2-44b2-8544-7125fbfdd295
+[03:09:36] [Server thread/INFO]: Loading file "logger.yml".
+[03:09:36] [Server thread/INFO]: File "logger.yml" is up to date. Importing configurations.
+[03:09:36] [Server thread/INFO]: 
+[03:09:36] [Server thread/INFO]: Plugin loaded successfully!
+[03:09:36] [Server thread/INFO]: [Any questions or problems that may arise, contact us through
+[03:09:36] [Server thread/INFO]: the website or our discord: https://phoenixplugins.com/discord]
+[03:09:36] [Server thread/INFO]: 
+[03:09:36] [Server thread/INFO]: [Shopkeepers] Enabling Shopkeepers v2.25.0
+[03:09:36] [Server thread/INFO]: [Shopkeepers] Loading the data of 21 shopkeepers ...
+[03:09:37] [Server thread/INFO]: [CommandTimer] Enabling CommandTimer v8.16.3
+[03:09:37] [Server thread/INFO]: [CommandTimer] Using Folia scheduler adapter
+[03:09:37] [Server thread/INFO]: [CommandTimer] Skipping migration for 7e3aec9c-8e80-4fa5-ae6c-77eaf46a8525.json (v1 >= v1)
+[03:09:37] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: commandtimer [8.16.3]
+[03:09:37] [Server thread/INFO]: [CommandTimer] CommandTimer hooked in PlaceholderAPI
+[03:09:37] [Server thread/INFO]: [CommandTimer] Loading task 7e3aec9c-8e80-4fa5-ae6c-77eaf46a8525.json
+[03:09:37] [Server thread/INFO]: [CommandTimer] Server time : 03:09:37
+[03:09:37] [Server thread/INFO]: [CommandTimer] Server day : FRIDAY
+[03:09:37] [Server thread/INFO]: [CommandTimer] 8.16.3 loaded 1 tasks!
+[03:09:37] [Server thread/INFO]: [Simple_RTP] Enabling Simple_RTP v1.0.2-BETA
+[03:09:37] [Server thread/INFO]: [Simple_RTP] Plugin has been enabled!
+[03:09:37] [Server thread/INFO]: [Simple_RTP] Thank you for using RTP plugin! by Jaeden
+[03:09:37] [Server thread/INFO]: [RealScoreboard] Enabling RealScoreboard v1.5.7
+[03:09:37] [Server thread/INFO]: [RealScoreboard]    ____            _ ____                     _                         _
+[03:09:37] [Server thread/INFO]: [RealScoreboard]   |  _ \ ___  __ _| / ___|  ___ ___  _ __ ___| |__   ___   __ _ _ __ __| |
+[03:09:37] [Server thread/INFO]: [RealScoreboard]   | |_) / _ \/ _` | \___ \ / __/ _ \| '__/ _ \ '_ \ / _ \ / _` | '__/ _` |
+[03:09:37] [Server thread/INFO]: [RealScoreboard]   |  _ <  __/ (_| | |___) | (_| (_) | | |  __/ |_) | (_) | (_| | | | (_| |
+[03:09:37] [Server thread/INFO]: [RealScoreboard]   |_| \_\___|\__,_|_|____/ \___\___/|_|  \___|_.__/ \___/ \__,_|_|  \__,_|
+[03:09:37] [Server thread/INFO]: [RealScoreboard]   Made by: JoseGamer_PT 		                      Version: 1.5.7
+[03:09:37] [Server thread/INFO]: [RealScoreboard] 
+[03:09:38] [Server thread/INFO]: [RealScoreboard] Loaded 2 conditions.
+[03:09:38] [Server thread/INFO]: [RealScoreboard] Loaded 1 scoreboards.
+[03:09:38] [Server thread/INFO]: [RealScoreboard] Server version: 1.21.10-R0.1-SNAPSHOT
+[03:09:38] [Server thread/INFO]: [RealScoreboard] Finished loading in 0.255 seconds.
+[03:09:38] [Server thread/INFO]: [RealScoreboard] <------------------ RealScoreboard v1.5.7 ------------------>
+[03:09:38] [Server thread/INFO]: [XVaults] Enabling XVaults v2.1.2
+[03:09:38] [Server thread/INFO]: [UJobs] Enabling UJobs v1.0.3
+[03:09:38] [Server thread/INFO]: [UJobs] Loaded 13 jobs successfully!
+[03:09:38] [Server thread/INFO]: [UJobs] All managers initialized successfully!
+[03:09:38] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: ujobs [1.0.3]
+[03:09:38] [Server thread/INFO]: [UJobs] UJobs has been enabled successfully!
+[03:09:38] [Server thread/INFO]: [TAB] Enabling TAB v5.4.0
+[03:09:38] [Thread-20/INFO]: [CommandTimer] Checking for update...
+[03:09:38] [Thread-20/INFO]: [CommandTimer] Update not found
+[03:09:38] [Server thread/INFO]: [TAB] Enabled in 208ms
+[03:09:38] [Server thread/INFO]: [AnimaBossBar] Enabling AnimaBossBar v${project.version}
+[03:09:38] [Server thread/INFO]: [AnimaBossBar] AnimaBossBar enabled.
+[03:09:38] [Server thread/INFO]: [spark] Starting background profiler...
+[03:09:39] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[03:09:39] [Server thread/INFO]: Starting remote control listener
+[03:09:39] [Server thread/INFO]: Thread RCON Listener started
+[03:09:39] [Server thread/INFO]: RCON running on 0.0.0.0:25575
+[03:09:39] [Server thread/INFO]: Running delayed init tasks
+[03:09:39] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[03:09:39] [Craft Scheduler Thread - 5 - Essentials/INFO]: [Essentials] Fetching version information...
+[03:09:39] [Craft Scheduler Thread - 24 - Vault/INFO]: [Vault] Checking for Updates ... 
+[03:09:39] [Craft Scheduler Thread - 9 - EliteMobs/INFO]: [EliteMobs] Latest public release is 9.6.3
+[03:09:39] [Craft Scheduler Thread - 9 - EliteMobs/INFO]: [EliteMobs] Your version is 9.6.1
+[03:09:39] [Craft Scheduler Thread - 9 - EliteMobs/WARN]: [EliteMobs] [EliteMobs] A newer version of this plugin is available for download!
+[03:09:39] [Craft Scheduler Thread - 21 - RealScoreboard/INFO]: [RealScoreboard] The plugin is updated to the latest version.
+[03:09:39] [Craft Scheduler Thread - 20 - BlockRegen/INFO]: [BlockRegen] §a[BlockRegen] You are running the latest version.
+[03:09:39] [Craft Scheduler Thread - 13 - zAuctionHouseV3/INFO]: [zAuctionHouseV3] The database connection is valid ! (192.168.10.10)
+[03:09:40] [Craft Scheduler Thread - 24 - Vault/INFO]: [Vault] No new version available
+[03:09:40] [Craft Scheduler Thread - 13 - zAuctionHouseV3/INFO]: [zAuctionHouseV3] Executing SQL: PRAGMA table_info(zauctionhouse_options)
+[03:09:40] [Craft Scheduler Thread - 13 - zAuctionHouseV3/INFO]: [zAuctionHouseV3 v3.2.4.0] Loading items
+[03:09:40] [Craft Scheduler Thread - 13 - zAuctionHouseV3/INFO]: [zAuctionHouseV3 v3.2.4.0] Loading transactions
+[03:09:40] [pool-93-thread-2/INFO]: [zAuctionHouseV3 v3.2.4.0] Loading of transactions successfully completed.
+[03:09:40] [pool-93-thread-1/INFO]: [zAuctionHouseV3 v3.2.4.0] Loading of items successfully completed.
+[03:09:40] [Craft Scheduler Thread - 14 - zAuctionHouseV3/INFO]: [zAuctionHouseV3 v3.2.4.0] New update available. Your version: 3.2.4.0, latest version: 3.2.4.1
+[03:09:40] [Craft Scheduler Thread - 14 - zAuctionHouseV3/INFO]: [zAuctionHouseV3 v3.2.4.0] Download plugin here: https://groupez.dev/resources/1
+[03:09:40] [Craft Scheduler Thread - 12 - zMenu/INFO]: [zMenu v1.1.0.7] No update available.
+[03:10:44] [spark-async-sampler-worker-thread/WARN]: [spark] Timed out waiting for world statistics
+[03:11:44] [spark-async-sampler-worker-thread/WARN]: [spark] Timed out waiting for world statistics
+[03:11:57] [Server thread/WARN]: [AdvancedEnchantments] Task #48 for AdvancedEnchantments v9.22.0 generated an exception
+java.net.ConnectException: Connection timed out
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:589) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:578) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:751) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:686) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:282) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:386) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:408) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1324) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1257) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1143) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1072) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1705) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1629) ~[?:?]
+	at AdvancedEnchantments-9.22.0[1].jar/net.advancedplugins.ae.Core$2.run(Core.java:388) ~[AdvancedEnchantments-9.22.0[1].jar:?]
+	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:78) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:474) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1271) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:384) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[03:11:57] [Server thread/INFO]: [AdvancedMobs] Loaded 0 stacked spawners.
+[03:11:57] [pool-91-thread-1/INFO]: [BattlePass] [STDOUT] Leaderboards reloaded in 22 ms
+[03:11:57] [pool-91-thread-1/WARN]: Nag author(s): '[]' of 'BattlePass v5.0.3' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[03:11:57] [Server thread/INFO]: [AuraSkills] Loaded 11 skills with 319 total sources
+[03:11:57] [Server thread/INFO]: [AuraSkills] Loaded 9 stats and 17 traits
+[03:11:57] [Server thread/INFO]: [AuraSkills] Loaded 22 pattern rewards and 0 level rewards
+[03:11:57] [Server thread/INFO]: [AuraSkills] Loaded 53 loot entries in 4 pools and 2 tables
+[03:11:57] [Server thread/INFO]: [AuraSkills] Loaded 7 menus
+[03:11:57] [Server thread/INFO]: [PlaceholderAPI] An update for PlaceholderAPI (v2.11.7) is available at:
+[03:11:57] [Server thread/INFO]: [PlaceholderAPI] https://www.spigotmc.org/resources/placeholderapi.6245/
+[03:11:57] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: vault [1.8.3]
+[03:11:57] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: server [2.7.3]
+[03:11:57] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: statistic [2.0.2]
+[03:11:57] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: luckperms [5.4-R2]
+[03:11:57] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: essentials [1.5.2]
+[03:11:57] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: localtime [1.2]
+[03:11:57] [Server thread/INFO]: 6 placeholder hook(s) registered!
+[03:11:57] [Server thread/INFO]: Done (225.063s)! For help, type "help"
+[03:11:57] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:11:57] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:11:57] [Server thread/INFO]: [AdvancedEnchantments] Successfully hooked into ProtocolLib, AuraSkills, AdvancedEnchantments, WorldGuard, PlaceholderAPI, ProtectionStones, Essentials, Vault, LuckPerms.
+[03:11:58] [Server thread/INFO]: [AdvancedEnchantments] Hooked into AdvancedEnchantments
+[03:11:58] [Server thread/INFO]: [AdvancedMobs] Hooked into AdvancedMobs
+[03:11:58] [Server thread/INFO]: [Shopkeepers] Hooked into Shopkeepers
+[03:11:58] [Server thread/INFO]: [AdvancedMobs] Successfully hooked into ProtocolLib, AuraSkills, AdvancedEnchantments, WorldGuard, PlaceholderAPI, ProtectionStones, Essentials, Vault, LuckPerms.
+[03:11:58] [Server thread/INFO]: [AdvancedMobs] Loaded 0 stacked mobs from previous session.
+[03:11:58] [Craft Scheduler Thread - 25 - AdvancedMobs/INFO]: [AdvancedMobs] You're using an outdated version of AdvancedMobs. A new version is available: 1.18.12
+[03:11:58] [Craft Scheduler Thread - 25 - AdvancedMobs/INFO]: [AdvancedMobs] Keep your Advanced plugins up to date automatically with MintServers Unlimited Hosting: https://mintservers.com/
+[03:11:58] [Craft Scheduler Thread - 27 - AdvancedEnchantments/INFO]: [AdvancedEnchantments] You're using an outdated version of AdvancedEnchantments. A new version is available: 9.22.6
+[03:11:58] [Craft Scheduler Thread - 27 - AdvancedEnchantments/INFO]: [AdvancedEnchantments] Keep your Advanced plugins up to date automatically with MintServers Unlimited Hosting: https://mintservers.com/
+[03:11:59] [Server thread/ERROR]: [AdvancedEnchantments] Failed to load the "Cazador de arañas" enchantment! Reason: enchantment name must be fully lower-case!
+[03:12:00] [Craft Scheduler Thread - 27 - SpawnerMeta/INFO]: [Spawner Meta v25.4] New version is available: v25.5! To download visit: https://www.spigotmc.org/resources/spawnermeta.74188/
+[03:12:07] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:12:07] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:12:17] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:12:17] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:12:27] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:12:27] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:12:37] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:12:37] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:12:47] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:12:47] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:12:50] [User Authenticator #0/INFO]: UUID of player apolofs is 9e9c9df8-57aa-3ef3-8bb9-b85629a1c59c
+[03:12:50] [Server thread/INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [LuckPerms, EliteMobs, ProtocolLib, WorldGuard]
+[03:12:54] [Server thread/ERROR]: Could not pass event PlayerJoinEvent to PhoenixCrates v4.2.3
+java.lang.NoClassDefFoundError: org/bukkit/craftbukkit/v1_21_R1/entity/CraftPlayer
+	at PhoenixCrates-4.2.3.jar/com.phoenixplugins.phoenixcrates.lib.common.nms.v1_21_R1.NMSFactoryImpl.modifyPipeline(NMSFactoryImpl.java:150) ~[PhoenixCrates-4.2.3.jar:?]
+	at PhoenixCrates-4.2.3.jar/com.phoenixplugins.phoenixcrates.lib.common.nms.v1_21_R1.NMSFactoryImpl.injectFakeEntityPacketListener(NMSFactoryImpl.java:112) ~[PhoenixCrates-4.2.3.jar:?]
+	at PhoenixCrates-4.2.3.jar/com.phoenixplugins.phoenixcrates.lib.common.utils.Utilities$2.onPlayerJoin(Utilities.java:109) ~[PhoenixCrates-4.2.3.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:71) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.players.PlayerList.placeNewPlayer(PlayerList.java:236) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.network.config.PrepareSpawnTask$Ready.spawn(PrepareSpawnTask.java:313) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.network.config.PrepareSpawnTask.spawnPlayer(PrepareSpawnTask.java:139) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.network.ServerConfigurationPacketListenerImpl.handleConfigurationFinished(ServerConfigurationPacketListenerImpl.java:210) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.handle(ServerboundFinishConfigurationPacket.java:22) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.handle(ServerboundFinishConfigurationPacket.java:8) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.network.PacketProcessor$ListenerAndPacket.handle(PacketProcessor.java:99) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.network.PacketProcessor.executeSinglePacket(PacketProcessor.java:33) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1511) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.recordTaskExecutionTimeWhileWaiting(MinecraftServer.java:1229) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1352) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:384) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.ClassNotFoundException: org.bukkit.craftbukkit.v1_21_R1.entity.CraftPlayer
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:208) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:175) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	... 21 more
+[03:12:54] [Server thread/INFO]: Welcome apolofs to the server!
+[03:12:54] [Server thread/INFO]: apolofs[/192.168.194.149:63566] logged in with entity id 16 at ([spawn2]26.61949393085956, 64.0, 49.347172088068554)
+[03:12:54] [Craft Scheduler Thread - 31 - RealScoreboard/INFO]: [RealScoreboard] Using 1.17+ ping method.
+[03:12:55] [Craft Scheduler Thread - 31 - EliteMobs/INFO]: [EliteMobs] User 9e9c9df8-57aa-3ef3-8bb9-b85629a1c59c data successfully read!
+[03:12:58] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:12:58] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:13:08] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:13:08] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:13:18] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:13:18] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:13:28] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:13:28] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:13:35] [Server thread/INFO]: apolofs issued server command: /reward
+[03:13:38] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:13:38] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:13:48] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:13:48] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:13:51] [Server thread/INFO]: apolofs issued server command: /zmenu open zmenu:recompensas
+[03:13:52] [Server thread/INFO]: apolofs issued server command: /zmenu open zmenu:recompensas
+[03:13:53] [Server thread/INFO]: apolofs issued server command: /zmenu open zmenu:recompensas
+[03:13:56] [Server thread/INFO]: apolofs issued server command: /reward
+[03:13:56] [Server thread/INFO]: apolofs issued server command: /reward
+[03:13:58] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:13:58] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:13:59] [Server thread/INFO]: apolofs issued server command: /warp dungeon
+[03:14:08] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:14:08] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:14:18] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:14:18] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:14:28] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:14:28] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:14:29] [Server thread/INFO]: apolofs issued server command: /schematic
+[03:14:32] [Server thread/INFO]: apolofs issued server command: /schematic list
+[03:14:38] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:14:38] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:14:48] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:14:48] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:14:58] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:14:58] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:15:07] [Server thread/INFO]: apolofs issued server command: /mv create koth normal -g DeepVoid
+[03:15:10] [Server thread/INFO]: [WorldGuard] Default configuration file written: config_world.yml
+[03:15:10] [Server thread/INFO]: [WorldGuard] Default configuration file written: blacklist.txt
+[03:15:10] [Server thread/INFO]: [WorldGuard] (koth) TNT ignition is PERMITTED.
+[03:15:10] [Server thread/INFO]: [WorldGuard] (koth) Lighters are PERMITTED.
+[03:15:10] [Server thread/INFO]: [WorldGuard] (koth) Lava fire is PERMITTED.
+[03:15:10] [Server thread/INFO]: [WorldGuard] (koth) Fire spread is UNRESTRICTED.
+[03:15:10] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'koth'
+[03:15:10] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:koth'...
+[03:15:10] [Server thread/INFO]: Prepared spawn area in 7 ms
+[03:15:10] [FancyLogger/INFO]: [FancyHolograms] (FancyHolograms-Holograms) INFO: Loading holograms for world koth
+[03:15:11] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:15:11] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:15:21] [Server thread/INFO]: apolofs issued server command: /mv teleport koth
+[03:15:21] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:15:21] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:15:31] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:15:31] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:15:41] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:15:41] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:15:51] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:15:51] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:16:01] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:16:01] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:16:11] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:16:11] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:16:12] [Server thread/INFO]: apolofs issued server command: /schematic load 200x200KOTHBog.schematic
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:13] [WorldEdit Task Executor - 1/ERROR]: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Failed to parse either. First: Index mismatch: 0 != 2; Second: Index mismatch: 0 != 5; Second: Index mismatch: 0 != 8; Second: Index mismatch: 0 != 3; Second: Unsupported key: minecraft:note_block; Second: Index mismatch: 0 != 6; Second: Index mismatch: 0 != 1; Second: Index mismatch: 0 != 7; Second: Index mismatch: 0 != 4; Second: Index mismatch: 0 != 9
+[03:16:14] [WorldEdit Task Executor - 1/INFO]: apolofs loaded /workspaces/solarking33/servidor_minecraft/plugins/WorldEdit/schematics/200x200KOTHBog.schematic
+[03:16:21] [Server thread/INFO]: apolofs issued server command: //paste
+[03:16:44] [spark-async-sampler-worker-thread/WARN]: [spark] Timed out waiting for world statistics
+[03:17:18] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH  - 1.21.10-117-df4b668 (MC: 1.21.10) ---
+[03:17:18] [Paper Watchdog Thread/ERROR]: The server has not responded for 10 seconds! Creating thread dump
+[03:17:18] [Paper Watchdog Thread/ERROR]: ------------------------------
+[03:17:18] [Paper Watchdog Thread/ERROR]: Server thread dump (Look for plugins here before reporting to Paper!):
+[03:17:18] [Paper Watchdog Thread/ERROR]: ------------------------------
+[03:17:18] [Paper Watchdog Thread/ERROR]: Current Thread: Server thread
+[03:17:18] [Paper Watchdog Thread/ERROR]: 	PID: 49 | Suspended: false | Native: false | State: RUNNABLE
+[03:17:18] [Paper Watchdog Thread/ERROR]: 	Stack:
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.world.level.block.state.BlockBehaviour$BlockStateBase.handleNeighborChanged(BlockBehaviour.java:838)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.bukkit.adapter.impl.v1_21_9.PaperweightWorldNativeAccess.fireNeighborChanged(PaperweightWorldNativeAccess.java:164)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.bukkit.adapter.impl.v1_21_9.PaperweightWorldNativeAccess.notifyNeighbors(PaperweightWorldNativeAccess.java:145)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.bukkit.adapter.impl.v1_21_9.PaperweightWorldNativeAccess.notifyNeighbors(PaperweightWorldNativeAccess.java:45)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.internal.wna.WorldNativeAccess.markAndNotifyBlock(WorldNativeAccess.java:186)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.internal.wna.WorldNativeAccess.applySideEffects(WorldNativeAccess.java:110)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.bukkit.BukkitWorld.applySideEffects(BukkitWorld.java:518)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.extent.world.SideEffectExtent$1.resume(SideEffectExtent.java:132)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.function.operation.OperationQueue.resume(OperationQueue.java:91)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.function.operation.Operations.completeBlindly(Operations.java:74)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.EditSession.internalFlushSession(EditSession.java:1008)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.EditSession.close(EditSession.java:952)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.extension.platform.PlatformCommandManager.handleCommand(PlatformCommandManager.java:515)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		java.base@21.0.9/java.lang.invoke.LambdaForm$DMH/0x00007b9220001000.invokeSpecial(LambdaForm$DMH)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		java.base@21.0.9/java.lang.invoke.LambdaForm$MH/0x00007b9221415400.invoke(LambdaForm$MH)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		java.base@21.0.9/java.lang.invoke.LambdaForm$MH/0x00007b922162c800.invokeExact_MT(LambdaForm$MH)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.util.eventbus.MethodHandleEventHandler.dispatch(MethodHandleEventHandler.java:51)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.util.eventbus.EventHandler.handleEvent(EventHandler.java:73)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.util.eventbus.EventBus.dispatch(EventBus.java:193)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.util.eventbus.EventBus.post(EventBus.java:181)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.bukkit.WorldEditPlugin.onCommand(WorldEditPlugin.java:392)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.bukkit.util.DynamicPluginCommand.execute(DynamicPluginCommand.java:55)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:83)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.commands.execution.UnboundEntryAction$$Lambda/0x00007b9222f46d20.execute(Unknown Source)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:105)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.commands.Commands.executeCommandInContext(Commands.java:458)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.commands.Commands.performCommand(Commands.java:364)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.commands.Commands.performCommand(Commands.java:352)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2321)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$12(ServerGamePacketListenerImpl.java:2294)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.network.ServerGamePacketListenerImpl$$Lambda/0x00007b9222f831c8.run(Unknown Source)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.TickTask.run(TickTask.java:18)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:176)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1537)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:180)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:150)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1517)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1511)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.recordTaskExecutionTimeWhileWaiting(MinecraftServer.java:1229)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1352)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:384)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer$$Lambda/0x00007b9220fea580.run(Unknown Source)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		java.base@21.0.9/java.lang.Thread.runWith(Thread.java:1596)
+[03:17:18] [Paper Watchdog Thread/ERROR]: 		java.base@21.0.9/java.lang.Thread.run(Thread.java:1583)
+[03:17:18] [Paper Watchdog Thread/ERROR]: ------------------------------
+[03:17:18] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH ---
+[03:17:18] [Paper Watchdog Thread/ERROR]: ------------------------------
+[03:17:23] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH  - 1.21.10-117-df4b668 (MC: 1.21.10) ---
+[03:17:23] [Paper Watchdog Thread/ERROR]: The server has not responded for 15 seconds! Creating thread dump
+[03:17:23] [Paper Watchdog Thread/ERROR]: ------------------------------
+[03:17:23] [Paper Watchdog Thread/ERROR]: Server thread dump (Look for plugins here before reporting to Paper!):
+[03:17:23] [Paper Watchdog Thread/ERROR]: ------------------------------
+[03:17:23] [Paper Watchdog Thread/ERROR]: Current Thread: Server thread
+[03:17:23] [Paper Watchdog Thread/ERROR]: 	PID: 49 | Suspended: false | Native: false | State: RUNNABLE
+[03:17:23] [Paper Watchdog Thread/ERROR]: 	Stack:
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.world.level.block.state.BlockBehaviour$BlockStateBase.handleNeighborChanged(BlockBehaviour.java:838)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.bukkit.adapter.impl.v1_21_9.PaperweightWorldNativeAccess.fireNeighborChanged(PaperweightWorldNativeAccess.java:164)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.bukkit.adapter.impl.v1_21_9.PaperweightWorldNativeAccess.notifyNeighbors(PaperweightWorldNativeAccess.java:147)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.bukkit.adapter.impl.v1_21_9.PaperweightWorldNativeAccess.notifyNeighbors(PaperweightWorldNativeAccess.java:45)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.internal.wna.WorldNativeAccess.markAndNotifyBlock(WorldNativeAccess.java:186)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.internal.wna.WorldNativeAccess.applySideEffects(WorldNativeAccess.java:110)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.bukkit.BukkitWorld.applySideEffects(BukkitWorld.java:518)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.extent.world.SideEffectExtent$1.resume(SideEffectExtent.java:132)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.function.operation.OperationQueue.resume(OperationQueue.java:91)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.function.operation.Operations.completeBlindly(Operations.java:74)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.EditSession.internalFlushSession(EditSession.java:1008)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.EditSession.close(EditSession.java:952)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.extension.platform.PlatformCommandManager.handleCommand(PlatformCommandManager.java:515)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		java.base@21.0.9/java.lang.invoke.LambdaForm$DMH/0x00007b9220001000.invokeSpecial(LambdaForm$DMH)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		java.base@21.0.9/java.lang.invoke.LambdaForm$MH/0x00007b9221415400.invoke(LambdaForm$MH)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		java.base@21.0.9/java.lang.invoke.LambdaForm$MH/0x00007b922162c800.invokeExact_MT(LambdaForm$MH)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.util.eventbus.MethodHandleEventHandler.dispatch(MethodHandleEventHandler.java:51)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.util.eventbus.EventHandler.handleEvent(EventHandler.java:73)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.util.eventbus.EventBus.dispatch(EventBus.java:193)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.util.eventbus.EventBus.post(EventBus.java:181)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.worldedit.bukkit.WorldEditPlugin.onCommand(WorldEditPlugin.java:392)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		worldedit-bukkit-7.3.18.jar//com.sk89q.bukkit.util.DynamicPluginCommand.execute(DynamicPluginCommand.java:55)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:83)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.commands.execution.UnboundEntryAction$$Lambda/0x00007b9222f46d20.execute(Unknown Source)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:105)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.commands.Commands.executeCommandInContext(Commands.java:458)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.commands.Commands.performCommand(Commands.java:364)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.commands.Commands.performCommand(Commands.java:352)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2321)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$12(ServerGamePacketListenerImpl.java:2294)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.network.ServerGamePacketListenerImpl$$Lambda/0x00007b9222f831c8.run(Unknown Source)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.TickTask.run(TickTask.java:18)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:176)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1537)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:180)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:150)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1517)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1511)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.recordTaskExecutionTimeWhileWaiting(MinecraftServer.java:1229)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1352)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:384)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer$$Lambda/0x00007b9220fea580.run(Unknown Source)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		java.base@21.0.9/java.lang.Thread.runWith(Thread.java:1596)
+[03:17:23] [Paper Watchdog Thread/ERROR]: 		java.base@21.0.9/java.lang.Thread.run(Thread.java:1583)
+[03:17:23] [Paper Watchdog Thread/ERROR]: ------------------------------
+[03:17:23] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH ---
+[03:17:23] [Paper Watchdog Thread/ERROR]: ------------------------------
+[03:17:26] [Server thread/INFO]: apolofs lost connection: Disconnected
+[03:17:26] [Server thread/INFO]: apolofs has left the server!
+[03:17:27] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:17:27] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:17:37] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:17:37] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:17:39] [User Authenticator #1/INFO]: UUID of player apolofs is 9e9c9df8-57aa-3ef3-8bb9-b85629a1c59c
+[03:17:41] [Server thread/ERROR]: Could not pass event PlayerJoinEvent to PhoenixCrates v4.2.3
+java.lang.NoClassDefFoundError: org/bukkit/craftbukkit/v1_21_R1/entity/CraftPlayer
+	at PhoenixCrates-4.2.3.jar/com.phoenixplugins.phoenixcrates.lib.common.nms.v1_21_R1.NMSFactoryImpl.modifyPipeline(NMSFactoryImpl.java:150) ~[PhoenixCrates-4.2.3.jar:?]
+	at PhoenixCrates-4.2.3.jar/com.phoenixplugins.phoenixcrates.lib.common.nms.v1_21_R1.NMSFactoryImpl.injectFakeEntityPacketListener(NMSFactoryImpl.java:112) ~[PhoenixCrates-4.2.3.jar:?]
+	at PhoenixCrates-4.2.3.jar/com.phoenixplugins.phoenixcrates.lib.common.utils.Utilities$2.onPlayerJoin(Utilities.java:109) ~[PhoenixCrates-4.2.3.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:71) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.players.PlayerList.placeNewPlayer(PlayerList.java:236) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.network.config.PrepareSpawnTask$Ready.spawn(PrepareSpawnTask.java:313) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.network.config.PrepareSpawnTask.spawnPlayer(PrepareSpawnTask.java:139) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.network.ServerConfigurationPacketListenerImpl.handleConfigurationFinished(ServerConfigurationPacketListenerImpl.java:210) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.handle(ServerboundFinishConfigurationPacket.java:22) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.handle(ServerboundFinishConfigurationPacket.java:8) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.network.PacketProcessor$ListenerAndPacket.handle(PacketProcessor.java:99) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.network.PacketProcessor.executeSinglePacket(PacketProcessor.java:33) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1511) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.recordTaskExecutionTimeWhileWaiting(MinecraftServer.java:1229) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1352) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:384) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.ClassNotFoundException: org.bukkit.craftbukkit.v1_21_R1.entity.CraftPlayer
+	... 21 more
+[03:17:41] [Server thread/INFO]: Welcome apolofs to the server!
+[03:17:41] [Server thread/INFO]: apolofs[/192.168.194.149:63691] logged in with entity id 184 at ([koth]0.5, 63.92159999847412, 0.5000000000000001)
+[03:17:41] [Craft Scheduler Thread - 41 - EliteMobs/INFO]: [EliteMobs] User 9e9c9df8-57aa-3ef3-8bb9-b85629a1c59c data successfully read!
+[03:17:47] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:17:47] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:17:57] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:17:57] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:18:07] [Server thread/INFO]: [EliteMobs] Event coins_goblin.yml has been queued!
+[03:18:09] [Server thread/INFO]: A Coins Goblin has been sighted!
+[03:18:09] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:18:09] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:18:19] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:18:19] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:18:29] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:18:29] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:18:32] [Server thread/INFO]: apolofs issued server command: /difficulty peaceful
+[03:18:32] [Server thread/INFO]: [apolofs: The difficulty has been set to Peaceful]
+[03:18:39] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:18:39] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:18:44] [Server thread/INFO]: apolofs issued server command: /gamerule doMobSpawning false
+[03:18:44] [Server thread/INFO]: [apolofs: Gamerule doMobSpawning is now set to: false]
+[03:18:49] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:18:49] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:18:59] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:18:59] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:19:09] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:19:09] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:19:19] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:19:19] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:19:29] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:19:29] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:19:39] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:19:39] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:19:49] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:19:49] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:19:53] [Server thread/INFO]: apolofs issued server command: /plugins
+[03:19:59] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:19:59] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:20:09] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:20:09] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:20:19] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:20:19] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:20:29] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:20:29] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:20:39] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:20:39] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:20:49] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:20:49] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:20:59] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:20:59] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:21:09] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:21:09] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:21:12] [Server thread/INFO]: apolofs issued server command: /spawn
+[03:21:15] [Server thread/INFO]: apolofs lost connection: Disconnected
+[03:21:15] [Server thread/INFO]: apolofs has left the server!
+[03:21:19] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:21:19] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:21:29] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:21:29] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:21:39] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:21:39] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:21:49] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:21:49] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:21:59] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:21:59] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:22:09] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:22:09] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:22:19] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:22:19] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:22:29] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:22:29] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:22:39] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:22:39] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:22:49] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:22:49] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:22:59] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:22:59] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:23:09] [pool-91-thread-1/INFO]: [BattlePass] [STDOUT] Leaderboards reloaded in 9 ms
+[03:23:09] [pool-91-thread-1/WARN]: Nag author(s): '[]' of 'BattlePass v5.0.3' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[03:23:09] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:23:09] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:23:19] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:23:19] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:23:29] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:23:29] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:23:39] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:23:39] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:23:49] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:23:49] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:23:59] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:23:59] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:24:09] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:24:09] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:24:19] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:24:19] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:24:29] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:24:29] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:24:39] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:24:39] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:24:49] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:24:49] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:24:59] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:24:59] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:25:09] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:25:09] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:25:19] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:25:19] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:25:29] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:25:29] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:25:39] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:25:39] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:25:49] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:25:49] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:25:59] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:25:59] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:26:09] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:26:09] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:26:19] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:26:19] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:26:29] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:26:29] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:26:39] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:26:39] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:26:49] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:26:49] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:26:59] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:26:59] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:27:09] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:27:09] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:27:19] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:27:19] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:27:29] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:27:29] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:27:39] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:27:39] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:27:49] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:27:49] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:27:59] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:27:59] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:28:09] [Server thread/INFO]: XVaults Data Auto-Saved.
+[03:28:09] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:28:09] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling
+[03:28:19] [Server thread/INFO]: [CommandTimer] Populating schedule for task: Task_JFyO
+[03:28:19] [Server thread/INFO]: [CommandTimer] Task Task_JFyO is not active, skipping scheduling

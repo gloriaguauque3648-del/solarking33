@@ -1,0 +1,13 @@
+{
+  "name": "welcome",
+  "active": true,
+  "description": "Mensaje de bienvenida al arrancar y cada 5 minutos",
+  "interval": {
+    "minutes": 5
+  },
+  "commands": [
+    { "command": "say [CommandTimer] Servidor en linea! Bienvenidos." }
+  ],
+  "commandExecutionMode": "CONSOLE",
+  "runOnLoad": true
+}

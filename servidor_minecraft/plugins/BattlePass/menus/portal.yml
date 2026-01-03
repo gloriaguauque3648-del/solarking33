@@ -1,0 +1,64 @@
+menu-title: '&6❃ &eᴘᴀsᴇ ᴅᴇ ʙᴀᴛᴀʟʟᴀ &6❃'
+menu-rows: 2
+
+menu:
+  '2': # The slot the item is in
+    item:
+      material: chest_minecart:0 # The material of the item. TIP: Use /bpa material item or /bpa material block.
+      name: '&eʀᴇᴄᴏᴍᴘᴇɴsᴀs &6(ᴄʟɪᴄᴋ)' # The name of the item in the GUI.
+      lore:
+        - ''
+        - '&6Hᴀɢᴀ ᴄʟɪᴄ ᴀǫᴜɪ́ ᴘᴀʀᴀ ᴇxᴘʟᴏʀᴀʀ ʟᴀs ʀᴇᴄᴏᴍᴘᴇɴsᴀs.'
+    actions:
+      - '[menu] {rewards}'
+  '4':
+    item:
+      material: anvil:0
+      name: '&esᴇsɪᴏɴ 1 ᴘᴀsᴇ ᴅᴇ ʙᴀᴛᴀʟʟᴀ'
+      lore:
+        - '&6%pass_type% &eᴘᴀsᴇ ᴅᴇ ʙᴀᴛᴀʟʟᴀ'
+        - ''
+        - '&esᴇᴍᴀɴᴀ &f%week%'
+        - ''
+        - '&eStatistics'
+        - '&6&l* &eNɪᴠᴇʟ &e%tier%'
+        - '&6&l* &eᴘᴜɴᴛᴏs &e%points%&8/&f%required_points%'
+    actions:
+      - "[menu] {close}"
+  '6':
+    item:
+      material: enchanted_book:0
+      name: '&eᴍɪsɪᴏɴᴇs &6(ᴄʟɪᴄᴋ)'
+      lore:
+        - ''
+        - '&eHᴀɢᴀ ᴄʟɪᴄ ᴀǫᴜɪ́ ᴘᴀʀᴀ ᴠᴇʀ ʟᴀs ᴍɪsɪᴏɴᴇs.'
+    actions:
+      - '[menu] {quest-overview}'
+  '12':
+    item:
+      material: golden_helmet
+      name: '&eTᴀʙʟᴀ ᴅᴇ ᴄʟᴀsɪғɪᴄᴀᴄɪᴏɴ'
+      lore:
+        - '&6Hᴀɢᴀ ᴄʟɪᴄ ᴘᴀʀᴀ ᴀʙʀɪʀ ʟᴀ ʟɪsᴛᴀ ᴅᴇ ᴄʟᴀsɪғɪᴄᴀᴄɪᴏɴ'
+    actions:
+      - '[menu] {leaderboard}'
+  '14':
+    item:
+      material: book:0
+      name: '&e¿ǫᴜᴇ ᴇs ᴇʟ ᴘᴀsᴇ ᴅᴇ ʙᴀᴛᴀʟʟᴀ??'
+      lore:
+        - ''
+        - '&esᴜʙᴇ ᴅᴇ ɴɪᴠᴇʟ ᴛᴜ &6ᴘᴀsᴇ ᴅᴇ Bᴀᴛᴀʟʟᴀ'
+        - '&eCᴏᴍᴘʟᴇᴛᴀɴᴅᴏ ᴍɪsɪᴏɴᴇs ᴅᴇsᴀғɪᴀɴᴛᴇs.'
+        - ''
+        - '&esᴇᴀ ᴜɴ ᴊᴜɢᴀᴅᴏʀ ᴀᴄᴛɪᴠᴏ ʏ ᴏʙᴛᴇɴ ᴘᴜɴᴛᴏs,'
+        - '&eregresa y recibe increíbles recompensas.'
+        - ''
+        - '&eᴘᴜᴇᴅᴇs ᴀᴅǫᴜɪʀɪʀ ʟᴀ ᴇᴅɪᴄɪᴏɴ ᴘʀᴇᴍɪᴜᴍ ᴅᴇ ᴇsᴛᴇ'
+        - '&eᴘᴀsᴇ ᴅᴇ ʙᴀᴛᴀʟʟᴀ &6 ᴇɴ ɴᴜᴇsᴛʀᴀ ᴛɪᴇɴᴅᴀ.'
+    actions:
+      - "[menu] {close}"
+  filler: # Fills all empty slots with the following item
+    slots: fill # This will fill all empty slots. You can also do 'startslot...endslot', e.g '2...8' to fill slots 2 to 8.
+    item:
+      material: stained_glass_pane:0

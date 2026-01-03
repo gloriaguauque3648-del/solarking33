@@ -1,0 +1,13 @@
+[03:28:46] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.1+8-LTS; Microsoft Microsoft-12574222) on Linux 6.8.0-1030-azure (amd64)
+[03:28:46] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.10-117-ver/1.21.10@df4b668 (2025-11-30T22:37:28Z) for Minecraft 1.21.10
+[03:28:46] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[03:28:46] [ServerMain/INFO]: [PluginInitializerManager] Initialized 0 plugins
+[03:28:47] [Paper Plugin Remapper Thread - 1/INFO]: [ReobfServer] Remapping server...
+[03:28:57] [Paper Plugin Remapper Thread - 1/INFO]: [ReobfServer] Done remapping server in 10496ms.
+[03:28:58] [ServerMain/WARN]: Failed to load eula.txt
+[03:28:58] [ServerMain/INFO]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.
+[03:28:59] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.1+8-LTS; Microsoft Microsoft-12574222) on Linux 6.8.0-1030-azure (amd64)
+[03:28:59] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.10-117-ver/1.21.10@df4b668 (2025-11-30T22:37:28Z) for Minecraft 1.21.10
+[03:28:59] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[03:28:59] [ServerMain/INFO]: [PluginInitializerManager] Initialized 0 plugins
+[03:29:05] [ServerMain/INFO]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.

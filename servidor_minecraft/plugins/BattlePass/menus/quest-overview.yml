@@ -1,0 +1,58 @@
+menu-title: '&#ff8000&lᴍɪsɪᴏɴᴇs'
+menu-rows: 4
+
+week-slots:
+  slots: '11...18' # ... is used to signify all of the ones in between. It functions the same as 11, 12, 13, 14, 15, 16, 17, 18
+
+menu:
+  '29':
+    item:
+      material: arrow:0
+      name: '&eᴘᴀɢɪɴᴀ ᴀɴᴛᴇʀɪᴏʀ &7(Cʟɪᴄᴋ)'
+      lore:
+        - ''
+        - '&7&o(( Hᴀɢᴀ ᴄʟɪᴄ ᴘᴀʀᴀ ɪʀ ᴀ ʟᴀ ᴘᴀ́ɢɪɴᴀ ᴀɴᴛᴇʀɪᴏʀ ))'
+    actions:
+      - '[menu](page = 1) {portal}' # If the page is 1, take them to the portal page
+      - '[menu](page ! 1) {previous-page}' # If their page is not 1, take them to the previous page
+  '30':
+    item:
+      material: clock:0
+      name: '&eᴍɪsɪᴏɴᴇs ᴅɪᴀʀɪᴀs &7(%daily_time_left%)'
+    actions:
+      - '[menu] {daily-quests}'
+  '32':
+    item:
+      material: dragon_egg:0
+      name: '&eMɪsɪᴏɴᴇs ᴅᴇ ᴇᴠᴇɴᴛᴏs'
+    actions:
+      - '[menu] {event-list}'
+  '33':
+    item:
+      material: arrow:0
+      name: '&ePᴀ́ɢɪɴᴀ sɪɢᴜɪᴇɴᴛᴇ &7(Cʟɪᴄᴋ)'
+      lore:
+        - ''
+        - '&7&o(( Hᴀɢᴀ ᴄʟɪᴄ ᴘᴀʀᴀ ɪʀ ᴀ ʟᴀ ᴘᴀ́ɢɪɴᴀ sɪɢᴜɪᴇɴᴛᴇ. ))'
+    actions:
+      - '[menu] {next-page}'
+
+static-items:
+  week-item:
+    material: writable_book:0
+    name: '&esᴇᴍᴀɴᴀ %week% &7(%status%&7)'
+    lore:
+      - ''
+      - '&7&o(( Hᴀɢᴀ ᴄʟɪᴄ ᴘᴀʀᴀ ᴠᴇʀ ʟᴀs ᴍɪsɪᴏɴᴇs ))'
+  locked-week-item:
+    material: writable_book:0
+    name: '&esᴇᴍᴀɴᴀ %week% &7(%status%&7)'
+    lore:
+      - ''
+      - '&7&o(( Shᴀɢᴀ ᴄʟɪᴄ ᴀǫᴜɪ́ ᴘᴀʀᴀ ᴠᴇʀ ʟᴀs ᴍɪsɪᴏɴᴇs ))'
+  requires-previous-completion-item: # Only used if you have require previous completion set to true in your settings.yml.
+    material: writable_book:0
+    name: '&esᴇᴍᴀɴᴀ %week% &7(%status%&7)'
+    lore:
+      - ''
+      - '&7&o(( hᴀɢᴀ ᴄʟɪᴄ ᴀǫᴜɪ́ ᴘᴀʀᴀ ᴠᴇʀ ʟᴀs ᴍɪsɪᴏɴᴇs ))'

@@ -1,0 +1,80 @@
+#
+# This configuration uses zMenu, please refer to zMenu documentation
+# zMenu: https://docs.zmenu.dev/
+# zAuctionHouse: https://zauctionhouse.groupez.dev/
+#
+
+name: '&8ᴀᴅᴍɪɴ ʀᴇᴍᴏᴠᴇ'  # Title of the menu, supports color codes and placeholders
+
+size: 54  # Size of the Minecraft inventory menu, must be a multiple of 9
+
+patterns:  # List of pattern identifiers used in the menu
+  - "zauctionhouse_decoration"  # Pattern for decorative elements
+
+items:
+  show:
+    type: ZAUCTIONHOUSE_SHOW_ADMIN  # Type for showing admin-specific items or information
+    slot: 22  # The slot in the menu where this item will be placed
+
+  back:
+    type: BACK  # A back button for navigation
+    item:
+      material: RED_STAINED_GLASS_PANE  # Material used for the back button
+      name: '&cBack'  # Name of the button, supports color codes
+    slot: 49  # The slot in the menu where this button will be placed
+
+  removeSilent:
+    type: ZAUCTIONHOUSE_ADMIN_REMOVE  # Type for admin removal of items silently
+    item:
+      material: GREEN_TERRACOTTA  # Material used for the button
+      name: '&fRemove silent and give item to player'  # Name of the button
+      lore:
+        - '&7&m                                     '
+        - '&f&l» &r&7Is silent&7: &atrue'  # Indicates silent removal
+        - '&f&l» &r&7Forced removal&7: &cfalse'  # Indicates non-forced removal
+        - '&7&m                                     '
+    isSilent: true  # Indicates that the removal will be silent
+    isForceRemove: false  # Indicates that the removal will not be forced
+    slot: 30  # The slot in the menu for this button
+
+  remove:
+    type: ZAUCTIONHOUSE_ADMIN_REMOVE  # Type for admin removal of items
+    item:
+      material: LIME_TERRACOTTA  # Material for the button
+      name: '&fRemove and give item to player'  # Button name
+      lore:
+        - '&7&m                                     '
+        - '&f&l» &r&7Is silent&7: &cfalse'  # Indicates non-silent removal
+        - '&f&l» &r&7Forced removal&7: &cfalse'  # Indicates non-forced removal
+        - '&7&m                                     '
+    isSilent: false  # Non-silent removal
+    isForceRemove: false  # Non-forced removal
+    slot: 29  # The slot in the menu for this button
+
+  removeSilentForce:
+    type: ZAUCTIONHOUSE_ADMIN_REMOVE  # Type for silent and forced removal
+    item:
+      material: RED_TERRACOTTA  # Material for the button
+      name: '&fRemove silent and remove item from player'  # Button name
+      lore:
+        - '&7&m                                     '
+        - '&f&l» &r&7Is silent&7: &atrue'  # Indicates silent removal
+        - '&f&l» &r&7Forced removal&7: &atrue'  # Indicates forced removal
+        - '&7&m                                     '
+    isSilent: true  # Silent removal
+    isForceRemove: true  # Forced removal
+    slot: 32  # Slot in the menu for this button
+
+  removeForce:
+    type: ZAUCTIONHOUSE_ADMIN_REMOVE  # Type for forced removal without giving item
+    item:
+      material: ORANGE_TERRACOTTA  # Material for the button
+      name: '&fRemove without give item to player'  # Button name
+      lore:
+        - '&7&m                                     '
+        - '&f&l» &r&7Is silent&7: &cfalse'  # Indicates non-silent removal
+        - '&f&l» &r&7Forced removal&7: &atrue'  # Indicates forced removal
+        - '&7&m                                     '
+    isSilent: false  # Non-silent removal
+    isForceRemove: true  # Forced removal
+    slot: 33  # Slot in the menu for this button

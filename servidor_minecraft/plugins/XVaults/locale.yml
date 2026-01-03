@@ -1,0 +1,35 @@
+########################
+# XVAULTS LOCALE FILE  #
+########################
+#
+# Here you can edit the names and colours of XVaults GUI.
+# All colour codes are standard MC colour codes.
+
+vault_gui_title: "&8Vault Selection"
+
+vault_1_name: "&8< &9Vault &31 &8>"
+vault_2_name: "&8< &9Vault &32 &8>"
+vault_3_name: "&8< &9Vault &33 &8>"
+vault_4_name: "&8< &9Vault &34 &8>"
+vault_5_name: "&8< &9Vault &35 &8>"
+vault_6_name: "&8< &9Vault &36 &8>"
+vault_7_name: "&8< &9Vault &37 &8>"
+vault_8_name: "&8< &9Vault &38 &8>"
+vault_9_name: "&8< &9Vault &39 &8>"
+vault_10_name: "&8< &9Vault &310 &8>"
+
+vault_1_desc: "&2 27 &aSlots"
+vault_2_desc: "&2 27 &aSlots"
+vault_3_desc: "&2 27 &aSlots"
+vault_4_desc: "&2 27 &aSlots"
+vault_5_desc: "&2 27 &aSlots"
+vault_6_desc: "&2 27 &aSlots"
+vault_7_desc: "&2 27 &aSlots"
+vault_8_desc: "&2 27 &aSlots"
+vault_9_desc: "&2 27 &aSlots"
+vault_10_desc: "&2 27 &aSlots"
+
+permission: "&9&lXVaults &7- &cYou do not have permission to do that."
+invalid_vault: "&9&lXVaults &7- &cInvalid vault number. Enter a number between 1 and 10."
+glass_text: "&8Select a Vault"
+locked_text: "&4Locked"

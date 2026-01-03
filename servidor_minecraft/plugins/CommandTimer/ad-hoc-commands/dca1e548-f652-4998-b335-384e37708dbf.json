@@ -1,0 +1,7 @@
+{
+  "id": "dca1e548-f652-4998-b335-384e37708dbf",
+  "command": "CONSOLE say [CommandTimer] Test run from RCON",
+  "gender": "CONSOLE",
+  "scheduledTime": "2025-12-31T19:39:29.587239022Z[Etc/UTC]",
+  "executed": true
+}

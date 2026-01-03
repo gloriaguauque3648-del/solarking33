@@ -1,0 +1,124 @@
+title: '&eCreate or Edit Scene'
+rows: 6
+empty-fill:
+  enabled: true
+  slots:
+  - all
+  item:
+    name: '&r'
+    lore: []
+    type: LIME_STAINED_GLASS_PANE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+exit:
+  enabled: true
+  slot: 53
+  item:
+    name: '&cBack'
+    lore:
+    - '&7Click to go back to the gui editor.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzUxY2VkMmU2NDczNjZmOGYzYWQyZGZlNDE1Y2NhODU2NTFiZmFmOTczOWE5NWNkNTdiNmYyMWNiYTA1MyJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+edit-scene:
+  enabled: true
+  slots:
+  - 10-16
+  - 19-25
+  - 28-34
+  - 37-43
+  item:
+    name: '&bScene %id%'
+    lore:
+    - '&7Click to edit scene %id%.'
+    type: KNOWLEDGE_BOOK
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+no-scene-found:
+  enabled: true
+  slot: 22
+  item:
+    name: '&cNo Scenes Found'
+    lore:
+    - '&7There are currently no scenes available.'
+    - '&7Use the ''''&a&lCreate New Scene&r&7'''' button to make one.'
+    type: RED_STAINED_GLASS_PANE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+create-new-scene:
+  enabled: true
+  slot: 45
+  item:
+    name: '&a&lCreate New Scene'
+    lore:
+    - '&7Start from scratch and build your custom scene.'
+    - '&7Click to create a new scene.'
+    type: LECTERN
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+previous:
+  enabled: true
+  slot: 48
+  item:
+    name: '&cBack'
+    lore: []
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjU2NDM5YzNmNjVlOWZlNDFmMmQ4YmU0N2JmNDkzZjE0M2FjYWRmZDVkYmVhODZmZWE2ZGJlMTllNDM1ZWEifX19
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+next:
+  enabled: true
+  slot: 50
+  item:
+    name: '&cNext'
+    lore: []
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWEyMGQ2ZWYxMjY4MTMwNjZhMjU3N2NjYzVkZjcxMDI2ODNmMWFmN2MzZTk0ZTQ1YWI5YWQ2N2VkYmI1MiJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+bulk-edit-scene-delay:
+  enabled: true
+  slot: 0
+  item:
+    name: '&bBulk Edit Scene Delay'
+    type: CLOCK
+    lore:
+    - ''
+    - '&7Change the delay time in ticks'
+    - '&7for all the scenes except the last.'
+    - ''
+    - '&eClick to change'
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0

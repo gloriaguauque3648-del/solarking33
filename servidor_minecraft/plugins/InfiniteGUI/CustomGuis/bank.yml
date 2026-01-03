@@ -1,0 +1,267 @@
+id: bank
+rows: 3
+type: chest
+title: §ePersonal Bank
+commandAlias: bank # used to open the gui
+scenes:
+  '0':
+    delay: 0
+    items:
+      '1':
+        slot: 0
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '2':
+        slot: 1
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '3':
+        slot: 2
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '4':
+        slot: 3
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '5':
+        slot: 4
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '6':
+        slot: 5
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '7':
+        slot: 6
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '8':
+        slot: 7
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '9':
+        slot: 8
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '10':
+        slot: 9
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '11':
+        slot: 10
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '12':
+        slot: 11
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '13':
+        slot: 12
+        item: PLAYER_HEAD
+        amount: 1
+        item-name: §e§lDeposit Money
+        item-lore:
+        - ''
+        - §7Want to secure your money?
+        - §7You have come to the right place!
+        - ''
+        - §bClick to deposit
+        item-flags: []
+        unbreakable: false
+        conditionFailMessage: §cYou either don't have enough money or typed a non-number
+          value!
+        skullBase64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZkMTA4MzgzZGZhNWIwMmU4NjYzNTYwOTU0MTUyMGU0ZTE1ODk1MmQ2OGMxYzhmOGYyMDBlYzdlODg2NDJkIn19fQ==
+        click-events:
+          68e879c0-99f0-4174-9615-81cb08d82b97:
+            type: chat-fetcher
+            message: §ePlease type the amount to deposit in chat! §8(Make sure you
+              have enough money)
+            conditionFailMessage: §cYou either don't have enough money or typed a
+              non-number value!
+            conditions:
+              7542eb96-69c9-4917-89af-0f3677ef3a5f:
+                condition: is-integer
+                value: '%input%'
+              900c1762-62c4-4513-8e7f-51eaf73e2060:
+                condition: has-money
+                required-balance: '%input%'
+            click-events:
+              1d237a91-29db-4756-b13b-f98197f00e63:
+                type: money-remove
+                amount: '%input%'
+              cc03f746-a178-4de4-94fd-951d0dbc8dd8:
+                type: save-player-info
+                save-format: deposited:%input%+%infinitegui_player_info_deposited%
+              a5b2483f-c6de-4463-82d9-c93db9b14be4:
+                type: message
+                message: §6%player% you have successfully deposited %input% to the
+                  bank!
+              897c56fd-a7b3-4b84-95c7-839be3b4a5bc:
+                type: command
+                commands:
+                - gui open bank %player%
+      '14':
+        slot: 13
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '15':
+        slot: 14
+        item: PLAYER_HEAD
+        amount: 1
+        item-name: §e§lWithdraw Money
+        item-lore:
+        - ''
+        - §7Want to withdraw some of that balance?
+        - §7Do not worry! You are at the right place!
+        - ''
+        - §bClick to withdraw
+        item-flags: []
+        unbreakable: false
+        skullBase64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzQ5ZGJmYWI4NmFmMzk5Y2FiOGM4NTMyMDM5NmRhY2Y4NTY5ZTkyZjg5NTc0YjYzNjI2Nzg3YTM0NGMxN2U0ZiJ9fX0=
+        click-events:
+          7729fa73-fb51-4a35-81a5-ed537f69f889:
+            type: chat-fetcher
+            message: §bPlease type the amount to withdraw!
+            conditionFailMessage: §cYou don't have enough bank balance!
+            conditions:
+              bac5d4f2-feb7-4a79-87e4-ad9b97c07291:
+                condition: conditional-placeholder
+            click-events:
+              473a445f-446b-43ef-86f4-920163ab3c9a:
+                type: command
+                commands:
+                - gui open bank %player%
+              a93e06e9-dc2f-4e67-afe7-3efeb301d361:
+                type: save-player-info
+                save-format: deposited:%input%-%infinitegui_player_info_deposited%
+              8cc3db47-7fac-4c4c-b1c7-7ba738fa4f48:
+                type: message
+                message: §eYou have withdrawn §7%input%§e from your bank!
+      '16':
+        slot: 15
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '17':
+        slot: 16
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '18':
+        slot: 17
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '19':
+        slot: 18
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '20':
+        slot: 19
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '21':
+        slot: 20
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '22':
+        slot: 21
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '23':
+        slot: 22
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '24':
+        slot: 23
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '25':
+        slot: 24
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '26':
+        slot: 25
+        item: LIGHT_BLUE_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '27':
+        slot: 26
+        item: ARROW
+        amount: 1
+        item-name: §cExit Bank
+        item-lore:
+        - §7Click to exit the bank
+        item-flags: []
+        unbreakable: false
+        click-events:
+          583b42e3-eb33-409a-96bb-fc928f50c230:
+            type: close-inventory

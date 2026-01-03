@@ -1,0 +1,84 @@
+# Battle Pass Configuration
+
+# Season duration in days
+season:
+  duration: 90
+  # Whether to reset battle coins when season ends
+  reset-coins-on-season-end: true
+
+# Experience configuration
+# xp-per-level: Fixed XP required to advance to next level
+# Total XP needed for level 54 = xp-per-level × 53
+# Examples:
+# - 100 XP per level = 5,300 total XP (very easy)
+# - 400 XP per level = 21,200 total XP (easy)
+# - 1000 XP per level = 53,000 total XP (balanced for 30 days)
+# - 2000 XP per level = 106,000 total XP (hard)
+experience:
+  xp-per-level: 1000
+
+# Daily reward configuration
+daily-reward:
+  xp: 500
+
+# Missions configuration
+# reset-hours: How often missions reset (in hours)
+missions:
+  reset-hours: 24
+
+# Battle Coins distribution configuration
+# Coins distributed to top 10 players at specified intervals
+# distribution-hours: How often coins are distributed (in hours)
+# Format: position = coins amount
+battle-coins:
+  distribution-hours: 24
+  distribution:
+    1: 100
+    2: 90
+    3: 80
+    4: 70
+    5: 60
+    6: 50
+    7: 40
+    8: 30
+    9: 20
+    10: 10
+
+# Shop configuration
+shop:
+  enabled: true
+
+# Custom Items configuration
+# sounds-enabled: Whether to play ambient sounds when holding custom items
+# Set to false to save resources on low-performance servers
+custom-items:
+  sounds-enabled: true
+
+# GUI Customization
+# Customize the appearance of the Battle Pass GUI
+# You can use any valid Minecraft material name
+# Examples: DIAMOND_BLOCK, GOLD_BLOCK, EMERALD_BLOCK, GLOWSTONE, SEA_LANTERN, etc.
+gui:
+  # Blocks displayed for locked rewards (when player doesn't have the required level)
+  reward-locked:
+    # Free rewards locked block
+    free: GRAY_STAINED_GLASS
+    # Premium rewards locked block (when player has premium but not the level)
+    premium: GRAY_STAINED_GLASS
+
+  # Block displayed for premium rewards when player doesn't have premium pass
+  premium-no-pass: BEDROCK
+
+  # Block displayed for available rewards (when player can claim)
+  reward-available: GOLD_BLOCK
+
+  # Blocks displayed for already claimed rewards
+  # Use 'NONE' to hide the slot completely (empty slot)
+  reward-claimed:
+    # Free rewards claimed block
+    free: GREEN_STAINED_GLASS
+    # Premium rewards claimed block
+    premium: LIME_STAINED_GLASS
+
+  # Separator blocks between premium and free rows (middle row)
+  separator: GRAY_STAINED_GLASS_PANE

@@ -1,0 +1,13 @@
+# RTP Plugin config
+# - Made by 58TechBoy
+
+cooldown-time: 300  # Cooldown time in seconds (default is 300 seconds, or 5 minutes)
+world: "world"      # Name of the world to teleport players in
+radius: 100         # Radius for random teleportation (default is 100 blocks)
+message-prefix: "[RTP]"
+
+teleport-sound:
+  enabled: true        # Set to false if you want to disable teleport sound
+  sound-type: "ENTITY_ENDERMAN_TELEPORT"  # Default sound type, change as needed
+  volume: 1.0          # Adjust volume (0.0 - 1.0)
+  pitch: 1.0           # Adjust pitch (0.0 - 2.0)

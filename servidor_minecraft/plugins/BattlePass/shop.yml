@@ -1,0 +1,156 @@
+shop-items:
+  # Premium Battle Pass Voucher
+  premium-pass-single:
+    slot: 11
+    material: NETHER_STAR
+    display-name: "<gradient:#FF00FF:#00FFFF>★ Premium Battle Pass Voucher ★</gradient>"
+    lore:
+      - ""
+      - "<gradient:#FFD700:#FFA500>Mystical Voucher</gradient>"
+      - "&7Unlock the legendary premium pass"
+      - "&7and gain access to exclusive rewards!"
+      - ""
+      - "<gradient:#4ECDC4:#45B7D1>▼ Features ▼</gradient>"
+      - "&7• <gradient:#FFD93D:#FF6B6B>Premium Battle Pass</gradient> for this season"
+      - "&7• Access to all premium rewards"
+      - "&7• Exclusive items and perks"
+      - ""
+      - "&7Price: <gradient:#FFD93D:#FF6B6B>250 Battle Coins</gradient>"
+      - ""
+      - "<gradient:#00FF88:#45B7D1>▶ CLICK TO PURCHASE</gradient>"
+    price: 250
+    commands:
+      - "bp giveitem premium <player> 1"
+
+  # Battle Coin Token Bundles
+  coins-small:
+    slot: 15
+    material: GOLD_NUGGET
+    display-name: "<gradient:#FFD700:#FFA500>✦ Small Coin Bundle ✦</gradient>"
+    lore:
+      - ""
+      - "<gradient:#FFD700:#FFFF00>Currency Bundle</gradient>"
+      - "&7A small stack of gleaming"
+      - "&7battle coin tokens"
+      - ""
+      - "<gradient:#4ECDC4:#45B7D1>▼ Contains ▼</gradient>"
+      - "&7• <gradient:#FFD93D:#FF6B6B>10 Battle Coin Tokens</gradient>"
+      - "&7• Worth 10 Battle Coins when redeemed"
+      - ""
+      - "&7Price: <gradient:#FFD93D:#FF6B6B>10 Battle Coins</gradient>"
+      - ""
+      - "<gradient:#00FF88:#45B7D1>▶ CLICK TO PURCHASE</gradient>"
+    price: 10
+    commands:
+      - "bp giveitem coins <player> 10"
+
+  # Experience Boost Elixirs
+  xp-boost-single:
+    slot: 20
+    material: EXPERIENCE_BOTTLE
+    display-name: "<gradient:#00FF00:#00FFFF>✧ Experience Boost Elixir ✧</gradient>"
+    lore:
+      - ""
+      - "<gradient:#00FF88:#45B7D1>Experience Elixir</gradient>"
+      - "&7A single dose of concentrated"
+      - "&7experience essence"
+      - ""
+      - "<gradient:#4ECDC4:#45B7D1>▼ Effect ▼</gradient>"
+      - "&7• Grants <gradient:#FFD93D:#FF6B6B>+100 Battle Pass XP</gradient>"
+      - "&7• Instant experience boost"
+      - ""
+      - "&7Price: <gradient:#FFD93D:#FF6B6B>15 Battle Coins</gradient>"
+      - ""
+      - "<gradient:#00FF88:#45B7D1>▶ CLICK TO PURCHASE</gradient>"
+    price: 15
+    commands:
+      - "bp giveitem levelboost <player> 1"
+
+  xp-boost-bundle-small:
+    slot: 21
+    material: EXPERIENCE_BOTTLE
+    display-name: "<gradient:#00FF00:#00FFFF>✧ Small XP Bundle ✧</gradient>"
+    lore:
+      - ""
+      - "<gradient:#00FF88:#45B7D1>Experience Bundle</gradient>"
+      - "&7A collection of experience"
+      - "&7boost elixirs"
+      - ""
+      - "<gradient:#4ECDC4:#45B7D1>▼ Contains ▼</gradient>"
+      - "&7• <gradient:#FFD93D:#FF6B6B>5 Experience Elixirs</gradient>"
+      - "&7• Total: <gradient:#FFD93D:#FF6B6B>+500 Battle Pass XP</gradient>"
+      - ""
+      - "&7Price: <gradient:#FFD93D:#FF6B6B>70 Battle Coins</gradient>"
+      - "&8&oSave 5 coins!"
+      - ""
+      - "<gradient:#00FF88:#45B7D1>▶ CLICK TO PURCHASE</gradient>"
+    price: 70
+    commands:
+      - "bp giveitem levelboost <player> 5"
+
+  xp-boost-bundle-medium:
+    slot: 22
+    material: EXPERIENCE_BOTTLE
+    display-name: "<gradient:#00FF00:#00FFFF>✧ Medium XP Bundle ✧</gradient>"
+    lore:
+      - ""
+      - "<gradient:#00FF88:#45B7D1>Experience Bundle</gradient>"
+      - "&7A generous collection of"
+      - "&7experience boost elixirs"
+      - ""
+      - "<gradient:#4ECDC4:#45B7D1>▼ Contains ▼</gradient>"
+      - "&7• <gradient:#FFD93D:#FF6B6B>16 Experience Elixirs</gradient>"
+      - "&7• Total: <gradient:#FFD93D:#FF6B6B>+1,600 Battle Pass XP</gradient>"
+      - ""
+      - "&7Price: <gradient:#FFD93D:#FF6B6B>200 Battle Coins</gradient>"
+      - "&8&oSave 40 coins!"
+      - ""
+      - "<gradient:#00FF88:#45B7D1>▶ CLICK TO PURCHASE</gradient>"
+    price: 200
+    commands:
+      - "bp giveitem levelboost <player> 16"
+
+  xp-boost-bundle-large:
+    slot: 23
+    material: EXPERIENCE_BOTTLE
+    display-name: "<gradient:#00FF00:#00FFFF>✧ Large XP Bundle ✧</gradient>"
+    lore:
+      - ""
+      - "<gradient:#00FF88:#45B7D1>Experience Bundle</gradient>"
+      - "&7A massive collection of"
+      - "&7experience boost elixirs"
+      - ""
+      - "<gradient:#4ECDC4:#45B7D1>▼ Contains ▼</gradient>"
+      - "&7• <gradient:#FFD93D:#FF6B6B>32 Experience Elixirs</gradient>"
+      - "&7• Total: <gradient:#FFD93D:#FF6B6B>+3,200 Battle Pass XP</gradient>"
+      - ""
+      - "&7Price: <gradient:#FFD93D:#FF6B6B>380 Battle Coins</gradient>"
+      - "&8&oSave 100 coins!"
+      - ""
+      - "<gradient:#00FF88:#45B7D1>▶ CLICK TO PURCHASE</gradient>"
+    price: 380
+    commands:
+      - "bp giveitem levelboost <player> 32"
+
+  xp-boost-bundle-mega:
+    slot: 24
+    material: EXPERIENCE_BOTTLE
+    display-name: "<gradient:#00FF00:#00FFFF>✧ MEGA XP Bundle ✧</gradient>"
+    lore:
+      - ""
+      - "<gradient:#00FF88:#45B7D1>MEGA Experience Bundle</gradient>"
+      - "&7The ultimate collection of"
+      - "&7experience boost elixirs!"
+      - ""
+      - "<gradient:#4ECDC4:#45B7D1>▼ Contains ▼</gradient>"
+      - "&7• <gradient:#FFD93D:#FF6B6B>64 Experience Elixirs</gradient>"
+      - "&7• Total: <gradient:#FFD93D:#FF6B6B>+6,400 Battle Pass XP</gradient>"
+      - "&7• <gradient:#FF00FF:#00FFFF>★ BEST VALUE ★</gradient>"
+      - ""
+      - "&7Price: <gradient:#FFD93D:#FF6B6B>700 Battle Coins</gradient>"
+      - "&8&oSave 260 coins!"
+      - ""
+      - "<gradient:#00FF88:#45B7D1>▶ CLICK TO PURCHASE</gradient>"
+    price: 700
+    commands:
+      - "bp giveitem levelboost <player> 64"

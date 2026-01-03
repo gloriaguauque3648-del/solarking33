@@ -1,0 +1,35 @@
+items: {}
+settings:
+  type: CRATE_REROLL
+  title: Claim this reward(s)?
+  rows: 3
+  refresh:
+    enabled: false
+    rate: 20
+  on-open-actions: []
+reward-slot: '13'
+review:
+  slot: 10-11
+  material: GREEN_STAINED_GLASS_PANE
+  amount: 1
+  custom-model-data: 0
+  glow: true
+  hide-attributes: true
+  display-name: '&aClaim'
+  lore:
+  - '&7Click here to claim this reward(s).'
+  - ''
+  - '&6Left-Click: &eClaim.'
+reroll:
+  slot: 15-16
+  material: PURPLE_STAINED_GLASS_PANE
+  amount: 1
+  custom-model-data: 0
+  glow: true
+  hide-attributes: true
+  display-name: '&aReroll'
+  lore:
+  - '&7&7Click here to reroll this reward(s).'
+  - '&7You have &e%rerolls_left% &7rerolls left.'
+  - ''
+  - '&6Left-Click: &eReroll.'

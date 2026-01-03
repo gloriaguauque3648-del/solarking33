@@ -1,0 +1,38 @@
+menu-title: '&6sᴇᴍᴀɴᴀ %week%'
+menu-rows: 5
+
+quest-slots:
+  slots: '11...15, 20...24'
+
+menu:
+  '39':
+    item:
+      material: arrow:0
+      name: '&eᴘᴀɢɪɴᴀ ᴀɴᴛᴇʀɪᴏʀ &6(Cʟɪᴄᴋ)'
+      lore:
+        - ''
+        - '&e(( Hᴀɢᴀ ᴄʟɪᴄ ᴘᴀʀᴀ ɪʀ ᴀ ʟᴀ ᴘᴀ́ɢɪɴᴀ ᴀɴᴛᴇʀɪᴏʀ ))'
+    actions:
+      - '[menu](page = 1) {quest-overview}' # If the page is 1, take them to the portal page
+      - '[menu](page ! 1) {previous-page}' # If their page is not 1, take them to the previous page
+  '40':
+    item:
+      material: book:0
+      name: '&e¿Qᴜᴇ sᴏɴ ᴇsᴛᴀs ᴍɪsɪᴏɴᴇs?'
+      lore:
+        - ''
+        - '&6Cᴏᴍᴘʟᴇᴛᴀ ᴇsᴛᴀs ᴍɪsɪᴏɴᴇs ᴘᴀʀᴀ'
+        - '&6ᴏʙᴛᴇɴᴇʀ &eᴘᴜɴᴛᴏs &6 ᴘᴀʀᴀ sᴜʙɪʀ ᴛᴜ'
+        - '&6Pᴀsᴇ ᴅᴇ ʙᴀᴛᴀʟʟᴀ ᴘᴀʀᴀ ʀᴇᴄɪʙɪʀ'
+        - '&6ʀᴇᴄᴏᴍᴘᴇɴsᴀs ɪɴᴄʀᴇɪʙʟᴇs'
+    actions:
+      - "[menu] {close}"
+  '41':
+    item:
+      material: arrow:0
+      name: '&eᴘᴀɢɪɴᴀ sɪɢᴜɪᴇɴᴛᴇ &6(Cʟɪᴄᴋ)'
+      lore:
+        - ''
+        - '&e(( Hᴀɢᴀ ᴄʟɪᴄ ᴘᴀʀᴀ ɪʀ ᴀ ʟᴀ ᴘᴀ́ɢɪɴᴀ sɪɢᴜɪᴇɴᴛᴇ. ))'
+    actions:
+      - '[menu] {next-page}'

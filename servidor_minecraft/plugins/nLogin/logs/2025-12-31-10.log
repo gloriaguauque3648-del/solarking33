@@ -1,0 +1,14 @@
+[2025/12/31 17:20:21 INFO]:           __             _       
+[2025/12/31 17:20:21 INFO]:   _ __   / /  ___   __ _(_)_ __  
+[2025/12/31 17:20:21 INFO]:  | '_ \ / /  / _ \ / _` | | '_ \ 
+[2025/12/31 17:20:21 INFO]:  | | | / /__| (_) | (_| | | | | |
+[2025/12/31 17:20:21 INFO]:  |_| |_\____/\___/ \__, |_|_| |_|
+[2025/12/31 17:20:21 INFO]:                   |___/            
+[2025/12/31 17:20:21 INFO]:  By: www.nickuc.com - V 2.0.7
+[2025/12/31 17:20:21 INFO]:  
+[2025/12/31 17:20:21 DEBUG]: Loading the messages_es.yml message file...
+[2025/12/31 17:20:21 DEBUG]: Messages were loaded in 90 ms (single file).
+[2025/12/31 17:20:22 DEBUG]: Settings were loaded in 217 ms.
+[2025/12/31 17:20:22 DEBUG]: Loading database...
+[2025/12/31 17:20:22 DEBUG]: Starting logger filter...
+[2025/12/31 17:24:51 INFO]: Successful plugin core shutdown (took 0.00s)

@@ -1,0 +1,89 @@
+title: Chat Fetcher Settings
+rows: 3
+empty-fill:
+  enabled: true
+  slots:
+  - all
+  item:
+    name: '&r'
+    lore: []
+    type: LIME_STAINED_GLASS_PANE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+exit:
+  enabled: true
+  slot: 26
+  item:
+    name: '&cBack'
+    lore:
+    - '&7Click to go back to the condition manager.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzUxY2VkMmU2NDczNjZmOGYzYWQyZGZlNDE1Y2NhODU2NTFiZmFmOTczOWE5NWNkNTdiNmYyMWNiYTA1MyJ9fX0=
+    amount: 1
+    item-flags: []
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+set-chat-fetcher-message:
+  enabled: true
+  slot: 11
+  item:
+    name: '&a&lSet Chat Fetcher Message'
+    lore:
+    - '&7Click to set the chat fetcher message.'
+    type: ACACIA_SIGN
+    amount: 1
+    item-flags: []
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+set-click-event:
+  enabled: true
+  slot: 13
+  item:
+    name: '&a&lSet Click Event'
+    lore:
+    - '&7Click to set the click event.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmVkZDMxYWVkODQ1ZjQxZWY2OTE4M2MzZmJjOGMyNjM1NDlmMWFhODhiMmFkOWY2NzIwY2U4YTVhZTQ5MGViIn19fQ==
+    amount: 1
+    item-flags: []
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+set-conditions:
+  enabled: true
+  slot: 15
+  item:
+    name: '&a&lSet Conditions'
+    lore:
+    - '&7Click to set the conditions.'
+    type: EMERALD
+    amount: 1
+    item-flags: []
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+toggle-exit-message:
+  enabled: true
+  slot: 18
+  item:
+    name: '&a&lToggle Exit Message'
+    lore:
+    - ''
+    - '&7Want to get rid of the exit message?'
+    - '&7Click here to toggle it.'
+    - '&7'
+    - '&bDisabled: &8%status%'
+    - '&7'
+    - '&eClick to toggle.'
+    type: BOOK
+    amount: 1
+    item-flags: []
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0

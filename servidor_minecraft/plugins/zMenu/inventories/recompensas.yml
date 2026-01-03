@@ -1,0 +1,41 @@
+name: '&4&lWarps'
+size: 45
+items:
+  btn-0:
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      name: ""
+    slots:
+      - 0-9
+      - 17-18
+      - 26-27
+      - 35-44
+  warp cajas:
+    slot: 11
+    item:
+      material: ENDER_CHEST
+  warp tradeos:
+    slot: 12
+    item:
+      material: EMERALD_BLOCK
+  warp pvp:
+    slot: 13
+    item:
+      material: NETHERITE_SWORD
+  mina pvp:
+    slot: 14
+    item:
+      material: NETHERITE_INGOT
+  mina inicial:
+    slot: 15
+    item:
+      material: INFESTED_STONE
+  warp afk:
+    slot: 20
+    item:
+      material: BEACON
+  btn-21:
+    item:
+      material: BARRIER
+    slots:
+      - 21-24

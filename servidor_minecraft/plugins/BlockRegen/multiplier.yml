@@ -1,0 +1,174 @@
+# ================================================================================= #
+#                      Regen Multiplier GUI Configuration                           #
+# ================================================================================= #
+# Here you can configure all aspects of the regen block multiplier system.          #
+# ================================================================================= #
+
+# Enable or disable the entire multiplier system.
+# NOTE: Profiles allow different settings per world or group. The plugin expects a profile named 'default'.
+profiles:
+  default:
+    enabled: true
+    # The maximum level a player can achieve.
+    max-level: 10
+
+    # The cost to upgrade TO the specified level.
+    # Example: '2: 1000' is the cost to upgrade from level 1 to level 2.
+    costs:
+      2: 1000
+      3: 5000
+      4: 10000
+      5: 25000
+      6: 50000
+      7: 100000
+      8: 250000
+      9: 500000
+      10: 1000000
+
+    # The drop multiplier value for each level. Level 1 is the default.
+    multipliers:
+      1: 1.0 # 100% drops (base)
+      2: 1.1 # 110% drops
+      3: 1.2 # 120% drops
+      4: 1.3
+      5: 1.5
+      6: 1.7
+      7: 2.0
+      8: 2.3
+      9: 2.6
+      10: 3.0
+
+    # GUI Settings
+    gui:
+      # The title that will be displayed at the top of the GUI.
+      title: "&8Upgrade Multiplier"
+
+      # The size of the GUI. Must be a multiple of 9 (e.g., 9, 18, 27, 36, 45, 54).
+      size: 27
+
+      # The item that will fill the empty slots in the GUI.
+      fill-item:
+        enabled: true
+        material: "GRAY_STAINED_GLASS_PANE"
+        name: "&r"
+
+      # All items displayed inside the GUI must be configured here.
+      items:
+        # Item that displays the player's current multiplier information.
+        # Placeholders: %level%, %multiplier%, %cost%, %player_name%, %next_level%
+        info-item:
+          slot: 13 # Middle slot for a 27-slot GUI
+          material: "DIAMOND"
+          name: "&b&lYour Multiplier Info"
+          lore:
+            - "&7"
+            - "&fCurrent Level: &e%level%"
+            - "&fDrop Multiplier: &e%multiplier%x"
+            - "&7"
+            - "&fNext Upgrade Cost:"
+            - "&a$%cost%"
+            - "&7"
+
+        # The button that players click to perform the upgrade.
+        # This item will be displayed if the player has NOT reached the max level.
+        upgrade-button:
+          slot: 11
+          material: "EMERALD"
+          name: "&a&lUpgrade Multiplier"
+          lore:
+            - "&7Click to upgrade your multiplier"
+            - "&7to level &e%next_level%&7."
+
+        # The item displayed instead of the upgrade button
+        # when the player HAS reached the maximum level.
+        max-level-item:
+          slot: 11
+          material: "REDSTONE_BLOCK"
+          name: "&c&lMaximum Level Reached"
+          lore:
+            - "&7You have reached the highest"
+            - "&7level for your multiplier."
+
+      # Message sent on a successful upgrade.
+      success-message: "&aCongratulations! Your multiplier has been upgraded to Level &e%level%&a."
+      # Message if the player doesn't have enough money.
+      not-enough-money-message: "&cSorry, you don't have enough money. You need &e$%cost%&c."
+
+      # Admin command messages
+      admin:
+        set-success: "&aYou have set &e%player%&a's multiplier level to &e%level%&a."
+        set-notify: "&aYour multiplier level has been set to &e%level% &aby an admin."
+        player-not-found: "&cPlayer '&e%player%&c' not found."
+        invalid-level: "&cInvalid level. Please enter a number between 1 and &e%max_level%&c."
+        usage: "&cUsage: /rm set <player> <level>"
+
+# Keep these top-level keys for backward compatibility (plugins that read old format)
+enabled: true
+max-level: 10
+costs:
+  2: 1000
+  3: 5000
+  4: 10000
+  5: 25000
+  6: 50000
+  7: 100000
+  8: 250000
+  9: 500000
+  10: 1000000
+
+multipliers:
+  1: 1.0
+  2: 1.1
+  3: 1.2
+  4: 1.3
+  5: 1.5
+  6: 1.7
+  7: 2.0
+  8: 2.3
+  9: 2.6
+  10: 3.0
+
+# The GUI block below is preserved as fallback, but primary profile is 'default'
+gui:
+  title: "&8Upgrade Multiplier"
+  size: 27
+  fill-item:
+    enabled: true
+    material: "GRAY_STAINED_GLASS_PANE"
+    name: "&r"
+  items:
+    info-item:
+      slot: 13
+      material: "DIAMOND"
+      name: "&b&lYour Multiplier Info"
+      lore:
+        - "&7"
+        - "&fCurrent Level: &e%level%"
+        - "&fDrop Multiplier: &e%multiplier%x"
+        - "&7"
+        - "&fNext Upgrade Cost:"
+        - "&a$%cost%"
+        - "&7"
+    upgrade-button:
+      slot: 11
+      material: "EMERALD"
+      name: "&a&lUpgrade Multiplier"
+      lore:
+        - "&7Click to upgrade your multiplier"
+        - "&7to level &e%next_level%&7."
+    max-level-item:
+      slot: 11
+      material: "REDSTONE_BLOCK"
+      name: "&c&lMaximum Level Reached"
+      lore:
+        - "&7You have reached the highest"
+        - "&7level for your multiplier."
+  success-message: "&aCongratulations! Your multiplier has been upgraded to Level &e%level%&a."
+  not-enough-money-message: "&cSorry, you don't have enough money. You need &e$%cost%&c."
+  admin:
+    set-success: "&aYou have set &e%player%&a's multiplier level to &e%level%&a."
+    set-notify: "&aYour multiplier level has been set to &e%level% &aby an admin."
+    player-not-found: "&cPlayer '&e%player%&c' not found."
+    invalid-level: "&cInvalid level. Please enter a number between 1 and &e%max_level%&c."
+    usage: "&cUsage: /rm set <player> <level>"
+

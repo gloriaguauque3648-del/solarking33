@@ -1,0 +1,168 @@
+# Format for enchantments as follows
+# enchantments:
+#   - "DAMAGE_ALL:1" -> ENCHANTMENT:LEVEL
+# You can find ids for all enchantments at https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/enchantments/Enchantment.html
+# Ids may vary depending on your server version
+
+# Something else to note would be, never change the ids for default items! or else you will break the GUIs
+title: Manage GUIs
+rows: 6
+
+empty-fill:
+  enabled: true
+  slots:
+  - all
+  item:
+    name: '&r'
+    lore: []
+    type: BLUE_STAINED_GLASS_PANE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+
+create-new-gui:
+  enabled: true
+  slot: 45
+  item:
+    name: '&a&lCreate New GUI'
+    lore:
+    - '&7Start from scratch and build your custom GUI'
+    - '&7Click to create a new GUI layout.'
+    type: CHEST
+    amount: 1
+    unbreakable: false
+    item-flags:
+    - all
+    enchantments: []
+    custom-model-data: 0
+
+save-guis:
+  enabled: true
+  slot: 47
+  item:
+    name: '&aSave Guis'
+    lore:
+    - '&7Save all the Guis to their respective'
+    - '&7files.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzEwMzQxYzJiZmMwZDBlYTk5MWRmZGE4ZjU3MWUxYzhlNjhmMjVkNTcxNGRjOTU0YzJlZDc4NDZlYTk2ODI5MyJ9fX0=
+    amount: 1
+    unbreakable: false
+    item-flags:
+    - all
+    enchantments: []
+    custom-model-data: 0
+
+existing-guis:
+  enabled: true
+  slots:
+  - 10-16
+  - 19-25
+  - 28-34
+  - 37-43
+  item:
+    name: '&f&l%gui_name%'
+    lore:
+    - '&7Modify %gui_title% existing GUI.'
+    type: CHEST
+    amount: 1
+    unbreakable: false
+    item-flags:
+    - all
+    enchantments: []
+    custom-model-data: 0
+  
+  no-gui-found-item:
+    name: '&cNo GUIs Found'
+    slot: 22
+    lore:
+    - '&7There are currently no GUIs available.'
+    - '&7Use the ''&a&lCreate New GUI&r&7'' button to make one.'
+    type: RED_STAINED_GLASS_PANE
+    amount: 1
+    unbreakable: false
+    item-flags:
+    - all
+    enchantments: []
+    custom-model-data: 0
+
+manage-system-menu:
+  enabled: true
+  slot: 49
+  item:
+    name: '&b&lManage System Menu'
+    lore:
+    - '&7Edit the system menus items!'
+    type: ENDER_CHEST
+    amount: 1
+    unbreakable: false
+    item-flags:
+    - all
+    enchantments: []
+    custom-model-data: 0
+
+reload-guis:
+  enabled: true
+  slot: 51
+  item:
+    name: '&cReload plugin'
+    lore:
+    - '&7Reloads the configuration files and'
+    - '&7and reloads the Guis in memory.'
+    - ''
+    - '&c&lUnsaved progress will be lost!'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzRkZGZiZDdjZDNhMTFlYzE4ZDJkZTU1OTRjNGQ2OWE4YzRlMmI5NDQ5YmNkMGU1MzY4NDZmYTJjMjRiMWNkZSJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    enchantments: []
+    custom-model-data: 0
+
+previous:
+  enabled: true
+  slot: 48
+  item:
+    name: '&cBack'
+    lore: []
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjU2NDM5YzNmNjVlOWZlNDFmMmQ4YmU0N2JmNDkzZjE0M2FjYWRmZDVkYmVhODZmZWE2ZGJlMTllNDM1ZWEifX19
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+
+next:
+  enabled: true
+  slot: 50
+  item:
+    name: '&cNext'
+    lore: []
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWEyMGQ2ZWYxMjY4MTMwNjZhMjU3N2NjYzVkZjcxMDI2ODNmMWFmN2MzZTk0ZTQ1YWI5YWQ2N2VkYmI1MiJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+
+exit:
+  enabled: true
+  slot: 53
+  item:
+    name: '&c&lExit'
+    lore:
+    - '&7Close the GUI manager.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTljZGI5YWYzOGNmNDFkYWE1M2JjOGNkYTc2NjVjNTA5NjMyZDE0ZTY3OGYwZjE5ZjI2M2Y0NmU1NDFkOGEzMCJ9fX0=
+    amount: 1
+    unbreakable: false
+    item-flags:
+    - all
+    enchantments: []
+    custom-model-data: 0

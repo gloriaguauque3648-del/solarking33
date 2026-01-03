@@ -1,0 +1,468 @@
+messages:
+  prefix:
+    message: '#92bed8zAuctionHouse #666666• '
+  time:
+    day:
+      message: '%02dᴅ %02dʜ %02dᴍ'
+    hour:
+      message: '%02dʜ %02dᴍ %02ds'
+    minute:
+      message: '%02dᴍ %02ds'
+    second:
+      message: '%02ds'
+  format:
+    second:
+      message: second
+    seconds:
+      message: seconds
+    minute:
+      message: minute
+    minutes:
+      message: minutes
+    hour:
+      message: hour
+    hours:
+      message: hours
+    day:
+      message: d
+    days:
+      message: days
+  command:
+    syntax:
+      error:
+        message: '&cYou must execute the command like this&7: &2%command%'
+    'no':
+      permission:
+        message: '&cYou don''t have permission!'
+      console:
+        message: '&cOnly players can use this command.'
+      arg:
+        message: '&cThis argument does not exist !'
+    cooldown:
+      message: '&cYou must wait a few seconds between each command.'
+    syntaxe:
+      help:
+        message: '&b» &f%syntaxe% &8- &7%description%'
+    help:
+      custom:
+        message: '&6» &eAnother cmd'
+    reload:
+      message: '&aPlugin successfully reloaded.'
+    sell:
+      argument:
+        price:
+          message: price
+        amount:
+          message: amount
+        economy:
+          message: economy
+      custom:
+        helping:
+          message: '&cYou must execute the command like this&7: &f/ah sell &a<price>
+            &b[<amount>]'
+    search:
+      custom:
+        helping:
+          message: '&cYou must execute the command like this&7: &f/ah search &a<word>'
+    open:
+      custom:
+        helping:
+          message: '&cYou must execute the command like this&7: &f/ah'
+    is:
+      disable:
+        message: '&cThe command is disabled.'
+  description:
+    auction:
+      message: Opens the auction house
+    sub:
+      items:
+        message: Opens the items inventory
+      categories:
+        message: Opens the categories inventory
+      buying:
+        message: Opens the buying inventory
+      expire:
+        message: Opens the expire inventory
+    blacklist:
+      list:
+        message: See the blacklist players.
+      add:
+        message: Add a player to the blacklist
+      remove:
+        message: Remove a player from the blacklist
+    version:
+      message: Show plugin version
+    open:
+      message: Open auction to a player
+    purge:
+      message: Remove old transaction
+    reload:
+      message: Reload plugin
+    sell:
+      message: Sell an item
+      inventory:
+        message: Sell an inventory
+      confirmation:
+        toggle:
+          message: Toggle sell confirmation inventory
+    help:
+      message: See the list of commands.
+    config:
+      message: Config plugin ingame
+    claim:
+      message: Claim your money
+    give:
+      message: Give economy item
+    test:
+      perf:
+        message: Add 1000 items in auction
+    addon:
+      message: Show addon list
+    search:
+      message: Search a item
+    lang:
+      message: See the list of translations.
+    convert:
+      message: Convert items form another plugin to zauctionhouse
+    history:
+      message: View your history
+    transaction:
+      message: View a player's transactions.
+    price:
+      message: Display item average price
+    admin:
+      message: Admin commands
+  'no':
+    holding:
+      item:
+        message: '&cAre you stupid ? You can''t sell air !'
+    money:
+      button:
+        type: ITEMSTACK
+        itemstack:
+          material: BARRIER
+          data: 0
+          amount: 1
+          durability: 0
+          name: '&4✘ &cYou don''t have enough money to buy this !'
+    enought:
+      money:
+        message: '&cYou don''t have enough money to buy this !'
+      place:
+        message: '&cYou don''t have enough space in your inventory to buy this item.'
+  player:
+    lag:
+      ping:
+        message: '&cYou cannot sell items at this time. (its disableSaleIfPlayerIsLagging
+          in config.json)'
+      tps:
+        message: '&cYou cannot sell items at this time. (its disableSaleIfServerIsLagging
+          in config.json)'
+  plugin:
+    disable:
+      message: '&cThe auction house is currently deactivated.'
+    not:
+      ready:
+        message: '&cThe plugin has not finished to be initialized, please be patient...'
+        hdb:
+          message: '&cThe &fHeadDataBase &cplugin is not yet active, the plugin inventories
+            have not yet loaded, please wait until HDB is working.'
+  sell:
+    cooldown:
+      message: '&cYou must wait &f%time%&c.'
+    max:
+      price:
+        message: '&cYou can''t put more than &f%max%&c for the price !'
+    min:
+      price:
+        message: '&cYou can''t put less than &f%min%&c for the price !'
+    message:
+      default:
+        message: '#e6fff3You just put #8ee6e3x%amount% &7%item% #e6fff3on sale for
+          #ffacd5%price%&f.'
+      inventory:
+        message: '#e6fff3You just put #8ee6e3%amount% &7items #e6fff3on sale for #ffacd5%price%&f.'
+    creative:
+      error:
+        message: '&cYou can''t sell an item in creative mode !'
+    item:
+      error:
+        message: '&cYou cannot sell this item, it is banned from the plugin.'
+      break:
+        message: '&cYou cannot sell a broken item.'
+      tax:
+        default:
+          message: '&cYou need &f%tax% &cto be able to sell this item.'
+      whitelist:
+        message: '&cYou do not have permission to add this item.'
+    world:
+      error:
+        message: '&cYou cannot sell in this world'
+    items:
+      error:
+        message: '&cYou cannot sell more than &f%max% &citems. &8(&7Did you set the
+          &fzauctionhouse.max.<number permission in the configuration file> &7?&8)'
+    inventory:
+      error:
+        message: '&cYou did not put any item, sale canceled.'
+      item:
+        type: ITEMSTACK
+        itemstack:
+          material: CHEST
+          data: 0
+          amount: 1
+          durability: 0
+          name: '&7Sale of inventory'
+    confirmation:
+      toggle:
+        enabled:
+          message: '&aYou have just disabled the sales confirmation inventory.'
+        disabled:
+          message: '&aYou have just enabled the sales confirmation inventory.'
+  item:
+    purchased:
+      message: '&fYou just purchased &a%item%&f.'
+    remove:
+      admin:
+        message: '&fYou have just deleted the item &a%item%&f.'
+      seller:
+        get:
+          message: '&fAn administrator has just removed &a%item%&f, you can retrieve
+            it from the list of expired items.'
+        delete:
+          message: '&fAn administrator has just removed &a%item%&f, You cannot retrieve
+            your item.'
+    stack:
+      size:
+        ascending:
+          message: ɪᴛᴇᴍ sᴛᴀᴄᴋ sɪᴢᴇ ᴀsᴄᴇɴᴅɪɴɢ
+        descending:
+          message: ɪᴛᴇᴍ sᴛᴀᴄᴋ sɪᴢᴇ ᴅᴇsᴄᴇɴᴅɪɴɢ
+    lore:
+      default:
+        messages:
+        - ''
+        - ' &f⌂ #e6fff3sᴇʟʟᴇʀ#8c8c8c: #92bed8%seller%'
+        - ' &f☆ #e6fff3ᴘʀɪᴄᴇ#8c8c8c: #ffacd5%price%'
+        - ' &f⌚ #e6fff3ᴇxᴘɪʀᴇ#8c8c8c: #969696%time%'
+        - ''
+        - ' %status%'
+      expire:
+        messages:
+        - ''
+        - ' &f⌚ #e6fff3ᴇxᴘɪʀᴇ#8c8c8c: #969696%time%'
+        - ''
+        - '#8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ʀᴇᴛʀɪᴇᴠᴇ ᴛʜɪs ɪᴛᴇᴍ'
+      buying:
+        messages:
+        - ''
+        - ' &f⌚ #e6fff3ᴇxᴘɪʀᴇ#8c8c8c: #969696%time%'
+        - ''
+        - '#8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ʀᴇᴛʀɪᴇᴠᴇ ᴛʜɪs ɪᴛᴇᴍ'
+      items:
+        messages:
+        - ''
+        - ' &f⌚ #e6fff3ᴇxᴘɪʀᴇ#8c8c8c: #969696%time%'
+        - ''
+        - '#8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ʀᴇᴛʀɪᴇᴠᴇ ᴛʜɪs ɪᴛᴇᴍ'
+      inventory:
+        messages:
+        - ''
+        - ' &f⌂ #e6fff3sᴇʟʟᴇʀ#8c8c8c: #92bed8%seller%'
+        - ' &f☆ #e6fff3ᴘʀɪᴄᴇ#8c8c8c: #ffacd5%price%'
+        - ' &f⌚ #e6fff3ᴇxᴘɪʀᴇ#8c8c8c: #969696%time%'
+        - ''
+        - ' &f» #cfcfcfʀɪɢʜᴛ ᴄʟɪᴄᴋ ᴛᴏ ʙᴜʏ'
+        - ' &f» #cfcfcfʟᴇғᴛ ᴄʟɪᴄᴋ ᴛᴏ sᴇᴇ ᴛʜᴇ ᴄᴏɴᴛᴇɴᴛ'
+        - ''
+        - ' %status%'
+    economy:
+      full:
+        message: '&7You have a full inventory, your items are gone in the inventory
+          of expired items.'
+  buyer:
+    purchased:
+      message: '#ffacd5%buyer% #e6fff3just bought &7%item% #e6fff3for #92bed8%price%#e6fff3.'
+  remove:
+    message:
+      message: '#e6fff3You just removed #8ee6e3x%amount% &7%item% #e6fff3from the
+        sales.'
+  ascending:
+    price:
+      message: ᴀsᴄᴇɴᴅɪɴɢ ᴘʀɪᴄᴇ
+    date:
+      message: ᴀsᴄᴇɴᴅɪɴɢ ᴅᴀᴛᴇ
+  decreasing:
+    date:
+      message: ᴅᴇᴄʀᴇᴀsɪɴɢ ᴅᴀᴛᴇ
+    price:
+      message: ᴅᴇᴄʀᴇᴀsɪɴɢ ᴘʀɪᴄᴇ
+  alphabetical:
+    name:
+      message: ᴀʟᴘʜᴀʙᴇᴛɪᴄᴀʟ ɴᴀᴍᴇ
+  reverse:
+    alphabetical:
+      name:
+        message: ʀᴇᴠᴇʀsᴇ ᴀʟᴘʜᴀʙᴇᴛɪᴄᴀʟ ɴᴀᴍᴇ
+  seller:
+    name:
+      alphabetical:
+        message: sᴇʟʟᴇʀ ɴᴀᴍᴇ ᴀʟᴘʜᴀʙᴇᴛɪᴄᴀʟ
+      reverse:
+        alphabetical:
+          message: sᴇʟʟᴇʀ ɴᴀᴍᴇ ʀᴇᴠᴇʀsᴇ ᴀʟᴘʜᴀʙᴇᴛɪᴄᴀʟ
+  material:
+    type:
+      alphabetical:
+        message: ᴍᴀᴛᴇʀɪᴀʟ ᴛʏᴘᴇ ᴀʟᴘʜᴀʙᴇᴛɪᴄᴀʟ
+      reverse:
+        alphabetical:
+          message: ᴍᴀᴛᴇʀɪᴀʟ ᴛʏᴘᴇ ʀᴇᴠᴇʀsᴇ ᴀʟᴘʜᴀʙᴇᴛɪᴄᴀʟ
+  economy:
+    name:
+      alphabetical:
+        message: ᴇᴄᴏɴᴏᴍʏ ɴᴀᴍᴇ ʀᴇᴠᴇʀsᴇ ᴀʟᴘʜᴀʙᴇᴛɪᴄᴀʟ
+      reverse:
+        alphabetical:
+          message: ᴇᴄᴏɴᴏᴍʏ ɴᴀᴍᴇ ʀᴇᴠᴇʀsᴇ ᴀʟᴘʜᴀʙᴇᴛɪᴄᴀʟ
+    not:
+      found:
+        message: '&cCannot find economy with name &f%name%&c.'
+    give:
+      error:
+        notfound:
+          message: '&cThe economy &f%name% &ccannot be found'
+        type:
+          message: '&cThe economy &f%name% &cis not item economy'
+      success:
+        message: '&aYou just got the &f%name% &aeconomy item.'
+    'no':
+      permission:
+        message: '&cYou do not have permission to use this economy.'
+  status:
+    player:
+      message: '#8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ʀᴇᴛʀɪᴇᴠᴇ ᴛʜɪs ɪᴛᴇᴍ'
+    buyer:
+      message: '#8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ʙᴜʏ ᴛʜɪs ɪᴛᴇᴍ'
+  error:
+    buy:
+      error:
+        message: '&cYou can''t buy this item.'
+      money:
+        message: '&cYou don’t have enough money to buy this.'
+    remove:
+      error:
+        message: '&cYou can''t remove this item.'
+      full:
+        message: '&cYou must have empty slot in your inventory to retrieve the item.'
+  broadcast:
+    sell:
+      annonce:
+        message: '&fPlayer &b%player% &fhas added &7%item% &ffor &d%price% &fto the
+          auction!'
+    buy:
+      annonce:
+        message: '&fPlayer &b%player% &fhas just bought &7%item% &ffor &d%price% &fto
+          the auction!'
+  world:
+    is:
+      banned:
+        message: '&cYou can''t use the auction house here.'
+  inventory:
+    full:
+      message: '&cYour inventory is full.'
+  blacklist:
+    information:
+      message: '&cYou are blacklisted, you cannot use the auction house.'
+    list:
+      message: '&7List of blacklis playerst&8: &f%players%'
+    empty:
+      message: '&cNo blacklist players'
+    add:
+      message: '&7You have just added the player &f%player% &7 to the blacklist.'
+    remove:
+      message: '&7You come to remove the player &f%player% &7 from the blacklist.'
+  transaction:
+    empty:
+      purchase:
+        message: '&cYou have not made any purchase transactions.'
+      sale:
+        message: '&cYou have not made any sales transactions.'
+      both:
+        message: '&cYou have not made any transactions.'
+    message:
+      list:
+        messages:
+        - '&8(&bzAuctionHouse&8) &fTransactions &7%type% &8(&a%page%&8/&a%maxPage%&8)'
+        - '%content%'
+        - '&8(&b?&8) &7&oDo &f&o/ah history %nextPage% %type% &7&oto go to the next
+          page.'
+      show:
+        messages:
+        - '&8(&bzAuctionHouse&8) &fTransactions &7%type% &fof &b%player% &8(&a%page%&8/&a%maxPage%&8)'
+        - '%content%'
+        - '&8(&b?&8) &7&oDo &f&o/ah transaction %player% %nextPage% %type% &7&oto
+          go to the next page.'
+      content:
+        sale:
+          message: '&f%seller% have sold x&a%amount% &o%item% &fto the player &b%buyer%
+            for &7%price% &8(&7%date%&8)'
+        purchase:
+          message: '&f%buyer% have purchased x&a%amount% &o%item% &fto the player
+            &b%seller% for &7%price% &8(&7%date%&8)'
+        you:
+          message: You
+  connect:
+    claim:
+      message: '&aYou have money to recover, make &b/ah claim &ato recover for your
+        money.'
+    transactions:
+      message: '&aYou sold %item% item(s) during your absence.'
+  claim:
+    money:
+      wait:
+        message: '&7Wait few seconds...'
+      cooldown:
+        message: '&cYou have to wait a few minutes before you can do this command
+          again.'
+      crash:
+        message: '&7Unable to retrieve transactions at this time, please contact an
+          administrator.'
+      error:
+        message: '&cYou have no pending transactions.'
+      success:
+        message: '&aYou just got your money back on hold.'
+  cooldown:
+    message:
+      type: ACTION
+      message: ' &cYou must wait &f%cooldown% &cbefore you can do this action.'
+  purge:
+    start:
+      message: '&aPurge start. &8(&7Wait few seconds&8)'
+    end:
+      message: '&aThe purge of transactions is over.'
+  click:
+    cooldown:
+      type: ACTION
+      message: '&cYou must wait before you can perform this action.'
+  force:
+    open:
+      message: '&aYou have just opened the auction house for the player &f%player%&a.'
+  priority:
+    message: No priority
+  dupe:
+    info:
+      message: '&aThe player &f%player% &ahas just put on sale and removed 3 items
+        in less than 60 seconds !'
+    infodiscord:
+      message: The player **%player%** has just put on sale and removed 3 items in
+        less than 60 seconds !
+  both:
+    message: both
+  purchase:
+    message: purchase
+  sale:
+    message: sale
+  search:
+    start:
+      message: '&aPlease write in the chat that you are looking for.'

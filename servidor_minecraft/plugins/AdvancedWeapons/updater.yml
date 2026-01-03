@@ -1,0 +1,648 @@
+# DO NOT EDIT OR DELETE
+
+reset-msg: '&6[AdvancedWeapons] &aConfig reset.'
+reload-msg: '&6[AdvancedWeapons] &aConfig reloaded.'
+update-msg: '&6[AdvancedWeapons] &aConfig updated.'
+no-permission-msg: '&cYou do not have permission to use &4/{cmd}&c.'
+insufficient-dust-msg: '&cYou do not have enough Dust.'
+insufficient-space-msg: '&cDropped items that do not fit in your inventory.'
+disabled-module-msg: '&cThis module is disabled.'
+update-check: true
+enchants: true
+weapons: true
+machines: true
+dustdrops: true
+coinflipping: true
+cake: true
+enable-dust-xp: true
+dust-xp: 85
+enable-dust-money: true
+dust-money: 100
+enable-dust-material: true
+dust-material: GOLD_INGOT
+dust-trade: 1
+dust-item:
+- '&7This Dust has magical properties'
+- '&7which make it a valuable currency.'
+dust-obtainable:
+- ANCIENT_DEBRIS:50
+- DIAMOND_ORE:40
+- DEEPSLATE_DIAMOND_ORE:40
+- EMERALD_ORE:35
+- DEEPSLATE_EMERALD_ORE:35
+- LAPIS_ORE:25
+- DEEPSLATE_LAPIS_ORE:25
+- REDSTONE_ORE:20
+- DEEPSLATE_REDSTONE_ORE:20
+- NETHER_GOLD_ORE:15
+- GOLD_ORE:15
+- DEEPSLATE_GOLD_ORE:15
+- IRON_ORE:10
+- DEEPSLATE_IRON_ORE:10
+- NETHER_QUARTZ_ORE:5
+- COPPER_ORE:5
+- DEEPSLATE_COPPER_ORE:5
+- COAL_ORE:5
+- DEEPSLATE_COAL_ORE:5
+weapon:
+  the-destroyer:
+    cost: 32
+  the-slayer:
+    msg: true
+    cost: 32
+  the-dropper:
+    msg: true
+    cost: 14
+  fireball-launcher:
+    msg: true
+    cost: 14
+  the-skeletal-sword:
+    msg: true
+    cost: 16
+  ice-chunk:
+    msg: true
+    cost: 12
+  spirit-leash:
+    msg: true
+    cost: 16
+  grappling-hook:
+    msg: actionbar
+    cost: 16
+  bloodshed-blade:
+    msg: true
+    cost: 64
+machine:
+  port-a-wall:
+    cost: 20
+  autominer:
+    cost: 160
+  grappling-post:
+    cost: 20
+enchant:
+  rush-i:
+    name: '&eRush I'
+    lore:
+    - '&7Gives you a quick rush of speed.'
+    - '&7Speed I - 4s'
+    - '&8{chance}% chance'
+    chance: 10
+    cost: 16
+    type: weapon
+    events:
+    - interact
+    function: potion
+    effects:
+    - SPEED
+    duration: 4
+    amplifier: 0
+  rush-ii:
+    name: '&eRush II'
+    lore:
+    - '&7Gives you a quick rush of speed.'
+    - '&7Speed I - 6s'
+    - '&8{chance}% chance'
+    chance: 10
+    cost: 32
+    type: weapon
+    events:
+    - interact
+    function: potion
+    effects:
+    - SPEED
+    duration: 6
+    amplifier: 0
+  rush-iii:
+    name: '&eRush III'
+    lore:
+    - '&7Gives you a quick rush of speed.'
+    - '&7Speed I - 8s'
+    - '&8{chance}% chance'
+    chance: 10
+    cost: 64
+    type: weapon
+    events:
+    - interact
+    function: potion
+    effects:
+    - SPEED
+    duration: 8
+    amplifier: 0
+  bounce-i:
+    name: '&eBounce I'
+    lore:
+    - '&7Lets you jump to new heights.'
+    - '&7Bounce I - 4s'
+    - '&8{chance}% chance'
+    chance: 10
+    cost: 16
+    type: weapon
+    events:
+    - interact
+    function: potion
+    effects:
+    - JUMP
+    duration: 4
+    amplifier: 0
+  bounce-ii:
+    name: '&eBounce II'
+    lore:
+    - '&7Lets you jump to new heights.'
+    - '&7Bounce I - 6s'
+    - '&8{chance}% chance'
+    chance: 10
+    cost: 32
+    type: weapon
+    events:
+    - interact
+    function: potion
+    effects:
+    - JUMP
+    duration: 6
+    amplifier: 0
+  bounce-iii:
+    name: '&eBounce III'
+    lore:
+    - '&7Lets you jump to new heights.'
+    - '&7Bounce I - 8s'
+    - '&8{chance}% chance'
+    chance: 10
+    cost: 64
+    type: weapon
+    events:
+    - interact
+    function: potion
+    effects:
+    - JUMP
+    duration: 8
+    amplifier: 0
+  hyper-i:
+    name: '&eHyper I'
+    lore:
+    - '&7Hit faster when hyper.'
+    - '&7Haste I - 4s'
+    - '&8{chance}% chance'
+    chance: 10
+    cost: 16
+    type: weapon
+    events:
+    - interact
+    function: potion
+    effects:
+    - FAST_DIGGING
+    duration: 4
+    amplifier: 0
+  hyper-ii:
+    name: '&eHyper II'
+    lore:
+    - '&7Hit faster when hyper.'
+    - '&7Haste I - 6s'
+    - '&8{chance}% chance'
+    chance: 10
+    cost: 32
+    type: weapon
+    events:
+    - interact
+    function: potion
+    effects:
+    - FAST_DIGGING
+    duration: 6
+    amplifier: 0
+  hyper-iii:
+    name: '&eHyper III'
+    lore:
+    - '&7Hit faster when hyper.'
+    - '&7Haste I - 8s'
+    - '&8{chance}% chance'
+    chance: 10
+    cost: 64
+    type: weapon
+    events:
+    - interact
+    function: potion
+    effects:
+    - FAST_DIGGING
+    duration: 8
+    amplifier: 0
+  plague-i:
+    name: '&ePlague I'
+    lore:
+    - '&7Inflicts poison on your enemies.'
+    - '&7Poison I - 4s'
+    - '&8{chance}% chance'
+    chance: 20
+    cost: 16
+    type: weapon
+    events:
+    - attackother
+    function: potion
+    effects:
+    - POISON
+    duration: 4
+    amplifier: 0
+    immune:
+    - poison
+  plague-ii:
+    name: '&ePlague II'
+    lore:
+    - '&7Inflicts poison on your enemies.'
+    - '&7Poison I - 6s'
+    - '&8{chance}% chance'
+    chance: 20
+    cost: 32
+    type: weapon
+    events:
+    - attackother
+    function: potion
+    effects:
+    - POISON
+    duration: 6
+    amplifier: 0
+    immune:
+    - poison
+  plague-iii:
+    name: '&ePlague III'
+    lore:
+    - '&7Inflicts poison on your enemies.'
+    - '&7Poison I - 8s'
+    - '&8{chance}% chance'
+    chance: 20
+    cost: 64
+    type: weapon
+    events:
+    - attackother
+    function: potion
+    effects:
+    - POISON
+    duration: 8
+    amplifier: 0
+    immune:
+    - poison
+  end-ender-i:
+    name: '&eEnd Ender I'
+    lore:
+    - '&7Deals more damage to endermen'
+    - '&7and endermites'
+    - '&7+1 damage'
+    - '&8{chance}% chance'
+    chance: 100
+    cost: 16
+    type: weapon
+    events:
+    - attackother
+    function: damage
+    effects:
+    - 1
+    affected:
+    - ENDERMAN
+    - ENDERMITE
+  end-ender-ii:
+    name: '&eEnd Ender II'
+    lore:
+    - '&7Deals more damage to endermen'
+    - '&7and endermites'
+    - '&7+1.5 damage'
+    - '&8{chance}% chance'
+    chance: 100
+    cost: 32
+    type: weapon
+    events:
+    - attackother
+    function: damage
+    effects:
+    - 1.5
+    affected:
+    - ENDERMAN
+    - ENDERMITE
+  end-ender-iii:
+    name: '&eEnd Ender III'
+    lore:
+    - '&7Deals more damage to endermen'
+    - '&7and endermites'
+    - '&7+2 damage'
+    - '&8{chance}% chance'
+    chance: 100
+    cost: 64
+    type: weapon
+    events:
+    - attackother
+    function: damage
+    effects:
+    - 2
+    affected:
+    - ENDERMAN
+    - ENDERMITE
+  end-ender-iv:
+    name: '&eEnd Ender IV'
+    lore:
+    - '&7Deals more damage to endermen'
+    - '&7and endermites'
+    - '&7+2.5 damage'
+    - '&8{chance}% chance'
+    chance: 100
+    cost: 128
+    type: weapon
+    events:
+    - attackother
+    function: damage
+    effects:
+    - 2.5
+    affected:
+    - ENDERMAN
+    - ENDERMITE
+  end-ender-v:
+    name: '&eEnd Ender V'
+    lore:
+    - '&7Deals more damage to endermen'
+    - '&7and endermites'
+    - '&7+3 damage'
+    - '&8{chance}% chance'
+    chance: 100
+    cost: 256
+    type: weapon
+    events:
+    - attackother
+    function: damage
+    effects:
+    - 3
+    affected:
+    - ENDERMAN
+    - ENDERMITE
+  butcher-i:
+    name: '&eButcher I'
+    lore:
+    - '&7Deals more damage'
+    - '&7to farm animals.'
+    - '&7+0.5 damage'
+    - '&8{chance}% chance'
+    chance: 100
+    cost: 16
+    type: weapon
+    events:
+    - attackother
+    function: damage
+    effects:
+    - 0.5
+    affected:
+    - COW
+    - PIG
+    - SHEEP
+    - CHICKEN
+    - HORSE
+    - DONKEY
+    - MULE
+  butcher-ii:
+    name: '&eButcher II'
+    lore:
+    - '&7Deals more damage'
+    - '&7to farm animals.'
+    - '&7+0.75 damage'
+    - '&8{chance}% chance'
+    chance: 100
+    cost: 32
+    type: weapon
+    events:
+    - attackother
+    function: damage
+    effects:
+    - 0.75
+    affected:
+    - COW
+    - PIG
+    - SHEEP
+    - CHICKEN
+    - HORSE
+    - DONKEY
+    - MULE
+  butcher-iii:
+    name: '&eButcher III'
+    lore:
+    - '&7Deals more damage'
+    - '&7to farm animals.'
+    - '&7+1 damage'
+    - '&8{chance}% chance'
+    chance: 100
+    cost: 64
+    type: weapon
+    events:
+    - attackother
+    function: damage
+    effects:
+    - 1
+    affected:
+    - COW
+    - PIG
+    - SHEEP
+    - CHICKEN
+    - HORSE
+    - DONKEY
+    - MULE
+  butcher-iv:
+    name: '&eButcher IV'
+    lore:
+    - '&7Deals more damage'
+    - '&7to farm animals.'
+    - '&7+1.25 damage'
+    - '&8{chance}% chance'
+    chance: 100
+    cost: 128
+    type: weapon
+    events:
+    - attackother
+    function: damage
+    effects:
+    - 1.25
+    affected:
+    - COW
+    - PIG
+    - SHEEP
+    - CHICKEN
+    - HORSE
+    - DONKEY
+    - MULE
+  butcher-v:
+    name: '&eButcher V'
+    lore:
+    - '&7Deals more damage'
+    - '&7to farm animals.'
+    - '&7+1.5 damage'
+    - '&8{chance}% chance'
+    chance: 100
+    cost: 256
+    type: weapon
+    events:
+    - attackother
+    function: damage
+    effects:
+    - 1.5
+    affected:
+    - COW
+    - PIG
+    - SHEEP
+    - CHICKEN
+    - HORSE
+    - DONKEY
+    - MULE
+  tolerance-i:
+    name: '&eTolerance I'
+    lore:
+    - '&7Gives resistance after taking more'
+    - '&7than a certain amount of damage.'
+    - '&7Resistance I when below 40% health - 4s'
+    - '&8{chance}% chance'
+    chance: 25
+    cost: 16
+    type: armor
+    events:
+    - armorself
+    function: potion
+    effects:
+    - DAMAGE_RESISTANCE
+    duration: 4
+    amplifier: 0
+    thresholdself: 0-40
+  tolerance-ii:
+    name: '&eTolerance II'
+    lore:
+    - '&7Gives resistance after taking more'
+    - '&7than a certain amount of damage.'
+    - '&7Resistance I when below 40% health - 6s'
+    - '&8{chance}% chance'
+    chance: 25
+    cost: 32
+    type: armor
+    events:
+    - armorself
+    function: potion
+    effects:
+    - DAMAGE_RESISTANCE
+    duration: 6
+    amplifier: 0
+    thresholdself: 0-40
+  tolerance-iii:
+    name: '&eTolerance III'
+    lore:
+    - '&7Gives resistance after taking more'
+    - '&7than a certain amount of damage.'
+    - '&7Resistance I when below 40% health - 8s'
+    - '&8{chance}% chance'
+    chance: 25
+    cost: 64
+    type: armor
+    events:
+    - armorself
+    function: potion
+    effects:
+    - DAMAGE_RESISTANCE
+    duration: 8
+    amplifier: 0
+    thresholdself: 0-40
+  golden-replenishment-i:
+    name: '&eGolden Replenishment I'
+    lore:
+    - '&7Gives saturation after mining'
+    - '&7a block of gold ore.'
+    - '&7Saturation I - 1s'
+    - '&8{chance}% chance'
+    chance: 25
+    cost: 32
+    type: tool
+    events:
+    - blockbreak
+    function: potion
+    blocks:
+    - GOLD_ORE
+    - DEEPSLATE_GOLD_ORE
+    - NETHER_GOLD_ORE
+    effects:
+    - SATURATION
+    duration: 1
+    amplifier: 0
+  cowification-i:
+    name: '&eCowification I'
+    lore:
+    - '&7Mooooooo'
+    - '&7Arrows summon cows on impact'
+    - '&8{chance}% chance'
+    chance: 100
+    cost: 16
+    type: bow
+    events:
+    - arrowland
+    function: summon
+    entity: COW
+    despawn: true
+    duration: 1
+  cannonball-i:
+    name: '&eCannonball I'
+    lore:
+    - '&7Bombs away!'
+    - '&7Shoots exploding arrows'
+    - '&8{chance}% chance'
+    chance: 100
+    cost: 32
+    type: bow
+    events:
+    - arrowland
+    - attackother
+    function: explosion
+    power: 1
+    durability: 5
+  killstreak-i:
+    name: '&eKillstreak I'
+    lore:
+    - '&7Feel a quick burst of might after finishing a foe'
+    - '&7Strength IV - 2s'
+    - '&8{chance}% chance'
+    chance: 75
+    cost: 128
+    type: weapon
+    events:
+    - entitydeath
+    function: potion
+    duration: 2
+    amplifier: 3
+  vampire-i:
+    name: '&eVampire I'
+    lore:
+    - '&7Drain the blood from your enemies'
+    - '&7to replenish your own health.'
+    - '&7+0.25 health'
+    - '&8{chance}% chance'
+    chance: 100
+    cost: 16
+    type: weapon
+    events:
+    - attackself
+    function: damage
+    effects:
+    - -0.25
+  vampire-ii:
+    name: '&eVampire II'
+    lore:
+    - '&7Drain the blood from your enemies'
+    - '&7to replenish your own health.'
+    - '&7+0.5 health'
+    - '&8{chance}% chance'
+    chance: 100
+    cost: 32
+    type: weapon
+    events:
+    - attackself
+    function: damage
+    effects:
+    - -0.5
+  vampire-iii:
+    name: '&eVampire III'
+    lore:
+    - '&7Drain the blood from your enemies'
+    - '&7to replenish your own health.'
+    - '&7+1 health'
+    - '&8{chance}% chance'
+    chance: 100
+    cost: 64
+    type: weapon
+    events:
+    - attackself
+    function: damage
+    effects:
+    - -1

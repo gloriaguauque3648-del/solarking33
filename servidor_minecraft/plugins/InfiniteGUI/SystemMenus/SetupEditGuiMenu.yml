@@ -1,0 +1,185 @@
+title: Edit %gui% Settings
+rows: 5
+empty-fill:
+  enabled: true
+  slots:
+  - all
+  item:
+    name: '&r'
+    lore: []
+    type: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+
+edit-title:
+  enabled: true
+  slot: 10
+  item:
+    name: '&b&l✎ Edit Title'
+    lore:
+    - ''
+    - '&7Edit the title of the'
+    - '&7Gui.'
+    - ''
+    - '&6&lCurrent: &f%gui_title%'
+    type: ANVIL
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+
+edit-rows:
+  enabled: true
+  slot: 20
+  item:
+    name: '&b&l▦ Edit Rows'
+    lore:
+    - ''
+    - '&7Edit the number of rows'
+    - '&7in the Gui.'
+    - ''
+    - '&6&lCurrent: &f%gui_rows%'
+    type: BOOK
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+
+scenes:
+  enabled: true
+  slot: 12
+  item:
+    name: '&b&l🎬 Edit Scenes'
+    type: OAK_SIGN
+    lore:
+    - ''
+    - '&7Edit the scenes of the Gui.'
+    - '&7Scenes allow for animated'
+    - '&7or static GUI displays.'
+    - ''
+    - '&eClick to edit scenes.'
+    amount: 1
+    item-flags:
+    - all
+    enchantments: []
+    custom-model-data: 0
+
+set-command-alias:
+  enabled: true
+  slot: 22
+  item:
+    name: '&b&l🖮 Set Command Alias'
+    lore:
+    - ''
+    - '&7Set a command alias for'
+    - '&7the Gui.'
+    - ''
+    - '&eClick to set.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZjNmFhOWVlYTY0ZTI1NzllOGE3ZmI4MDY0MDBiYTQyN2FlOWM0ZmMxMDA2ZTBhYzkwNDY5ODhlOTcyNjVhNSJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+
+change-gui-type:
+  enabled: true
+  slot: 14
+  item:
+    name: '&b&l🛠 Change Menu Type'
+    lore:
+    - ''
+    - '&7Change menu type, but be'
+    - '&7aware that items might be'
+    - '&7&cremoved &7if their slots'
+    - '&7are invalid for the new type!'
+    - ''
+    - '&6&lCurrent: &f%gui_type%'
+    - ''
+    - '&eClick to change.'
+    type: CHEST
+    amount: 1
+    item-flags:
+    - all
+    enchantments: []
+    custom-model-data: 0
+
+delete-gui:
+  enabled: true
+  slot: 16
+  item:
+    name: '&c&l❌ Delete GUI'
+    lore:
+    - ''
+    - '&7Delete the Gui.'
+    - ''
+    - '&eClick to delete.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGZmOTY4YzkwNTIyMzQ5MWE0ZTM5MGM3ZDVmMTBjMTg0M2E2YmEwNDgyMGQ2YjE3ODRmNTJlNDEwZDExYWI1YiJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+
+set-permission:
+  enabled: true
+  slot: 25
+  item:
+    name: '&b&l🔒 Set Permission'
+    lore:
+    - ''
+    - '&7Set the permission required'
+    - '&7to access this Gui.'
+    - ''
+    - '&eClick to set.'
+    type: COMMAND_BLOCK
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+
+save-gui:
+  enabled: true
+  slot: 36
+  item:
+    name: '&aSave Gui'
+    lore:
+    - '&7Save this gui to it''s respective file.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzEwMzQxYzJiZmMwZDBlYTk5MWRmZGE4ZjU3MWUxYzhlNjhmMjVkNTcxNGRjOTU0YzJlZDc4NDZlYTk2ODI5MyJ9fX0=
+    amount: 1
+    unbreakable: false
+    item-flags:
+    - all
+    enchantments: []
+    custom-model-data: 0
+
+exit:
+  enabled: true
+  slot: 44
+  item:
+    name: '&c⬅ Back'
+    lore:
+    - '&7Return to the Gui Manager.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzUxY2VkMmU2NDczNjZmOGYzYWQyZGZlNDE1Y2NhODU2NTFiZmFmOTczOWE5NWNkNTdiNmYyMWNiYTA1MyJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0

@@ -1,0 +1,362 @@
+title: Modify item
+rows: 6
+empty-fill:
+  enabled: true
+  ignore-slots:
+  - 11
+  - 13
+  - 15
+  - 19-25
+  - 29
+  - 31
+  - 33
+  - 37-43
+  slots:
+  - all
+  item:
+    name: '&r'
+    lore: []
+    type: ORANGE_STAINED_GLASS_PANE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+custom-empty-fill:
+  enabled: true
+  slots:
+  - 11
+  - 13
+  - 15
+  - 19-25
+  - 29
+  - 31
+  - 33
+  - 37-43
+  item:
+    name: '&r'
+    lore: []
+    type: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+exit:
+  enabled: true
+  slot: 53
+  item:
+    name: '&cBack'
+    lore:
+    - '&7Go back to the scene inventory editor.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzUxY2VkMmU2NDczNjZmOGYzYWQyZGZlNDE1Y2NhODU2NTFiZmFmOTczOWE5NWNkNTdiNmYyMWNiYTA1MyJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+item-cloner:
+  enabled: true
+  slot: 45
+  item:
+    name: '&eItem Cloner'
+    lore:
+    - '&7Clone this item onto other slots of the scene!'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWIwNGVmOGE5ZDAxYmJkYWFiZTA4MzllMjgwNGZhOWUxYWI1ZWMxZTA0MDIxZjQ0MDI1YWZiYWViZTgxZTE2YyJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+modify-name:
+  enabled: true
+  slot: 10
+  item:
+    name: '&eModify Item Name'
+    lore:
+    - ''
+    - '&7Change the display name'
+    - '&7of the item.'
+    - ''
+    - '&eCurrent: &r&f%display_name%'
+    - ''
+    - '&bClick to change'
+    type: PAPER
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+modify-lore:
+  enabled: true
+  slot: 12
+  item:
+    name: '&eModify Item Lore'
+    lore:
+    - ''
+    - '&7Change the lore'
+    - '&7of the item.'
+    - ''
+    - '&bClick to change'
+    type: LECTERN
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+modify-type:
+  enabled: true
+  slot: 14
+  item:
+    name: '&eModify Material'
+    lore:
+    - ''
+    - '&7Change the material'
+    - '&7of the item.'
+    - ''
+    - '&eCurrent: &f%material%'
+    - ''
+    - '&bClick to change'
+    type: CRAFTING_TABLE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+modify-custom-model-data:
+  enabled: true
+  slot: 20
+  item:
+    name: '&eModify Custom Model Data'
+    lore:
+    - ''
+    - '&7Change the custom model data'
+    - '&7of the item.'
+    - ''
+    - '&eCurrent: &f%custom_model_data%'
+    - ''
+    - '&bClick to change'
+    type: DIAMOND_SWORD
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+modify-click-events:
+  enabled: true
+  slot: 24
+  item:
+    name: '&eModify Click Events'
+    lore:
+    - ''
+    - '&7Change the click events'
+    - '&7of the item.'
+    - ''
+    - '&bClick to change'
+    type: SHIELD
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+
+modify-unbreakable:
+  enabled: true
+  slot: 22
+  item:
+    name: '&eToggle Unbreakable'
+    lore:
+    - ''
+    - '&7Toggle the unbreakable tag'
+    - '&7for the item.'
+    - ''
+    - '&eCurrent: &f%unbreakable%'
+    - ''
+    - '&bClick to toggle'
+    type: OBSIDIAN
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+modify-amount:
+  enabled: true
+  slot: 16
+  item:
+    name: '&eModify Amount'
+    lore:
+    - ''
+    - '&7Change the amount'
+    - '&7of the item.'
+    - ''
+    - '&eCurrent: &f%amount%'
+    - ''
+    - '&bClick to change'
+    type: REDSTONE
+    # amount not needed here as it's auto set to the amount of the actual item
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+set-itemstack:
+  enabled: true
+  slot: 40
+  item:
+    name: '&eSet Item'
+    lore:
+    - ''
+    - '&7Replace the current'
+    - '&7item with a new one'
+    - ''
+    - '&bClick to change'
+    type: OAK_SIGN
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+
+modify-attributes:
+  enabled: true
+  slot: 38
+  item:
+    name: '&eModify Attributes'
+    lore:
+    - ''
+    - '&7Modify the attributes'
+    - '&7of the item.'
+    - ''
+    - '&bClick to change'
+    type: GOLDEN_PICKAXE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+modify-item-flags:
+  enabled: true
+  slot: 28
+  item:
+    name: '&eModify Item Flags'
+    lore:
+    - ''
+    - '&7Change the item flags'
+    - '&7of the item.'
+    - ''
+    - '&bClick to change'
+    type: GRAY_BANNER
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+modify-enchantments:
+  enabled: true
+  slot: 30
+  item:
+    name: '&eModify Enchantments'
+    lore:
+    - ''
+    - '&7Modify the enchantments'
+    - '&7of the item.'
+    - ''
+    - '&bClick to change'
+    type: ENCHANTED_BOOK
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+modify-conditions:
+  enabled: true
+  slot: 32
+  item:
+    name: '&eModify Click Conditions'
+    lore:
+    - ''
+    - '&7Modify the conditions'
+    - '&7checked when player'
+    - '&7clicks on the item.'
+    - ''
+    - '&bClick to change'
+    type: ANVIL
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+modify-player-head-texture:
+  enabled: true
+  slot: 34
+  item:
+    name: '&eModify Player Head Texture'
+    lore:
+    - ''
+    - '&7Modify the player head'
+    - '&7texture of the item.'
+    - ''
+    - '&bClick to change'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDdlM2I5OTg5ODIxMmZiOGVjZGVhYWNlZjk2YzA1MTE1Mzg1NWUyOGZkZjA3ODdkYTY0OTU1NTNiMjNiYzljIn19fQ==
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+not-available-modify-player-head-texture:
+  enabled: true
+  slot: 34
+  item:
+    name: '&cFeature not available'
+    lore:
+    - ''
+    - '&7Cannot change player head'
+    - '&7texture for this item!'
+    - ''
+    - '&cItem is not supported'
+    type: BARRIER
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+modify-slot:
+  enabled: true
+  slot: 0
+  item:
+    name: '&eModify Slot(s)'
+    lore:
+    - ''
+    - '&7Change the slot(s)'
+    - '&7of the item.'
+    - ''
+    - '&eCurrent: &f%slot%'
+    - ''
+    - '&bClick to change'
+    type: CHEST
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0

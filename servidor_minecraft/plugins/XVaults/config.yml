@@ -1,0 +1,45 @@
+########################
+# XVAULTS CONFIG FILE  #
+########################
+#
+# XVaults Developed by Beckstation
+#
+# For Language and GUI options, please refer to the locale.yml file.
+# 
+# Any questions, please join the XPlugins discord found on our Spigot page. 
+# Enjoy!
+
+# Recommended to only edit vault_sizes at the start of a server/wipe/fresh plugin installation.
+# If you make vaults 5 rows, DO NOT change this value to a lower one at a later date, or player items maybe lost/data load will fail.
+# You CAN safely increase this value at anytime, even if players have items in those vaults.
+# A row is 9 slots. So 3 rows is a single chest, 6 is a double chest. You can choose any value from 1-6.
+
+vault_sizes:
+  vault_1_rows: 3
+  vault_2_rows: 3
+  vault_3_rows: 3
+  vault_4_rows: 3
+  vault_5_rows: 3
+  vault_6_rows: 3
+  vault_7_rows: 3
+  vault_8_rows: 3
+  vault_9_rows: 3
+  vault_10_rows: 3
+  
+# For below, use default minecraft naming. Any item/block can be used.
+# vault_locked refers to a vault that a player does not have permission to use.
+# Example: CHEST, ENDER_CHEST, TRAPPED_CHEST, etc..
+
+vault_details:
+  vault_locked: ENDER_CHEST
+  vault_1_icon: CHEST
+  vault_2_icon: CHEST
+  vault_3_icon: CHEST
+  vault_4_icon: CHEST
+  vault_5_icon: CHEST
+  vault_6_icon: CHEST
+  vault_7_icon: CHEST
+  vault_8_icon: CHEST
+  vault_9_icon: CHEST
+  vault_10_icon: CHEST
+  filler_icon: GRAY_STAINED_GLASS_PANE

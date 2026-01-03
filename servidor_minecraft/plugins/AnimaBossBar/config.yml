@@ -1,0 +1,40 @@
+bossbars:
+  "1":
+    enabled: true
+    title:
+      text: "&#431717&lʙ&#481616&lɪ&#4C1515&lᴇ&#511414&lɴ&#561313&lᴠ&#5A1212&lᴇ&#5F1010&lɴ&#640F0F&lɪ&#680E0E&lᴅ&#6D0D0D&lᴏ &#760B0B&lᴀ &#800909&ls&#840808&lᴏ&#890707&lʟ&#8E0505&lᴀ&#920404&lʀ&#970303&lᴋ&#9C0202&lɪ&#A00101&lɴ&#A50000&lɢ "
+    color: RED
+    style: SOLID
+    animation: DECREASING
+    timeSeconds: 15
+    removeOnFinish: true
+    next: "2"
+    autoAttach: true
+
+  "2":
+    enabled: true
+    title:
+      text: "&e&#1A5315&l/&#165F15&lʀ&#136A14&lᴇ&#0F7614&lᴡ&#0B8213&lᴀ&#078E13&lʀ&#049912&lᴅ&#00A512&ls  &7&#0E479F&l/&#2D35A1&lᴋ&#4B24A2&lɪ&#6A12A4&lᴛ&#8800A5&ls  &b&#9F720E&l/&#8E7F0B&lᴊ&#7C8C07&lᴏ&#6B9804&lʙ&#59A500&ls"
+    color: GREEN
+    style: SOLID
+    animation: DECREASING
+    timeSeconds: 10
+    removeOnFinish: true
+    next: "1"
+    autoAttach: false
+
+chatMessages:
+  welcome:
+    enabled: true
+    intervalSeconds: 360
+    messages:
+      - "&7ᴇɴᴛʀᴀ ᴀ ɴᴜᴇsᴛʀᴏ &9ᴅɪsᴄᴏʀᴅ &7: &b/discord"
+      - "&7ᴜsᴀ &b/ᴠᴏᴛᴇ &7ʏ ᴏʙᴛᴇ́ɴ ʀᴇᴄᴏᴍᴘᴇɴsᴀs!"
+    audience:
+      type: ALL
+
+
+    disabledWorlds:
+      - "world_nether"
+      - "world_the_end"
+    

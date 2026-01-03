@@ -1,0 +1,18 @@
+debug:
+  enabled: false
+chat-fetcher-exit-message-cooldown: 10 # unit is seconds
+gui-settings:
+  # Anything not mentioned here will have -1 row, helpful in cases such as dispenser, hopper, dropper, etc.
+  # If you try to set rows for a menu type such as dispenser, hopper, etc, it would have no effect on them
+  default-rows:
+    chest: 3
+
+# disable the commands while in chat fetcher
+disable-commands-chat-fetcher: true
+disable-guis-chat-fetcher: true
+
+command-settings:
+  gui-command:
+    name: "gui"
+    aliases: [ "igui", "ig", "infinitegui" ]
+    description: "Main command for the Infinite GUI plugin"

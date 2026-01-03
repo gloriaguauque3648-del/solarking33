@@ -1,0 +1,875 @@
+# Do not edit
+file-version: '1'
+title: '&8Kits Menu'
+type: CHEST
+rows: 6
+refresh-delay: 20
+display-name: Main Menu
+menu-fillers:
+  - main-kits-menu-left-arrow
+  - main-kits-menu-right-arrow
+  - non-random-rainbow-glass-pane
+open-command:
+  enabled: true
+  command: kits
+  aliases: []
+  #permission: advancedkits.command.kits
+  description: Opens the main kits menu.
+kits:
+  Snowman:
+    slots:
+      - 25
+    available:
+      material: FIREWORK_STAR
+      color: WHITE
+      name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+      glow: true
+      lore:
+        - ''
+        - <gradient:dark_green:green><b>Kit Information:</gradient>
+        - ' <gradient:dark_green:green>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_green:green>┠ Redeem Status:</gradient> <#E5DCD9>Available'
+        - ' <gradient:dark_green:green>┗ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <u>Left-click</u> <i>to claim this kit!'
+        - ''
+        - <gradient:dark_green:green><b>Level Information:<gradient>
+        - ' <gradient:dark_green:green>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_green:green>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_green:green>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_green:green>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    unavailable:
+      material: FIREWORK_STAR
+      color: WHITE
+      name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+      lore:
+        - ''
+        - <gradient:gold:yellow><b>Kit Information:</gradient>
+        - ' <gradient:gold:yellow>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:gold:yellow>┠ Redeem Status:</gradient> <#E5DCD9>On Cooldown'
+        - ' <gradient:gold:yellow>┠ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <gradient:gold:yellow>┗ Available In:</gradient> <#E5DCD9>{cooldown}'
+        - ' <#E5DCD9>┠ <i>You have to wait for the cooldown!'
+        - ''
+        - <gradient:gold:yellow><b>Level Information:<gradient>
+        - ' <gradient:gold:yellow>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:gold:yellow>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:gold:yellow>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:gold:yellow>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    locked:
+      material: FIREWORK_STAR
+      color: WHITE
+      name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+      lore:
+        - ''
+        - <gradient:dark_red:red><b>Kit Information:</gradient>
+        - ' <gradient:dark_red:red>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_red:red>┠ Redeem Status:</gradient> <#E5DCD9>Locked'
+        - ' <gradient:dark_red:red>┗ Required Rank:</gradient> <#E5DCD9>Member'
+        - ' <#E5DCD9>┠ <i>You need a rank to unlock this kit!'
+        - ''
+        - <gradient:dark_red:red><b>Level Information:<gradient>
+        - ' <gradient:dark_red:red>┏ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_red:red>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_red:red>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    purchasable:
+      material: FIREWORK_STAR
+      color: WHITE
+      name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+      lore:
+        - ''
+        - <gradient:dark_purple:light_purple><b>Kit Information:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_purple:light_purple>┠ Redeem Status:</gradient> <#E5DCD9>Purchasable'
+        - ' <gradient:dark_purple:light_purple>┗ Buy Price:</gradient> <#E5DCD9>{cost}'
+        - ' <#E5DCD9>┠ <i>You must buy this kit to gain access!'
+        - ''
+        - <gradient:dark_purple:light_purple><b>Level Information:<gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_purple:light_purple>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_purple:light_purple>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    overused:
+      material: FIREWORK_STAR
+      color: WHITE
+      name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+      lore:
+        - ''
+        - <gradient:dark_gray:gray><b>Kit Information:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_gray:gray>┠ Redeem Status:</gradient> <#E5DCD9>All Claimed'
+        - ' <gradient:dark_gray:gray>┗ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <i>You have reached utilization limits!'
+        - ''
+        - <gradient:dark_gray:gray><b>Level Information:<gradient>
+        - ' <gradient:dark_gray:gray>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_gray:gray>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_gray:gray>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_gray:gray>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+  Viking:
+    slots:
+      - 20
+    available:
+      material: SHIELD
+      name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+      glow: true
+      lore:
+        - ''
+        - <gradient:dark_green:green><b>Kit Information:</gradient>
+        - ' <gradient:dark_green:green>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_green:green>┠ Redeem Status:</gradient> <#E5DCD9>Available'
+        - ' <gradient:dark_green:green>┗ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <u>Left-click</u> <i>to claim this kit!'
+        - ''
+        - <gradient:dark_green:green><b>Level Information:<gradient>
+        - ' <gradient:dark_green:green>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_green:green>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_green:green>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_green:green>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    unavailable:
+      material: SHIELD
+      name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+      lore:
+        - ''
+        - <gradient:gold:yellow><b>Kit Information:</gradient>
+        - ' <gradient:gold:yellow>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:gold:yellow>┠ Redeem Status:</gradient> <#E5DCD9>On Cooldown'
+        - ' <gradient:gold:yellow>┠ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <gradient:gold:yellow>┗ Available In:</gradient> <#E5DCD9>{cooldown}'
+        - ' <#E5DCD9>┠ <i>You have to wait for the cooldown!'
+        - ''
+        - <gradient:gold:yellow><b>Level Information:<gradient>
+        - ' <gradient:gold:yellow>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:gold:yellow>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:gold:yellow>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:gold:yellow>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    locked:
+      material: SHIELD
+      name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+      lore:
+        - ''
+        - <gradient:dark_red:red><b>Kit Information:</gradient>
+        - ' <gradient:dark_red:red>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_red:red>┠ Redeem Status:</gradient> <#E5DCD9>Locked'
+        - ' <gradient:dark_red:red>┗ Required Rank:</gradient> <#E5DCD9>Member'
+        - ' <#E5DCD9>┠ <i>You need a rank to unlock this kit!'
+        - ''
+        - <gradient:dark_red:red><b>Level Information:<gradient>
+        - ' <gradient:dark_red:red>┏ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_red:red>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_red:red>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    purchasable:
+      material: SHIELD
+      name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+      lore:
+        - ''
+        - <gradient:dark_purple:light_purple><b>Kit Information:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_purple:light_purple>┠ Redeem Status:</gradient> <#E5DCD9>Purchasable'
+        - ' <gradient:dark_purple:light_purple>┗ Buy Price:</gradient> <#E5DCD9>{cost}'
+        - ' <#E5DCD9>┠ <i>You must buy this kit to gain access!'
+        - ''
+        - <gradient:dark_purple:light_purple><b>Level Information:<gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_purple:light_purple>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_purple:light_purple>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    overused:
+      material: SHIELD
+      name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+      lore:
+        - ''
+        - <gradient:dark_gray:gray><b>Kit Information:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_gray:gray>┠ Redeem Status:</gradient> <#E5DCD9>All Claimed'
+        - ' <gradient:dark_gray:gray>┗ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <i>You have reached utilization limits!'
+        - ''
+        - <gradient:dark_gray:gray><b>Level Information:<gradient>
+        - ' <gradient:dark_gray:gray>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_gray:gray>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_gray:gray>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_gray:gray>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+  Ultimate:
+    slots:
+      - 12
+    available:
+      material: DIAMOND_CHESTPLATE
+      trim-material: DIAMOND
+      trim-pattern: VEX
+      name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+      glow: true
+      lore:
+        - ''
+        - <gradient:dark_green:green><b>Kit Information:</gradient>
+        - ' <gradient:dark_green:green>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_green:green>┠ Redeem Status:</gradient> <#E5DCD9>Available'
+        - ' <gradient:dark_green:green>┗ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <u>Left-click</u> <i>to claim this kit!'
+        - ''
+        - <gradient:dark_green:green><b>Level Information:<gradient>
+        - ' <gradient:dark_green:green>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_green:green>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_green:green>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_green:green>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    unavailable:
+      material: DIAMOND_CHESTPLATE
+      trim-material: DIAMOND
+      trim-pattern: VEX
+      name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+      lore:
+        - ''
+        - <gradient:gold:yellow><b>Kit Information:</gradient>
+        - ' <gradient:gold:yellow>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:gold:yellow>┠ Redeem Status:</gradient> <#E5DCD9>On Cooldown'
+        - ' <gradient:gold:yellow>┠ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <gradient:gold:yellow>┗ Available In:</gradient> <#E5DCD9>{cooldown}'
+        - ' <#E5DCD9>┠ <i>You have to wait for the cooldown!'
+        - ''
+        - <gradient:gold:yellow><b>Level Information:<gradient>
+        - ' <gradient:gold:yellow>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:gold:yellow>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:gold:yellow>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:gold:yellow>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    locked:
+      material: DIAMOND_CHESTPLATE
+      trim-material: DIAMOND
+      trim-pattern: VEX
+      name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+      lore:
+        - ''
+        - <gradient:dark_red:red><b>Kit Information:</gradient>
+        - ' <gradient:dark_red:red>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_red:red>┠ Redeem Status:</gradient> <#E5DCD9>Locked'
+        - ' <gradient:dark_red:red>┗ Required Rank:</gradient> <#E5DCD9>Member'
+        - ' <#E5DCD9>┠ <i>You need a rank to unlock this kit!'
+        - ''
+        - <gradient:dark_red:red><b>Level Information:<gradient>
+        - ' <gradient:dark_red:red>┏ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_red:red>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_red:red>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    purchasable:
+      material: DIAMOND_CHESTPLATE
+      trim-material: DIAMOND
+      trim-pattern: VEX
+      name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+      lore:
+        - ''
+        - <gradient:dark_purple:light_purple><b>Kit Information:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_purple:light_purple>┠ Redeem Status:</gradient> <#E5DCD9>Purchasable'
+        - ' <gradient:dark_purple:light_purple>┗ Buy Price:</gradient> <#E5DCD9>{cost}'
+        - ' <#E5DCD9>┠ <i>You must buy this kit to gain access!'
+        - ''
+        - <gradient:dark_purple:light_purple><b>Level Information:<gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_purple:light_purple>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_purple:light_purple>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    overused:
+      material: DIAMOND_CHESTPLATE
+      trim-material: DIAMOND
+      trim-pattern: VEX
+      name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+      lore:
+        - ''
+        - <gradient:dark_gray:gray><b>Kit Information:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_gray:gray>┠ Redeem Status:</gradient> <#E5DCD9>All Claimed'
+        - ' <gradient:dark_gray:gray>┗ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <i>You have reached utilization limits!'
+        - ''
+        - <gradient:dark_gray:gray><b>Level Information:<gradient>
+        - ' <gradient:dark_gray:gray>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_gray:gray>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_gray:gray>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_gray:gray>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+  Swordsman:
+    slots:
+      - 22
+    available:
+      material: DIAMOND_SWORD
+      name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+      glow: true
+      lore:
+        - ''
+        - <gradient:dark_green:green><b>Kit Information:</gradient>
+        - ' <gradient:dark_green:green>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_green:green>┠ Redeem Status:</gradient> <#E5DCD9>Available'
+        - ' <gradient:dark_green:green>┗ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <u>Left-click</u> <i>to claim this kit!'
+        - ''
+        - <gradient:dark_green:green><b>Level Information:<gradient>
+        - ' <gradient:dark_green:green>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_green:green>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_green:green>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_green:green>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    unavailable:
+      material: DIAMOND_SWORD
+      name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+      lore:
+        - ''
+        - <gradient:gold:yellow><b>Kit Information:</gradient>
+        - ' <gradient:gold:yellow>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:gold:yellow>┠ Redeem Status:</gradient> <#E5DCD9>On Cooldown'
+        - ' <gradient:gold:yellow>┠ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <gradient:gold:yellow>┗ Available In:</gradient> <#E5DCD9>{cooldown}'
+        - ' <#E5DCD9>┠ <i>You have to wait for the cooldown!'
+        - ''
+        - <gradient:gold:yellow><b>Level Information:<gradient>
+        - ' <gradient:gold:yellow>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:gold:yellow>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:gold:yellow>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:gold:yellow>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    locked:
+      material: DIAMOND_SWORD
+      name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+      lore:
+        - ''
+        - <gradient:dark_red:red><b>Kit Information:</gradient>
+        - ' <gradient:dark_red:red>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_red:red>┠ Redeem Status:</gradient> <#E5DCD9>Locked'
+        - ' <gradient:dark_red:red>┗ Required Rank:</gradient> <#E5DCD9>Member'
+        - ' <#E5DCD9>┠ <i>You need a rank to unlock this kit!'
+        - ''
+        - <gradient:dark_red:red><b>Level Information:<gradient>
+        - ' <gradient:dark_red:red>┏ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_red:red>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_red:red>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    purchasable:
+      material: DIAMOND_SWORD
+      name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+      lore:
+        - ''
+        - <gradient:dark_purple:light_purple><b>Kit Information:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_purple:light_purple>┠ Redeem Status:</gradient> <#E5DCD9>Purchasable'
+        - ' <gradient:dark_purple:light_purple>┗ Buy Price:</gradient> <#E5DCD9>{cost}'
+        - ' <#E5DCD9>┠ <i>You must buy this kit to gain access!'
+        - ''
+        - <gradient:dark_purple:light_purple><b>Level Information:<gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_purple:light_purple>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_purple:light_purple>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    overused:
+      material: DIAMOND_SWORD
+      name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+      lore:
+        - ''
+        - <gradient:dark_gray:gray><b>Kit Information:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_gray:gray>┠ Redeem Status:</gradient> <#E5DCD9>All Claimed'
+        - ' <gradient:dark_gray:gray>┗ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <i>You have reached utilization limits!'
+        - ''
+        - <gradient:dark_gray:gray><b>Level Information:<gradient>
+        - ' <gradient:dark_gray:gray>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_gray:gray>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_gray:gray>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_gray:gray>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+  Potions:
+    slots:
+      - 21
+    available:
+      material: POTION
+      color: RED
+      name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+      glow: true
+      lore:
+        - ''
+        - <gradient:dark_green:green><b>Kit Information:</gradient>
+        - ' <gradient:dark_green:green>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_green:green>┠ Redeem Status:</gradient> <#E5DCD9>Available'
+        - ' <gradient:dark_green:green>┗ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <u>Left-click</u> <i>to claim this kit!'
+        - ''
+        - <gradient:dark_green:green><b>Level Information:<gradient>
+        - ' <gradient:dark_green:green>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_green:green>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_green:green>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_green:green>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    unavailable:
+      material: POTION
+      color: RED
+      name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+      lore:
+        - ''
+        - <gradient:gold:yellow><b>Kit Information:</gradient>
+        - ' <gradient:gold:yellow>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:gold:yellow>┠ Redeem Status:</gradient> <#E5DCD9>On Cooldown'
+        - ' <gradient:gold:yellow>┠ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <gradient:gold:yellow>┗ Available In:</gradient> <#E5DCD9>{cooldown}'
+        - ' <#E5DCD9>┠ <i>You have to wait for the cooldown!'
+        - ''
+        - <gradient:gold:yellow><b>Level Information:<gradient>
+        - ' <gradient:gold:yellow>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:gold:yellow>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:gold:yellow>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:gold:yellow>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    locked:
+      material: POTION
+      color: RED
+      name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+      lore:
+        - ''
+        - <gradient:dark_red:red><b>Kit Information:</gradient>
+        - ' <gradient:dark_red:red>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_red:red>┠ Redeem Status:</gradient> <#E5DCD9>Locked'
+        - ' <gradient:dark_red:red>┗ Required Rank:</gradient> <#E5DCD9>Member'
+        - ' <#E5DCD9>┠ <i>You need a rank to unlock this kit!'
+        - ''
+        - <gradient:dark_red:red><b>Level Information:<gradient>
+        - ' <gradient:dark_red:red>┏ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_red:red>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_red:red>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    purchasable:
+      material: POTION
+      color: RED
+      name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+      lore:
+        - ''
+        - <gradient:dark_purple:light_purple><b>Kit Information:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_purple:light_purple>┠ Redeem Status:</gradient> <#E5DCD9>Purchasable'
+        - ' <gradient:dark_purple:light_purple>┗ Buy Price:</gradient> <#E5DCD9>{cost}'
+        - ' <#E5DCD9>┠ <i>You must buy this kit to gain access!'
+        - ''
+        - <gradient:dark_purple:light_purple><b>Level Information:<gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_purple:light_purple>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_purple:light_purple>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    overused:
+      material: POTION
+      color: RED
+      name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+      lore:
+        - ''
+        - <gradient:dark_gray:gray><b>Kit Information:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_gray:gray>┠ Redeem Status:</gradient> <#E5DCD9>All Claimed'
+        - ' <gradient:dark_gray:gray>┗ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <i>You have reached utilization limits!'
+        - ''
+        - <gradient:dark_gray:gray><b>Level Information:<gradient>
+        - ' <gradient:dark_gray:gray>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_gray:gray>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_gray:gray>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_gray:gray>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+  Pyro:
+    slots:
+      - 14
+    available:
+      material: FLINT_AND_STEEL
+      name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+      glow: true
+      lore:
+        - ''
+        - <gradient:dark_green:green><b>Kit Information:</gradient>
+        - ' <gradient:dark_green:green>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_green:green>┠ Redeem Status:</gradient> <#E5DCD9>Available'
+        - ' <gradient:dark_green:green>┗ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <u>Left-click</u> <i>to claim this kit!'
+        - ''
+        - <gradient:dark_green:green><b>Level Information:<gradient>
+        - ' <gradient:dark_green:green>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_green:green>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_green:green>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_green:green>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    unavailable:
+      material: FLINT_AND_STEEL
+      name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+      lore:
+        - ''
+        - <gradient:gold:yellow><b>Kit Information:</gradient>
+        - ' <gradient:gold:yellow>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:gold:yellow>┠ Redeem Status:</gradient> <#E5DCD9>On Cooldown'
+        - ' <gradient:gold:yellow>┠ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <gradient:gold:yellow>┗ Available In:</gradient> <#E5DCD9>{cooldown}'
+        - ' <#E5DCD9>┠ <i>You have to wait for the cooldown!'
+        - ''
+        - <gradient:gold:yellow><b>Level Information:<gradient>
+        - ' <gradient:gold:yellow>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:gold:yellow>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:gold:yellow>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:gold:yellow>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    locked:
+      material: FLINT_AND_STEEL
+      name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+      lore:
+        - ''
+        - <gradient:dark_red:red><b>Kit Information:</gradient>
+        - ' <gradient:dark_red:red>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_red:red>┠ Redeem Status:</gradient> <#E5DCD9>Locked'
+        - ' <gradient:dark_red:red>┗ Required Rank:</gradient> <#E5DCD9>Member'
+        - ' <#E5DCD9>┠ <i>You need a rank to unlock this kit!'
+        - ''
+        - <gradient:dark_red:red><b>Level Information:<gradient>
+        - ' <gradient:dark_red:red>┏ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_red:red>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_red:red>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    purchasable:
+      material: FLINT_AND_STEEL
+      name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+      lore:
+        - ''
+        - <gradient:dark_purple:light_purple><b>Kit Information:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_purple:light_purple>┠ Redeem Status:</gradient> <#E5DCD9>Purchasable'
+        - ' <gradient:dark_purple:light_purple>┗ Buy Price:</gradient> <#E5DCD9>{cost}'
+        - ' <#E5DCD9>┠ <i>You must buy this kit to gain access!'
+        - ''
+        - <gradient:dark_purple:light_purple><b>Level Information:<gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_purple:light_purple>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_purple:light_purple>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    overused:
+      material: FLINT_AND_STEEL
+      name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+      lore:
+        - ''
+        - <gradient:dark_gray:gray><b>Kit Information:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_gray:gray>┠ Redeem Status:</gradient> <#E5DCD9>All Claimed'
+        - ' <gradient:dark_gray:gray>┗ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <i>You have reached utilization limits!'
+        - ''
+        - <gradient:dark_gray:gray><b>Level Information:<gradient>
+        - ' <gradient:dark_gray:gray>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_gray:gray>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_gray:gray>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_gray:gray>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+  Ninja:
+    slots:
+      - 24
+    available:
+      material: ELYTRA
+      name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+      glow: true
+      lore:
+        - ''
+        - <gradient:dark_green:green><b>Kit Information:</gradient>
+        - ' <gradient:dark_green:green>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_green:green>┠ Redeem Status:</gradient> <#E5DCD9>Available'
+        - ' <gradient:dark_green:green>┗ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <u>Left-click</u> <i>to claim this kit!'
+        - ''
+        - <gradient:dark_green:green><b>Level Information:<gradient>
+        - ' <gradient:dark_green:green>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_green:green>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_green:green>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_green:green>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    unavailable:
+      material: ELYTRA
+      name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+      lore:
+        - ''
+        - <gradient:gold:yellow><b>Kit Information:</gradient>
+        - ' <gradient:gold:yellow>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:gold:yellow>┠ Redeem Status:</gradient> <#E5DCD9>On Cooldown'
+        - ' <gradient:gold:yellow>┠ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <gradient:gold:yellow>┗ Available In:</gradient> <#E5DCD9>{cooldown}'
+        - ' <#E5DCD9>┠ <i>You have to wait for the cooldown!'
+        - ''
+        - <gradient:gold:yellow><b>Level Information:<gradient>
+        - ' <gradient:gold:yellow>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:gold:yellow>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:gold:yellow>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:gold:yellow>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    locked:
+      material: ELYTRA
+      name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+      lore:
+        - ''
+        - <gradient:dark_red:red><b>Kit Information:</gradient>
+        - ' <gradient:dark_red:red>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_red:red>┠ Redeem Status:</gradient> <#E5DCD9>Locked'
+        - ' <gradient:dark_red:red>┗ Required Rank:</gradient> <#E5DCD9>Member'
+        - ' <#E5DCD9>┠ <i>You need a rank to unlock this kit!'
+        - ''
+        - <gradient:dark_red:red><b>Level Information:<gradient>
+        - ' <gradient:dark_red:red>┏ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_red:red>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_red:red>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    purchasable:
+      material: ELYTRA
+      name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+      lore:
+        - ''
+        - <gradient:dark_purple:light_purple><b>Kit Information:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_purple:light_purple>┠ Redeem Status:</gradient> <#E5DCD9>Purchasable'
+        - ' <gradient:dark_purple:light_purple>┗ Buy Price:</gradient> <#E5DCD9>{cost}'
+        - ' <#E5DCD9>┠ <i>You must buy this kit to gain access!'
+        - ''
+        - <gradient:dark_purple:light_purple><b>Level Information:<gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_purple:light_purple>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_purple:light_purple>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    overused:
+      material: ELYTRA
+      name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+      lore:
+        - ''
+        - <gradient:dark_gray:gray><b>Kit Information:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_gray:gray>┠ Redeem Status:</gradient> <#E5DCD9>All Claimed'
+        - ' <gradient:dark_gray:gray>┗ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <i>You have reached utilization limits!'
+        - ''
+        - <gradient:dark_gray:gray><b>Level Information:<gradient>
+        - ' <gradient:dark_gray:gray>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_gray:gray>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_gray:gray>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_gray:gray>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+  Archer:
+    slots:
+      - 16
+    available:
+      material: BOW
+      name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+      glow: true
+      lore:
+        - ''
+        - <gradient:dark_green:green><b>Kit Information:</gradient>
+        - ' <gradient:dark_green:green>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_green:green>┠ Redeem Status:</gradient> <#E5DCD9>Available'
+        - ' <gradient:dark_green:green>┗ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <u>Left-click</u> <i>to claim this kit!'
+        - ''
+        - <gradient:dark_green:green><b>Level Information:<gradient>
+        - ' <gradient:dark_green:green>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_green:green>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_green:green>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_green:green>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    unavailable:
+      material: BOW
+      name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+      lore:
+        - ''
+        - <gradient:gold:yellow><b>Kit Information:</gradient>
+        - ' <gradient:gold:yellow>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:gold:yellow>┠ Redeem Status:</gradient> <#E5DCD9>On Cooldown'
+        - ' <gradient:gold:yellow>┠ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <gradient:gold:yellow>┗ Available In:</gradient> <#E5DCD9>{cooldown}'
+        - ' <#E5DCD9>┠ <i>You have to wait for the cooldown!'
+        - ''
+        - <gradient:gold:yellow><b>Level Information:<gradient>
+        - ' <gradient:gold:yellow>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:gold:yellow>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:gold:yellow>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:gold:yellow>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    locked:
+      material: BOW
+      name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+      lore:
+        - ''
+        - <gradient:dark_red:red><b>Kit Information:</gradient>
+        - ' <gradient:dark_red:red>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_red:red>┠ Redeem Status:</gradient> <#E5DCD9>Locked'
+        - ' <gradient:dark_red:red>┗ Required Rank:</gradient> <#E5DCD9>Member'
+        - ' <#E5DCD9>┠ <i>You need a rank to unlock this kit!'
+        - ''
+        - <gradient:dark_red:red><b>Level Information:<gradient>
+        - ' <gradient:dark_red:red>┏ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_red:red>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_red:red>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    purchasable:
+      material: BOW
+      name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+      lore:
+        - ''
+        - <gradient:dark_purple:light_purple><b>Kit Information:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_purple:light_purple>┠ Redeem Status:</gradient> <#E5DCD9>Purchasable'
+        - ' <gradient:dark_purple:light_purple>┗ Buy Price:</gradient> <#E5DCD9>{cost}'
+        - ' <#E5DCD9>┠ <i>You must buy this kit to gain access!'
+        - ''
+        - <gradient:dark_purple:light_purple><b>Level Information:<gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_purple:light_purple>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_purple:light_purple>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    overused:
+      material: BOW
+      name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+      lore:
+        - ''
+        - <gradient:dark_gray:gray><b>Kit Information:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_gray:gray>┠ Redeem Status:</gradient> <#E5DCD9>All Claimed'
+        - ' <gradient:dark_gray:gray>┗ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <i>You have reached utilization limits!'
+        - ''
+        - <gradient:dark_gray:gray><b>Level Information:<gradient>
+        - ' <gradient:dark_gray:gray>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_gray:gray>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_gray:gray>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_gray:gray>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+  Infected:
+    slots:
+      - 26
+    available:
+      material: SPLASH_POTION
+      name: <b><green>✧<dark_green>✦<green>✧ <gradient:green:dark_green:green>Kit {kit}</gradient> <green>✧<dark_green>✦<green>✧
+      glow: true
+      lore:
+        - ''
+        - <gradient:dark_green:green><b>Kit Information:</gradient>
+        - ' <gradient:dark_green:green>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_green:green>┠ Redeem Status:</gradient> <#E5DCD9>Available'
+        - ' <gradient:dark_green:green>┗ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <u>Left-click</u> <i>to claim this kit!'
+        - ''
+        - <gradient:dark_green:green><b>Level Information:<gradient>
+        - ' <gradient:dark_green:green>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_green:green>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_green:green>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_green:green>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    unavailable:
+      material: SPLASH_POTION
+      name: <b><yellow>✧<gold>✦<yellow>✧ <gradient:yellow:gold:yellow>Kit {kit}</gradient> <yellow>✧<gold>✦<yellow>✧
+      lore:
+        - ''
+        - <gradient:gold:yellow><b>Kit Information:</gradient>
+        - ' <gradient:gold:yellow>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:gold:yellow>┠ Redeem Status:</gradient> <#E5DCD9>On Cooldown'
+        - ' <gradient:gold:yellow>┠ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <gradient:gold:yellow>┗ Available In:</gradient> <#E5DCD9>{cooldown}'
+        - ' <#E5DCD9>┠ <i>You have to wait for the cooldown!'
+        - ''
+        - <gradient:gold:yellow><b>Level Information:<gradient>
+        - ' <gradient:gold:yellow>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:gold:yellow>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:gold:yellow>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:gold:yellow>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    locked:
+      material: SPLASH_POTION
+      name: <b><red>✧<dark_red>✦<red>✧ <gradient:red:dark_red:red>Kit {kit}</gradient> <red>✧<dark_red>✦<red>✧
+      lore:
+        - ''
+        - <gradient:dark_red:red><b>Kit Information:</gradient>
+        - ' <gradient:dark_red:red>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_red:red>┠ Redeem Status:</gradient> <#E5DCD9>Locked'
+        - ' <gradient:dark_red:red>┗ Required Rank:</gradient> <#E5DCD9>Member'
+        - ' <#E5DCD9>┠ <i>You need a rank to unlock this kit!'
+        - ''
+        - <gradient:dark_red:red><b>Level Information:<gradient>
+        - ' <gradient:dark_red:red>┏ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_red:red>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_red:red>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    purchasable:
+      material: SPLASH_POTION
+      name: <b><light_purple>✧<dark_purple>✦<light_purple>✧ <gradient:light_purple:dark_purple:light_purple>Kit {kit}</gradient> <light_purple>✧<dark_purple>✦<light_purple>✧
+      lore:
+        - ''
+        - <gradient:dark_purple:light_purple><b>Kit Information:</gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_purple:light_purple>┠ Redeem Status:</gradient> <#E5DCD9>Purchasable'
+        - ' <gradient:dark_purple:light_purple>┗ Buy Price:</gradient> <#E5DCD9>{cost}'
+        - ' <#E5DCD9>┠ <i>You must buy this kit to gain access!'
+        - ''
+        - <gradient:dark_purple:light_purple><b>Level Information:<gradient>
+        - ' <gradient:dark_purple:light_purple>┏ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_purple:light_purple>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_purple:light_purple>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''
+    overused:
+      material: SPLASH_POTION
+      name: <b><gray>✧<dark_gray>✦<gray>✧ <gradient:gray:dark_gray:gray>Kit {kit}</gradient> <gray>✧<dark_gray>✦<gray>✧
+      lore:
+        - ''
+        - <gradient:dark_gray:gray><b>Kit Information:</gradient>
+        - ' <gradient:dark_gray:gray>┏ Maximum Level:</gradient> <#E5DCD9>{maximum_level}'
+        - ' <gradient:dark_gray:gray>┠ Redeem Status:</gradient> <#E5DCD9>All Claimed'
+        - ' <gradient:dark_gray:gray>┗ Current Usages:</gradient> <#E5DCD9>{current_usages}'
+        - ' <#E5DCD9>┠ <i>You have reached utilization limits!'
+        - ''
+        - <gradient:dark_gray:gray><b>Level Information:<gradient>
+        - ' <gradient:dark_gray:gray>┏ Current Level:</gradient> <#E5DCD9>{current_level}'
+        - ' <gradient:dark_gray:gray>┠ Number of Items:</gradient> <#E5DCD9>{items}'
+        - ' <gradient:dark_gray:gray>┠ Cooldown:</gradient> <#E5DCD9>{total}'
+        - ' <gradient:dark_gray:gray>┗ Maximum Usages:</gradient> <#E5DCD9>{maximum_usages}'
+        - ' <#E5DCD9>┠ <u>Right-click</u> <i>to view all available levels!'
+        - ''

@@ -1,0 +1,41 @@
+{
+  "id": "7e3aec9c-8e80-4fa5-ae6c-77eaf46a8525",
+  "name": "Task_JFyO",
+  "commands": [],
+  "interval": {
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 5
+  },
+  "times": [],
+  "random": 1.0,
+  "days": [
+    "MONDAY",
+    "TUESDAY",
+    "WEDNESDAY",
+    "THURSDAY",
+    "FRIDAY",
+    "SATURDAY",
+    "SUNDAY"
+  ],
+  "executionLimit": -1,
+  "commandExecutionMode": "ALL",
+  "commandExecutionInterval": {
+    "days": 0,
+    "hours": 0,
+    "minutes": 0,
+    "seconds": 1
+  },
+  "active": false,
+  "resetExecutionsAfterRestart": false,
+  "condition": {
+    "conditionType": "SIMPLE",
+    "conditions": [],
+    "simpleCondition": {
+      "conditionParamFields": []
+    }
+  },
+  "events": [],
+  "configVersion": 1
+}

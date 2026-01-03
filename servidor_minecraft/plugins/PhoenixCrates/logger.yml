@@ -1,0 +1,13 @@
+log-format:
+  open-crate: '%player% opened a crate %crate_name% (%crate_id%) at %location%.'
+  won-reward: '%player% got the reward %reward_name% (%reward_id%) on crate %crate_name%
+    (%crate_id%).'
+discord-webhook:
+  enabled: false
+  url: ''
+  avatar-url: ''
+  username: Phoenix Crates - Logger
+  embed:
+    title: Action Log
+    description: '%message%'
+    color: '#4a20ff'

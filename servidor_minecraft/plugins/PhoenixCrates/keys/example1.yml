@@ -1,0 +1,14 @@
+enabled: true
+identifier: example1
+virtual: false
+glow: true
+item:
+  ==: org.bukkit.inventory.ItemStack
+  DataVersion: 4440
+  id: minecraft:tripwire_hook
+  count: 1
+  components:
+    minecraft:lore: '[{extra:["&7This is a lore line"],text:""},"",{extra:["&eUse
+      this key in &6%crate%&e!"],text:""}]'
+    minecraft:custom_name: '{extra:["&aExample #1 Crate Key"],text:""}'
+  schema_version: 1

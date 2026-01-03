@@ -1,0 +1,260 @@
+# ---------------------------------------------------------------------------------------------------- #
+#                                      BlockRegen Configuration                                      #
+# ---------------------------------------------------------------------------------------------------- #
+# This file defines custom block regeneration behaviors, including drops, sounds, particles,           #
+# tool requirements, and commands. Each top-level key represents a block identifier (e.g., STONE,     #
+# itemsadder:custom_ore, mmoitems:TOOL:PICKAXE).                                                       #
+#                                                                                                      #
+# IMPORTANT: Ensure that the block identifiers match the exact namespaced IDs for custom blocks        #
+# (e.g., from ItemsAdder) or the Material enum names for vanilla blocks. For MMOItems, use the         #
+# 'mmoitems:TYPE:ID' format.                                                                           #
+# ---------------------------------------------------------------------------------------------------- #
+
+
+# ==================================================================================================== #
+#                                       EXAMPLE CONFIGURATIONS                                       #
+# ==================================================================================================== #
+
+
+# ---------------------------------------------------------------------------------------------------- #
+# 1. BASIC VANILLA ORE (COAL_ORE)                                                                      #
+#    - Simple regeneration with natural drop enabled.                                                  #
+# ---------------------------------------------------------------------------------------------------- #
+COAL_ORE:
+  replaced-block: STONE
+  regen-delay: 5
+  exp-drop-amount: '1-2' # Drops 1 to 2 experience points
+  auto-pickup-exp: true # If true, EXP is given directly to the player. If false, it drops as an orb.
+  drops:
+    auto-inventory: false
+    natural-drop: true
+  fortune:
+    enabled: true
+    multiplier:
+      1: 1.2  # Fortune I: drop amount multiplied by 1.2
+      2: 1.5  # Fortune II: drop amount multiplied by 1.5
+      3: 2.0  # Fortune III: drop amount multiplied by 2.0
+
+
+# ---------------------------------------------------------------------------------------------------- #
+# 2. CUSTOM DROP ORE (IRON_ORE)                                                                        #
+#    - Natural drop disabled, only custom vanilla drops.                                               #
+# ---------------------------------------------------------------------------------------------------- #
+IRON_ORE:
+  replaced-block: STONE
+  regen-delay: 8
+  exp-drop-amount: '1-3' # Drops 1 to 3 experience points
+  auto-pickup-exp: true # If true, EXP is given directly to the player. If false, it drops as an orb.
+  drops:
+    auto-inventory: false
+    natural-drop: false # Disable natural drop
+  custom-drops:
+    iron_ingot_drop:
+      chance: 100.0
+      amount: '1-2'
+      material: IRON_INGOT
+      name: '&f&lRefined Iron'
+      lore:
+        - '&7A specially processed iron ingot.'
+
+
+# ---------------------------------------------------------------------------------------------------- #
+# 3. ITEMSADDER ORE (GOLD_ORE)                                                                         #
+#    - Custom drop with an ItemsAdder item.                                                            #
+# ---------------------------------------------------------------------------------------------------- #
+GOLD_ORE:
+  replaced-block: STONE
+  regen-delay: 12
+  exp-drop-amount: '2-4' # Drops 2 to 4 experience points
+  drops:
+    auto-inventory: false
+    natural-drop: false
+  custom-drops:
+    itemsadder_gold_coin:
+      chance: 80.0
+      amount: '1'
+      material: 'itemsadder:gold_coin' # ItemsAdder item
+      # Name and lore are optional for ItemsAdder items.
+
+
+# ---------------------------------------------------------------------------------------------------- #
+# 4. MMOITEMS ORE (DIAMOND_ORE)                                                                        #
+#    - Custom drop with an MMOItems item.                                                              #
+# ---------------------------------------------------------------------------------------------------- #
+DIAMOND_ORE:
+  replaced-block: BEDROCK
+  regen-delay: 15
+  exp-drop-amount: '3-7' # Drops 3 to 7 experience points
+  drops:
+    auto-inventory: false
+    natural-drop: false
+  custom-drops:
+    mmoitems_legendary_pickaxe:
+      chance: 10.0
+      amount: '1'
+      material: 'mmoitems:PICKAXE:LEGENDARY_PICKAXE' # MMOItems item (TYPE:ID)
+  mmocore-exp:
+    mining: 15 # Gives 15 EXP to the MMOCore 'mining' profession
+    # Name and lore are optional for MMOItems.
+
+
+
+# ---------------------------------------------------------------------------------------------------- #
+# 5. TOOL REQUIREMENT ORE (EMERALD_ORE)                                                                #
+#    - Requires a specific tool to break.                                                              #
+# ---------------------------------------------------------------------------------------------------- #
+EMERALD_ORE:
+  replaced-block: STONE
+  regen-delay: 20
+  tools-required:
+    - DIAMOND_PICKAXE
+    - NETHERITE_PICKAXE # Only these tools can break it
+  exp-drop-amount: '3-7' # Drops 3 to 7 experience points
+  drops:
+    auto-inventory: false
+    natural-drop: true
+
+
+# ---------------------------------------------------------------------------------------------------- #
+# 6. SOUND & PARTICLE ORE (LAPIS_ORE)                                                                  #
+#    - Custom sounds and particles on break and regen.                                                 #
+# ---------------------------------------------------------------------------------------------------- #
+LAPIS_ORE:
+  replaced-block: STONE
+  regen-delay: 10
+  exp-drop-amount: '2-5' # Drops 2 to 5 experience points
+  drops:
+    auto-inventory: false
+    natural-drop: true
+  sounds:
+    break-sound: ENTITY_PLAYER_LEVELUP # Custom break sound
+    regen-sound: BLOCK_NOTE_BLOCK_PLING # Custom regen sound
+  particles:
+    break-particle: EXPLOSION_LARGE # Custom break particle
+    regen-particle: HEART # Custom regen particle
+
+
+# ---------------------------------------------------------------------------------------------------- #
+# 7. COMMAND ORE (REDSTONE_ORE)                                                                        #
+#    - Executes commands when broken.                                                                  #
+# ---------------------------------------------------------------------------------------------------- #
+REDSTONE_ORE:
+  replaced-block: STONE
+  regen-delay: 7
+  exp-drop-amount: '1-5' # Drops 1 to 5 experience points
+  drops:
+    auto-inventory: false
+    natural-drop: true
+  commands:
+    - '[CONSOLE] give %player% experience 100' # Give player 100 XP
+    - '[PLAYER] msg %player% You found a special Redstone Ore!' # Send player a message
+    - '[OP] effect give %player% speed 5 2' # Temporarily give speed effect
+
+
+# ---------------------------------------------------------------------------------------------------- #
+# 8. FULL FEATURED ORE (ANCIENT_DEBRIS)                                                                #
+#    - Combines multiple features: custom drops, tool requirement, sounds, particles, and commands.    #
+# ---------------------------------------------------------------------------------------------------- #
+ANCIENT_DEBRIS:
+  replaced-block: NETHERRACK
+  regen-delay: 30
+  tools-required:
+    - NETHERITE_PICKAXE
+    - DIAMOND_PICKAXE:
+        name: "&bSuper Pickaxe"
+        lore:
+          - "&7very rare pickaxe."
+  exp-drop-amount: '5-10' # Drops 5 to 10 experience points
+  drops:
+    auto-inventory: true # Auto-inventory enabled
+    natural-drop: false
+  custom-drops:
+    netherite_scrap_drop:
+      chance: 50.0
+      amount: '1'
+      material: NETHERITE_SCRAP
+      name: '&d&lMystical Scrap'
+      lore:
+        - '&7A fragment of ancient power.'
+    itemsadder_ancient_relic:
+      chance: 5.0
+      amount: '1'
+      material: 'itemsadder:ancient_relic'
+    mmoitems_ancient_artifact:
+      chance: 1.0
+      amount: '1'
+      material: 'mmoitems:ARTIFACT:ANCIENT_ARTIFACT'
+  sounds:
+    break-sound: ENTITY_WITHER_DEATH
+    regen-sound: ENTITY_WITHER_SPAWN
+  particles:
+    break-particle: ASH
+    regen-particle: SOUL_FIRE_FLAME
+  commands:
+    - '[CONSOLE] broadcast %player% has found an ANCIENT DEBRIS!'
+    - '[PLAYER] title %player% title &6&lTREASURE FOUND!'
+    - '[OP] give %player% diamond 1'
+
+
+# ---------------------------------------------------------------------------------------------------- #
+# 9. AUTO INVENTORY ORE (QUARTZ_ORE)                                                                   #
+#    - Demonstrates the auto-inventory feature for custom drops.                                       #
+# ---------------------------------------------------------------------------------------------------- #
+QUARTZ_ORE:
+  replaced-block: NETHERRACK
+  regen-delay: 10
+  exp-drop-amount: '2-5' # Drops 2 to 5 experience points
+  drops:
+    auto-inventory: true # Items will go directly into player's inventory
+    natural-drop: false
+  custom-drops:
+    quartz_crystal:
+      chance: 100.0
+      amount: '1'
+      material: QUARTZ
+      name: '&f&lPure Quartz Crystal'
+      lore:
+        - '&7A crystal of pure energy.'
+
+# ---------------------------------------------------------------------------------------------------- #
+# 10. ITEMS ADDER ORE                                                                                  #
+#    - Demonstrates the items adder ore integrated                                                     #
+# ---------------------------------------------------------------------------------------------------- #
+'itemsadder:sapphire_ore':
+  replaced-block: NETHERRACK
+  regen-delay: 10
+  exp-drop-amount: '3-6' # Drops 3 to 6 experience points
+  drops:
+    auto-inventory: true # Items will go directly into player's inventory
+    natural-drop: false
+  custom-drops:
+    quartz_crystal:
+      chance: 100.0
+      amount: '1'
+      material: QUARTZ
+      name: '&f&lPure Quartz Crystal'
+      lore:
+        - '&7A crystal of pure energy.'
+      commands:
+        - '[PLAYER] msg %player% &dYou found a Mystical Scrap!'
+        - '[CONSOLE] lp user %player% permission settemp lucky.scrap true 5m'
+
+# ---------------------------------------------------------------------------------------------------- #
+# 11. DEDICATED ITEMSADDER ORE (PALLADIUM_ORE)                                                         #
+#    - Demonstrates a block that is itself an ItemsAdder custom block, and drops another ItemsAdder    #
+#      item as a custom drop.                                                                          #
+# ---------------------------------------------------------------------------------------------------- #
+'noblemetals:palladium_ore':
+  replaced-block: STONE
+  regen-delay: 15
+  exp-drop-amount: '4-8' # Drops 4 to 8 experience points
+  drops:
+    auto-inventory: false
+    natural-drop: false
+    natural-drop-amount: '1'
+  custom-drops:
+    itemsadder_gem_shard:
+      chance: 75.0
+      amount: '1-3'
+      material: 'noblemetals:palladium_ingot' # This is the ItemsAdder custom drop
+      # Name and lore are optional for ItemsAdder items, as they are defined in ItemsAdder itself.

@@ -1,0 +1,54 @@
+#
+# This configuration uses zMenu, please refer to zMenu documentation
+# zMenu: https://docs.zmenu.dev/
+# zAuctionHouse: https://zauctionhouse.groupez.dev/
+#
+
+name: '&8ᴘᴜʀᴄʜᴀsᴇ'  # Title of the menu, supports color codes and placeholders
+
+size: 27  # Size of the Minecraft inventory menu, must be a multiple of 9 (3 rows in this case)
+
+items:
+  buy:
+    type: ZAUCTIONHOUSE_BUY_CONFIRM  # Type for the action of confirming a purchase
+    item:
+      material: GREEN_STAINED_GLASS_PANE  # Material used for the buy confirmation button
+      name: ''  # No name specified for the item
+      lore:
+        - "      #2bba43✔ ᴘᴜʀᴄʜᴀsᴇ"  # Lore text with color code, confirming purchase
+        - "           #8c8c8c&m      "  # Lore text for decoration
+        - ""
+        - " #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴘᴜʀᴄʜᴀsᴇ #8c8c8c• "  # Instructions for purchase action
+    slots:
+      - 0-2  # Items occupy slots 0 through 2
+      - 9-11  # Items occupy slots 9 through 11
+      - 18-20  # Items occupy slots 18 through 20
+
+  deny:
+    type: BACK  # A back button for navigation
+    item:
+      material: RED_STAINED_GLASS_PANE  # Material used for the back button
+      name: ""  # No name specified for the item
+      lore:
+        - "          #c42323ʙᴀᴄᴋ"  # Lore text with color code, indicating back action
+        - "          #8c8c8c&m      "  # Lore text for decoration
+        - ""
+        - " #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ɢᴏ ʙᴀᴄᴋ #8c8c8c• "  # Instructions for going back
+    slots:
+      - 6-8  # Items occupy slots 6 through 8
+      - 15-17  # Items occupy slots 15 through 17
+      - 24-26  # Items occupy slots 24 through 26
+
+  slot:
+    item:
+      material: GRAY_STAINED_GLASS_PANE  # Material used for decorative or filler items
+      name: '&e'  # Name of the item, supports color codes
+    slots:
+      - 3-5  # Decorative items occupy slots 3 through 5
+      - 12   # Decorative item occupies slot 12
+      - 14   # Decorative item occupies slot 14
+      - 21-23  # Decorative items occupy slots 21 through 23
+
+  show:
+    type: ZAUCTIONHOUSE_SHOW_BUY  # Type for showing the item being purchased
+    slot: 13  # The slot in the menu where this item will be displayed

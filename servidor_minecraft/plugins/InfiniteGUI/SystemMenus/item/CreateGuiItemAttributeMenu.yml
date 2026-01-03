@@ -1,0 +1,232 @@
+title: Create Attribute Modifier
+rows: 6
+empty-fill:
+  enabled: true
+  slots:
+  - all
+  item:
+    name: '&r'
+    lore: []
+    type: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+exit:
+  enabled: true
+  slot: 44
+  item:
+    name: '&cBack'
+    lore:
+    - '&7Click to go back to the condition manager.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzUxY2VkMmU2NDczNjZmOGYzYWQyZGZlNDE1Y2NhODU2NTFiZmFmOTczOWE5NWNkNTdiNmYyMWNiYTA1MyJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+
+generic_max_health:
+  enabled: true
+  slot: 10
+  item:
+    name: '&dGeneric Max Health'
+    lore:
+    - '&7Click to set the modifier for max health.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTY0ZGRmZTlhNTMxOWNmZTgxY2U4NTZjYTJmYjNiODQ5NWQ3MzVkODMzN2IwMTBiNjk1YjQ2MmU2ZGRmNjk5OSJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+generic_follow_range:
+  enabled: true
+  slot: 11
+  item:
+    name: '&dGeneric Follow Range'
+    lore:
+    - '&7Click to set the modifier for follow range.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTY2YTUzZmM3MDdjZTFmZjg4YTU3NmVmNDAyMDBjZThkNDlmYWU0YWNhZDFlM2IzNzg5YzdkMWNjMWNjNTQxYSJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+generic_knockback_resistance:
+  enabled: true
+  slot: 12
+  item:
+    name: '&dGeneric Knockback Resistance'
+    lore:
+    - '&7Click to set the modifier for knockback resistance.'
+    type: STICK
+    amount: 1
+    item-flags:
+    - HIDE_ENCHANTS
+    unbreakable: false
+    enchantments:
+      luck: 1
+    custom-model-data: 0
+generic_movement_speed:
+  enabled: true
+  slot: 13
+  item:
+    name: '&dGeneric Movement Speed'
+    lore:
+    - '&7Click to set the modifier for movement speed.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmQ0MjkzNjM5OTQ2NThkMTY5MzUyNmEzNTA0M2M3MWI0YmM3ZGE5MmEwZDBjMWUwYTQ0YTJmMGM0MjM1N2JlOSJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+generic_flying_speed:
+  enabled: true
+  slot: 14
+  item:
+    name: '&dGeneric Flying Speed'
+    lore:
+    - '&7Click to set the modifier for flying speed.'
+    type: COMMAND_BLOCK
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+generic_attack_damage:
+  enabled: true
+  slot: 15
+  item:
+    name: '&dGeneric Attack Speed'
+    lore:
+    - '&7Click to set the modifier for attack damage.'
+    type: IRON_SWORD
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+generic_attack_knockback:
+  enabled: true
+  slot: 16
+  item:
+    name: '&dGeneric Attack Knockback'
+    lore:
+    - '&7Click to set the modifier for attack knockback.'
+    type: NETHER_STAR
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+generic_attack_speed:
+  enabled: true
+  slot: 19
+  item:
+    name: '&dGeneric Attack Speed'
+    lore:
+    - '&7Click to set the modifier for attack speed.'
+    type: DIAMOND_AXE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+generic_armor:
+  enabled: true
+  slot: 20
+  item:
+    name: '&dGeneric Armor'
+    lore:
+    - '&7Click to set the modifier for armor.'
+    type: DIAMOND_CHESTPLATE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+generic_armor_toughness:
+  enabled: true
+  slot: 21
+  item:
+    name: '&dGeneric Armor Toughness'
+    lore:
+    - '&7Click to set the modifier for armor toughness.'
+    type: NETHERITE_CHESTPLATE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+generic_luck:
+  enabled: true
+  slot: 22
+  item:
+    name: '&dGeneric Luck'
+    lore:
+    - '&7Click to set the modifier for luck.'
+    type: EMERALD
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+generic_max_absorption:
+  enabled: true
+  slot: 23
+  item:
+    name: '&dGeneric Max Absorption'
+    lore:
+    - '&7Click to set the modifier for max absorption.'
+    type: GOLDEN_APPLE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+horse_jump_strength:
+  enabled: true
+  slot: 24
+  item:
+    name: '&dHorse Jump Strength'
+    lore:
+    - '&7Click to set the modifier for horse jump strength.'
+    type: RABBIT_FOOT
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+zombie_spawn_reinforcements:
+  enabled: true
+  slot: 25
+  item:
+    name: '&dZombie Spawn Reinforcements'
+    lore:
+    - '&7Click to set the modifier for zombie spawn reinforcements.'
+    type: RABBIT_FOOT
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0

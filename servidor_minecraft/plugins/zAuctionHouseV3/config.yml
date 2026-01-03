@@ -1,0 +1,1021 @@
+#########################################################################################################################################
+#
+#
+#   Sponsor: https://serveur-minecraft-vote.fr/
+#   Documentation: https://zauctionhouse.groupez.dev/
+#   Discord: https://discord.groupez.dev/
+#
+#
+# ███████╗░█████╗░██╗░░░██╗░█████╗░████████╗██╗░█████╗░███╗░░██╗██╗░░██╗░█████╗░██╗░░░██╗░██████╗███████╗██╗░░░██╗██████╗░
+# ╚════██║██╔══██╗██║░░░██║██╔══██╗╚══██╔══╝██║██╔══██╗████╗░██║██║░░██║██╔══██╗██║░░░██║██╔════╝██╔════╝██║░░░██║╚════██╗
+# ░░███╔═╝███████║██║░░░██║██║░░╚═╝░░░██║░░░██║██║░░██║██╔██╗██║███████║██║░░██║██║░░░██║╚█████╗░█████╗░░╚██╗░██╔╝░█████╔╝
+# ██╔══╝░░██╔══██║██║░░░██║██║░░██╗░░░██║░░░██║██║░░██║██║╚████║██╔══██║██║░░██║██║░░░██║░╚═══██╗██╔══╝░░░╚████╔╝░░╚═══██╗
+# ███████╗██║░░██║╚██████╔╝╚█████╔╝░░░██║░░░██║╚█████╔╝██║░╚███║██║░░██║╚█████╔╝╚██████╔╝██████╔╝███████╗░░╚██╔╝░░██████╔╝
+# ╚══════╝╚═╝░░╚═╝░╚═════╝░░╚════╝░░░░╚═╝░░░╚═╝░╚════╝░╚═╝░░╚══╝╚═╝░░╚═╝░╚════╝░░╚═════╝░╚═════╝░╚══════╝░░░╚═╝░░░╚═════╝░
+#
+#
+#
+#   Commands and permissions:
+#   - /zauctionhouse » Main command (aliases: /ah, /hdv, /zauction, /zah, /zhdv) - zauctionhouse.use
+#   - /ah sell <price> [<amount>] » Sell an item (aliases: /ah vendre, /ah s) - zauctionhouse.sell
+#   - /ah sellinventory <price> » Sell an inventory (aliases: /ah vendreinventaire, /ah si, /ah vi) - zauctionhouse.sell.inventory
+#   - /ah reload » Reloaded the configuration files - zauctionhouse.reload
+#   - /ah config » Configure the in-game plugin - zauctionhouse.config
+#   - /ah version » See the plugin version - no permission
+#   - /ah blacklist » See the list of blacklist players - zauctionhouse.blacklist
+#   - /ah blacklist add <player> » Add a player to the blacklist - zauctionhouse.blacklist.add
+#   - /ah blacklist remove <player> » Remove a player from the blacklist - zauctionhouse.blacklist.remove
+#   - /ah history [<page>] [<type>] » View your purchase and/or sale history - zauctionhouse.history
+#   - /ah transaction <player> [<page>] [<type>] » View a player's buy or sell history - zauctionhouse.transaction
+#   - /ah claim » Allows you to recover your pending money - zauctionhouse.claim
+#   - /ah search <string> » Allows you to search for anything, more information about the filter system on the "Filter" page - zauctionhouse.search
+#   - /ah purge <days> » Purge old transactions - zauctionhouse.purge
+#
+#   Optionals commands:
+#   - /ah expire » Allows you to access the list of expired items 
+#   - /ah buying » Allows you to access the list of purchased items
+#   - /ah categories » Allow access to the list of categories
+#   - /ah items » Allows you to access your items on sale
+#
+#   Addons:
+#   - zAuctionHouse Discord: https://groupez.dev/resources/zauctionhouse-discord.20 (FREE)
+#     A discord bot to send messages or delete them when selling or buying
+#   - zAuctionHouse Redis: https://groupez.dev/resources/zauctionhouse-redis.210 (15€)
+#     An addon to link zAuctionHouse between multiple servers
+#   - zAuctionHouse Stats: https://groupez.dev/resources/zauctionhouse-stats.319 (7€)
+#     Save all actions performed by your players and create statics with new placeholders, orders and inventory.
+#
+#   Configurations (Official configuration, created by GroupeZ):
+#   - DonutSMP AuctionHouse: https://builtbybit.com/resources/zauctionhouse-donutsmp-auctionhouse.41404/ (3.99)
+#   - Hypixel AuctionHouse: https://builtbybit.com/resources/zauctionhouse-hypixel-auctionhouse.41378/ (3.99)
+#   - Mc-Complex AuctionHouse: https://builtbybit.com/resources/zauctionhouse-mc-complex-auctionhouse.41745/ (3.99)
+#
+#########################################################################################################################################
+
+# Enables detailed information display in the console.
+# If you encounter an issue, enable this option and send the errors to support.
+enableDebug: false
+
+# Enables execution time debugging to measure plugin performance.
+# Useful for identifying bottlenecks and optimizing performance.
+enableDebugTime: false
+
+#########################################################################################################################################
+# Use zMenu's inventory system,
+#
+# zMenu is a comprehensive inventory plugin.
+# It allows you to create custom inventories and link them to custom commands.
+# With its button system, you can fully customize your inventories.
+#
+# zMenu provides an API that enables zAuctionHouse to connect seamlessly.
+# By using zMenu, you will benefit from enhanced functionality and better performance.
+#
+# Download here: https://www.spigotmc.org/resources/110402/
+# zMenu Convert download (Convert your DeluxeMenu or GuiPlus configuration to zMenu): https://www.spigotmc.org/resources/110403/
+# zMenu Documentation: https://docs.zmenu.dev/
+#
+# To convert your current configuration to zMenu, use the command: /ah convert zmenu
+#
+# Don’t want to use zMenu? Please follow this tutorial to disable zMenu using the old configuration: https://zauctionhouse.groupez.dev/informations/why-i-need-zmenu#how-not-to-use-zmenu
+#
+useZMenuEngine: true
+
+# Inventory Management with zMenu (https://www.spigotmc.org/resources/110402/)
+#
+# The inventories in your plugin are managed using the zMenu plugin.
+# This setup allows for flexible and powerful inventory customization and management.
+# Here is an overview of how it works:
+#
+# Inventory Location
+#
+# All inventories are located in the `inventaires` folder.
+# This folder contains all the necessary configuration files that define how each inventory behaves and appears to the player.
+#
+# Pattern Location
+#
+# All pattern files are stored in the `patterns` folder.
+# These pattern files define the layout and structure that can be applied to any inventory configuration within the `inventaires` folder.
+#
+# Benefits of Using Patterns
+#
+# 1. Consistency: Patterns ensure that all inventories share a consistent look and feel, making it easier for players to navigate and use.
+# 2. Efficiency: By defining common layouts in patterns, you can quickly apply these layouts to multiple inventories without duplicating configuration code.
+# 3. Maintenance: Updating a pattern file automatically updates all inventories that use that pattern, simplifying maintenance and updates.
+#########################################################################################################################################
+
+# Enable or disable the plugin.
+#
+# Set to 'true' to enable the plugin. If you need to perform maintenance
+# or disable the plugin for any other reason, simply set this to 'false'.
+# This allows you to easily manage the plugin's availability.
+enablePlugin: true
+
+# Allow item sales in Creative mode.
+#
+# Set to 'true' to enable the selling of items while in Creative mode.
+# This can be useful for testing or administrative purposes.
+# Note: Enabling this option may affect game balance, as players in Creative mode have access to unlimited resources.
+enableCreativeSell: true
+
+#########################################################################################################################################
+
+# Enable announcements for item sales.
+#
+# Set to 'true' to allow announcements to be made when items are sold.
+# This can be useful for notifying other players of sales and creating a dynamic marketplace environment.
+# If set to 'false', no announcements will be made during sales.
+enableSellAnnonce: false
+
+# Permission required to make an announcement during a sale.
+#
+# This permission must be granted to players or roles that you want to allow
+# making announcements when they sell items.
+# Example usage: "zauctionhouse.sell.annonce"
+# sellAnnoncePermission: "zauctionhouse.sell.annonce"
+
+# Display an error message when the player cannot purchase the item.
+# The message occurs when the item is already in purchase, is already purchased or other reason.
+displayErrorBuyMessage: false
+
+# Enable announcements for item purchases.
+#
+# Set to 'true' to allow announcements to be made when items are purchased.
+# This can be useful for notifying other players of purchases and creating a dynamic marketplace environment.
+# If set to 'false', no announcements will be made during purchases.
+enableBuyAnnonce: false
+
+# Permission required to make an announcement during a purchase.
+#
+# This permission must be granted to players or roles that you want to allow
+# making announcements when they purchase items.
+# Example usage: "zauctionhouse.buy.annonce"
+# buyAnnoncePermission: "zauctionhouse.buy.annonce"
+
+# Auto-completion for the /ah sell command
+sell-auto-completion:
+
+  # When a player uses the /ah sell command, the following values will be suggested for the price argument.
+  price:
+    - 100
+    - 200
+    - 300
+    - 400
+    - 500
+    - 600
+    - 700
+    - 800
+    - 900
+
+  # When a player uses the /ah sell command, the following values will be suggested for the amount argument.
+  amount:
+    - 1
+    - 4
+    - 8
+    - 16
+    - 32
+    - 64
+
+#########################################################################################################################################
+
+# Default Economy
+#
+# Available economies:
+# - ITEM: Use items as currency, such as gold.
+# - LEVEL: Use the player's Minecraft level.
+# - EXPERIENCE: Use the player's Minecraft experience points.
+# - VAULT: Requires Vault plugin (https://www.spigotmc.org/resources/vault.34315/).
+# - PLAYERPOINTS: Requires PlayerPoints plugin (https://www.spigotmc.org/resources/playerpoints.80745/).
+# - TOKENMANAGER: Requires TokenManager plugin (https://www.spigotmc.org/resources/tokenmanager.8610/).
+# - COINSENGINE: Requires CoinsEngine plugin (https://www.spigotmc.org/resources/84121/).
+# - OPTECO: Requires Opteco plugin (https://www.spigotmc.org/resources/76179/).
+# - MYSQLTOKEN: Requires MySQLToken plugin (https://www.spigotmc.org/resources/7535/).
+# - BEASTTOKEN: Requires BeastToken plugin (https://www.spigotmc.org/resources/20806/).
+#
+# You need to use the name of the economy you configured inside the economies.yml file.
+#
+defaultEconomy: VAULT
+
+# Open a menu to choose the economy when selling an item.
+#
+# WARNING: This inventory allows players to select the economy they want to use.
+# The defaultEconomy setting will not affect this inventory! (see economy.yml in the inventories folder)
+enableSellEconomyInventory: true
+
+# Enable cooldown on sales orders.
+#
+# When enabled, a cooldown period is enforced between sales orders to prevent spam.
+# The default cooldown is set to 5 seconds.
+sellCooldown:
+  enable: true
+  seconds: 5
+
+# Change the item that players click on when they don't have enough money.
+#
+# By default, the item will change for 20 ticks when the player doesn't have enough funds to make a purchase.
+# This provides a visual indication to the player about insufficient funds.
+noMoneyItem:
+  enable: true
+  ticks: 20
+
+# Activate the /ah claim command and hold players' money.
+#
+# Set to 'true' to enable the /ah claim command, which allows players to claim their money.
+# When enabled, the money from sales is put on hold until the player claims it.
+enableClaimMoney: false
+
+# Display a message on connection if the player has money to collect with the /ah claim command.
+#
+# Set to 'true' to notify players upon joining the server that they have money waiting to be claimed.
+# This helps ensure players are aware of unclaimed funds.
+enableClaimMoneyMessageOnJoin: false
+
+# Display a message showing the number of sales made while the player was disconnected.
+#
+# Set to 'true' to inform players of the total number of sales that occurred during their absence.
+# This can help players stay updated on their sales activity.
+enableTransactionMessageOnJoin: false
+
+# Prevent selling items at the default price.
+#
+# When enabled, if the price is set to the default value, the player will receive an error message.
+# This helps avoid accidental sales at incorrect prices due to command errors.
+disableDefaultSellPriceFormatError: true
+
+# Number of ticks before sending the message when the player connects.
+#
+# This setting determines the delay (in ticks) before a message is sent to the player upon connection.
+cooldownClaimMoneyMessageTicks: 10
+
+# Number of ticks before sending the message if the player sold items while offline.
+#
+# This setting determines the delay (in ticks) before informing the player about offline sales upon connection.
+cooldownInformationsMessageTicks: 15
+
+# Cooldown in seconds for using the /ah claim command.
+#
+# This setting imposes a cooldown period (in seconds) between consecutive uses of the /ah claim command.
+cooldownClaimMoneySecond: 300
+
+# Enable sound on successful purchase
+enableBuySuccessSound: false
+
+# Sound played on successful purchase
+buySuccessSound:
+  sound: ENTITY_PLAYER_LEVELUP
+  volume: 1
+  pitch: 1
+
+# Enable sound when player cannot buy
+enableBuyErrorSound: false
+
+# Sound played when player cannot buy
+buyErrorSound:
+  sound: ENTITY_VILLAGER_NO
+  volume: 1
+  pitch: 1
+
+# Price configuration
+price:
+
+  # Maximum price for any item.
+  max: 999999999999999999
+
+  # Minimum price for any item.
+  min: 10
+
+  # Allows defining permissions for the maximum price per economy
+  permissions:
+  # vault: # Economy name
+  #      - permission: zauctionhouse.price.max.vault.player # Permission
+  #    amount: 128 # Max price
+  #  - permission: zauctionhouse.price.max.vault.vip # Permission
+  #    amount: 250 # Max price
+  # item_diamond: # Economy name
+  #  - permission: zauctionhouse.price.max.item.player # Permission
+  #    amount: 32 # Max price
+  #  - permission: zauctionhouse.price.max.item.vip # Permission
+  #    amount: 64 # Max price
+
+  # Allows defining a minimum and maximum price by savings
+  limits:
+    - economy: item_diamond # Economy name
+      max: 64 # Max price
+      min: 1 # Min price
+
+  # Enable item-based minimum and maximum prices, configurable in prices.yml.
+  # If you attempt to sell from /ah sellinventory but an item is not configured, the max price will be used.
+  enableMinMaxPricePerItems: false
+
+  # Format prices for better readability.
+  # When enabled, prices will be formatted according to the configuration in betterPriceEspace.
+  # For example, 10000 will be displayed as 10 000.
+  betterPrice: true
+  betterPriceEspace: ' '
+
+  # Reduce prices to a more readable format.
+  # For example:
+  # 1000 -> 1k
+  # 100000 -> 100k
+  # 1000000 -> 1m
+  betterPriceReduction: false
+
+  # Use colors to display text, compatible with MiniMessage: https://docs.advntr.dev/minimessage/format.html
+  display: "&f%amount%"
+
+  # Documentation for String format: https://www.geeksforgeeks.org/java-string-format-method-with-examples/
+  formats:
+    - format: "" # Blank format to display text directly
+      maxAmount: 1000
+      # Add colors to text display, works with MiniMessage
+      # display: "#2bd66f%amount%"
+    - format: "%.1fK"
+      maxAmount: 1000000
+      # display: "#a3d14d%amount%"
+    - format: "%.1fM"
+      maxAmount: 1000000000
+      # display: "#ebbc23%amount%"
+    - format: "%.1fB"
+      maxAmount: 1000000000000
+      # display: "#eb4b23%amount%"
+    - format: "%.2fT"
+      maxAmount: 1000000000000000
+    - format: "%.2fQ"
+      maxAmount: 100000000000000000
+
+# Allows to manage the tax system on the plugin
+tax:
+  # Enable tax on all items.
+  globalTax: false
+
+  # Enable tax on certain items, configurable in taxs.yml.
+  perItemTax: false
+
+  # Tax type: SELL, PURCHASE, BOTH, or CAPITALISM.
+  #
+  # SELL: Tax is applied when selling items.
+  # PURCHASE: Tax is applied when purchasing items.
+  # BOTH: Tax is applied on both selling and purchasing items.
+  # CAPITALISM: A different or special tax logic, if implemented.
+  type: SELL
+
+  # Tax Percentage to be applied.
+  percent: 10.0
+
+  # Allow certain players to bypass the tax.
+  enableByPass: true
+  byPassPermission: zauctionhouse.bypass.tax
+
+# Enable the /ah sell 500k command.
+#
+# When enabled, players can use shorthand formats like 'k', 'M', etc., to quickly input large numbers for selling items.
+enableNumberFormatSell: false
+
+# Reduces the number of items you need to write to sell.
+#
+# Instead of having to use commands like /ah sell 500000, the player can use shorthand formats like /ah sell 500k.
+# This list defines the shorthand formats and their corresponding multiplications.
+numberFormatSellMultiplication:
+  - format: K
+    multiplication: 1000
+  - format: M
+    multiplication: 1000000
+  - format: B
+    multiplication: 1000000000
+  - format: T
+    multiplication: 1000000000000
+  - format: Q
+    multiplication: 1000000000000000
+  - format: QQ
+    multiplication: 1000000000000000000
+  - format: S
+    multiplication: 1000000000000000000000
+  - format: SS
+    multiplication: 1000000000000000000000000
+  - format: O
+    multiplication: 1000000000000000000000000000
+  - format: N
+    multiplication: 1000000000000000000000000000000
+  - format: D
+    multiplication: 1000000000000000000000000000000000
+  - format: UN
+    multiplication: 1000000000000000000000000000000000000
+  - format: DD
+    multiplication: 1000000000000000000000000000000000000000
+  - format: TR
+    multiplication: 1000000000000000000000000000000000000000000
+
+# Gives the money on the server where the item was sold. Only applicable when using Redis.
+#
+# When enabled, the money from a sale will be credited to the player on the server where the sale occurred.
+# This setting is only effective if you are using Redis for cross-server communication.
+giveMoneyOnSellServer: false
+
+#########################################################################################################################################
+
+# Change the storage type of the plugin.
+#
+# Available storage types:
+# - JSON: A JSON file that will contain all the plugin data. (Deprecated, do not use)
+# - SQLITE: A lightweight, file-based database. Suitable for small to medium-sized servers.
+# - MYSQL: A robust, server-based database. Ideal for large servers requiring high performance and scalability.
+# - MARIADB: A high-performance JDBC connection pool for MySQL. Best for large servers that need efficient database connection management.
+# - CUSTOM: Custom storage system. You need to develop your own system.
+#
+# Do you want to synchronize multiple servers at the same time?
+# The zAuctionHouseRedis add-on is designed for this: https://groupez.dev/resources/zauctionhouse-redis.210
+#
+# Note: The JSON storage type is deprecated and should not be used.
+storage: SQLITE
+
+# Connect the plugin to an SQL database.
+#
+# SQL is used here solely as a storage system. It cannot be used to synchronize items between different servers.
+sql:
+  # The username for the SQL database.
+  user: homestead
+  # The password for the SQL database.
+  password: secret
+  # The port number for the SQL database connection.
+  port: 3306
+  # The host address for the SQL database.
+  host: 192.168.10.10
+  # The name of the SQL database.
+  database: zauctionhouse
+  # Table prefix. If you change this, you need to change it in the scripts folder too.
+  prefix: "zauctionhouse_"
+  # Number of retry attempts for SQL connection.
+  retry: 5
+  # Enable debug mode for SQL queries.
+  debug: false
+  # Retrieves transactions, if you have a large server please disable this option
+  fetchTransactions: true
+
+# Enable backup file creation for JSON storage.
+#
+# When enabled, the items.json file will be copied to the backup folder every day at 00:00.
+# This ensures that you have daily backups of your data.
+# If you want to change the backup times, you can use the zScheduler plugin.
+# For more information, visit: https://www.spigotmc.org/resources/zschedulers.112705/
+enableBackup: true
+
+#########################################################################################################################################
+
+# Change the way items are sorted by default.
+#
+# Sort type options:
+# - ASCENDING_PRICE: Sort items by price in ascending order (lowest to highest).
+# - DECREASING_PRICE: Sort items by price in descending order (highest to lowest).
+# - ASCENDING_DATE: Sort items by date in ascending order (oldest to newest).
+# - DECREASING_DATE: Sort items by date in descending order (newest to oldest).
+#
+defaultSort: DECREASING_DATE
+
+time:
+  # Time (in seconds) before items on sale are marked as expired.
+  #
+  # This setting determines how long an item can remain on sale before it is considered expired.
+  sell: 172800
+
+  # Time (in seconds) before purchased or expired items are deleted.
+  #
+  # This setting specifies how long to keep purchased or expired items before they are automatically deleted.
+  expire: 604800
+
+  # Time (in seconds) before a transaction is removed from the history.
+  #
+  # This setting determines how long transaction records are kept before being deleted from the transaction history.
+  removeTransactionAfter: 604800
+
+# Enable expiration time based on permissions.
+#
+# When enabled, the expiration time for items on sale can be set based on player permissions.
+# This allows different groups of players to have different item expiration times.
+# Ensure that the permissions and corresponding expiration times are correctly configured in the 'expirations' section.
+enableExpirationPermission: false
+
+# Allows to change the time (in seconds) for the expiration of items for sale based on permissions.
+#
+# If the player has the zauctionhouse.expiration.vip permission, their items will expire in 1 hour (3600 seconds).
+# If the player has the zauctionhouse.expiration.elite permission, their items will expire in 2 hours (7200 seconds).
+# If the player has the zauctionhouse.expiration.legend permission, their items will expire in 3 days (259200 seconds).
+#
+expirations:
+  - permission: zauctionhouse.expiration.vip
+    expiration: 3600
+  - permission: zauctionhouse.expiration.elite
+    expiration: 7200
+  - permission: zauctionhouse.expiration.legend
+    expiration: 259200
+
+#########################################################################################################################################
+
+# Change the number of items the player can sell based on permissions.
+#
+# If a player has the zauctionhouse.max.5 permission, they can sell up to 5 items.
+# If a player has the zauctionhouse.max.10 permission, they can sell up to 10 items.
+# If a player has the zauctionhouse.max.15 permission, they can sell up to 15 items.
+#
+permissions:
+  - permission: zauctionhouse.max.5
+    limit: 5
+  - permission: zauctionhouse.max.10
+    limit: 10
+  - permission: zauctionhouse.max.15
+    limit: 15
+
+#########################################################################################################################################
+
+# Enables the use of priorities in item sorting.
+#
+# When enabled, items will be sorted based on their priority values.
+enablePrioritySort: true
+
+# Activates a priority limit during item sorting.
+#
+# When enabled, the number of items displayed based on their priority will be limited according to the specified limits.
+enablePrioritySortLimit: true
+
+# To display an item in priority, its priority must be higher.
+#
+# You can display the priority text in the lore of the auction item with the placeholder %priority_text%.
+#
+priorities:
+  - permission: zauctionhouse.priority.vip
+    priority: 1
+    limit: 10
+    text: '&bVip'
+  - permission: zauctionhouse.priority.vipplus
+    priority: 2
+    limit: 5
+    text: '&6Vip+'
+
+#########################################################################################################################################
+
+# Enable logging options.
+log:
+  # Enable logs in the console.
+  #
+  # When enabled, logs will be displayed in the console, providing real-time feedback and information.
+  enable: true
+
+  # Enable logs in a file.
+  #
+  # When enabled, logs will be saved to a file, allowing for persistent logging and later review.
+  inFile: true
+
+#########################################################################################################################################
+
+optimisation:
+  # The number of milliseconds an ItemStack will be cached.
+  # Keeping the default value is usually sufficient.
+  cacheItemStack: 1000
+
+  # Allow PAPI (PlaceholderAPI) placeholders in item lore.
+  #
+  # When enabled, PAPI placeholders can be used in item lore.
+  # You can always use the placeholders plugin for additional customization.
+  enablePapiInLore: true
+
+  # Cache the list of items for optimization.
+  #
+  # When enabled, the list of items will be cached for the specified number of seconds.
+  # This is useful for servers with a large number of items for sale.
+  # If you have less than 500 items for sale, there is no need to enable this option.
+  cache:
+    enable: false
+    seconds: 15
+
+  # Time in seconds the player has to wait before changing the sort type.
+  #
+  # This setting imposes a cooldown period between changes to the sort type to reduce server load.
+  sortCooldown: 5
+
+  # Time in seconds for automatic data backup, only for JSON storage.
+  #
+  # This setting determines how frequently (in seconds) the data will be automatically backed up.
+  autoSave: 600
+
+  # Enable messages that indicate files have been saved correctly.
+  #
+  # When enabled, messages will be displayed to confirm that files have been successfully saved.
+  enableLogAutoSaveInformation: true
+
+  # Open inventories to synchronize.
+  #
+  # When enabled, inventories will not be displayed at the same time as opening the inventory.
+  # This setting is useful for synchronizing inventory data across different views.
+  openSyncInventory: false
+
+# This configuration is only available for the zAuctionHouse REDIS addon.
+# If you don't use the REDIS addon, you don't need this section.
+placeholder:
+  # Placeholder cache duration in milliseconds.
+  #
+  # This setting determines how long (in milliseconds) placeholders will be cached.
+  # The default is set to 1 minute (60000 milliseconds).
+  cache: 60000
+
+  # Value displayed while the placeholder is loading.
+  #
+  # This setting defines the text that will be shown while the placeholder data is being fetched.
+  loading: "Loading..."
+
+# Cache duration in milliseconds for categories.
+#
+# By default, there is 60 seconds (60000 milliseconds) cache on the list of items in each category.
+# The cache will be automatically updated when an item is removed or added to the sale.
+cacheDurationCategory: 60000
+
+# Cache categories for x seconds
+enableCategoriesCache: false
+
+# Anti-duplication system. This system will completely block items that come from zAuctionHouse inventories.
+# If a player successfully obtains an item from a zAuctionHouse inventory through duplication, it will be automatically deleted.
+#
+# This system is provided by zMenu. If you use zMenu for your inventories, you do not need to activate this.
+antiDupe:
+  # Enable or disable the anti-duplication system.
+  enable: true
+
+  # Send a message to your Discord when a player tries to duplicate items.
+  discordWebhook:
+    # Enable or disable Discord notifications for duplication attempts.
+    enable: false
+
+    # The URL of the Discord webhook.
+    url: "https://discord.com/api/webhooks/xxxxx/xxxxxxxxxxxx"
+
+    # The content of the message sent to Discord.
+    content: "**%player%** tried to use x%amount% %itemname% from zAuctionHouse. Removing it!"
+
+  # Send a message to your console when a player tries to duplicate items.
+  consoleLog:
+    # Enable or disable console logging for duplication attempts.
+    enable: true
+
+    # The content of the message sent to the console.
+    content: "%player% tried to use x%amount% %itemname% from zAuctionHouse. Removing it!"
+
+#########################################################################################################################################
+
+# Configuration for the Discord webhook, allows sending a message to your Discord server during an item sale.
+discordWebhook:
+  # The URL of the Discord webhook.
+  url: https://discord.com/api/webhooks/xxxxx/xxxxxxxxxxxx
+
+  # Enable or disable the Discord webhook.
+  #
+  # When set to 'true', the webhook will send messages to the configured Discord URL.
+  isEnable: false
+
+  # The content of the message sent by the webhook.
+  # Uncomment and customize the line below to set a custom message content.
+  # content: "%player% just sold an item! Use /zauctionhouse"
+
+  # Embed configuration for the Discord message.
+  embed:
+    # The title of the embed message.
+    title: New sale !
+
+    # The description of the embed message.
+    # Uncomment and customize the line below to set a custom description.
+    # description: "Your description"
+
+    # The URL attached to the embed title.
+    # Uncomment and customize the line below to set a custom URL.
+    # url: "<your url>"
+
+    # The color of the embed message.
+    color:
+      r: 40
+      g: 240
+      b: 40
+
+    # The footer of the embed message.
+    footer:
+      text: zAuctionHouse
+      iconUrl: https://groupez.dev/storage/images/1.png
+
+    # The thumbnail of the embed message.
+    # Uncomment and customize the line below to set a custom thumbnail.
+    # thumbnail: "<your thumbnail>"
+
+    # The image of the embed message.
+    # Uncomment and customize the line below to set a custom image.
+    # image: "<your image>"
+
+    # The author of the embed message.
+    # Uncomment and customize the lines below to set a custom author.
+    # author:
+    #   name: "Maxlego08"
+    #   url: ""
+    #   iconUrl: ""
+
+    # Fields in the embed message.
+    fields:
+      - name: Sale
+        value: "Player **%seller%** just added x%amount% %material% for **%price%**"
+        inline: false
+
+#########################################################################################################################################
+
+# Disable the ability to sell broken items.
+#
+# When enabled, items that are broken or damaged cannot be sold.
+# This helps maintain the quality of items in the auction house.
+disableSellBreakItem: false
+
+# Give the item directly to the player in their inventory upon purchase.
+#
+# When enabled, items purchased by the player will be placed directly into their inventory.
+# If the player's inventory is full, the item will go to the purchased items inventory.
+giveItemAfterPurchase: false
+
+# Allow the player to retrieve the item directly from their inventory when they remove it from sale.
+#
+# When enabled, items removed from sale will be placed directly into the player's inventory.
+# If the player's inventory is full, the item will go to the expired items inventory.
+giveItemAfterRemove: false
+
+
+# Prevent giving items if the player's inventory is full when giveItemAfterPurchase and/or giveItemAfterRemove is active.
+#
+# When enabled, items will not be given to the player if their inventory is full,
+# even if the options to give items after purchase or removal are active.
+dontGiveIfPlayerHasFullInventory: false
+
+# Open the inventory after confirming the removal of an item from sale.
+#
+# When enabled, the player's inventory will automatically open after they confirm
+# the removal of an item from sale. This helps them manage their items immediately.
+openInventoryAfterRemoveConfirm: true
+
+# Open the inventory after purchasing an item.
+#
+# When enabled, the player's inventory will automatically open after they purchase an item.
+# This allows them to immediately see and manage the purchased item.
+openInventoryAfterBuying: false
+
+
+# Require a price to be specified for the /ah sellinventory command.
+#
+# When enabled, players must specify a price when using the /ah sellinventory command.
+# This ensures that items are listed with an explicit price.
+needPriceForSellInventory: true
+
+# Display an error message if the minimum price is not respected.
+#
+# When enabled, an error message will be shown if a player attempts to sell an item below the minimum price.
+# This helps maintain price standards within the auction house.
+disablePriceErrorDefault: true
+
+# Enable the commands /ah items, /ah expire, and /ah items.
+#
+# When enabled, these commands will be available for use:
+# - /ah items: Allows players to view their listed items.
+# - /ah expire: Allows players to view their expired items.
+# - /ah items: Allows players to view their auctioned items.
+enableCommandInventories: false
+
+
+# Enable the plugin version checker.
+#
+# When enabled, the plugin will check for new versions and updates.
+# This helps ensure you are always using the latest version with the latest features and fixes.
+enableVersionChecker: true
+
+# Categories will only check the material of items.
+#
+# When enabled, categories will be determined solely by the material of the items,
+# ignoring other attributes such as item name, lore, or enchantments.
+categoryCheckOnlyMaterial: true
+
+# Display a message when the player is in cooldown.
+#
+# When enabled, a message will be shown to the player informing them that they are in cooldown
+# and need to wait before issuing another command.
+displayCooldownMessage: true
+
+
+# Cooldown between transaction commands in milliseconds.
+#
+# This setting imposes a delay between consecutive transaction commands issued by a player.
+# The cooldown is specified in milliseconds. For example, 30000 milliseconds equals 30 seconds.
+cooldownTransactions: 30000
+
+# Enable cooldown on all commands.
+#
+# When enabled, a cooldown period will be applied to all commands,
+# preventing players from issuing commands too frequently.
+enableCooldownCommand: true
+
+
+# Cooldown between commands in milliseconds.
+#
+# This setting imposes a delay between consecutive commands issued by a player.
+# The cooldown is specified in milliseconds. For example, 5000 milliseconds equals 5 seconds.
+commandCooldownMilliSeconds: 5000
+
+
+# Allow the inventory to update automatically during a purchase,
+# when adding an item, or when an item is removed.
+#
+# When enabled, the inventory will automatically refresh to reflect changes
+# such as new purchases, additions, or removals of items.
+enableAutoUpdate: false
+
+# Custom message configuration
+enableCustomMessage:
+  # Enable custom message for the /ah help command.
+  #
+  # When enabled, a custom message will be displayed when players use the /ah help command.
+  help: false
+
+  # Enable custom message for the /ah sell command.
+  #
+  # When enabled, a custom message will be displayed when players use the /ah sell command.
+  sell: false
+
+  # Enable custom message for the /ah open command.
+  #
+  # When enabled, a custom message will be displayed when players use the /ah open command.
+  open: false
+
+  # Enable custom message for the /ah search command.
+  #
+  # When enabled, a custom message will be displayed when players use the /ah search command.
+  search: false
+
+
+# Edit the plugin commands
+command:
+  # Modify the main command of the plugin.
+  #
+  # This setting allows you to change the primary command used to access the plugin's features.
+  main: zauctionhouse
+
+  # Change the aliases of the main command.
+  #
+  # This setting allows you to define alternative commands (aliases) that can be used
+  # to access the plugin's features. Players can use any of these aliases as shortcuts.
+  aliases:
+    - zauction
+    - ah
+    - hdv
+    - zah
+    - zhdv
+  
+  # Change arguments for the sale command.
+  #
+  # This setting allows you to define alternative arguments (aliases) for the sale command.
+  # Players can use any of these aliases to initiate a sale.
+  # Example usage: /zauctionhouse <sell/vendre/s>
+  sellCommandAliases:
+    - sell
+    - vendre
+    - s
+
+# Disable the plugin in specific worlds.
+#
+# This setting allows you to specify worlds where the plugin will be disabled.
+# List the worlds where you do not want the plugin to be active.
+disableWorlds:
+  - world_the_end
+
+# Open the "auction" inventory (the default inventory) from an NPC named "Auction".
+#
+# This setting allows players to access the auction inventory by interacting with a specified NPC.
+# Define the NPC's name and the inventory that should open.
+citizen:
+  - name: Auction
+    inventory: auction
+
+# Permissions for specific commands.
+permission:
+# Permission required to use the /ah addon command.
+#
+# When set, this permission controls access to the /ah addon command.
+# Uncomment and set the appropriate permission string if needed.
+# It needs to be indented with 2 spaces inside the permission section.
+#  addon: "zauctionhouse.addon"
+
+# Permission required to use the /ah version command.
+#
+# When set, this permission controls access to the /ah version command.
+# Uncomment and set the appropriate permission string if needed.
+# It needs to be indented with 2 spaces inside the permission section.
+#  version: "zauctionhouse.version"
+
+# Date format for transactions.
+#
+# This setting determines the format used to display transaction history dates.
+# Use the format "YYYY MM dd hh:mm:ss" to represent year, month, day, hour, minute, and second.
+transactionDateFormat: "YYYY MM dd hh:mm:ss"
+
+# Disable plugin commands.
+#
+# When enabled, all plugin commands will be disabled.
+# This can be useful if you want to create alternative ways to access the plugin and sell items.
+disableCommands: false
+
+# Add ItemFlags to items displayed in the auction house.
+itemFlags:
+  # Enable or disable the use of ItemFlags.
+  #
+  # When enabled, the specified ItemFlags will be applied to items displayed in the auction house.
+  enable: false
+
+  # List of ItemFlags to be applied.
+  #
+  # The following flags can be used to hide various item attributes:
+  # - HIDE_ATTRIBUTES: Hides item attributes such as attack damage.
+  # - HIDE_DESTROYS: Hides the blocks that an item can destroy in adventure mode.
+  # - HIDE_ENCHANTS: Hides enchantments on the item.
+  # - HIDE_PLACED_ON: Hides the blocks that an item can be placed on in adventure mode.
+  # - HIDE_POTION_EFFECTS: Hides potion effects.
+  # - HIDE_UNBREAKABLE: Hides the unbreakable status of an item.
+  # Uncomment the following flags to use them:
+  # - HIDE_DYE: Hides dye color information.
+  # - HIDE_ARMOR_TRIM: Hides armor trim information.
+  flags:
+    - HIDE_ATTRIBUTES
+    - HIDE_DESTROYS
+    - HIDE_ENCHANTS
+    - HIDE_PLACED_ON
+    - HIDE_POTION_EFFECTS
+    - HIDE_UNBREAKABLE
+    # - HIDE_DYE
+    # - HIDE_ARMOR_TRIM
+
+
+# Click action to display the contents of a shulker, chest, etc.
+#
+# This setting specifies which mouse button action will trigger the display of container contents.
+# Options can be LEFT or RIGHT click.
+showClick: RIGHT
+
+# Number of transactions per page for the /ah transaction and /ah history commands.
+#
+# This setting determines how many transactions will be displayed per page
+# when using the /ah transaction and /ah history commands.
+transactionPageSize: 5
+
+# Check if the HeadDatabase plugin is enabled.
+#
+# When enabled, the plugin will check for the HeadDatabase plugin and wait until it is active before using it.
+# If you are using zMenu, the plugin will not need to wait for HeadDatabase and will load directly.
+enableHeadDatabaseVerification: true
+
+# Use the new algorithm for encoding text items. It is automatically used from 1.20.5
+#
+# If you are in an older version (1.20.4) and want to migrate your data later, it is advisable to enable this option
+enableNewBase64ItemStackMethod: false
+
+# Enables the whitelist of items
+#
+# To sell an item it must be mandatory in the list of whitelist items, otherwise it cannot be sold
+enableWhitelist: false
+
+#########################################################################################################################################
+
+# Configuration for the /ah search command
+search:
+
+  # Toggle the /ah search command
+  # Note: Restart the server if you modify this setting
+  enable: true
+
+  # Enable item search with translation
+  # Requires Minecraft 1.13+ and a translation file in the zAuctionHouse/langs directory
+  # The plugin auto-downloads all files, simply enable and set your desired language
+  enable-translated-material: false
+
+  # Allows enabling the search with ProtocolLib, if the plugin is on your server, you will have a panel to search, otherwise the search will be done in the chat
+  enable-search-with-protocol-lib: true
+
+  # Lines of the panel for search, you must leave the first line blank
+  sign-lines:
+    - ""
+    - "--------"
+    - "please enter"
+    - "your search"
+
+# Language settings for your server, only applicable for Minecraft 1.13+
+# Translation files can be found at: https://github.com/Maxlego08/minecraft-assets/tree/1.21/assets/minecraft/lang
+# Place the file in zAuctionHouse/langs with the format <country>-<language> (e.g., 'fr-fr' for French)
+# This settings only works for translations of itemstacks
+language: 'fr-fr'
+
+# Auto-download all translation files if the zAuctionHouse/langs folder is absent
+# This feature saves time and eliminates the need for manual file selection
+download-all-langages-files: true
+
+# Enable translation of item names to the specified language
+enable-itemstack-translation: false
+
+# Enable MiniMessage format across all plugin messages
+# Note: This requires the zMenu plugin
+enableMiniMessageInMessage: true
+
+# Allows moving expired items in the zessentials mailbox
+enableZEssentialsCustomProvider: true

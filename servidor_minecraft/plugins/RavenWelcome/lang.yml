@@ -1,0 +1,31 @@
+# Prefix used in all plugin messages
+# You can use <prefix> in messages to automatically include it
+prefix: "&#FF5555[RavenWelcome] "
+
+# General error messages
+no-permission: "<prefix>&#FF5555You don't have permission to execute this command."
+player-only: "<prefix>&#FF5555This command can only be used by players."
+
+# Command-related messages
+commands:
+  usage: "<prefix>&#FFFFFFUsage: /rw <reload|test|edit>"
+  unknown: "<prefix>&#FF5555Unknown command. Use /rw for help."
+  reload: "<prefix>&#00FF00Configuration reloaded successfully!"
+  
+  test:
+    usage: "<prefix>&#FFFFFFUsage: /rw test <join|quit|firstjoin>"
+  
+  edit:
+    usage: "<prefix>&#FFFFFFUsage: /rw edit <join|quit|firstjoin> <message>"
+    success: "<prefix>&#00FF00Message updated successfully!"
+
+  welcome:
+    sent: "<prefix>&#00FF00Your welcome message has been sent!"
+    no_target: "<prefix>&#FF5555No newcomer to welcome right now."
+    cannot_self: "<prefix>&#FF5555You cannot welcome yourself."
+
+# Reward system messages
+reward:
+  claimed: "<prefix>&#00FF00You have claimed your welcome reward!"
+  expired: "<prefix>&#FF5555Your welcome reward has expired!"
+

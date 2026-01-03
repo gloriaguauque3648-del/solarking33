@@ -1,0 +1,1 @@
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"FancyNpcs (2.9.0) has been enabled.","timestamp":1767436512908,"properties":{"server_software":"Paper","thread_id":42,"plugin_version":"2.9.0","thread_name":"Server thread","server_version":"1.21.10-R0.1-SNAPSHOT","plugin_name":"FancyNpcs","is_online_mode":false}}

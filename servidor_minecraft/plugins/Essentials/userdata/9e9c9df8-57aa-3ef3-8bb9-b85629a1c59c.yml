@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 192.168.194.149
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: true
+timestamps:
+  lastteleport: 1767326679217
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1767437545348
+  login: 1767437001366
+money: '30001000.8955'
+last-account-name: apolofs
+lastlocation:
+  world: 8812bb5f-af3d-4d9f-a74a-11e4ab52b37e
+  world-name: arenapvp
+  x: 0.20948696702886005
+  y: 69.32180455416969
+  z: 0.7341076667942473
+  yaw: 92.40029907226562
+  pitch: 38.100067138671875
+logoutlocation:
+  world: 91ff1682-9975-49cb-8ff8-5f6c2e7d09f4
+  world-name: spawn2
+  x: 26.64343076480132
+  y: 64.0
+  z: 49.56477906544149
+  yaw: 92.70260620117188
+  pitch: 18.600000381469727
+last-message-reply-recipient: false

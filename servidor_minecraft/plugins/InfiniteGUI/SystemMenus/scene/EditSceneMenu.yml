@@ -1,0 +1,113 @@
+title: Edit Scene %id%
+rows: 3
+empty-fill:
+  enabled: true
+  slots:
+  - all
+  item:
+    name: '&r'
+    lore: []
+    type: GREEN_STAINED_GLASS_PANE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+exit:
+  enabled: true
+  slot: 26
+  item:
+    name: '&cBack'
+    lore:
+    - '&7Click to go back to the scene manager.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzUxY2VkMmU2NDczNjZmOGYzYWQyZGZlNDE1Y2NhODU2NTFiZmFmOTczOWE5NWNkNTdiNmYyMWNiYTA1MyJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+setup-inventory:
+  enabled: true
+  slot: 10
+  item:
+    name: '&e&lSetup Inventory'
+    lore:
+    - ''
+    - '&7Setup the inventory for'
+    - '&7this scene, drag and drop'
+    - '&7items to add to the scene!'
+    - ''
+    - '&eClick to setup'
+    type: LIGHT_BLUE_SHULKER_BOX
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+change-last-delay:
+  enabled: true
+  slot: 12
+  item:
+    name: '&b&lChange Last Delay'
+    lore:
+    - ''
+    - '&7Change the time in ticks for'
+    - '&7which the scene will last.'
+    - ''
+    - '&6Current: &8%delay%'
+    - ''
+    - '&eClick to change'
+    type: REPEATER
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+duplicate-scene:
+  enabled: true
+  slot: 14
+  item:
+    name: '&6&lDuplicate Scene'
+    lore:
+    - '&7Click to duplicate this scene.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWEwNDQxMjhlNjc3YjFkMDQzODMwZDcyYTFjNjVhMjUxZWI4NDA0YmVjYjcyODE0NTcxMzMwMjE4ZWY5Yjg1NiJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+remove-scene:
+  enabled: true
+  slot: 16
+  item:
+    name: '&c&lRemove Scene'
+    lore:
+    - '&7Click to &c&lpermanently remove &7this scene.'
+    type: BARRIER
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+scene-open-event-manager:
+  enabled: true
+  slot: 18
+  item:
+    name: '&bScene Open Event Manager'
+    type: OAK_SIGN
+    lore:
+    - '&7Click to go to the scene open event manager.'
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0

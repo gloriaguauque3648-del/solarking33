@@ -1,0 +1,461 @@
+# Allows to customize commands and their subcommand
+# Please note that reload won't work and the server needs to be FULLY restarted in order to apply changes
+
+battlepass:
+  enabled: true
+  command: battlepass
+  permission: battlepass.use
+  description: Main command of BattlePass
+  aliases: [pass, bp, bpass, battlep]
+  subcommands:
+    booster:
+      enabled: true
+      command: booster
+      permission: battlepass.use
+      description: List of active boosters
+      aliases: []
+    leaderboard:
+      enabled: true
+      command: leaderboard
+      permission: battlepass.use
+      description: Open leaderboard menu
+      aliases: []
+      subcommands:
+        quests:
+          enabled: true
+          command: quests
+          permission: battlepass.use
+          description: Show quests leaderboard
+          aliases: []
+        tier:
+          enabled: true
+          command: tier
+          permission: battlepass.use
+          description: Show tier leaderboard
+          aliases: []
+    help:
+      enabled: true
+      command: help
+      permission: battlepass.use
+      description: Show help
+      aliases: ["?"]
+      args:
+        page: page
+    stats:
+      enabled: true
+      command: stats
+      permission: battlepass.use
+      description: Show player's stats
+      aliases: []
+    open:
+      enabled: true
+      command: open
+      permission: battlepass.use
+      description: Open menu
+      aliases: ["menu"]
+      subcommands:
+        week:
+          enabled: true
+          command: week
+          permission: battlepass.use
+          description: Open week menu
+          aliases: []
+          args:
+            week: week
+
+battlepassadmin:
+  enabled: true
+  command: battlepassadmin
+  permission: battlepass.admin
+  description: Battle Pass main admin command
+  aliases: [bpa, battlepassa, bpadmin]
+  subcommands:
+    open:
+      enabled: true
+      command: open
+      permission: battlepass.admin
+      description: Open menu
+      aliases: [ "menu" ]
+      subcommands:
+        week:
+          enabled: true
+          command: week
+          permission: battlepass.admin
+          description: Open week menu
+          aliases: [ ]
+          args:
+            week: week
+    migrate:
+      enabled: false
+      command: migrate
+      aliases: []
+      subcommands:
+        storage:
+          enabled: true
+          command: storage
+          permission: battlepass.admin
+          description: Migrate users data to the new storage type
+          args:
+            newType: newType
+    reload:
+      enabled: true
+      command: reload
+      permission: battlepass.admin
+      description: Reload plugin
+      aliases: []
+    give:
+      enabled: false
+      command: give
+      aliases: []
+      subcommands:
+        balance:
+          enabled: true
+          command: balance
+          permission: battlepass.admin
+          description: Give balance to player
+          aliases: [bal,currency]
+          args:
+            player: player
+            amount: amount
+        points:
+          enabled: true
+          command: points
+          permission: battlepass.admin
+          description: Give points to player
+          aliases: [ ]
+          args:
+            player: player
+            points: points
+    giveall:
+      enabled: false
+      command: giveall
+      aliases: []
+      subcommands:
+        balance:
+          enabled: true
+          command: balance
+          permission: battlepass.admin
+          description: Give balance to all players
+          aliases: [bal,currency]
+          args:
+            amount: amount
+        points:
+          enabled: true
+          command: points
+          permission: battlepass.admin
+          description: Give points to all players
+          aliases: [ ]
+          args:
+            points: points
+    remove:
+      enabled: false
+      command: remove
+      aliases: []
+      subcommands:
+        balance:
+          enabled: true
+          command: balance
+          permission: battlepass.admin
+          description: Remove balance from player
+          aliases: [bal,currency]
+          args:
+            player: player
+            amount: amount
+    set:
+      enabled: false
+      command: set
+      aliases: []
+      subcommands:
+        balance:
+          enabled: true
+          command: balance
+          permission: battlepass.admin
+          description: Set player's balance
+          aliases: [ bal,currency ]
+          args:
+            player: player
+            amount: amount
+        points:
+          enabled: true
+          command: points
+          permission: battlepass.admin
+          description: Set player's points
+          aliases: []
+          args:
+            player: player
+            points: points
+        pass:
+          enabled: true
+          command: pass
+          permission: battlepass.admin
+          description: Set player's pass
+          aliases: []
+          args:
+            player: player
+            pass-id: pass-id
+          subcommands:
+            all:
+              enabled: true
+              command: all
+              permission: battlepass.admin
+              description: Set all players' pass
+              aliases: []
+              args:
+                pass-id: pass-id
+            online:
+              enabled: true
+              command: online
+              permission: battlepass.admin
+              description: Set all online players' pass
+              aliases: []
+              args:
+                pass-id: pass-id
+    boosters:
+      enabled: false
+      command: boosters
+      aliases: []
+      subcommands:
+        add:
+          enabled: true
+          command: add
+          permission: battlepass.admin
+          description: Add booster
+          aliases: []
+          args:
+            target: player/all
+            type: type
+            percent: percent
+            hours: hours
+            affects: affects
+        clear:
+          enabled: true
+          command: clear
+          permission: battlepass.admin
+          description: Clear booster
+          aliases: []
+          args:
+            target: player/all
+    material:
+      enabled: false
+      command: material
+      aliases: []
+      subcommands:
+        block:
+          enabled: true
+          command: block
+          permission: battlepass.admin
+          description: Get ID of block you are looking at
+          aliases: []
+        item:
+          enabled: true
+          command: item
+          permission: battlepass.admin
+          description: Get ID of item in your hand
+          aliases: []
+        b64:
+          enabled: true
+          command: b64
+          permission: battlepass.admin
+          description: Get base 64 code of item in your hand
+          aliases: []
+    close:
+      enabled: false
+      command: close
+      aliases: []
+      subcommands:
+        menu:
+          enabled: true
+          command: menu
+          permission: battlepass.admin
+          description: Close player's menu
+          aliases: []
+          args:
+            player: player
+    delete:
+      enabled: false
+      command: delete
+      aliases: []
+      subcommands:
+        user:
+          enabled: true
+          command: user
+          permission: battlepass.admin
+          description: Delete user's data
+          aliases: []
+          args:
+            player: player
+    editor:
+      enabled: true
+      command: editor
+      permission: battlepass.editor
+      description: Open quests / rewards editor
+      aliases: []
+    new:
+      enabled: false
+      command: new
+      aliases: []
+      subcommands:
+        season:
+          enabled: true
+          command: season
+          permission: battlepass.admin
+          description: Start new season
+          aliases: []
+    bypass:
+      enabled: false
+      command: bypass
+      aliases: []
+      subcommands:
+        locked:
+          enabled: false
+          command: locked
+          aliases: []
+          subcommands:
+            quests:
+              enabled: true
+              command: quests
+              permission: battlepass.admin
+              description: Toggle bypassing locked quests
+              aliases: []
+              args:
+                player: player
+    daily:
+      enabled: false
+      command: daily
+      aliases: []
+      subcommands:
+        quest:
+          enabled: false
+          command: quest
+          aliases: []
+          subcommands:
+            ids:
+              enabled: true
+              command: ids
+              permission: battlepass.admin
+              description: Show ids of daily quests
+              aliases: []
+    quest:
+      enabled: false
+      command: quest
+      aliases: []
+      subcommands:
+        ids:
+          enabled: true
+          command: ids
+          permission: battlepass.admin
+          description: Show ids of week quests
+          aliases: [ ]
+    progress:
+      enabled: false
+      command: progress
+      aliases: []
+      subcommands:
+        daily:
+          enabled: false
+          command: daily
+          aliases: [ ]
+          subcommands:
+            quest:
+              enabled: true
+              command: quest
+              permission: battlepass.admin
+              description: Progress daily quest
+              aliases: []
+              args:
+                player: player
+                quest-id: quest-id
+                amount: amount
+        quest:
+          enabled: true
+          command: quest
+          permission: battlepass.admin
+          description: Progress quest
+          aliases: []
+          args:
+            player: player
+            week: week
+            quest-id: quest-id
+            amount: amount
+    refresh:
+      enabled: false
+      command: refresh
+      aliases: []
+      subcommands:
+        daily:
+          enabled: false
+          command: daily
+          aliases: []
+          subcommands:
+            quests:
+              enabled: true
+              command: quests
+              permission: battlepass.admin
+              description: Refresh daily quests
+              aliases: []
+    sync:
+      enabled: false
+      command: sync
+      aliases: []
+      subcommands:
+        daily:
+          enabled: false
+          command: daily
+          aliases: []
+          subcommands:
+            quests:
+              enabled: true
+              command: quests
+              permission: battlepass.admin
+              description: Sync daily quests across bungee network
+              aliases: []
+    reset:
+      enabled: false
+      command: reset
+      aliases: []
+      subcommands:
+        quest:
+          enabled: true
+          command: quest
+          permission: battlepass.admin
+          description: Reset player's quest
+          aliases: []
+          args:
+            player: player
+            week: week
+            quest-id: quest-id
+
+battlepassdebug:
+  enabled: true
+  command: battlepassdebug
+  permission: battlepass.admin
+  description: BattlePass debugger
+  aliases: [bpd,bpdebug]
+  subcommands:
+    start:
+      enabled: true
+      command: start
+      permission: battlepass.admin
+      description: Start debugger
+      aliases: [ ]
+    stop:
+      enabled: true
+      command: stop
+      permission: battlepass.admin
+      description: Stop debugger
+      aliases: [ ]
+    create:
+      enabled: true
+      command:  create
+      permission: battlepass.admin
+      description: Create debugger
+      aliases: [ ]
+      args:
+        player: player
+    clear:
+      enabled: true
+      command: clear
+      permission: battlepass.admin
+      description: Clear debugger
+      aliases: []
+

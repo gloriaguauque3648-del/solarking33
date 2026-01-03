@@ -1,0 +1,98 @@
+Upgrade-layout:
+  rows: 3
+  stats:
+    slots:
+    - 0
+    material: NETHER_STAR
+    glint: true
+    model: 0
+  range:
+    slots:
+    - 11
+    material: COMPASS
+    glint: true
+    model: 0
+    deny-material: BARRIER
+  delay:
+    slots:
+    - 13
+    material: CLOCK
+    glint: true
+    model: 0
+    deny-material: BARRIER
+  amount:
+    slots:
+    - 15
+    material: GOLD_INGOT
+    glint: true
+    model: 0
+    deny-material: BARRIER
+  charges:
+    slots:
+    - 26
+    material: CHARCOAL
+    glint: true
+    model: 0
+  background:
+    material: CYAN_STAINED_GLASS_PANE
+    glint: false
+    model: 0
+# In this section you can change
+#   the order of item lore and even
+#   delete lines.
+# You can delete a line by deleting
+#   the line in this file or add '!'
+#   after the line.
+#   E.g. 'INFO' -> 'INFO!'
+Item-layout:
+  # Keys:
+  #   HEADER, RANGE, DELAY, AMOUNT
+  #   CHARGES, SPAWNABLE, INFO
+  spawner-item:
+  - '!'
+  - HEADER
+  - RANGE
+  - DELAY
+  - AMOUNT
+  - '!'
+  - CHARGES
+  - SPAWNABLE
+  - '!'
+  - INFO
+  upgrades:
+    # Keys:
+    #   EMPTY, SWITCHING, LOCATION, STACK
+    #   WARNING, OFFLINE, SPAWNABLE, INFO
+    stat-item:
+    - EMPTY
+    - SWITCHING
+    - '!'
+    - LOCATION
+    - STACK
+    - SPAWNABLE
+    - '!'
+    - WARNING
+    - '!'
+    - OFFLINE
+    - '!'
+    - INFO
+    # Keys:
+    #   HELP, INFO, CURRENT, NEXT, PRICE
+    upgrade-item:
+    - HELP
+    - '!'
+    - INFO
+    - '!'
+    - CURRENT
+    - '!'
+    - NEXT
+    - '!'
+    - PRICE
+    # Keys:
+    #   HELP, INFO, CURRENT
+    disabled-upgrade-item:
+    - HELP
+    - '!'
+    - INFO
+    - '!'
+    - CURRENT

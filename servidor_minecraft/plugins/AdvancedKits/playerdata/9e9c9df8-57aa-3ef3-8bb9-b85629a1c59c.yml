@@ -1,0 +1,86 @@
+kits:
+  Ultimate:
+    level: 1
+    usages: 0
+    cooldown: 0
+    buy-cooldown: 0
+  Pyro:
+    level: 1
+    usages: 0
+    cooldown: 0
+    buy-cooldown: 0
+  Gold:
+    level: 1
+    usages: 0
+    cooldown: 0
+    buy-cooldown: 0
+  Archer:
+    level: 1
+    usages: 0
+    cooldown: 0
+    buy-cooldown: 0
+  Iron:
+    level: 1
+    usages: 0
+    cooldown: 0
+    buy-cooldown: 0
+  Diamond:
+    level: 1
+    usages: 0
+    cooldown: 0
+    buy-cooldown: 0
+  Swordsman:
+    level: 1
+    usages: 0
+    cooldown: 0
+    buy-cooldown: 0
+  Bedrock:
+    level: 1
+    usages: 1
+    cooldown: 0
+    buy-cooldown: 0
+  Viking:
+    level: 1
+    usages: 0
+    cooldown: 0
+    buy-cooldown: 0
+  Potions:
+    level: 1
+    usages: 1
+    cooldown: 0
+    buy-cooldown: 0
+  Ninja:
+    level: 1
+    usages: 0
+    cooldown: 0
+    buy-cooldown: 0
+  Emerald:
+    level: 1
+    usages: 0
+    cooldown: 0
+    buy-cooldown: 0
+  Coal:
+    level: 1
+    usages: 0
+    cooldown: 0
+    buy-cooldown: 0
+  Wenst:
+    level: 1
+    usages: 0
+    cooldown: 0
+    buy-cooldown: 0
+  Snowman:
+    level: 1
+    usages: 0
+    cooldown: 0
+    buy-cooldown: 0
+  Lapis:
+    level: 1
+    usages: 0
+    cooldown: 0
+    buy-cooldown: 0
+  Infected:
+    level: 1
+    usages: 0
+    cooldown: 0
+    buy-cooldown: 0

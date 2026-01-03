@@ -1,0 +1,192 @@
+# ================================================================================= #
+#                      Configuration for BlockRegen Plugin                          #
+# ================================================================================= #
+# Thank you for using BlockRegen!                                                   #
+# In this file, you can configure all aspects of the plugin.                        #
+# For help, use the '&' symbol for color codes.                                     #
+# ================================================================================= #
+
+# Current version of the configuration file. Do not change this value.
+config-version: 6
+
+
+
+# ================================================================================= #
+#                              Wand Configuration                                   #
+# ================================================================================= #
+wand:
+  # The item used as the selection wand.
+  # A full list of materials can be found here:
+  # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+  material: BLAZE_ROD
+  
+  # The display name of the wand item. Supports '&' color codes.
+  name: '&6&lRegion Selection Wand'
+
+
+# ================================================================================= #
+#                             Default Sound Settings                                #
+# ================================================================================= #
+# These sounds will be used if not specified per-block.
+# A full list of sound names: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+# Format: 'SOUND_NAME:volume:pitch'
+sounds:
+  # The sound played when a configured block is broken.
+  break-sound: BLOCK_STONE_BREAK:1.0:1.0
+  
+  # The sound played when a block successfully regenerates.
+  regen-sound: ENTITY_EXPERIENCE_ORB_PICKUP:1.0:1.5
+  
+  # The sound played when a player tries to break a block with the wrong tool.
+  wrong-tool-sound: BLOCK_ANVIL_LAND:0.8:1.0
+
+
+# ================================================================================= #
+#                              World Management                                     #
+# ================================================================================= #
+worlds:
+  # If set to 'true', the plugin will be active in all worlds.
+  # If 'false', it will only be active in the worlds listed below.
+  enable-all-worlds: false
+  
+  # A list of worlds where block regeneration is enabled.
+  # This list is ignored if 'enable-all-worlds' is set to 'true'.
+  enabled-worlds:
+  - world_mining
+  - world_prison
+  world-multiplier-profiles:
+    world_prison: prison
+
+
+# ================================================================================= #
+#                           Miscellaneous Plugin Options                            #
+# ================================================================================= #
+options:
+  # If true, a countdown message will be shown on the player's action bar
+  # when a block is on cooldown to regenerate.
+  send-regen-countdown: true
+  
+  # If true, the plugin will check for new updates upon server startup.
+  check-for-updates: true
+  
+  # If true, players will be prevented from breaking regen blocks if their inventory is full.
+  prevent-mining-when-full: true
+
+
+# ================================================================================= #
+#                             WorldGuard Integration                                #
+# ================================================================================= #
+worldguard:
+  # Enable WorldGuard integration. If true, the plugin will check WorldGuard regions.
+  enabled: false
+  
+  # If true, and WorldGuard is enabled, only blocks defined in blocks.yml can be broken
+  # within WorldGuard regions where the 'block-break' flag is set to ALLOW.
+  # All other blocks (like regular dirt, stone, etc.) will be unbreakable in such regions.
+  disable-other-break: true
+  
+  # If true, players will be able to break blocks from blocks.yml even in WorldGuard
+  # regions where the 'block-break' flag is set to DENY.
+  # This allows you to protect a region completely but still allow farming/mining of regen blocks.
+  break-regen-in-deny-regions: false
+
+# ================================================================================= #
+#                               MMOCore Integration                                 #
+# ================================================================================= #
+mmocore:
+  # Enable MMOCore integration for profession experience.
+  enabled: true
+  # Hologram offset for MMOCore profession experience gain.
+  # These values are added to the block's location.
+  hologram-offset:
+    x: 0
+    y: 0.1
+    z: 0
+
+# ================================================================================= #
+#                                Particle Settings                                  #
+# ================================================================================= #
+particles:
+  # Global toggle for all particle effects. If set to false, no particles will be spawned.
+  enabled: true
+  
+  # Whether to spawn particles when a block is broken.
+  on-break: true
+  
+  # Whether to spawn particles when a block regenerates.
+  on-regen: true
+  
+  # Default particle effect when a block is broken, if not specified per-block.
+  # Format: "PARTICLE_NAME:count:offset"
+  # PARTICLE_NAME: Refer to https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+  # count: Number of particles to spawn.
+  # offset: Spread of particles from the block's center (e.g., 0.5 for half a block).
+  default-break-particle: CRIT:10:0.5
+  
+  # Default particle effect when a block regenerates, if not specified per-block.
+  default-regen-particle: VILLAGER_HAPPY:10:0.5
+
+
+# ================================================================================= #
+#                                 Plugin Messages                                   #
+# ================================================================================= #
+# All plugin messages are configurable and support color codes using the '&' symbol.
+messages:
+  # The prefix that appears before most plugin messages.
+  prefix: '&6[&eBlockRegen&6] &r'
+  
+  # Message sent when the configuration is successfully reloaded.
+  reload: '&6Configuration has been successfully reloaded.'
+  
+  # Message sent to a player who lacks the required permission.
+  no-permission: '&cYou do not have permission to execute this command.'
+  
+  # Message sent when a player's inventory is full and they try to break a block.
+  inventory-full: '&cYour inventory is full! You cannot break this block.'
+  
+  # Message sent when a player tries to break a regen block with the wrong tool.
+  wrong-tool: '&cYou need a more suitable tool to break this block.'
+  
+  # The message displayed on the action bar while a block is on cooldown.
+  # Placeholders: %time% - The remaining time in seconds.
+  regen-countdown: '&6Block will regenerate in &e%time%s&6.'
+  
+  # Message sent to the player when they receive the wand.
+  wand-receive: '&6You have received the &eRegion Selection Wand&6.'
+  
+  # Message sent when position 1 is set.
+  # Placeholders: %location%
+  pos1-set: '&6Position 1 set to &e%location%&6.'
+  
+  # Message sent when position 2 is set.
+  # Placeholders: %location%
+  pos2-set: '&6Position 2 set to &e%location%&6.'
+  
+  # Message sent when a region is successfully saved.
+  # Placeholders: %region%
+  region-saved: '&6Region ''&e%region%&6'' has been successfully saved.'
+  
+  # Sent to admins when they break a regen block outside of a defined region.
+  not-in-region: '&cThis block will not regenerate because it is not inside a defined
+    region.'
+  
+  # Message sent when a region is successfully removed.
+  region-removed: '&6Region ''&e%region%&6'' has been successfully removed.'
+  
+  # Message sent when a specified region is not found.
+  region-not-found: '&cRegion ''&e%region%&c'' not found.'
+  
+  # Message sent when a new update is available.
+  # Placeholders: %latest_version%, %current_version%, %download_link%
+  update-notify: '&6A new version is available: &e%latest_version% &6(Current: &e%current_version%&6).
+    Download it from: &e%download_link%'
+  
+  # Help command messages
+  help-header: '&6&m-----------------------------------------------------'
+  help-title: '&6&lBlockRegen &7- &fCommands'
+  help-footer: '&6&m-----------------------------------------------------'
+  help-commands:
+  - '&6/blockregen reload &7- Reloads the plugin configuration.'
+  - '&6/blockregen wand &7- Gives you the region selection wand.'
+  - '&6/blockregen save <name> &7- Saves the currently selected region.'
+  - '&6/blockregen remove <name> &7- Removes a saved region.'

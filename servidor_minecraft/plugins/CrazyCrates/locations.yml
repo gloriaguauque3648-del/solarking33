@@ -1,0 +1,31 @@
+Locations:
+  '5':
+    Crate: Menu
+    World: spawn3
+    X: -173
+    Y: -58
+    Z: -239
+  '1':
+    Crate: CasinoCrate
+    World: spawn3
+    X: -165
+    Y: -58
+    Z: -217
+  '2':
+    Crate: CosmicCrate
+    World: spawn3
+    X: -169
+    Y: -58
+    Z: -215
+  '3':
+    Crate: WonderCrate
+    World: spawn3
+    X: -173
+    Y: -58
+    Z: -215
+  '4':
+    Crate: QuadCrate
+    World: spawn3
+    X: -177
+    Y: -58
+    Z: -217

@@ -1,0 +1,521 @@
+Settings:
+  Buy:
+    Enabled: true
+    Rows: 4
+    Filler: PURPLE_STAINED_GLASS_PANE
+    Buyable:
+      First: true
+      Second: true
+      Third: true
+      Maximum: true
+    Amount:
+      First: 1
+      Second: 4
+      Third: 16
+    Items:
+      Next: SPECTRAL_ARROW
+      Previous: SPECTRAL_ARROW
+      Page: PAPER
+    Order: []
+  Sell:
+    Enabled: false
+    Filler: LIME_STAINED_GLASS_PANE
+    Sell: EMERALD
+    Close: REDSTONE
+    Rows: 4
+  Selection:
+    Filler: LIGHT_BLUE_STAINED_GLASS_PANE
+    Buy: GOLD_BLOCK
+    Sell: EMERALD_BLOCK
+Shop:
+  Buy:
+    AXOLOTL:
+      Toggle: true
+      Cost: 500
+    BAT:
+      Toggle: true
+      Cost: 500
+    BEE:
+      Toggle: true
+      Cost: 500
+    CAT:
+      Toggle: true
+      Cost: 500
+    CHICKEN:
+      Toggle: true
+      Cost: 500
+    COD:
+      Toggle: true
+      Cost: 500
+    COW:
+      Toggle: true
+      Cost: 500
+    DOLPHIN:
+      Toggle: true
+      Cost: 500
+    DONKEY:
+      Toggle: true
+      Cost: 500
+    ENDERMITE:
+      Toggle: true
+      Cost: 500
+    FOX:
+      Toggle: true
+      Cost: 500
+    FROG:
+      Toggle: true
+      Cost: 500
+    GLOW_SQUID:
+      Toggle: true
+      Cost: 500
+    GOAT:
+      Toggle: true
+      Cost: 500
+    HOGLIN:
+      Toggle: true
+      Cost: 500
+    HORSE:
+      Toggle: true
+      Cost: 500
+    LLAMA:
+      Toggle: true
+      Cost: 500
+    MULE:
+      Toggle: true
+      Cost: 500
+    MUSHROOM_COW:
+      Toggle: true
+      Cost: 500
+    OCELOT:
+      Toggle: true
+      Cost: 500
+    PANDA:
+      Toggle: true
+      Cost: 500
+    PARROT:
+      Toggle: true
+      Cost: 500
+    PIG:
+      Toggle: true
+      Cost: 500
+    POLAR_BEAR:
+      Toggle: true
+      Cost: 500
+    PUFFERFISH:
+      Toggle: true
+      Cost: 500
+    RABBIT:
+      Toggle: true
+      Cost: 500
+    SALMON:
+      Toggle: true
+      Cost: 500
+    SHEEP:
+      Toggle: true
+      Cost: 500
+    SNIFFER:
+      Toggle: true
+      Cost: 500
+    SILVERFISH:
+      Toggle: true
+      Cost: 500
+    SQUID:
+      Toggle: true
+      Cost: 500
+    STRIDER:
+      Toggle: true
+      Cost: 500
+    TROPICAL_FISH:
+      Toggle: true
+      Cost: 500
+    TURTLE:
+      Toggle: true
+      Cost: 500
+    WOLF:
+      Toggle: true
+      Cost: 500
+    ZOGLIN:
+      Toggle: true
+      Cost: 500
+    BLAZE:
+      Toggle: true
+      Cost: 1000
+    CAVE_SPIDER:
+      Toggle: true
+      Cost: 1000
+    CREEPER:
+      Toggle: true
+      Cost: 1000
+    CREAKING:
+      Toggle: true
+      Cost: 1000
+    DROWNED:
+      Toggle: true
+      Cost: 1000
+    ENDERMAN:
+      Toggle: true
+      Cost: 1000
+    EVOKER:
+      Toggle: true
+      Cost: 1000
+    GHAST:
+      Toggle: true
+      Cost: 1000
+    GUARDIAN:
+      Toggle: true
+      Cost: 1000
+    HUSK:
+      Toggle: true
+      Cost: 1000
+    IRON_GOLEM:
+      Toggle: true
+      Cost: 1000
+    MAGMA_CUBE:
+      Toggle: true
+      Cost: 1000
+    PHANTOM:
+      Toggle: true
+      Cost: 1000
+    PIGLIN:
+      Toggle: true
+      Cost: 1000
+    PIGLIN_BRUTE:
+      Toggle: true
+      Cost: 1000
+    PILLAGER:
+      Toggle: true
+      Cost: 1000
+    RAVAGER:
+      Toggle: true
+      Cost: 1000
+    SHULKER:
+      Toggle: true
+      Cost: 1000
+    SKELETON:
+      Toggle: true
+      Cost: 1000
+    SLIME:
+      Toggle: true
+      Cost: 1000
+    SPIDER:
+      Toggle: true
+      Cost: 1000
+    STRAY:
+      Toggle: true
+      Cost: 1000
+    VEX:
+      Toggle: true
+      Cost: 1000
+    VINDICATOR:
+      Toggle: true
+      Cost: 1000
+    WITCH:
+      Toggle: true
+      Cost: 1000
+    WITHER_SKELETON:
+      Toggle: true
+      Cost: 1000
+    ZOMBIE:
+      Toggle: true
+      Cost: 1000
+    ZOMBIFIED_PIGLIN:
+      Toggle: true
+      Cost: 1000
+    EMPTY:
+      Toggle: false
+      Cost: 1000
+  # There are 3 options for each entity type:
+  #   Toggle - can this entity spawner be sold
+  #   Refund - the price that is refunded for the spawner
+  #   Upgrades - refunded percentage of upgrade value ( 0.5 -> 50% )
+  Sell:
+    BLAZE:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    CAVE_SPIDER:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    CREEPER:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    CREAKING:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    DROWNED:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    ENDERMAN:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    EVOKER:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    GHAST:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    GUARDIAN:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    HUSK:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    IRON_GOLEM:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    MAGMA_CUBE:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    PHANTOM:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    PIG_ZOMBIE:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    PIGLIN:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    PIGLIN_BRUTE:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    PILLAGER:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    RAVAGER:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    SHULKER:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    SKELETON:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    SLIME:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    SPIDER:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    STRAY:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    VEX:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    VINDICATOR:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    WITCH:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    WITHER_SKELETON:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    ZOMBIE:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    ZOMBIFIED_PIGLIN:
+      Toggle: true
+      Refund: 500
+      Upgrades: 0.5
+    AXOLOTL:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    BAT:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    BEE:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    CAT:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    CHICKEN:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    COD:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    COW:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    DOLPHIN:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    DONKEY:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    ENDERMITE:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    FOX:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    FROG:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    GLOW_SQUID:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    GOAT:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    HOGLIN:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    HORSE:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    LLAMA:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    MULE:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    MUSHROOM_COW:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    OCELOT:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    PANDA:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    PARROT:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    PIG:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    POLAR_BEAR:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    PUFFERFISH:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    RABBIT:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    SALMON:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    SHEEP:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    SNIFFER:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    SILVERFISH:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    SQUID:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    STRIDER:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    TROPICAL_FISH:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    TURTLE:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    WOLF:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    ZOGLIN:
+      Toggle: true
+      Refund: 250
+      Upgrades: 0.5
+    EMPTY:
+      Toggle: false
+      Refund: 500
+Permissions:
+  # Shop buy permissions can be created:
+  #   <permission name>:
+  #     # List of allowed entities.
+  #     # Use ALL to allow all entities.
+  #     entities:
+  #     - PIG
+  #     - ...
+  #     # Previous permission, this permission will
+  #     # include all sub-permission entities.
+  #     sub-permission: <permission name>
+  #
+  # Final permission name - spawnermeta.shop.buy.permission.<permission name>
+  buy: []
+  # Shop sell permissions can be created:
+  #   <permission name>:
+  #     # List of allowed entities.
+  #     # Use ALL to allow all entities.
+  #     entities:
+  #     - PIG
+  #     - ...
+  #     # Previous permission, this permission will
+  #     # include all sub-permission entities.
+  #     sub-permission: <permission name>
+  #
+  # Final permission name - spawnermeta.shop.sell.permission.<permission name>
+  sell: []

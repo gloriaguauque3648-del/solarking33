@@ -1,0 +1,20 @@
+#
+# This configuration uses zMenu, please refer to zMenu documentation
+# zMenu: https://docs.zmenu.dev/
+# zAuctionHouse: https://zauctionhouse.groupez.dev/
+#
+
+name: "zauctionhouse_decoration" # Name of the pattern
+size: 54
+items:
+  decorations:
+    isPermanent: true
+    item:
+      material: BLACK_STAINED_GLASS_PANE
+      name: "&e"
+    slots:
+      - 0-9
+      - 17-18
+      - 26-27
+      - 35-36
+      - 44-53

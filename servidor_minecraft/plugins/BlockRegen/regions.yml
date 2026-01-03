@@ -1,0 +1,5 @@
+# This file stores the defined regeneration regions.
+# Regions can be created in-game using the /br wand and /br save <name> commands.
+# It is not recommended to edit this file manually.
+
+regions:

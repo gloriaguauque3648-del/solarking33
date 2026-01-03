@@ -1,0 +1,383 @@
+prefix: "<gradient:#FF6B6B:#4ECDC4>BATTLE PASS</gradient> &8» "
+
+messages:
+  plugin-enabled: "<gradient:#00FF88:#00D4FF>✓ Battle Pass enabled successfully!</gradient>"
+  config-reloaded: "<gradient:#00FF88:#00D4FF>✓ Configuration reloaded!</gradient>"
+
+  player-only: "<gradient:#FF0000:#FF6B6B>✗ Only players can use this command!</gradient>"
+  no-permission: "<gradient:#FF0000:#FF6B6B>✗ You don't have permission to use this command!</gradient>"
+  player-not-found: "<gradient:#FF0000:#FF6B6B>✗ Player not found!</gradient>"
+  invalid-amount: "<gradient:#FF0000:#FF6B6B>✗ Invalid amount! Please enter a number.</gradient>"
+  amount-must-be-positive: "<gradient:#FF0000:#FF6B6B>✗ Amount must be positive!</gradient>"
+  invalid-item-type: "<gradient:#FF0000:#FF6B6B>✗ Invalid item type! Use 'premium', 'coins' or 'levelboost'.</gradient>"
+
+  usage:
+    battlepass: "<gradient:#FFE66D:#FF6B6B>Usage:</gradient> &f/battlepass"
+    add-premium: "<gradient:#FFE66D:#FF6B6B>Usage:</gradient> &f/battlepass addpremium <player>"
+    remove-premium: "<gradient:#FFE66D:#FF6B6B>Usage:</gradient> &f/battlepass removepremium <player>"
+    add-xp: "<gradient:#FFE66D:#FF6B6B>Usage:</gradient> &f/battlepass addxp <player> <amount>"
+    remove-xp: "<gradient:#FFE66D:#FF6B6B>Usage:</gradient> &f/battlepass removexp <player> <amount>"
+    add-coins: "<gradient:#FFE66D:#FF6B6B>Usage:</gradient> &f/battlepass addcoins <player> <amount>"
+    remove-coins: "<gradient:#FFE66D:#FF6B6B>Usage:</gradient> &f/battlepass removecoins <player> <amount>"
+    giveitem: "<gradient:#FFE66D:#FF6B6B>Usage:</gradient> &f/battlepass giveitem <type> <player> <amount>"
+
+  help:
+    header: "<gradient:#FFD93D:#FF6B6B>⚡ BATTLE PASS COMMANDS ⚡</gradient>"
+    battlepass: "<gradient:#4ECDC4:#45B7D1>/battlepass</gradient> &7- Open the Battle Pass GUI"
+    help: "<gradient:#4ECDC4:#45B7D1>/bp help</gradient> &7- Show this help menu"
+    reload: "<gradient:#4ECDC4:#45B7D1>/bp reload</gradient> &7- Reload the configuration"
+    reset-season: "<gradient:#4ECDC4:#45B7D1>/bp reset season</gradient> &7- Force reset the season"
+    reset-missions: "<gradient:#4ECDC4:#45B7D1>/bp reset missions</gradient> &7- Force reset daily missions"
+    add-premium: "<gradient:#4ECDC4:#45B7D1>/bp addpremium <player></gradient> &7- Give premium pass"
+    remove-premium: "<gradient:#4ECDC4:#45B7D1>/bp removepremium <player></gradient> &7- Remove premium pass"
+    add-xp: "<gradient:#4ECDC4:#45B7D1>/bp addxp <player> <amount></gradient> &7- Add XP to a player"
+    remove-xp: "<gradient:#4ECDC4:#45B7D1>/bp removexp <player> <amount></gradient> &7- Remove XP from a player"
+    add-coins: "<gradient:#4ECDC4:#45B7D1>/bp addcoins <player> <amount></gradient> &7- Add Battle Coins"
+    remove-coins: "<gradient:#4ECDC4:#45B7D1>/bp removecoins <player> <amount></gradient> &7- Remove Battle Coins"
+    giveitem: "<gradient:#4ECDC4:#45B7D1>/bp giveitem <type> <player> <amount></gradient> &7- Give custom items"
+
+  premium:
+    given-sender: "<gradient:#00FF88:#00D4FF>✓</gradient> Premium pass given to <gradient:#FFD93D:#FF6B6B>%target%</gradient>"
+    given-target: "<gradient:#FFD93D:#FF6B6B>★ CONGRATULATIONS ★</gradient>\n<gradient:#F7B731:#FC4A1A>You now have the Premium Battle Pass!</gradient>"
+    removed-sender: "<gradient:#FF6B6B:#FF0000>✗</gradient> Premium pass removed from %target%"
+    removed-target: "<gradient:#FF6B6B:#FF0000>Your Premium Battle Pass has been removed!</gradient>"
+    required: "<gradient:#FF0000:#FF6B6B>⚠ You need the Premium Pass to claim this reward!</gradient>"
+
+  xp:
+    added-sender: "<gradient:#00FF88:#00D4FF>✓</gradient> Added <gradient:#FFD93D:#FF6B6B>%amount% XP</gradient> to %target%"
+    added-target: "<gradient:#00FF88:#45B7D1>+ %amount% XP</gradient>"
+    removed-sender: "<gradient:#FF6B6B:#FF0000>✗</gradient> Removed %amount% XP from %target%"
+    removed-target: "<gradient:#FF6B6B:#FF0000>- %amount% XP</gradient>"
+
+  level-up: "<gradient:#FFD93D:#FF6B6B>⬆ LEVEL UP!</gradient> <gradient:#4ECDC4:#45B7D1>You are now level %level%</gradient>"
+  new-rewards: "<gradient:#00FF88:#45B7D1>NEW REWARDS!</gradient> &fYou have new rewards available to claim!"
+
+  rewards-available: "<gradient:#4ECDC4:#45B7D1>Welcome back!</gradient> &fYou have <gradient:#FFD93D:#FF6B6B>%amount% rewards</gradient> available!"
+  rewards-notification: "You have <gradient:#FFD93D:#FF6B6B>%amount% new rewards</gradient> to claim!"
+
+  mission:
+    completed: "<gradient:#00FF88:#45B7D1>✓ MISSION COMPLETED:</gradient> &a%mission% <gradient:#FFD93D:#FF6B6B>(+%reward_xp% XP)</gradient>"
+    reset: "<gradient:#FF6B6B:#4ECDC4>⟳ Daily missions have been reset!</gradient>"
+    forced-reset: "<gradient:#FF6B6B:#4ECDC4>⟳ An administrator has reset the daily missions!</gradient>"
+    reset-complete: "<gradient:#00FF88:#00D4FF>✓ Missions have been successfully reset!</gradient>"
+    reset-admin: "<gradient:#FF6B6B:#4ECDC4>⟳ %admin% has forcefully reset the daily missions!</gradient>"
+    actionbar-progress: "&c%mission%: &7%current%&f/&8%required%"
+    actionbar-completed: "<gradient:#00FF88:#45B7D1>✓ COMPLETED:</gradient> &a&l%mission%"
+
+  season:
+    reset: "<gradient:#FF0000:#FFD93D>SEASON RESET</gradient>\n<gradient:#4ECDC4:#45B7D1>The Battle Pass season has ended! A new season begins now!</gradient>"
+    forced-reset: "<gradient:#FF0000:#FFD93D>FORCED SEASON RESET</gradient>\n<gradient:#4ECDC4:#45B7D1>An administrator has reset the Battle Pass season!</gradient>"
+    reset-warning: "<gradient:#FFD93D:#FF6B6B>⚠ WARNING:</gradient> &fThe season will be reset in 2 seconds. All player progress will be lost!"
+    reset-complete: "<gradient:#00FF88:#00D4FF>✓ Season has been successfully reset!</gradient>"
+    reset-admin: "<gradient:#FF0000:#FFD93D>SEASON RESET</gradient>\n<gradient:#4ECDC4:#45B7D1>%admin% has forcefully reset the Battle Pass season!</gradient>"
+    ends-in: "&7Season ends in: <gradient:#FFD93D:#FF6B6B>%season_time%</gradient>"
+    achievement: "<gradient:#FFD93D:#FF6B6B>%player%</gradient> has completed the entire Battle Pass!"
+    premium-achievement: "<gradient:#FFD93D:#FF6B6B>%player%</gradient> has become a <gradient:#FF00FF:#00FFFF>LEGEND</gradient> by completing the Premium Battle Pass!"
+
+  rewards:
+    free-claimed: "<gradient:#00FF88:#45B7D1>✓ Free Rewards Claimed!</gradient>"
+    premium-claimed: "<gradient:#FFD93D:#FF6B6B>★ Premium Rewards Claimed!</gradient>"
+    already-claimed: "<gradient:#FF6B6B:#FF0000>✗ You have already claimed this reward!</gradient>"
+    cannot-claim: "<gradient:#FF6B6B:#FF0000>✗ You cannot claim this reward!</gradient>"
+    locked: "<gradient:#FF0000:#FF6B6B>LOCKED</gradient> &7(Level %level% Required)"
+    item-reward: "&7• &f%amount%x <gradient:#4ECDC4:#45B7D1>%item%</gradient>"
+    item-reward-dropped: "&7• &f%amount%x <gradient:#4ECDC4:#45B7D1>%item%</gradient> <gradient:#FFD93D:#FF6B6B>(Dropped on ground)</gradient>"
+    command-reward: "&7• <gradient:#FFD93D:#FF6B6B>%reward%</gradient>"
+    already-claimed-error: "<gradient:#FF6B6B:#FF0000>✗ This reward has already been redeemed! If you believe this is an error, please contact our staff.</gradient>"
+
+  daily-reward:
+    claimed: "<gradient:#00FF88:#45B7D1>✓ Daily Reward Claimed!</gradient> &fYou received <gradient:#FFD93D:#FF6B6B>%amount% XP</gradient>"
+    already-claimed: "<gradient:#FF6B6B:#FF0000>✗ You have already claimed your daily reward!</gradient>"
+
+  coins:
+    distribution-announcement: "<gradient:#FFD93D:#FF6B6B>BATTLE COINS</gradient> <gradient:#4ECDC4:#45B7D1>Top 10 players are receiving their daily Battle Coins!</gradient>"
+    distribution-player: "<gradient:#FFD93D:#FF6B6B>#%rank%</gradient> <gradient:#4ECDC4:#45B7D1>%player%</gradient> &7received <gradient:#FFD93D:#FF6B6B>%amount% Battle Coins</gradient>"
+    received: "<gradient:#00FF88:#45B7D1>+ %amount% Battle Coins!</gradient>"
+    balance: "&7Your Battle Coins: <gradient:#FFD93D:#FF6B6B>%amount%</gradient>"
+    added-sender: "<gradient:#00FF88:#45B7D1>✓</gradient> Added <gradient:#FFD93D:#FF6B6B>%amount% Battle Coins</gradient> to %target%"
+    added-target: "<gradient:#00FF88:#45B7D1>+ %amount% Battle Coins!</gradient>"
+    removed-sender: "<gradient:#FF6B6B:#FF0000>✗</gradient> Removed %amount% Battle Coins from %target%"
+    removed-target: "<gradient:#FF6B6B:#FF0000>- %amount% Battle Coins!</gradient>"
+    insufficient-remove: "<gradient:#FF6B6B:#FF0000>✗</gradient> %target% only has %current% Battle Coins!"
+
+  shop:
+    insufficient-coins: "<gradient:#FF6B6B:#FF0000>✗ Insufficient Battle Coins!</gradient> &7Need: <gradient:#4ECDC4:#45B7D1>%required%</gradient> &7Have: <gradient:#4ECDC4:#45B7D1>%current%</gradient>"
+    purchase-success: "<gradient:#00FF88:#45B7D1>✓ Purchase Successful!</gradient> &fBought %item% &ffor <gradient:#FFD93D:#FF6B6B>%price% Battle Coins</gradient>"
+    shop-title: "<gradient:#FFD93D:#FF6B6B>Battle Pass Shop</gradient>"
+
+  items:
+    given: "<gradient:#00FF88:#45B7D1>✓</gradient> Given <gradient:#FFD93D:#FF6B6B>%amount%x %item%</gradient> to %target%"
+    given-dropped: "<gradient:#00FF88:#45B7D1>✓</gradient> Given <gradient:#FFD93D:#FF6B6B>%amount%x %item%</gradient> to %target% <gradient:#FFE66D:#FF6B6B>(Some items dropped)</gradient>"
+    received: "<gradient:#00FF88:#45B7D1>✓</gradient> You received <gradient:#FFD93D:#FF6B6B>%amount%x %item%</gradient>"
+    already-have-premium: "<gradient:#FF6B6B:#FF0000>✗ You already have the Premium Battle Pass!</gradient>"
+    premium-activated: "<gradient:#FFD93D:#FF6B6B>★ PREMIUM ACTIVATED ★</gradient>\n<gradient:#F7B731:#FC4A1A>You now have access to all premium rewards!</gradient>"
+    coins-redeemed: "<gradient:#00FF88:#45B7D1>✓ Redeemed %amount% Battle Coins!</gradient>"
+    max-level-reached: "<gradient:#FF6B6B:#FF0000>✗ You have already reached the maximum level!</gradient>"
+    xp-boost-used: "<gradient:#00FF88:#45B7D1>★ XP BOOST!</gradient>\n<gradient:#4ECDC4:#45B7D1>Consumed %items% elixir(s) and gained %amount% XP!</gradient>"
+
+gui:
+  battlepass: "<gradient:#FF6B6B:#4ECDC4>⚡ BATTLE PASS</gradient> &8- &7Page %page%"
+  missions: "<gradient:#4ECDC4:#45B7D1>Daily Missions</gradient>"
+  leaderboard: "<gradient:#FFD93D:#FF6B6B>Battle Pass Leaderboard</gradient>"
+  shop: "<gradient:#FFD93D:#FF6B6B>Battle Pass Shop</gradient>"
+
+items:
+  progress:
+    name: "<gradient:#FFD93D:#FF6B6B>⭐ Your Progress</gradient>"
+    lore:
+      - "&7"
+      - "&8▸ &7Level: <gradient:#4ECDC4:#45B7D1>%level%</gradient>&7/<gradient:#4ECDC4:#45B7D1>54</gradient>"
+      - "&8▸ &7XP: <gradient:#FFD93D:#FF6B6B>%xp%</gradient>&7/<gradient:#FFD93D:#FF6B6B>%xp_needed%</gradient>"
+      - "&7"
+      - "&8▸ &7Premium Pass: %premium_status%"
+      - "&8▸ &7Season Ends: <gradient:#FF6B6B:#FFD93D>%season_time%</gradient>"
+      - "&7"
+      - "&7Complete missions to earn XP"
+      - "&7and unlock amazing rewards!"
+
+  premium-status:
+    active: "<gradient:#00FF88:#45B7D1>✓ ACTIVE</gradient>"
+    inactive: "<gradient:#FF6B6B:#FF0000>✗ INACTIVE</gradient>"
+
+  separator:
+    name: " "
+
+  previous-page:
+    name: "<gradient:#4ECDC4:#45B7D1>← Previous Page</gradient>"
+    lore:
+      - "&7Click to go to page %page%"
+
+  next-page:
+    name: "<gradient:#4ECDC4:#45B7D1>Next Page →</gradient>"
+    lore:
+      - "&7Click to go to page %page%"
+
+  missions-button:
+    name: "<gradient:#4ECDC4:#45B7D1>Daily Missions</gradient>"
+    lore:
+      - "&7"
+      - "&7Complete daily missions"
+      - "&7to earn bonus XP!"
+      - "&7"
+      - "&8▸ &7Resets in: <gradient:#FFD93D:#FF6B6B>%reset_time%</gradient>"
+      - "&7"
+      - "<gradient:#4ECDC4:#45B7D1>▶ CLICK TO VIEW</gradient>"
+
+  leaderboard-button:
+    name: "<gradient:#FFD93D:#FF6B6B>Leaderboard</gradient>"
+    lore:
+      - "&7"
+      - "&7View the top 10 players"
+      - "&7with highest battle pass levels!"
+      - "&7"
+      - "&8▸ &7Next Coins: <gradient:#FFD93D:#FF6B6B>%coins_time%</gradient>"
+      - "&7"
+      - "<gradient:#FFD93D:#FF6B6B>▶ CLICK TO VIEW</gradient>"
+
+  shop-button:
+    name: "<gradient:#FFD93D:#FF6B6B>Battle Pass Shop</gradient>"
+    lore:
+      - "&7"
+      - "&7Spend your Battle Coins on"
+      - "&7exclusive rewards and items!"
+      - "&7"
+      - "&8▸ &7Your Coins: <gradient:#FFD93D:#FF6B6B>%coins%</gradient>"
+      - "&7"
+      - "<gradient:#FFD93D:#FF6B6B>▶ CLICK TO OPEN</gradient>"
+
+  daily-reward:
+    name: "<gradient:#FFD93D:#FF6B6B>☀ Daily Reward</gradient>"
+    lore-available:
+      - "&7"
+      - "&7Claim your daily XP bonus!"
+      - "&7"
+      - "&8▸ &7Reward: <gradient:#FFD93D:#FF6B6B>%xp% XP</gradient>"
+      - "&7"
+      - "<gradient:#00FF88:#45B7D1>▶ CLICK TO CLAIM!</gradient>"
+    lore-cooldown:
+      - "&7"
+      - "&7You have already claimed"
+      - "&7your daily reward!"
+      - "&7"
+      - "&8▸ &7Reward: <gradient:#FFD93D:#FF6B6B>%xp% XP</gradient>"
+      - "&8▸ &7Next claim: <gradient:#FF6B6B:#FF0000>%time%</gradient>"
+      - "&7"
+      - "<gradient:#FF6B6B:#FF0000>⏰ ON COOLDOWN</gradient>"
+
+  reward-available:
+    name: "<gradient:#00FF88:#45B7D1>✓ Level %level% Reward</gradient>"
+    lore-header:
+      - "&7"
+      - "<gradient:#4ECDC4:#45B7D1>▼ Rewards ▼</gradient>"
+    lore-footer:
+      - "&7"
+      - "&8▸ &7Required Level: <gradient:#FFD93D:#FF6B6B>%level%</gradient>"
+      - "&7"
+      - "<gradient:#00FF88:#45B7D1>▶ CLICK TO CLAIM!</gradient>"
+
+  reward-claimed:
+    name: "&8Level %level% Reward"
+    lore-header:
+      - "&7"
+      - "&8▼ Rewards ▼"
+    lore-footer:
+      - "&7"
+      - "&8▸ &7Required Level: &8%level%"
+      - "&7"
+      - "&8✓ ALREADY CLAIMED"
+
+  reward-premium-locked:
+    name: "<gradient:#FFD93D:#FF6B6B>Level %level% Premium Reward</gradient>"
+    lore-header:
+      - "&7"
+      - "<gradient:#FFD93D:#FF6B6B>▼ Rewards ▼</gradient>"
+    lore-footer:
+      - "&7"
+      - "&8▸ &7Required Level: <gradient:#FFD93D:#FF6B6B>%level%</gradient>"
+      - "&7"
+      - "<gradient:#FFD93D:#FF6B6B>⭐ PREMIUM ONLY</gradient>"
+
+  reward-level-locked:
+    name: "<gradient:#FF6B6B:#FF0000>Level %level% Reward</gradient>"
+    lore-header:
+      - "&7"
+      - "&8▼ Rewards ▼"
+    lore-footer:
+      - "&7"
+      - "&8▸ &7Required Level: <gradient:#FF6B6B:#FF0000>%level%</gradient>"
+      - "&7"
+      - "<gradient:#FF6B6B:#FF0000>LOCKED</gradient>"
+
+  mission-timer:
+    name: "<gradient:#4ECDC4:#45B7D1>⏰ Time Until Reset</gradient>"
+    lore:
+      - "&7"
+      - "&7Missions reset in:"
+      - "<gradient:#FFD93D:#FF6B6B>%reset_time%</gradient>"
+      - "&7"
+      - "&7Complete missions before"
+      - "&7they reset to earn XP!"
+
+  mission-completed:
+    name: "<gradient:#00FF88:#45B7D1>✓ %mission%</gradient>"
+    lore:
+      - "&7"
+      - "&8▸ &7Progress: <gradient:#00FF88:#45B7D1>%progress%/%required%</gradient>"
+      - "&8▸ &7Reward: <gradient:#FFD93D:#FF6B6B>%reward_xp% XP</gradient>"
+      - "&7"
+      - "&8▸ &7Resets in: <gradient:#FFD93D:#FF6B6B>%reset_time%</gradient>"
+      - "&7"
+      - "<gradient:#00FF88:#45B7D1>✓ COMPLETED</gradient>"
+
+  mission-in-progress:
+    name: "&c&l %mission%"
+    lore:
+      - "&7"
+      - "&8▸ &7Progress: <gradient:#FFE66D:#FF6B6B>%progress%/%required%</gradient>"
+      - "&8▸ &7Reward: <gradient:#FFD93D:#FF6B6B>%reward_xp% XP</gradient>"
+      - "&7"
+      - "&8▸ &7Resets in: <gradient:#FFD93D:#FF6B6B>%reset_time%</gradient>"
+      - "&7"
+      - "<gradient:#FFE66D:#FF6B6B>⚡ IN PROGRESS</gradient>"
+
+  leaderboard-title:
+    name: "<gradient:#FFD93D:#FF6B6B>Top 10 Players</gradient>"
+    lore:
+      - "&7"
+      - "&8▸ &7Season ends: <gradient:#FFD93D:#FF6B6B>%season_time%</gradient>"
+      - "&8▸ &7Next coins: <gradient:#4ECDC4:#45B7D1>%coins_time%</gradient>"
+      - "&7"
+      - "&7Compete for the top spots"
+      - "&7and earn Battle Coins daily!"
+
+  leaderboard-player:
+    name: "%rank% <gradient:#4ECDC4:#45B7D1>%player%</gradient>"
+    lore:
+      - "&7"
+      - "&8▸ &7Level: <gradient:#4ECDC4:#45B7D1>%level%</gradient>"
+      - "&8▸ &7Total Levels: <gradient:#FFD93D:#FF6B6B>%total_levels%</gradient>"
+      - "&8▸ &7XP: <gradient:#4ECDC4:#45B7D1>%xp%</gradient>"
+      - "&8▸ &7Battle Coins: <gradient:#FFD93D:#FF6B6B>%coins%</gradient>"
+      - "&7"
+      - "%status%"
+
+  leaderboard-rank:
+    first: "<gradient:#FFD700:#FFA500>#1</gradient>"
+    second: "<gradient:#C0C0C0:#808080>#2</gradient>"
+    third: "<gradient:#CD7F32:#8B4513>#3</gradient>"
+    other: "&7#%rank%"
+
+  leaderboard-status:
+    you: "<gradient:#00FF88:#45B7D1>★ THIS IS YOU! ★</gradient>"
+    other: "&7Keep grinding to beat them!"
+
+  coins-info:
+    name: "<gradient:#FFD93D:#FF6B6B>Battle Coins Info</gradient>"
+    lore:
+      - "&7"
+      - "&7Battle Coins are special currency"
+      - "&7awarded to top players daily!"
+      - "&7"
+      - "<gradient:#4ECDC4:#45B7D1>▼ How to earn ▼</gradient>"
+      - "&7• Be in the top 10 leaderboard"
+      - "&7• #1 gets 10 coins"
+      - "&7• #2 gets 9 coins"
+      - "&7• ... and so on"
+      - "&7"
+      - "<gradient:#FFD93D:#FF6B6B>▼ What they're for ▼</gradient>"
+      - "&7• Purchase exclusive items"
+      - "&7• Get special perks"
+      - "&7• Show off your dedication!"
+      - "&7"
+      - "&8▸ &7Next distribution: <gradient:#FFD93D:#FF6B6B>%time%</gradient>"
+
+  back-button:
+    name: "<gradient:#FF6B6B:#FF0000>← Back</gradient>"
+    lore:
+      - "&7Return to Battle Pass"
+
+  shop-balance:
+    name: "<gradient:#FFD93D:#FF6B6B>Your Balance</gradient>"
+    lore:
+      - "&7"
+      - "&8▸ &7Battle Coins: <gradient:#FFD93D:#FF6B6B>%coins%</gradient>"
+      - "&7"
+      - "&7Earn more by staying"
+      - "&7in the top 10!"
+
+time:
+  days-hours: "%days%d %hours%h"
+  hours-minutes: "%hours%h %minutes%m"
+  day: "day"
+  days: "days"
+  hour: "hour"
+  hours: "hours"
+  minute: "minute"
+  minutes: "minutes"
+  available-now: "<gradient:#00FF88:#45B7D1>Available now!</gradient>"
+
+reward-types:
+  free: "<gradient:#4ECDC4:#45B7D1>Free</gradient>"
+  premium: "<gradient:#FFD93D:#FF6B6B>Premium</gradient>"
+
+reward-level-locked:
+  name: "<gradient:#FF6B6B:#FF0000>Level %level% Reward</gradient>"
+  lore-header:
+    - "&7"
+    - "&8▼ Rewards ▼"
+  lore-footer:
+    - "&7"
+    - "&8▸ &7Required Level: <gradient:#FF6B6B:#FF0000>%level%</gradient>"
+    - "&7"
+    - "<gradient:#FF6B6B:#FF0000>LOCKED</gradient>"
+
+reward-claimed:
+  name: "&8Level %level% %type% Reward"
+  lore-header:
+    - "&7"
+    - "&8▼ Rewards ▼"
+  lore-footer:
+    - "&7"
+    - "&8▸ &7Required Level: &8%level%"
+    - "&7"
+    - "&8✓ ALREADY CLAIMED"

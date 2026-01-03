@@ -1,0 +1,30 @@
+#
+# This configuration uses zMenu, please refer to zMenu documentation
+# zMenu: https://docs.zmenu.dev/
+# zAuctionHouse: https://zauctionhouse.groupez.dev/
+#
+
+name: '&8%zauctionhouse_category% &8(&f%page%&8/&f%maxPage%&8)'
+
+size: 54
+
+patterns:
+  - "zauctionhouse_decoration"
+  - "zauctionhouse_pagination"
+  - "zauctionhouse_auction"
+
+items:
+  auctionItems:
+    type: ZAUCTIONHOUSE_CATEGORY
+    isPermanent: true
+    slots:
+      - 10-16
+      - 19-25
+      - 28-34
+      - 37-43
+    else:
+      slots:
+        - 22
+      item:
+        material: BARRIER
+        name: '&c&nNo Items Found'

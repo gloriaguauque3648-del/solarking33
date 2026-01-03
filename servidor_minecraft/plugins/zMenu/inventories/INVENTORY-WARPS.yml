@@ -1,0 +1,53 @@
+name: '&0MENU'
+size: 9
+items:
+  btn-2:
+    slot: 2
+    item:
+      material: CHISELED_QUARTZ_BLOCK
+      name: Lobby
+      lore:
+        - 'Inicio del Mundo '
+        - '⇨&8Click para teletrasportarte'
+    actions:
+      -
+        type: sound
+        sound: BLOCK_BAMBOO_SAPLING_PLACE
+        pitch: 1
+        volume: 1
+  btn-4:
+    slot: 4
+    item:
+      material: BOW
+      name: Tienda
+      lore:
+        - 'Aldeanos que te esperan tradear '
+        - 'sus cosas ademas de los precios '
+        - 'accesibles y un ambiente calido'
+        - ''
+        - '⇨&8Click para teletranportarte'
+    actions:
+      -
+        type: sound
+        sound: BLOCK_ANCIENT_DEBRIS_PLACE
+        pitch: 1
+        volume: 1
+  btn-6:
+    slot: 6
+    item:
+      material: GRASS_BLOCK
+      name: 'Mundo Abierto'
+      lore:
+        - 'Aqui puedes explorar y sumergirte '
+        - 'a una aventura totalmente peligrosa '
+        - 'ademas de exelente loot y construcciones '
+        - 'asombrosas. '
+        - ''
+        - '⇨&8Click para teletrasportarte'
+      model-id: 1
+    actions:
+      -
+        type: sound
+        sound: BLOCK_AMETHYST_BLOCK_RESONATE
+        pitch: 1
+        volume: 1

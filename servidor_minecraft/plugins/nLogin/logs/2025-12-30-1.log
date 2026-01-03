@@ -1,0 +1,42 @@
+[2025/12/30 19:18:02 INFO]:           __             _       
+[2025/12/30 19:18:02 INFO]:   _ __   / /  ___   __ _(_)_ __  
+[2025/12/30 19:18:02 INFO]:  | '_ \ / /  / _ \ / _` | | '_ \ 
+[2025/12/30 19:18:02 INFO]:  | | | / /__| (_) | (_| | | | | |
+[2025/12/30 19:18:02 INFO]:  |_| |_\____/\___/ \__, |_|_| |_|
+[2025/12/30 19:18:02 INFO]:                   |___/            
+[2025/12/30 19:18:02 INFO]:  By: www.nickuc.com - V 2.0.7
+[2025/12/30 19:18:02 INFO]:  
+[2025/12/30 19:18:02 DEBUG]: The config.yml file was created successfully.
+[2025/12/30 19:18:03 DEBUG]: Loading the messages_es.yml message file...
+[2025/12/30 19:18:03 DEBUG]: Messages were loaded in 74 ms (single file).
+[2025/12/30 19:18:06 DEBUG]: Settings were loaded in 3948 ms.
+[2025/12/30 19:18:06 DEBUG]: Loading database...
+[2025/12/30 19:18:07 INFO]: Generating RSA keypair... (this may take a while)
+[2025/12/30 19:18:08 INFO]: The RSA key pair was successfully generated. Took 0.99s
+[2025/12/30 19:18:08 DEBUG]: Starting logger filter...
+[2025/12/30 19:21:07 INFO]: 
+[2025/12/30 19:21:07 INFO]:  Thank you so much for choosing nLogin! :)
+[2025/12/30 19:21:07 INFO]: 
+[2025/12/30 19:21:07 INFO]:  For your safety, please read the message below:
+[2025/12/30 19:21:07 INFO]:   Never download nLogin from unknown sources.
+[2025/12/30 19:21:07 INFO]:   A modified version may contain malicious software.
+[2025/12/30 19:21:07 INFO]: 
+[2025/12/30 19:21:07 INFO]:  Trusted sources:
+[2025/12/30 19:21:07 INFO]:   Website: nickuc.com
+[2025/12/30 19:21:07 INFO]:   GitHub: github.com/nickuc-com
+[2025/12/30 19:21:07 INFO]:   OpeNLogin installer (from Spigot or GitHub)
+[2025/12/30 19:21:07 INFO]: 
+[2025/12/30 19:21:07 INFO]:  Official support:
+[2025/12/30 19:21:07 INFO]:   Documentation: docs.nickuc.com/nlogin/
+[2025/12/30 19:21:07 INFO]:   Discord: nickuc.com/discord
+[2025/12/30 19:21:07 INFO]:   Email: support@nickuc.com
+[2025/12/30 19:21:07 INFO]: 
+[2025/12/30 19:21:49 DEBUG]: Loading the messages_es.yml message file...
+[2025/12/30 19:21:49 DEBUG]: Messages were loaded in 8 ms (single file).
+[2025/12/30 19:21:49 DEBUG]: Settings were loaded in 14 ms.
+[2025/12/30 19:22:13 DEBUG]: [SQLite] [UPDATE]: "INSERT INTO `nlogin` (`last_name`, `unique_id`, `mojang_id`, `bedrock_id`, `password`, `last_ip`, `creation_date`, `last_seen`, `email`, `discord`, `settings`) VALUES ('apolofs', 9e9c9df857aa3ef38bb9b85629a1c59c, null, null, '$argon2id$v=19$m=32768,t=5,p=1$TvgfiU2pyaF4Y1q5VnFx9g$I97qSs2XNrmsd4Ri1/CXoCzC8AA0ln8K+ovNiC4N7IQ', '192.168.194.149', '2025-12-30 19:22:13.184', '2025-12-30 19:22:13.184', null, null, '{"settings":[{"value":true,"key":"force-invalid-session"}],"version":0}')" (applied to all columns)
+[2025/12/30 19:22:13 INFO]: The user apolofs has successfully registered.
+[2025/12/30 19:22:20 DEBUG]: [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'apolofs', `unique_id` = 9e9c9df857aa3ef38bb9b85629a1c59c,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$argon2id$v=19$m=32768,t=5,p=1$TvgfiU2pyaF4Y1q5VnFx9g$I97qSs2XNrmsd4Ri1/CXoCzC8AA0ln8K+ovNiC4N7IQ', `last_ip` = '192.168.194.149', `creation_date` = 2025-12-30 19:22:13.184, `last_seen` = 2025-12-30 19:22:20.631, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":true,"key":"force-invalid-session"},{"value":"es","key":"language"}],"version":0}' WHERE `ai` = 1" (applied to [last_seen, settings] columns)
+[2025/12/30 19:22:45 DEBUG]: [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'apolofs', `unique_id` = 9e9c9df857aa3ef38bb9b85629a1c59c,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$argon2id$v=19$m=32768,t=5,p=1$TvgfiU2pyaF4Y1q5VnFx9g$I97qSs2XNrmsd4Ri1/CXoCzC8AA0ln8K+ovNiC4N7IQ', `last_ip` = '192.168.194.149', `creation_date` = 2025-12-30 19:22:13.184, `last_seen` = 2025-12-30 19:22:45.39, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":"es","key":"language"}],"version":0}' WHERE `ai` = 1" (applied to [last_ip, last_seen, settings] columns)
+[2025/12/30 19:22:45 INFO]: The user apolofs has successfully logged in.
+[2025/12/30 19:51:29 INFO]: Successful plugin core shutdown (took 0.00s)

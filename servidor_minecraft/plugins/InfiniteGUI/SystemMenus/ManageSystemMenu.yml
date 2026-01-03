@@ -1,0 +1,79 @@
+title: Manage System Menus
+rows: 6
+slots:
+- 10-16
+- 19-25
+- 28-34
+- 37-43
+exit:
+  enabled: true
+  slot: 53
+  item:
+    name: '&cBack'
+    lore:
+    - '&7Click to go back to the main menu.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTljZGI5YWYzOGNmNDFkYWE1M2JjOGNkYTc2NjVjNTA5NjMyZDE0ZTY3OGYwZjE5ZjI2M2Y0NmU1NDFkOGEzMCJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+empty-fill:
+  enabled: true
+  slots:
+  - all
+  item:
+    name: '&r'
+    lore: []
+    type: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+previous:
+  enabled: true
+  slot: 48
+  item:
+    name: '&cBack'
+    lore: []
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjU2NDM5YzNmNjVlOWZlNDFmMmQ4YmU0N2JmNDkzZjE0M2FjYWRmZDVkYmVhODZmZWE2ZGJlMTllNDM1ZWEifX19
+    amount: 1
+    item-flags: []
+    unbreakable: false
+    enchantments: []
+next:
+  enabled: true
+  slot: 50
+  item:
+    name: '&cNext'
+    lore: []
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWEyMGQ2ZWYxMjY4MTMwNjZhMjU3N2NjYzVkZjcxMDI2ODNmMWFmN2MzZTk0ZTQ1YWI5YWQ2N2VkYmI1MiJ9fX0=
+    amount: 1
+    item-flags: []
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+system-menu-item:
+  enabled: true
+  item:
+    name: '&a%title% &7[System Menu]'
+    lore:
+    - ''
+    - '&7You can edit this system menu'
+    - '&7by clicking on this item'
+    - ''
+    - '&eLeft click to modify &dtitle'
+    - '&eLeft + Shift click to modify &brows'
+    - '&eRight click to modify &aedit'
+    type: ENDER_CHEST
+    amount: 1
+    item-flags: []
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0

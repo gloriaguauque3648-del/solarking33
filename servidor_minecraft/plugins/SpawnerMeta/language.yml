@@ -1,0 +1,426 @@
+#
+# Language file has been updated!
+#
+# (!!!) Legacy colors (&a&1&b...) are NO longer available.
+#
+# New text formatting:
+#
+# Color format:
+#   <#123abc>
+#   <#ABC987>
+#   ...
+#
+# Gradient format:
+#   <#ff0000-#00ff00>
+#   <#ff0000-#ffff00-#00ff00>
+#   ...
+#
+# Modifier format:
+#   bold - <!bold> or <!b>
+#   italic - <!italic> or <!i>
+#   underline - <!underline> or <!u>
+#   strikethrough - <!strikethrough> or <!s>
+#   obfuscated - <!obfuscated> or <!o>
+#
+# If you find any errors or bugs, or any text shows
+#   incorrectly then be sure to report it.
+
+Upgrade-GUI:
+  purchase:
+    range: <#00ff00>(!) <#80ff00>Upgraded <#00ffff-#008080><!italic>range <#80ff00>to
+      level %level%
+    delay: <#00ff00>(!) <#80ff00>Upgraded <#ffff00-#ff8000><!italic>delay <#80ff00>to
+      level %level%
+    amount: <#00ff00>(!) <#80ff00>Upgraded <#ff00ff-#800080><!italic>amount <#80ff00>to
+      level %level%
+  name: Spawner
+  items:
+    upgrade:
+      name:
+        range: <#00ffff-#008080>-= Range %level% =-
+        delay: <#ffff00-#ff8000>-= Delay %level% =-
+        amount: <#ff00ff-#800080>-= Amount %level% =-
+      help: <#808080><!italic>Click to upgrade!
+      info:
+        range:
+        - '  <#99bfbf>Shows required player distance'
+        - <#99bfbf>from the spawner to be active
+        delay:
+        - '  <#bfbf99>Shows time between each spawning'
+        - <#bfbf99>if active
+        amount:
+        - '  <#bf99bf>Shows amount of entities that'
+        - <#bf99bf>will spawn each time
+      current:
+        range: '<#bfbfbf>Current range: <#80ffff-#00ffff><!italic>%value% Blocks'
+        delay: '<#bfbfbf>Current delay: <#ffff80-#ffff00><!italic>%value% Seconds'
+        amount: '<#bfbfbf>Current amount: <#ff80ff-#ff00ff><!italic>%value% Entities'
+      next:
+        range: '<#bfbfbf>Next range: <#80ffff-#00ffff><!italic>%value% Blocks'
+        delay: '<#bfbfbf>Next delay: <#ffff80-#ffff00><!italic>%value% Seconds'
+        amount: '<#bfbfbf>Next amount: <#ff80ff-#ff00ff><!italic>%value% Entities'
+      maximum-reached: <#008000>Maximum level has been reached!
+      price: '<#ffffff>Price: <#00bf00><!italic>%price%'
+    disabled-upgrade:
+      name:
+        range: <#00ffff-#008080>-= Range =-
+        delay: <#ffff00-#ff8000>-= Delay =-
+        amount: <#ff00ff-#800080>-= Amount =-
+      help: <#800000>Cannot be upgraded!
+      current:
+        range: '<#bfbfbf><!italic>Current range: <#80ffff-#00ffff>%value% Blocks'
+        delay: '<#bfbfbf><!italic>Current delay: <#ffff80-#ffff00>%value% Seconds'
+        amount: '<#bfbfbf><!italic>Current amount: <#ff80ff-#ff00ff>%value% Entities'
+    stats:
+      name: <#bfffff-#00ffff>-= %type% Spawner =-
+      disabled: <#ff0000>DISABLED <#bfbfbf><!italic>(Click to enable)
+      enabled: <#00ff00>ENABLED <#bfbfbf><!italic>(Click to disable)
+      empty: <#bfbfbf>Shift-right-click on this spawner to empty it.
+      location: '<#bfbfbf>Location: <#ff0000>%x%<#808080>, <#ff0000>%y%<#808080>,
+        <#ff0000>%z%'
+      stacking:
+        infinite: '<#bfbfbf>Stacked: <#bfff00>%stack% Spawner'
+        finite: '<#bfbfbf>Stacked: <#bfff00>%stack%/%limit% Spawners'
+      spawnable: '<#bfbfbf>Spawnable Entities: <#ffff00-#ffbf00>%spawnable%'
+      warnings:
+        header: '<#ff0000><!underline>Spawner has %count% warning(s):'
+        light: '  <#ff8000><!italic>insufficient light level'
+        environment: '  <#ff8000><!italic>insufficient spawn space'
+        ground: '  <#ff8000><!italic>missing correct ground type'
+        charges: '  <#ff8000><!italic>out of charges'
+        power: '  <#ff8000><!italic>insufficient redstone power'
+        unknown: '  <#ff8000><!italic>invalid spawn conditions'
+      owner-offline:
+      - <#ffbf00>Unable to spawn because the owner
+      - '  <#ffbf00>of this spawner is offline!'
+      lore: []
+    charges:
+      name: '<#ff0080-#ff0000>Spawning Charges: <#00ffff>%charges%'
+      purchase:
+        first: <#bfbfbf>Left-Click to purchase <#ffff00>%charges% charges <#808080><!italic>(%price%)
+        second: <#bfbfbf>Right-Click to purchase <#ff8000>%charges% charges <#808080><!italic>(%price%)
+        all: <#bfbfbf>Shift-Click to purchase <#ff0000>%charges% charges <#808080><!italic>(%price%)
+  charges:
+    purchase: <#00ff00>(!) <#00ffff>You bought %charges% spawner charges
+  disabled-upgrade: <#800000>(!) <#ff8000>You cannot upgrade this!
+Spawner-item:
+  regular:
+    name: <#bfffff-#00ffff>Spawner <#ffff00-#ffaa00>(%type%)
+  empty:
+    name: <#ff8000><Empty> <#bfffff-#00ffff>Spawner
+  empty-stored:
+    name: '<#ff8000><Empty : %type%> <#bfffff-#00ffff>Spawner'
+  header: '<#ffffff>Upgrades:'
+  upgrade:
+    range: <#808080>- <#00ffff-#008080><!italic>Range <#00ffff>%level%
+    delay: <#808080>- <#ffff00-#ff8000><!italic>Delay <#00ffff>%level%
+    amount: <#808080>- <#ff00ff-#800080><!italic>Amount <#00ffff>%level%
+  charges: '<#ff0080-#ff0000>Charges: <#00ffff>%charges%'
+  spawnable: '<#ffff00-#ff8000>Spawnable Entities: <#00ffff>%spawnable%'
+  info: []
+Spawner-view:
+  name: <#000000>All Spawners
+  items:
+    name: <#ffff00>-=[ <#00ffff>%type% Spawner<#ffff00> ]=-
+    header:
+      range: '<#00ffff-#008080><!italic>Range:'
+      delay: '<#ffff00-#ff8000><!italic>Delay:'
+      amount: '<#ff00ff-#800080><!italic>Amount:'
+    price: '<#808080>- <#bfbfbf>Price: <#ffffff><!italic>%price%'
+    price-increase: '<#808080>- <#bfbfbf>Price Increase: <#ffffff><!italic>%increase%'
+    maximum-level: '<#808080>- <#bfbfbf>Maximum Level: <#ffffff><!italic>%level%'
+    spawnable: '<#bfbfbf>Spawnable Entities: <#ffff00-#ff8000>%spawnable%'
+    page:
+      current: <#00ffff>Page %page%
+      next: <#ff8000>Next Page
+      previous: <#ff8000>Previous Page
+  permission: <#ff8000>Previous Page
+Prices:
+  type:
+    experience:
+      insufficient: Not enough experience!
+      amount: '%amount% Experience'
+    levels:
+      insufficient: Not enough experience levels!
+      amount: '%amount% Experience Levels'
+    material:
+      insufficient: Not enough materials!
+      amount: '%amount% × %material%'
+    economy:
+      insufficient: Insufficient funds!
+      amount: $%amount%
+    flare-tokens:
+      insufficient: Insufficient tokens!
+      amount: '%amount% Tokens'
+    player-points:
+      insufficient: Insufficient player points!
+      amount: '%amount% Player points'
+  insufficient: <#800000>(!) <#ff8000>%insufficient% <#bfbfbf>[Missing %price%]
+Holograms:
+  empty:
+    single: <#ff8000><Empty> <#bfffff-#00ffff>Spawner
+    multiple: <#ffff00>%stack% <#bfbfbf>× <#ff8000><Empty> <#bfffff-#00ffff>Spawner
+  regular:
+    single: <#bfffff-#00ffff>%name% Spawner
+    multiple: <#ffff00>%stack% <#bfbfbf>× <#bfffff-#00ffff>%name% Spawner
+  warning: <#ffff00>( <#800000>!!! <#ffff00>)
+Shop-buy:
+  name: <#000000>Spawner Shop <#808080>(<#ff8000>%page_current%<#808080>/<#ff8000>%page_total%<#808080>)
+  items:
+    page:
+      current: <#00ffff>Page %page%
+      next: <#ff8000>Next Page
+      previous: <#ff8000>Previous Page
+    spawner:
+      name: <#bfffff-#00ffff>Spawner <#ffff00-#ffaa00>(%type%)
+      price: '<#ffffff>Price: <#00bf00><!italic>%price%'
+      purchase:
+        first: <#bfbfbf>Left-click to purchase %amount%
+        second: <#bfbfbf>Right-click to purchase %amount%
+        third: <#bfbfbf>Shift-left-click to purchase %amount%
+        all: <#bfbfbf>Shift-right-click to purchase maximum
+  purchase:
+    success: <#008000>(!) <#00ffff>Purchased <#ffff00-#ffaa00>%amount% × %type%<#00ffff>
+      Spawner(s)!
+  permission:
+    opening: <#800000>(!) <#ff8000>You do not have a permission to open this!
+    purchase: <#800000>(!) <#ff8000>You do not have a permission to purchase this!
+Shop-sell:
+  name: <#000000>Spawners Selling
+  accept: <#00ff00>Sell
+  cancel: <#ff0000>Close
+  items:
+    selling:
+      name: '<#00ffff>Selling for:'
+      price: <#bfbfbf>- <#00bf00>%price%
+  selling:
+    success: '<#008000>(!) <#00ffff>Successfully sold spawners for:'
+    empty: <#800000>(!) <#ff8000>Nothing to sell!
+    unable: <#800000>(!) <#ff8000>Unable to sell that!
+  disabled: <#800000>(!) <#008080>Spawner shop has been disabled!
+  permission:
+    opening: <#800000>(!) <#ff8000>You do not have a permission to open this!
+    selling: <#800000>(!) <#ff8000>You do not have a permission to sell this!
+Shop-select:
+  name: <#000000>Spawners Selling
+  buy-shop: <#00ffff>Click to purchase spawners
+  sell-shop: <#00ffff>Click to sell spawners
+  permission:
+    opening: <#800000>(!) <#ff8000>You do not have a permission to open this!
+Inventory:
+  insufficient-space: <#800000>(!) <#ff8000>You do not have enough space in your inventory!
+Items:
+  spawner-drop:
+    alert: <#00ffff>You have <#ffff00>%seconds% seconds <#00ffff>to take your spawner
+      items! <#ffffff>(click or /spawnerdrops)
+    cleared: <#800000>(!) <#ff8000>Your spawner drops disappeared, was not taken in
+      time!
+    try-breaking: <#800000>(!) <#ff8000>Cannot break spawners while you have not taken
+      previously dropped items!
+    empty: <#800000>(!) <#ff8000>No items to give!
+Spawners:
+  placing:
+    permission: <#800000>(!) <#ff8000>You do not have a permission to place this!
+  breaking:
+    success: <#00ff00>(!) <#00ffff>Spawner successfully mined!
+    failure: <#800000>(!) <#008080>Spawner failed to mine!
+    permission: <#800000>(!) <#ff8000>You do not have a permission to break this!
+  stacking:
+    stacked:
+      infinite: <#008000>(!) <#00ffff>Spawners have been stacked! <#ffff00>(%stack%
+        Stacked)
+      finite: <#008000>(!) <#00ffff>Spawners have been stacked! <#ffff00>(%stack%/%limit%
+        Stacked)
+    unequal-spawner: <#800000>(!) <#ff8000>Spawners must be the same to stack!
+    disabled-type: <#800000>(!) <#ff8000>You cannot stack this spawner!
+    limit-reached: <#800000>(!) <#ff8000>This spawner has reached its stacking limit!
+    nearby:
+      none-match: <#800000>(!) <#ff8000>Unable to find any nearby spawner to stack
+        to that matches!
+    permission: <#800000>(!) <#ff8000>You do not have a permission to stack this!
+  chunks:
+    limit-reached: <#800000>(!) <#ff8000>This chunk has reached its spawner limit!
+  ownership:
+    limit:
+      place: <#008000>(!) <#00ffff>Spawner placed <#ff8000>(<#ffff00>%placed%<#ff8000>/<#ffff00>%limit%<#ff8000>)
+      reached: <#800000>(!) <#ff8000>You have reach your spawner limit! <#bfbfbf>(%limit%)
+    stacking:
+      warning: <#800000>(!) <#ff8000>You cannot stack a spawner that you do not own!
+    breaking:
+      warning: <#800000>(!) <#ff8000>You cannot break a spawner that you do not own!
+    upgrading:
+      warning: <#800000>(!) <#ff8000>You cannot upgrade a spawner that you do not
+        own!
+    opening:
+      warning: <#800000>(!) <#ff8000>You cannot open a spawner that you do not own!
+    changing:
+      warning: <#800000>(!) <#ff8000>You cannot change a spawner that you do not own!
+    show-owner: <#008000>(!) <#ffff00>This spawner is owner by <#00ffff>%player%
+  natural:
+    changing:
+      warning: <#800000>(!) <#ff8000>You cannot change a natural spawner!
+    breaking:
+      warning: <#800000>(!) <#ff8000>You cannot break a natural spawner!
+    stacking:
+      warning: <#800000>(!) <#ff8000>You cannot stack a natural spawner!
+    opening:
+      warning: <#800000>(!) <#ff8000>You cannot open a natural spawner!
+    upgrading:
+      warning: <#800000>(!) <#ff8000>You cannot upgrade a natural spawner!
+  changing:
+    type-changed: <#008000>(!) <#00ffff>Spawner type set to <#ffff00>%type%
+    same-type: <#800000>(!) <#ff8000>You cannot set the same entity type!
+    dany:
+      from: <#800000>(!) <#ff8000>You cannot change this entity type spawner!
+      to: <#800000>(!) <#ff8000>You cannot set this entity type!
+    permission: <#800000>(!) <#ff8000>You do not have a permission to use this!
+    eggs:
+      insufficient: <#800000>(!) <#ff8000>Not enough spawn eggs <#bfbfbf>(Requires
+        %required%)
+  charges:
+    lose-by-stacking: <#800000>(!) <#ff8000>Lost <#ffff00>%charges% charge(s) <#ff8000>when
+      stacking!
+  upgrades:
+    disabled: <#800000>(!) <#ff8000>You cannot upgrade this!
+    permission:
+      opening: <#800000>(!) <#ff8000>You do not have a permission to open this!
+      purchase: <#800000>(!) <#ff8000>You do not have a permission to upgrade this!
+  empty:
+    disabled: <#800000>(!) <#008080>Empty spawners are disabled!
+    try-open: <#800000>(!) <#008080>Cannot open empty spawners!
+    hand-full: <#800000>(!) <#008080>You must have an empty hand to remove spawner
+      egg(s)!
+    verify-removing:
+      first: <#ff8000>(!) <#ffff00>Left click to verify removing eggs from this spawner!
+      try-again: <#800000>(!) <#008080>You first have to sneak and right click the
+        empty spawner!
+  view:
+    empty: <#800000>(!) <#008080>Nothing to view!
+    disabled: <#800000>(!) <#008080>Spawner viewing is disabled!
+  give:
+    success: <#008000>(!) <#008080>Added <#00ffff>%amount% <#008080>× <#00ffff>%type%
+      Spawner <#008080>to your inventory!
+    success-single: <#008000>(!) <#008080>Added <#00ffff>%type% Spawner <#008080>to
+      your inventory!
+Locations:
+  header: '<#00ffff>You have placed %count% spawner(s) at:'
+  world: '  <#808080>(%world%)'
+  position: <#ff0080>%index%. <#c4c4c4>%x%, %y%, %z%
+  none-owned: <#ff8000>You do not own any spawners!
+Trusted:
+  help:
+    primary:
+    - '<#00ff80>Usage: <#80ffff>/spawnertrust'
+    - '  <#80ffff>add [player] <#cccccc>- add trusted player'
+    - '  <#80ffff>remove [player] <#cccccc>- remove trusted player'
+    - '  <#80ffff>clear <#cccccc>- remove all trusted players'
+    - '  <#80ffff>view <#cccccc>- view all trusted players'
+    add: '<#00ff80>Usage: <#80ffff>/spawnertrust add [player]'
+    remove: '<#00ff80>Usage: <#80ffff>/spawnertrust remove [player]'
+  info:
+    unknow-player: <#ff0000>Unknown player!
+    already-trusted: <#ff8000>You already trust this player!
+    not-trusted: <#ff8000>You already do not trust this player!
+    empty: <#ff8000>You do not trust any players!
+    added: <#00ffff>Added this player to your trust list!
+    removed: <#00ffff>Removed this player from your trust list!
+    cleared: <#00ffff>Removed %count% player(s) from your trust list!
+  header: '<#00ffff>You have %count% player(s) in your trust list:'
+  player: <#ff0080>%index%. <#c4c4c4>%player%
+Entities:
+  name:
+    ALLAY: Allay
+    ARMADILLO: Armadillo
+    ARMOR_STAND: Armor Stand
+    AXOLOTL: Axolotl
+    BAT: Bat
+    BEE: Bee
+    BLAZE: Blaze
+    BOAT: Boat
+    BOGGED: Bogged
+    BREEZE: Breeze
+    CAMEL: Camel
+    CAT: Cat
+    CAVE_SPIDER: Cave Spider
+    CHICKEN: Chicken
+    COD: Cod
+    COPPER_GOLEM: Copper Golem
+    COW: Cow
+    CREEPER: Creeper
+    CREAKING: Creaking
+    DOLPHIN: Dolphin
+    DONKEY: Donkey
+    DROWNED: Drowned
+    ELDER_GUARDIAN: Elder Guardian
+    ENDERMAN: Enderman
+    ENDERMITE: Endermite
+    ENDER_DRAGON: Ender Dragon
+    EVOKER: Evoker
+    EXPERIENCE_BOTTLE: Experience Bottle
+    EXPERIENCE_ORB: Experience Orb
+    FOX: Fox
+    FROG: Frog
+    GHAST: Ghast
+    GIANT: Giant
+    GLOW_SQUID: Glow Squid
+    GOAT: Goat
+    GUARDIAN: Guardian
+    HOGLIN: Hoglin
+    HORSE: Horse
+    HUSK: Husk
+    ILLUSIONER: Illusioner
+    IRON_GOLEM: Iron Golem
+    LLAMA: Llama
+    MAGMA_CUBE: Magma Cube
+    MINECART: Minecart
+    MINECART_CHEST: Minecart with Chest
+    MINECART_COMMAND: Minecart with Command Block
+    MINECART_FURNACE: Minecart with Furnace
+    MINECART_HOPPER: Minecart with Hopper
+    MINECART_SPAWNER: Minecart with Spawner
+    MINECART_TNT: Minecart with TNT
+    MULE: Mule
+    MUSHROOM_COW: Mushroom Cow
+    OCELOT: Ocelot
+    PANDA: Panda
+    PARROT: Parrot
+    PHANTOM: Phantom
+    PIG: Pig
+    PIGLIN: Piglin
+    PIGLIN_BRUTE: Piglin Brute
+    PILLAGER: Pillager
+    POLAR_BEAR: Polar Bear
+    PUFFERFISH: Pufferfish
+    RABBIT: Rabbit
+    RAVAGER: Ravager
+    SALMON: Salmon
+    SHEEP: Sheep
+    SHULKER: Shulker
+    SILVERFISH: Silverfish
+    SKELETON: Skeleton
+    SKELETON_HORSE: Skeleton Horse
+    SLIME: Slime
+    SNIFFER: Sniffer
+    SNOWMAN: Snowman
+    SPIDER: Spider
+    SQUID: Squid
+    STRAY: Stray
+    STRIDER: Strider
+    TADPOLE: Tadpole
+    TRADER_LLAMA: Trader Llama
+    TROPICAL_FISH: Tropical Fish
+    TURTLE: Turtle
+    VEX: Vex
+    VILLAGER: Villager
+    VINDICATOR: Vindicator
+    WANDERING_TRADER: Wandering Trader
+    WARDEN: Warden
+    WITCH: Witch
+    WITHER: Wither
+    WITHER_SKELETON: Wither Skeleton
+    WOLF: Wolf
+    ZOGLIN: Zoglin
+    ZOMBIE: Zombie
+    ZOMBIE_HORSE: Zombie Horse
+    ZOMBIE_VILLAGER: Zombie Villager
+    ZOMBIFIED_PIGLIN: Zombified Piglin

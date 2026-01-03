@@ -1,0 +1,120 @@
+title: Manage Item Attributes
+rows: 6
+empty-fill:
+  enabled: true
+  slots:
+  - all
+  item:
+    name: '&r'
+    lore: []
+    type: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+exit:
+  enabled: true
+  slot: 53
+  item:
+    name: '&cBack'
+    lore:
+    - '&7Click to go back to the item editor.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzUxY2VkMmU2NDczNjZmOGYzYWQyZGZlNDE1Y2NhODU2NTFiZmFmOTczOWE5NWNkNTdiNmYyMWNiYTA1MyJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+previous:
+  enabled: true
+  slot: 48
+  item:
+    name: '&cBack'
+    lore: []
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjU2NDM5YzNmNjVlOWZlNDFmMmQ4YmU0N2JmNDkzZjE0M2FjYWRmZDVkYmVhODZmZWE2ZGJlMTllNDM1ZWEifX19
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+next:
+  enabled: true
+  slot: 50
+  item:
+    name: '&cNext'
+    lore: []
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWEyMGQ2ZWYxMjY4MTMwNjZhMjU3N2NjYzVkZjcxMDI2ODNmMWFmN2MzZTk0ZTQ1YWI5YWQ2N2VkYmI1MiJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+new-create-attribute:
+  enabled: true
+  slot: 45
+  item:
+    name: '&e&lCreate New Attribute Modifier&r'
+    lore:
+    - ''
+    - '&7Create new attribute modifier'
+    - '&7for this item!'
+    - ''
+    - '&bClick to create.'
+    type: OAK_SIGN
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+no-attributes-found:
+  enabled: true
+  slot: 22
+  item:
+    name: '&cNo Item Attributes Found'
+    lore:
+    - '&7There are currently no'
+    - '&7attribute modifiers available.'
+    - '&7Use the ''&e&lCreate New Attribute Modifier&r&7'' button'
+    type: RED_STAINED_GLASS_PANE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+attribute:
+  enabled: true
+  slots:
+  - 10-16
+  - 19-25
+  - 28-34
+  - 37-43
+  - 46-52
+  item:
+    name: '&e%name%'
+    lore:
+    - ''
+    - '&bIdentifier: &f%id%'
+    - '&bCurrent Modifier: &f%modifier%'
+    - '&bOperation: &f%operation%'
+    - '&bSlot: &f%slot%'
+    - ''
+    - '&eLeft Click to edit modifier.'
+    - '&eRight Click to change slot.'
+    - '&eLeft Shift Click to change operation.'
+    - '&eRight Shift Click to &cdelete modifier&e.'
+    type: IRON_INGOT
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0

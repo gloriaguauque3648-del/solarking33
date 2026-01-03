@@ -1,0 +1,253 @@
+# NOTE: Remember to check each update for language file changes or you may receive 'null' messages in chat.
+
+could-not-find-user: '&7Could not find the user &e%player%'
+no-permission: '&7You do not have permission to execute this command.'
+inventory-full: '&cYour inventory is full.'
+disallowed-permission: '&7You do not have permission to use Battlepass.' # This is used if you give a user battlepass.block to disallow them from using the battlepass.
+collectable-rewards-notification: '&e&lHEY! &eYou have rewards available to claim.
+  Check them out in /bp open rewards.'
+
+daily-quest-reset: '&eThere have been some quests that have reset.'
+
+week-status-locked: '&cLocked'
+week-status-unlocked: '&aUnlocked'
+
+season-finished-message: '&aFinished' # This is displayed as the %week% if the season is finished. Remove this line to have it go to the minimum week.
+
+# Result of %condition_status% placeholder in week/daily menu
+condition-status:
+  pass: In the process of execution... # When player meets required conditions
+  fail: Closed # When player doesn't meet required conditions
+  completed: Completed # When quest is already completed
+
+event-status:
+  before: '&cStart in %date%'
+  started: '&eEnds in %date%'
+  ended: '&cAlready Ended'
+  no-permission: '&cNo permission'
+  not-completed-required: '&cFirstly, you need to complete %categories%'
+
+progress-bar:
+  complete-color: '&a'
+  incomplete-color: '&c'
+  symbol: '|'
+
+boosters:
+  points: points
+  progress: Progress
+  rewards: Rewards
+  serverStarted: '&7&l+&a&l%percent%% &6&l%type% &r&eserver booster started for &6&l%time%&7.
+    &eIt affects &6&l%affects%'
+  playerStarted: '&7&l+&a&l%percent%% &6&l%type% &r&ebooster started for &6&l%time%&7.
+    &eIt affects &6&l%affects%'
+  serverEnded: '&7&l+&a&l%percent%% &4&l%type% &r&cserver booster ended. &cIt affected
+    &6&l%affects%'
+  playerEnded: '&7&l+&a&l%percent%% &4&l%type% &r&cbooster ended. &cIt affected &6&l%affects%'
+  menu: '&6✰ &2&l+%booster%% &a%type% booster'
+  command:
+    booster: '&6✰ &2&l+%booster%% &a%type% booster which affects &2&l%affects% &7(&c%time%&7)'
+    server: '&7» &2&lServer Boosters'
+    player: '&7» &2&lPlayer Boosters'
+  affects:
+    join: '&r&f, '
+    all: everything
+    daily: daily quests
+    week: weekly quests
+    n-week: week %num%
+    tier: tier %tier%
+    event: event %event%
+
+stats-command:
+- '&eYour BattlePass Stats:'
+- '  &8- &ePass Type: &f%pass_type%'
+- '  &8- &eTier: &f%tier%'
+- '  &8- &eTotal Points: &f%total_points%'
+# - '  &8- &eBalance: &f%balance%' # Only used if you use internal for excess points in the settings.yml
+
+date-time-format: <years:y ><months:mo ><weeks:w ><days:d ><hours:h ><minutes:m ><seconds:s> # <key:TEXT AFTER NUMBER>
+
+quests:
+  # The base message will be used for all quests unless another message is set.
+  base-message-progressed: '&8[&eQuests&8] &7You progressed the quest &e%quest_name%
+    &8(&e%progress%&7/&8&e%required_progress%&8)'
+  base-message-completed: '&8[&eQuests&8] &7You completed the quest &e%quest_name%'
+  
+  boss-bar-message-progressed: '&7&e%quest_name% Quest Progressed &8(&e%progress%&7/&8&e%required_progress%&8)'
+  boss-bar-message-completed: '&7&e%quest_name% Quest Completed'
+  
+  # The message set below will overwrite the one set as the base message.
+  # <quest name>-progressed: "<Your  message>"
+  # <quest-name>-completed: "<Your Message>"
+  # These are here as examples, and you can make as many as necessary.
+  askyblock_createisland-progressed: '&eQuests >> &7Custom ASkyblock progression message
+    :D. &8(&e%progress%&7/&8%required_progress%&8)'
+  askyblock_createisland-completed: '&eQuests >> &7You completed the ASkyblock island
+    quest!'
+  
+  steps:
+    completed-info: '&7Already completed'
+    base-message-step-completed: '&8[&eQuests&8] &7You completed one step of the quest
+      &e%quest_name%'
+    boss-bar-message-step-completed: '&7&e%quest_name% Step Completed'
+
+quest-select:
+  cancel: '&cClick LMB to cancel quest'
+  select: '&aClick LMB to select quest'
+  limit: '&cYou can''t select more quests!'
+  selected: '&aSelected quest %quest%'
+  cancelled: '&cCancelled quest %quest%'
+
+daily-quests:
+  # This section will only be used if the quest is daily. If messages aren't present here but are in the quest section, it will fall back onto that message.
+  # This section is coded so you can remove it entirely and only use the quests messages if you wish.
+  base-message-progressed: '&8[&eQuests&8] &7You progressed the daily quest &e%quest_name%
+    &8(&e%progress%&7/&8&e%required_progress%&8)'
+  base-message-completed: '&8[&eQuests&8] &7You completed the daily quest &e%quest_name%'
+  
+  boss-bar-message-progressed: '&7&e%quest_name% Quest Progressed &8(&e%progress%&7/&8&e%required_progress%&8)'
+  boss-bar-message-completed: '&7&e%quest_name% Quest Completed'
+  
+  askyblock_createisland-progressed: '&8[&eQuests&8] &7ASkyblock quests progressed.
+    &8(&e%progress%&7/&8%required_progress%&8)'
+  askyblock_createisland-completed: '&8[&eQuests&8] &7You completed the ASkyblock
+    island daily quest!'
+  
+  steps:
+    base-message-step-completed: '&8[&eQuests&8] &7You completed one step of the daily
+      quest &e%quest_name%'
+    boss-bar-message-step-completed: '&7&e%quest_name% Step Completed'
+
+
+leaderboard-command:
+  tier-leaderboard:
+  - '&7&m=====&r&7[ &2Tier Leaderboard &7]&m====='
+  - '&7>> &b1. &r&a%battlepass_top_tier_name_1% &7- &2%battlepass_top_tier_value_1%'
+  - '&7>> &b2. &r&a%battlepass_top_tier_name_2% &7- &2%battlepass_top_tier_value_2%'
+  - '&7>> &b3. &r&a%battlepass_top_tier_name_3% &7- &2%battlepass_top_tier_value_3%'
+  - '&7>> &b4. &r&a%battlepass_top_tier_name_4% &7- &2%battlepass_top_tier_value_4%'
+  - '&7>> &b5. &r&a%battlepass_top_tier_name_5% &7- &2%battlepass_top_tier_value_5%'
+  - '&7>> ...'
+  - '&7>> &aYour score: &2%battlepass_top_tier_value_me% &7(&2&b%battlepass_top_tier_place_me%&r&7)'
+  - '&7>> &aNext refresh: &2%battlepass_top_time%'
+  quests-leaderboard:
+  - '&7&m=====&r&7[ &2Completed Quests Leaderboard &7]&m====='
+  - '&7>> &b1. &r&a%battlepass_top_quests_name_1% &7- &2%battlepass_top_quests_value_1%'
+  - '&7>> &b2. &r&a%battlepass_top_quests_name_2% &7- &2%battlepass_top_quests_value_2%'
+  - '&7>> &b3. &r&a%battlepass_top_quests_name_3% &7- &2%battlepass_top_quests_value_3%'
+  - '&7>> &b4. &r&a%battlepass_top_quests_name_4% &7- &2%battlepass_top_quests_value_4%'
+  - '&7>> &b5. &r&a%battlepass_top_quests_name_5% &7- &2%battlepass_top_quests_value_5%'
+  - '&7>> ...'
+  - '&7>> &aYour score: &2%battlepass_top_quests_value_me% &7(&2&b%battlepass_top_quests_place_me%&r&7)'
+  - '&7>> &aNext refresh: &2%battlepass_top_time%'
+
+storage-migrate:
+  confirm:
+  - '&cType the command again within 30 seconds to confirm this action.'
+  - '&cAll players will be saved & kicked. Migration process may lag and nobody should
+    join the server when process is active'
+  - '&cMake sure that credentials of new storage type are configured properly'
+  - '&cBoosters and current daily quests will reset'
+  - '&cServer will shutdown after completion'
+  - '&cIn case of any problems, you can back to old storage type by changing storage-type
+    in settings.yml to the old one'
+  kick: '&cStorage migration in progress. Don''t join the server before completion...'
+  same: '&cYou can''t migrate to the same storage type'
+  invalid: '&cInvalid storage type!'
+
+successful-refresh-daily: '&aSuccessfully&7 refreshed all the &adaily&7 quests.'
+successful-booster-updated: '&aSuccessfully&7 updated boosters'
+successful-sync-daily: '&aSuccessfully&7 synchronized all the &adaily&7 quests.'
+cant-refresh-daily: '&cYou can''t refresh daily quests, because quests are disabled
+  or bungee mode is enabled. When using bungee mode, you can only refresh quests on
+  main server.'
+cant-sync-daily: '&cYou can''t synchronize daily quests, because bungee mode is disabled
+  or quests are already synchronized.'
+invalid-quest-type: '&7Could not find the quest type &c%quest_type%&7.'
+quest-ids-title: '&eQuest id''s and their names'
+quest-id: '&7   id: &e%quest_id% &7name: &e%quest_name%'
+invalid-quest-id: '&7Could not find the quest id &c%quest_id%&7 from the type &c%quest_type%&7.
+  Use the command &c/bpa quest ids <type>&7.'
+successful-reload: '&aSuccessfully&7 reloaded all files in &a%milliseconds%&7 milliseconds.'
+successful-quest-reset: '&aSuccessfully&7 reset the quest &a%quest_name%&7 for &a%player_name%&7.'
+failed-quest-reset: '&cFailed&7 to reset the quest &c%quest_name%&7 for &c%player_name%&7.'
+successful-quest-progress: '&aSuccessfully&7 progressed the quest &a%quest_name%&7.'
+failed-quest-progress: '&cFailed to progress the quest &a%quest_name%&c.'
+invalid-pass-id: '&7Could not find a pass type with the id &c%pass_id%&7.'
+successful-set-pass: '&aSuccessfully&7 set &a%player_name%''s&7 pass type to &a%pass_type%&7.'
+successful-set-pass-online: '&aSuccessfully&7 set &aall online player''s&7 pass type
+  to &a%pass_type%&7.'
+successful-set-pass-global: '&aSuccessfully&7 set &aevery user''s&7 pass type to &a%pass_type%&7.'
+successful-give-points: '&aSuccessfully&7 gave %player_name% &a%points%&7 points.'
+successful-give-all-points: '&aSuccessfully&7 gave &a%points%&7 points to all online
+  players.'
+successful-set-points: '&aSuccessfully&7 set &a%player_name%''s&7 points to &a%points%&7.'
+failed-set-pass-require-permission: '&7You &ccan not&7 set the pass type to &c%pass_type%&7
+  because you have &crequired-permission&7 enabled. This value is set to &c%permission%&7.'
+successful-deleted-user: '&aSuccessfully&7 deleted the user &a%player_name%&7.'
+quest-already-done: '&a%player_name% has already completed this quest.'
+toggle-lock-bypass-on: '&c%player_name% now bypasses week locks.'
+toggle-lock-bypass-off: '&c%player_name% no longer bypasses week locks.'
+target-toggle-lock-bypass-on: '&cYou now bypass week locks'
+target-toggle-lock-bypass-off: '&cYou no longer bypass week locks.'
+user-data-deleted: '&aYou have successfully deleted %player_name%''s data.'
+target-user-data-deleted: '&cYour quest data has been wiped.'
+user-data-deleted-null-player: '&cUser data deleted.'
+debug-dumped: '&cDumped the debug information to a file called %file_name%'
+debug-start: '&aDebugger started.'
+debug-stop: '&cDebugger stopped.'
+debug-not-running: '&cThe debugger is not running.'
+debug-already-running: '&cThe debugger is already running.'
+debug-cleared: '&aThe debugger has been cleared.'
+cooldown-has-seconds: '&cPlease wait %seconds% seconds before using this again.'
+confirm-new-season: '&cType the command again within 30 seconds to confirm this action.
+  This command can be destructive, read the wiki first.'
+new-season-reset: '&cReset user tiers, points, quest progress and pending rewards.'
+blocked-from-pass: '&c%player_name% is blocked from the battlepass.'
+closed-player-menu: '&aClosed %player_name%''s open menu if they had one.'
+invalid-number-input: '&cCould not parse number amount.'
+given-user-balance: '&aGiven %amount% balance to %player_name%.'
+given-user-all-balance: '&aGiven %amount% balance to all online players.'
+removed-user-balance: '&aRemoved %amount% from %player_name%''s balance.'
+set-user-balance: '&aSet %player_name%''s balance to %amount%.'
+menu-id: '&8&o%id%'
+last-config-update: 5.0.3
+
+#
+# Here you can configure your own help page for /bpa and /bp
+#
+# bpa:
+#  command:
+#    - ''
+#    - '&bBattlePass Admin Help:'
+#    - '&e/bpa &8- &7This page.'
+#    - '&e/bpa reload &8- &7Reloads all the reloadable files.'
+#    - '&e/bpa editor &8- &7Open In-Game quests editor.'
+#    - '&e/bpa set pass <player/online/all> <pass type> &8- &7Sets a player/group of players'' pass type.'
+#    - '&e/bpa set points <player> <points> &8- &7Set a players points.'
+#    - '&e/bpa give points <player> <points> &8- &7Give a player points.'
+#    - '&e/bpa delete user <player> &8- &7Delete all data of a user.'
+#    - '&e/bpa quest ids <week> &8- &7List all of the weeks quest ids and their names.'
+#    - '&e/bpa daily quest ids &8- &7List all of the daily quest ids and their names.'
+#    - '&e/bpa reset quest <player> <week> <id> &8- &7Resets a specific quest of a player.'
+#    - '&e/bpa progress quest <player> <week> <quest id> <amount> &8- &7Progresses a specific quest of a player.'
+#    - '&e/bpa progress daily quest <player> <quest id> <amount> &8- &7Progress a specific quest of a player.'
+#    - '&e/bpa refresh daily quests &8- &7Refresh daily quests.'
+#    - '&e/bpa new season &8- &7Resets user tiers, pending rewards and points.'
+#    - '&e/bpa material <block/item> &8- &7Get the config name of the item you''re holding or block you''re looking at.'
+#    - '&e/bpa bypass locked quests <player> &8- &7Allows the player to bypass week locks and complete quests anyway.'
+#    - '&e/bpa boosters add <player/all> <PROGRESS/POINTS/REWARDS> <percent> <hours> <affects> &8- &7Adds booster.'
+#    - '&e/bpa boosters clear <player/all> &8- &7Removes boosters.'
+#    - '&e/bpa close menu <player> &8- &7Closes a player''s open menu.'
+#  internal-balance:
+#    - '&e/bpa give balance <player> <amount> &8- &7Gives internal balance.'
+#    - '&e/bpa remove balance <player> <amount> &8- &7Takes away internal balance.'
+#    - '&e/bpa set balance <player> <amount> &8- &7Sets a player''s internal balance.'
+#
+#
+# help-command: # /bp help
+#  - ''
+#  - '&eBattlePass &7by AdvancedPlugins'
+#  - '&e/battlepass - Opens the portal menu.'
+#  - '&e/battlepass stats - View your BattlePass stats.'
+#  - '&e/battlepass open <portal/daily/quests/rewards> - Directly opens a menu.'
+#  - ''

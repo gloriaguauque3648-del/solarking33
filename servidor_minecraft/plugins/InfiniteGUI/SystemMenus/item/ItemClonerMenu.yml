@@ -1,0 +1,15 @@
+title: Clone Item onto other slots (ESC)
+# rows not needed
+clone-item:
+  enabled: true
+  # slot isn't needed
+  item:
+    name: '&eItem will be cloned here'
+    lore: []
+    type: PAPER
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0

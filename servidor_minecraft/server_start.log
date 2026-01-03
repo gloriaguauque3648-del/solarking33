@@ -1,0 +1,1265 @@
+nohup: ignoring input
+Starting org.bukkit.craftbukkit.Main
+*** Warning, you've not updated in a while! ***
+*** Please download a new build from https://papermc.io/downloads/paper ***
+2025-12-31T20:04:22.466578751Z ServerMain WARN Advanced terminal features are not available in this environment
+[20:04:22 INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.1+8-LTS; Microsoft Microsoft-12574222) on Linux 6.8.0-1030-azure (amd64)
+[20:04:22 INFO]: [bootstrap] Loading Paper 1.21.10-117-ver/1.21.10@df4b668 (2025-11-30T22:37:28Z) for Minecraft 1.21.10
+[20:04:22 INFO]: [PluginInitializerManager] Initializing plugins...
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::allocateMemory has been called by io.netty.util.internal.PlatformDependent0$2 (file:/workspaces/solarking33/servidor_minecraft/libraries/io/netty/netty-common/4.1.118.Final/netty-common-4.1.118.Final.jar)
+WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$2
+WARNING: sun.misc.Unsafe::allocateMemory will be removed in a future release
+[20:04:24 INFO]: [PluginInitializerManager] Initialized 41 plugins
+[20:04:24 INFO]: [PluginInitializerManager] Paper plugins (4):
+ - AdvancedKits (1.21.29), FancyHolograms (2.9.0), FancyNpcs (2.9.0), UJobs (1.0.3)
+[20:04:24 INFO]: [PluginInitializerManager] Bukkit plugins (37):
+ - AdvancedEnchantments (9.22.0), AdvancedMobs (1.18.6), AnimaBossBar (${project.version}), AuraSkills (2.3.10), AxRewards (3.7.0), BattlePass (5.0.3), BlockRegen (2.4), CommandTimer (8.16.3), DeepVoid (2.22.0), EliteMobs (9.6.1), Essentials (2.22.0-dev+49-000e6c5), EssentialsChat (2.22.0-dev+49-000e6c5), EssentialsSpawn (2.22.0-dev+49-000e6c5), GHolo (2.2.6), InfiniteGUI (1.1.10), ItemEdit (3.7.8), LuckPerms (5.5.0), Multiverse-Core (5.3.0), PhoenixCrates (4.2.3), PlaceholderAPI (2.11.6), ProtectionStones (2.10.5), ProtocolLib (5.4.1-SNAPSHOT-1257506), RavenWelcome (1.0), RealScoreboard (1.5.7), Shopkeepers (2.25.0), Simple_RTP (1.0.2-BETA), SkinsRestorer (15.9.1), Skulls (3.26.0), SpawnerMeta (25.5), Vault (1.7.3-b131), VoidTeleport (2.4.5), WorldEdit (7.3.18+7298-4383852), WorldGuard (7.0.14+2339-43997ec), XVaults (2.1.2), nLogin (2.0.7), zAuctionHouseV3 (3.2.4.0), zMenu (1.1.0.7)
+[20:04:28 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[20:04:30 INFO]: Loaded 1461 recipes
+[20:04:30 INFO]: Loaded 1574 advancements
+[20:04:31 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[20:04:31 INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 398.9ms
+[20:04:31 INFO]: Starting minecraft server version 1.21.10
+[20:04:31 INFO]: Loading properties
+[20:04:31 INFO]: This server is running Paper version 1.21.10-117-ver/1.21.10@df4b668 (2025-11-30T22:37:28Z) (Implementing API version 1.21.10-R0.1-SNAPSHOT)
+[20:04:31 INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[20:04:31 INFO]: Server Ping Player Sample Count: 12
+[20:04:31 INFO]: Using 4 threads for Netty based IO
+[20:04:31 INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[20:04:32 ERROR]: [TerminalConsole] Failed to read console input
+java.io.IOException: Bad file descriptor
+	at java.base/java.io.FileInputStream.readBytes(Native Method) ~[?:?]
+	at java.base/java.io.FileInputStream.read(FileInputStream.java:281) ~[?:?]
+	at java.base/java.lang.System$In.read(System.java:1871) ~[?:?]
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:328) ~[?:?]
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:388) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:279) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:322) ~[?:?]
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:186) ~[?:?]
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:183) ~[?:?]
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:166) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:333) ~[?:?]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:400) ~[?:?]
+	at net.minecrell.terminalconsole.SimpleTerminalConsole.readCommands(SimpleTerminalConsole.java:180) ~[terminalconsoleappender-1.3.0.jar:?]
+	at net.minecrell.terminalconsole.SimpleTerminalConsole.start(SimpleTerminalConsole.java:143) ~[terminalconsoleappender-1.3.0.jar:?]
+	at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:201) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+[20:04:32 INFO]: Default game type: SURVIVAL
+[20:04:32 INFO]: Generating keypair
+[20:04:32 INFO]: Starting Minecraft server on *:25565
+[20:04:32 INFO]: Using epoll channel type
+[20:04:32 INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[20:04:32 INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[20:04:32 WARN]: [FancyAnalytics] Failed to move old config file: plugins/FancyAnalytics/config.json
+[20:04:32 INFO]: [SpigotLibraryLoader] [ItemEdit] Loading 5 libraries... please wait
+[20:04:32 INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-api/4.20.0/adventure-api-4.20.0.jar
+[20:04:32 INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-key/4.20.0/adventure-key-4.20.0.jar
+[20:04:32 INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/examination-api/1.3.0/examination-api-1.3.0.jar
+[20:04:32 INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/examination-string/1.3.0/examination-string-1.3.0.jar
+[20:04:32 INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/org/jetbrains/annotations/26.0.2/annotations-26.0.2.jar
+[20:04:32 INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-platform-bukkit/4.3.4/adventure-platform-bukkit-4.3.4.jar
+[20:04:32 INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-platform-api/4.3.4/adventure-platform-api-4.3.4.jar
+[20:04:32 INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-bungeecord/4.3.4/adventure-text-serializer-bungeecord-4.3.4.jar
+[20:04:32 INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-nbt/4.13.1/adventure-nbt-4.13.1.jar
+[20:04:32 INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson-legacy-impl/4.13.1/adventure-text-serializer-gson-legacy-impl-4.13.1.jar
+[20:04:32 INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-platform-facet/4.3.4/adventure-platform-facet-4.3.4.jar
+[20:04:32 INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-platform-viaversion/4.3.4/adventure-platform-viaversion-4.3.4.jar
+[20:04:32 INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-text-minimessage/4.20.0/adventure-text-minimessage-4.20.0.jar
+[20:04:32 INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-gson/4.20.0/adventure-text-serializer-gson-4.20.0.jar
+[20:04:32 INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-json/4.20.0/adventure-text-serializer-json-4.20.0.jar
+[20:04:32 INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/option/1.1.0/option-1.1.0.jar
+[20:04:32 INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar
+[20:04:32 INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar
+[20:04:32 INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar
+[20:04:32 INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-commons/4.20.0/adventure-text-serializer-commons-4.20.0.jar
+[20:04:32 INFO]: [SpigotLibraryLoader] [ItemEdit] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/net/kyori/adventure-text-serializer-legacy/4.20.0/adventure-text-serializer-legacy-4.20.0.jar
+[20:04:33 INFO]: [SpigotLibraryLoader] [zMenu] Loading 1 libraries... please wait
+[20:04:33 INFO]: [SpigotLibraryLoader] [zMenu] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/org/mariadb/jdbc/mariadb-java-client/3.5.6/mariadb-java-client-3.5.6.jar
+[20:04:33 INFO]: [SpigotLibraryLoader] [zAuctionHouseV3] Loading 1 libraries... please wait
+[20:04:33 INFO]: [SpigotLibraryLoader] [zAuctionHouseV3] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/org/mariadb/jdbc/mariadb-java-client/3.5.6/mariadb-java-client-3.5.6.jar
+[20:04:34 INFO]: [SpigotLibraryLoader] [BattlePass] Loading 4 libraries... please wait
+[20:04:34 INFO]: [SpigotLibraryLoader] [BattlePass] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar
+[20:04:34 INFO]: [SpigotLibraryLoader] [BattlePass] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/com/zaxxer/HikariCP/7.0.2/HikariCP-7.0.2.jar
+[20:04:34 INFO]: [SpigotLibraryLoader] [BattlePass] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/org/slf4j/slf4j-api/2.0.17/slf4j-api-2.0.17.jar
+[20:04:34 INFO]: [SpigotLibraryLoader] [BattlePass] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/com/j256/ormlite/ormlite-jdbc/6.1/ormlite-jdbc-6.1.jar
+[20:04:34 INFO]: [SpigotLibraryLoader] [BattlePass] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/org/postgresql/postgresql/42.7.5/postgresql-42.7.5.jar
+[20:04:34 INFO]: [SpigotLibraryLoader] [BattlePass] Loaded library /workspaces/solarking33/servidor_minecraft/libraries/org/checkerframework/checker-qual/3.48.3/checker-qual-3.48.3.jar
+[20:04:34 INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.0
+[20:04:35 INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[20:04:35 INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.6
+[20:04:35 INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.18+7298-4383852
+[20:04:35 INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@9eb502]
+[20:04:35 INFO]: [FancyNpcs] Loading server plugin FancyNpcs v2.9.0
+[20:04:35 INFO]: [WorldGuard] Loading server plugin WorldGuard v7.0.14+2339-43997ec
+[20:04:35 INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.4.1-SNAPSHOT-1257506
+[20:04:35 WARN]: [ProtocolLib] Version (MC: 1.21.10) has not yet been tested! Proceed with caution.
+[20:04:36 INFO]: [FancyHolograms] Loading server plugin FancyHolograms v2.9.0
+[20:04:36 INFO]: [FancyHolograms] (Server thread) INFO: Successfully loaded FancyHolograms version 2.9.0
+[20:04:36 INFO]: [CoreLogging] Loading server plugin Multiverse-Core v5.3.0
+[20:04:36 INFO]: [Essentials] Loading server plugin Essentials v2.22.0-dev+49-000e6c5
+[20:04:36 INFO]: [ProtectionStones] Loading server plugin ProtectionStones v2.10.5
+[20:04:36 INFO]: [AuraSkills] Loading server plugin AuraSkills v2.3.10
+[20:04:36 INFO]: [ItemEdit] Loading server plugin ItemEdit v3.7.8
+[20:04:36 INFO]: [EliteMobs] Loading server plugin EliteMobs v9.6.1
+[20:04:36 INFO]: [EliteMobs] MagmaCore v1.13-SNAPSHOT initialized!
+[20:04:36 INFO]: [EliteMobs] Registered /logify command
+[20:04:36 INFO]: [EliteMobs]  WorldGuard detected.
+[20:04:36 INFO]: [Skulls] Loading server plugin Skulls v3.26.0
+[20:04:36 INFO]: [AdvancedEnchantments] Loading server plugin AdvancedEnchantments v9.22.0
+[20:04:36 INFO]: [zMenu] Loading server plugin zMenu v1.1.0.7
+[20:04:36 INFO]: [AdvancedKits] Loading server plugin AdvancedKits v1.21.29
+[20:04:36 INFO]: [VoidTeleport] Loading server plugin VoidTeleport v2.4.5
+[20:04:36 INFO]: [DeepVoid] Loading server plugin DeepVoid v2.22.0
+[20:04:36 INFO]: [zAuctionHouseV3] Loading server plugin zAuctionHouseV3 v3.2.4.0
+[20:04:36 INFO]: [AxRewards] Loading server plugin AxRewards v3.7.0
+[20:04:36 INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.9.1
+[20:04:36 INFO]: [EssentialsChat] Loading server plugin EssentialsChat v2.22.0-dev+49-000e6c5
+[20:04:36 INFO]: [AdvancedMobs] Loading server plugin AdvancedMobs v1.18.6
+[20:04:36 INFO]: [GHolo] Loading server plugin GHolo v2.2.6
+[20:04:36 INFO]: [InfiniteGUI] Loading server plugin InfiniteGUI v1.1.10
+[20:04:36 INFO]: [nLogin] Loading server plugin nLogin v2.0.7
+[20:04:36 INFO]: [RavenWelcome] Loading server plugin RavenWelcome v1.0
+[20:04:36 INFO]: [SpawnerMeta] Loading server plugin SpawnerMeta v25.5
+[20:04:36 INFO]: [BlockRegen] Loading server plugin BlockRegen v2.4
+[20:04:36 INFO]: [EssentialsSpawn] Loading server plugin EssentialsSpawn v2.22.0-dev+49-000e6c5
+[20:04:36 INFO]: [PhoenixCrates] Loading server plugin PhoenixCrates v4.2.3
+[20:04:36 INFO]: [Shopkeepers] Loading server plugin Shopkeepers v2.25.0
+[20:04:37 INFO]: [Shopkeepers] Loaded all plugin classes (629 ms).
+[20:04:37 INFO]: [Shopkeepers] Compatibility provider loaded: 1_21_R8_paper
+[20:04:37 INFO]: [Shopkeepers] Loading config.
+[20:04:37 INFO]: [Shopkeepers] Loading language file: language-en-default.yml
+[20:04:37 INFO]: [Shopkeepers] Registering WorldGuard flag 'allow-shop'.
+[20:04:37 INFO]: [Shopkeepers] Registering defaults.
+[20:04:37 INFO]: [CommandTimer] Loading server plugin CommandTimer v8.16.3
+[20:04:37 INFO]: [Simple_RTP] Loading server plugin Simple_RTP v1.0.2-BETA
+[20:04:37 INFO]: [RealScoreboard] Loading server plugin RealScoreboard v1.5.7
+[20:04:37 INFO]: [XVaults] Loading server plugin XVaults v2.1.2
+[20:04:37 INFO]: [UJobs] Loading server plugin UJobs v1.0.3
+[20:04:37 INFO]: [BattlePass] Loading server plugin BattlePass v5.0.3
+[20:04:37 INFO]: [AnimaBossBar] Loading server plugin AnimaBossBar v${project.version}
+[20:04:37 INFO]: Server permissions file permissions.yml is empty, ignoring it
+[20:04:37 INFO]: [LuckPerms] Enabling LuckPerms v5.5.0
+[20:04:38 INFO]: [38;2;85;255;255m       [38;2;0;170;170m __    [0m
+[20:04:38 INFO]: [38;2;85;255;255m  |    [38;2;0;170;170m|__)   [38;2;0;170;0mLuckPerms[0m [38;2;85;255;255mv5.5.0[0m
+[20:04:38 INFO]: [38;2;85;255;255m  |___ [38;2;0;170;170m|      [38;2;85;85;85mRunning on Bukkit - Paper[0m
+[20:04:38 INFO]: 
+[20:04:38 INFO]: [LuckPerms] Loading configuration...
+[20:04:38 INFO]: [LuckPerms] Loading storage provider... [H2]
+[20:04:38 INFO]: [LuckPerms] Loading internal permission managers...
+[20:04:38 INFO]: [LuckPerms] Performing initial data load...
+[20:04:39 INFO]: [LuckPerms] Successfully enabled. (took 1672ms)
+[20:04:39 INFO]: [Vault] Enabling Vault v1.7.3-b131
+[20:04:39 INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[20:04:39 INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[20:04:39 INFO]: [Vault] Enabled Version 1.7.3-b131
+[20:04:39 INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[20:04:39 INFO]: [WorldEdit] Enabling WorldEdit v7.3.18+7298-4383852
+[20:04:39 INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[20:04:39 INFO]: WEPIF: Vault detected! Using Vault for permissions
+[20:04:39 INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_21_9.PaperweightAdapter as the Bukkit adapter
+[20:04:41 INFO]: [ProtocolLib] Enabling ProtocolLib v5.4.1-SNAPSHOT-1257506
+[20:04:41 INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.9.1
+[20:04:42 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.21.10[32;1m.[0;39m
+[20:04:42 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mUsing paper join listener![0;39m
+[20:04:42 INFO]: [PlaceholderAPI] Successfully registered internal expansion: skinsrestorer [15.9.1]
+[20:04:42 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mPlaceholderAPI expansion registered![0;39m
+[20:04:42 INFO]: [nLogin] Enabling nLogin v2.0.7
+[20:04:42 INFO]: [nLogin] Successful plugin core start (took 0.23s)
+[20:04:42 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[20:04:42 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[20:04:42 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m
+[20:04:42 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m
+[20:04:42 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m
+[20:04:42 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m
+[20:04:42 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[20:04:42 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.9.1[0;39m
+[20:04:42 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1mee713cb[0;39m
+[20:04:42 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m
+[20:04:42 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m
+[20:04:42 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mDo you have issues? Read our troubleshooting guide: [33;1mhttps://skinsrestorer.net/docs/troubleshooting[0;39m
+[20:04:42 INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[34;1mWant to support SkinsRestorer? Consider donating: [33;1mhttps://skinsrestorer.net/donate[0;39m
+[20:04:42 INFO]: [nLogin] [38;2;85;85;255m          __             _       [0m
+[20:04:42 INFO]: [nLogin] [38;2;85;85;255m  _ __   / /  ___   __ _(_)_ __  [0m
+[20:04:42 INFO]: [nLogin] [38;2;85;85;255m | '_ \ / /  / _ \ / _` | | '_ \ [0m
+[20:04:42 INFO]: [nLogin] [38;2;85;85;255m | | | / /__| (_) | (_| | | | | |[0m
+[20:04:42 INFO]: [nLogin] [38;2;85;85;255m |_| |_\____/\___/ \__, |_|_| |_|[0m
+[20:04:42 INFO]: [nLogin] [38;2;85;85;255m                  |___/            [0m
+[20:04:42 INFO]: [nLogin] [38;2;85;85;255m By: www.nickuc.com - V 2.0.7[0m
+[20:04:42 INFO]: [nLogin] [38;2;85;85;255m [0m
+[20:04:44 WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[20:04:44 WARN]: The server will make no attempt to authenticate usernames. Beware.
+[20:04:44 WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[20:04:44 WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[20:04:44 INFO]: Preparing level "world"
+[20:04:45 INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
+[20:04:45 INFO]: Preparing spawn area: 100%
+[20:04:45 INFO]: Prepared spawn area in 5 ms
+[20:04:45 INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[20:04:45 INFO]: Preparing spawn area: 100%
+[20:04:45 INFO]: Prepared spawn area in 20 ms
+[20:04:45 INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[20:04:45 INFO]: Prepared spawn area in 0 ms
+[20:04:45 INFO]: Done preparing level "world" (1.029s)
+[20:04:45 INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.6
+[20:04:45 INFO]: [PlaceholderAPI] Fetching available expansion information...
+[20:04:45 INFO]: [FancyNpcs] Enabling FancyNpcs v2.9.0
+[20:04:45 WARN]: [org.mineskin.MineSkinClient] Creating MineSkinClient without API key
+[20:04:46 INFO]: [FancyNpcs] (Server thread) INFO: FancyNpcs (2.9.0) has been enabled.
+[20:04:46 INFO]: [WorldGuard] Enabling WorldGuard v7.0.14+2339-43997ec
+[20:04:46 INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[20:04:46 INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[20:04:46 INFO]: [WorldGuard] (world) Lava fire is PERMITTED.
+[20:04:46 INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[20:04:46 INFO]: [WorldGuard] Loaded configuration for world 'world'
+[20:04:46 INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+[20:04:46 INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
+[20:04:46 INFO]: [WorldGuard] (world_nether) Lava fire is PERMITTED.
+[20:04:46 INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+[20:04:46 INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
+[20:04:46 INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[20:04:46 INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[20:04:46 INFO]: [WorldGuard] (world_the_end) Lava fire is PERMITTED.
+[20:04:46 INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+[20:04:46 INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[20:04:46 INFO]: [WorldGuard] Loading region data...
+[20:04:46 INFO]: [FancyHolograms] Enabling FancyHolograms v2.9.0
+[20:04:46 WARN]: [FancyAnalytics] Failed to move old config file: plugins/FancyAnalytics/config.json
+[20:04:46 INFO]: [FancyHolograms] (Server thread) INFO: Successfully enabled FancyHolograms version 2.9.0
+[20:04:46 INFO]: [Multiverse-Core] Enabling Multiverse-Core v5.3.0
+[20:04:47 INFO]: Could not set generator for world 'spawn2': Plugin 'DeepVoid v2.22.0' is not enabled
+[20:04:47 INFO]: Loading 0 persistent chunks for world 'minecraft:spawn2'...
+[20:04:47 INFO]: Prepared spawn area in 2 ms
+[20:04:47 INFO]: [WorldGuard] (spawn2) TNT ignition is PERMITTED.
+[20:04:47 INFO]: [WorldGuard] (spawn2) Lighters are PERMITTED.
+[20:04:47 INFO]: [WorldGuard] (spawn2) Lava fire is PERMITTED.
+[20:04:47 INFO]: [WorldGuard] (spawn2) Fire spread is UNRESTRICTED.
+[20:04:47 INFO]: [WorldGuard] Loaded configuration for world 'spawn2'
+[20:04:47 INFO]: [FancyHolograms] (FancyHolograms-Holograms) INFO: Loading holograms for world spawn2
+[20:04:47 INFO]: Could not set generator for world 'lobby': Plugin 'DeepVoid v2.22.0' is not enabled
+[20:04:47 INFO]: Loading 0 persistent chunks for world 'minecraft:lobby'...
+[20:04:47 INFO]: Prepared spawn area in 3 ms
+[20:04:47 INFO]: [WorldGuard] (lobby) TNT ignition is PERMITTED.
+[20:04:47 INFO]: [WorldGuard] (lobby) Lighters are PERMITTED.
+[20:04:47 INFO]: [WorldGuard] (lobby) Lava fire is PERMITTED.
+[20:04:47 INFO]: [WorldGuard] (lobby) Fire spread is UNRESTRICTED.
+[20:04:47 INFO]: [WorldGuard] Loaded configuration for world 'lobby'
+[20:04:47 INFO]: [FancyHolograms] (FancyHolograms-Holograms) INFO: Loading holograms for world lobby
+[20:04:47 INFO]: Could not set generator for world 'spawn': Plugin 'DeepVoid v2.22.0' is not enabled
+[20:04:47 INFO]: Loading 0 persistent chunks for world 'minecraft:spawn'...
+[20:04:47 INFO]: Preparing spawn area: 100%
+[20:04:47 INFO]: Prepared spawn area in 4 ms
+[20:04:47 INFO]: [WorldGuard] (spawn) TNT ignition is PERMITTED.
+[20:04:47 INFO]: [WorldGuard] (spawn) Lighters are PERMITTED.
+[20:04:47 INFO]: [WorldGuard] (spawn) Lava fire is PERMITTED.
+[20:04:47 INFO]: [WorldGuard] (spawn) Fire spread is UNRESTRICTED.
+[20:04:47 INFO]: [WorldGuard] Loaded configuration for world 'spawn'
+[20:04:47 INFO]: [FancyHolograms] (FancyHolograms-Holograms) INFO: Loading holograms for world spawn
+[20:04:48 INFO]: [PlaceholderAPI] Successfully registered internal expansion: multiverse-core [5.3.0]
+[20:04:48 INFO]: [Multiverse-Core] API service loaded!
+[20:04:48 INFO]: [Multiverse-Core] [32mVersion 5.3.0 (API v5.3) Enabled - By dumptruckman, Rigby, fernferret, lithium3141, main--, benwoo1110 and Zax71[39m
+[20:04:48 INFO]: [Multiverse-Core] [32mLoving Multiverse-Core? Please consider supporting the project with a small donation: https://github.com/sponsors/Multiverse[39m
+[20:04:48 INFO]: [Essentials] Enabling Essentials v2.22.0-dev+49-000e6c5
+[20:04:48 ERROR]: [Essentials] You are running an unsupported server version!
+[20:04:48 INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[20:04:48 INFO]: [Essentials] No kits found to migrate.
+[20:04:48 INFO]: [Essentials] Selected 1.12+ Spawner Block Provider as the provider for SpawnerBlockProvider
+[20:04:48 INFO]: [Essentials] Selected Paper Known Commands Provider as the provider for KnownCommandsProvider
+[20:04:48 INFO]: [Essentials] Selected Paper Serialization Provider as the provider for SerializationProvider
+[20:04:48 INFO]: [Essentials] Selected Paper Container Provider as the provider for ContainerProvider
+[20:04:48 INFO]: [Essentials] Selected 1.20.4+ Damage Event Provider as the provider for DamageEventProvider
+[20:04:48 INFO]: [Essentials] Selected 1.14+ Sign Data Provider as the provider for SignDataProvider
+[20:04:48 INFO]: [Essentials] Selected Legacy Biome Name Provider as the provider for BiomeNameProvider
+[20:04:48 INFO]: [Essentials] Selected Paper Tick Count Provider as the provider for TickCountProvider
+[20:04:48 INFO]: [Essentials] Selected Paper Biome Key Provider as the provider for BiomeKeyProvider
+[20:04:48 INFO]: [Essentials] Selected 1.13+ Spawn Egg Provider as the provider for SpawnEggProvider
+[20:04:48 INFO]: [Essentials] Selected 1.8.3+ Spawner Item Provider as the provider for SpawnerItemProvider
+[20:04:48 INFO]: [Essentials] Selected 1.14.4+ Persistent Data Container Provider as the provider for PersistentDataProvider
+[20:04:48 INFO]: [Essentials] Selected 1.20.6+ Potion Meta Provider as the provider for PotionMetaProvider
+[20:04:48 INFO]: [Essentials] Selected 1.12.2+ Player Locale Provider as the provider for PlayerLocaleProvider
+[20:04:48 INFO]: [Essentials] Selected 1.20.5+ Banner Data Provider as the provider for BannerDataProvider
+[20:04:48 INFO]: [Essentials] Selected Reflection Online Mode Provider as the provider for OnlineModeProvider
+[20:04:48 INFO]: [Essentials] Selected Paper Server State Provider as the provider for ServerStateProvider
+[20:04:48 INFO]: [Essentials] Selected 1.11+ Item Unbreakable Provider as the provider for ItemUnbreakableProvider
+[20:04:48 INFO]: [Essentials] Selected 1.21+ InventoryView Interface ABI Provider as the provider for InventoryViewProvider
+[20:04:48 INFO]: [Essentials] Selected 1.21.4+ Sync Commands Provider as the provider for SyncCommandsProvider
+[20:04:48 INFO]: [Essentials] Selected Paper Material Tag Provider as the provider for MaterialTagProvider
+[20:04:48 INFO]: [Essentials] Selected 1.17.1+ World Info Provider as the provider for WorldInfoProvider
+[20:04:48 INFO]: [Essentials] Selected Reflection Formatted Command Alias Provider as the provider for FormattedCommandAliasProvider
+[20:04:49 INFO]: [Essentials] Loaded 46309 items from items.json.
+[20:04:49 INFO]: [Essentials] Using locale en
+[20:04:49 INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[20:04:49 INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[20:04:49 INFO]: [Vault] [Economy] Essentials Economy hooked.
+[20:04:49 INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[20:04:49 INFO]: [ProtectionStones] Enabling ProtectionStones v2.10.5
+[20:04:49 INFO]: [WorldGuard] Registering session handler dev.espi.protectionstones.flags.GreetingFlagHandler
+[20:04:49 INFO]: [WorldGuard] Registering session handler dev.espi.protectionstones.flags.FarewellFlagHandler
+[20:04:49 INFO]: [ProtectionStones] PlaceholderAPI support enabled!
+[20:04:49 INFO]: [PlaceholderAPI] Successfully registered internal expansion: protectionstones [2.10.5]
+[20:04:49 INFO]: [ProtectionStones] LuckPerms support enabled!
+[20:04:49 INFO]: [ProtectionStones] Protection Stone Blocks:
+[20:04:49 INFO]: [ProtectionStones] - EMERALD_ORE (64)
+[20:04:49 INFO]: [ProtectionStones] Building region cache...
+[20:04:49 INFO]: [ProtectionStones] Building UUID cache... (if slow change async-load-uuid-cache in the config to true)
+[20:04:49 INFO]: [ProtectionStones] Checking if PS regions have been updated to UUIDs...
+[20:04:49 INFO]: [ProtectionStones] §fProtectionStones has successfully started!
+[20:04:49 INFO]: [AuraSkills] Enabling AuraSkills v2.3.10
+[20:04:50 INFO]: [AuraSkills] Loaded 21 message files
+[20:04:51 INFO]: [AuraSkills] Successfully registered hook LuckPerms
+[20:04:51 INFO]: [PlaceholderAPI] Successfully registered internal expansion: auraskills [2.3.10]
+[20:04:51 INFO]: [PlaceholderAPI] Successfully registered internal expansion: aureliumskills [2.3.10]
+[20:04:51 INFO]: [AuraSkills] Successfully registered hook PlaceholderAPI
+[20:04:51 INFO]: [AuraSkills] Successfully registered hook ProtocolLib
+[20:04:51 INFO]: [AuraSkills] Successfully registered hook Vault
+[20:04:51 INFO]: [AuraSkills] Successfully registered hook WorldGuard
+[20:04:51 INFO]: [AuraSkills] Loaded 160 config options in 47 ms
+[20:04:51 INFO]: [NBTAPI] [NBTAPI] Found Minecraft: 1.21.10! Trying to find NMS support
+[20:04:51 INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_21_R6' loaded!
+[20:04:51 INFO]: [NBTAPI] [NBTAPI] Using the plugin 'AuraSkills' to create a bStats instance!
+[20:04:51 INFO]: [AuraSkills] Loaded 3 blocked/disabled worlds
+[20:04:51 INFO]: [AuraSkills] [ACF] Enabled Asynchronous Tab Completion Support!
+[20:04:51 INFO]: [ItemEdit] Enabling ItemEdit v3.7.8
+[20:04:51 INFO]: [38;2;0;0;170m[[38;2;255;255;255mItemEdit[38;2;0;0;170m] [38;2;255;255;255mHooking into [38;2;255;0;0mM[38;2;255;109;0mi[38;2;255;218;0mn[38;2;182;255;0mi[38;2;72;255;0mM[38;2;0;255;36me[38;2;0;255;145ms[38;2;0;255;255ms[38;2;0;145;255ma[38;2;0;36;255mg[38;2;72;0;255me[38;2;182;0;255mA[38;2;255;0;218mP[38;2;255;0;109mI[38;2;255;255;255m see https://webui.advntr.dev/[0m
+[20:04:52 INFO]: [38;2;0;0;170m[[38;2;255;255;255mItemEdit[38;2;0;0;170m] [38;2;255;255;255mSelected Storage Type: YAML[0m
+[20:04:52 INFO]: [38;2;0;0;170m[[38;2;255;255;255mItemEdit[38;2;0;0;170m] [38;2;255;255;255mHooking into Vault[0m
+[20:04:52 INFO]: [38;2;0;0;170m[[38;2;255;255;255mItemEdit[38;2;0;0;170m] [38;2;255;255;255mHooking into PlaceHolderAPI[0m
+[20:04:52 INFO]: [38;2;0;0;170m[[38;2;255;255;255mItemEdit[38;2;0;0;170m] [38;2;255;255;255mplaceholders:[0m
+[20:04:52 INFO]: [38;2;0;0;170m[[38;2;255;255;255mItemEdit[38;2;0;0;170m] [38;2;255;255;255m  [38;2;255;255;85m%itemedit_amount_[38;2;255;170;0m<{itemid}>[38;2;255;255;85m_[38;2;255;170;0m[{slot}][38;2;255;255;85m_[38;2;255;170;0m[{player}][38;2;255;255;85m%[0m
+[20:04:52 INFO]: [38;2;0;0;170m[[38;2;255;255;255mItemEdit[38;2;0;0;170m] [38;2;255;255;255m    shows how many [38;2;255;170;0mitemid player [38;2;255;255;255mhas on [38;2;255;170;0mslot[0m
+[20:04:52 INFO]: [38;2;0;0;170m[[38;2;255;255;255mItemEdit[38;2;0;0;170m] [38;2;255;255;255m    <{itemid}> for item id on serveritem[0m
+[20:04:52 INFO]: [38;2;0;0;170m[[38;2;255;255;255mItemEdit[38;2;0;0;170m] [38;2;255;255;255m    [{slot}] for the slot where the item should be counted, by default [38;2;85;255;85minventory[0m
+[20:04:52 INFO]: [38;2;0;0;170m[[38;2;255;255;255mItemEdit[38;2;0;0;170m] [38;2;255;255;255m      Values: [38;2;255;255;85minventory[38;2;255;255;255m (include offhand), [38;2;255;255;85mequip[38;2;255;255;255m (include offhand), [38;2;255;255;85minventoryandequip[38;2;255;255;255m (include offhand), [38;2;255;255;85mhand[38;2;255;255;255m, [38;2;255;255;85moffhand[38;2;255;255;255m, [38;2;255;255;85mhead[38;2;255;255;255m, [38;2;255;255;85mchest[38;2;255;255;255m, [38;2;255;255;85mlegs[38;2;255;255;255m, [38;2;255;255;85mfeet[0m
+[20:04:52 INFO]: [38;2;0;0;170m[[38;2;255;255;255mItemEdit[38;2;0;0;170m] [38;2;255;255;255m    [{player}] for the player, by default [38;2;85;255;85mself[0m
+[20:04:52 INFO]: [38;2;0;0;170m[[38;2;255;255;255mItemEdit[38;2;0;0;170m] [38;2;255;255;255m    example: %itemedit_amount_{[38;2;255;170;0mmy_item_id[38;2;255;255;255m}_{[38;2;255;170;0mhand[38;2;255;255;255m}%[0m
+[20:04:52 INFO]: [PlaceholderAPI] Successfully registered internal expansion: itemedit [1.0]
+[20:04:52 INFO]: [38;2;0;0;170m[[38;2;255;255;255mItemEdit[38;2;0;0;170m] [38;2;85;255;85m# [38;2;255;255;255mEnabled (took [38;2;255;255;85m380[38;2;255;255;255m ms)[0m
+[20:04:52 INFO]: [EliteMobs] Enabling EliteMobs v9.6.1
+[20:04:52 INFO]:  _____ _     _____ _____ ________  ______________  _____
+[20:04:52 INFO]: |  ___| |   |_   _|_   _|  ___|  \/  |  _  | ___ \/  ___|
+[20:04:52 INFO]: | |__ | |     | |   | | | |__ | .  . | | | | |_/ /\ `--.
+[20:04:52 INFO]: |  __|| |     | |   | | |  __|| |\/| | | | | ___ \ `--. \
+[20:04:52 INFO]: | |___| |_____| |_  | | | |___| |  | \ \_/ / |_/ //\__/ /
+[20:04:52 INFO]: \____/\_____/\___/  \_/ \____/\_|  |_/\___/\____/ \____/
+[20:04:52 INFO]: By MagmaGuy - v. 9.6.1
+[20:04:52 INFO]: [EliteMobs] Supported server version detected: v1_21_R6
+[20:04:52 INFO]: [EliteMobs] Language set to English - using plugin defaults
+[20:04:52 INFO]: [org.reflections.Reflections] Reflections took 50 ms to scan 1 urls, producing 1 keys and 60 values
+[20:04:52 INFO]: [org.reflections.Reflections] Reflections took 13 ms to scan 1 urls, producing 1 keys and 16 values
+[20:04:57 INFO]: [org.reflections.Reflections] Reflections took 10 ms to scan 1 urls, producing 1 keys and 71 values
+[20:04:58 INFO]: [org.reflections.Reflections] Reflections took 32 ms to scan 1 urls, producing 10 keys and 220 values
+[20:04:58 INFO]: [org.reflections.Reflections] Reflections took 4 ms to scan 1 urls, producing 1 keys and 15 values
+[20:04:58 INFO]: [EliteMobs] WorldGuard compatibility is enabled!
+[20:04:58 INFO]: [EliteMobs] [(EliteMobs] Vault detected.
+[20:04:58 INFO]: [EliteMobs] Opened database successfully
+[20:04:58 INFO]: [PlaceholderAPI] Successfully registered internal expansion: elitemobs [9.6.1]
+[20:04:58 INFO]: [org.reflections.Reflections] Reflections took 7 ms to scan 1 urls, producing 1 keys and 116 values
+[20:05:01 INFO]: [org.reflections.Reflections] Reflections took 7 ms to scan 1 urls, producing 1 keys and 74 values
+[20:05:01 INFO]: [org.reflections.Reflections] Reflections took 9 ms to scan 1 urls, producing 1 keys and 134 values
+[20:05:01 INFO]: [org.reflections.Reflections] Reflections took 2 ms to scan 1 urls, producing 1 keys and 1 values
+[20:05:01 INFO]: [org.reflections.Reflections] Reflections took 3 ms to scan 1 urls, producing 1 keys and 34 values
+[20:05:01 INFO]: [org.reflections.Reflections] Reflections took 4 ms to scan 1 urls, producing 1 keys and 24 values
+[20:05:01 INFO]: [org.reflections.Reflections] Reflections took 2 ms to scan 1 urls, producing 1 keys and 1 values
+[20:05:01 INFO]: [org.reflections.Reflections] Reflections took 3 ms to scan 1 urls, producing 1 keys and 8 values
+[20:05:01 INFO]: [org.reflections.Reflections] Reflections took 2 ms to scan 1 urls, producing 1 keys and 4 values
+[20:05:01 INFO]: [Skulls] Enabling Skulls v3.26.0
+[20:05:01 INFO]:  
+[20:05:01 INFO]: [38;2;0;168;127m=============================[0m
+[20:05:01 INFO]: [38;2;0;206;116mSkulls [38;2;255;255;255mv[38;2;255;255;85m3.26.0 [38;2;203;203;203mby [38;2;0;206;116mTweetzy[0m
+[20:05:01 INFO]: [38;2;0;206;116mDeveloper[38;2;203;203;203m: [38;2;255;255;85mKiran Hart[0m
+[20:05:02 INFO]: [1m[38;2;221;94;137mS[38;2;227;115;152mk[38;2;233;136;167mu[38;2;239;157;182ml[38;2;245;178;197ml[38;2;251;199;212ms[0m [38;2;85;85;85m» [38;2;85;255;85mSetting up vault economy provider[0m
+[20:05:02 INFO]: [38;2;85;85;85m[[38;2;0;206;116mFlightCore[38;2;85;85;85m][38;2;203;203;203m Enabling metrics for [38;2;0;206;116mSkulls[0m
+[20:05:02 INFO]: [38;2;0;168;127m=============================[0m
+[20:05:02 INFO]:  
+[20:05:02 INFO]: [AdvancedEnchantments] Enabling AdvancedEnchantments v9.22.0
+[20:05:02 WARN]: You are using invalid version of Minecraft [1.21.10-R0.1-SNAPSHOT]! Disabling...
+[20:05:02 INFO]: [AdvancedEnchantments] Loading Minecraft Version Unknown
+[20:05:02 INFO]: [AdvancedEnchantments] Loaded 7 armor sets.
+[20:05:02 INFO]: [AdvancedEnchantments] Loaded 5 weapons.
+[20:05:02 WARN]: [org.bukkit.craftbukkit.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[20:05:14 INFO]: [AdvancedEnchantments] Successfully hooked into economy plugin (Vault)
+[20:05:14 INFO]: [PlaceholderAPI] Successfully registered internal expansion: advancedenchantments [1.0.0]
+[20:05:14 INFO]: [zMenu] Enabling zMenu v1.1.0.7
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;255;255;85m=== ENABLE START ===[0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mPlugin Version V[38;2;255;85;85m1.1.0.7[0m
+[20:05:14 INFO]: [PlaceholderAPI] Successfully registered internal expansion: zmenu [1.1.0.7]
+[20:05:14 INFO]: [zMenu] The database connection is valid ! (SQLITE)
+[20:05:14 INFO]: [zMenu] Use ComponentMeta
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mPaper server detected, loading Dialogs support[0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mzMenu Config[0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zMenu/patterns/pattern_example.yml loaded successfully ![0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zMenu/inventories/examples/cookies.yml loaded successfully ![0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zMenu/inventories/examples/switch.yml loaded successfully ![0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zMenu/inventories/examples/playtimes.yml loaded successfully ![0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zMenu/inventories/advanced_inventory.yml loaded successfully ![0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zMenu/inventories/basic_inventory.yml loaded successfully ![0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zMenu/inventories/pro_inventory.yml loaded successfully ![0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zMenu/inventories/INVENTORY-WARPS.yml loaded successfully ![0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zMenu/inventories/recompensas.yml loaded successfully ![0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zMenu/inventories/example_punish.yml loaded successfully ![0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zMenu/website/inventories.yml loaded successfully ![0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zMenu/dialogs/confirmation-dialog.yml loaded successfully![0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zMenu/dialogs/multi_action-dialog.yml loaded successfully![0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zMenu/dialogs/default-dialog.yml loaded successfully![0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zMenu/dialogs/server_link-dialog.yml loaded successfully![0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;0;170;0mCommand /basic_command successfully register.[0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;0;170;0mCommand /advanced_command successfully register.[0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;0;170;0mCommand /pro_command successfully register.[0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;0;170;0mCommand /openbook successfully register.[0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;0;170;0mCommand /punish successfully register.[0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170m[0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mYou can support zMenu by upgrading your account here: https://minecraft-inventory-builder.com/account-upgrade[0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mzMenu’s site includes an inventory editor (under development), a marketplace (already available) is a forum (under development)[0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170m[0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;0;170;0mLoading 6 commands[0m
+[20:05:14 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;255;255;85m=== ENABLE DONE [38;2;170;170;170m([38;2;255;170;0m444ms[38;2;170;170;170m) [38;2;255;255;85m===[0m
+[20:05:14 INFO]: [AdvancedKits] Enabling AdvancedKits v1.21.29
+[20:05:14 INFO]: [AdvancedKits] Bootstrapping runtime (libraries & configuration)...
+[20:05:14 INFO]: [AdvancedKits] Loading library boosted-yaml
+[20:05:14 INFO]: [AdvancedKits] Loading library YamlAssist
+[20:05:15 INFO]: [AdvancedKits] Loading library gson
+[20:05:15 INFO]: [AdvancedKits] Loading library XSeries
+[20:05:15 INFO]: [AdvancedKits] Loading library fast-uuid
+[20:05:15 INFO]: [AdvancedKits] Loading library bstats-bukkit
+[20:05:15 INFO]: [AdvancedKits] Loading library bstats-base
+[20:05:15 INFO]: [AdvancedKits] Loading library adventure-api
+[20:05:15 INFO]: [AdvancedKits] Loading library adventure-key
+[20:05:15 INFO]: [AdvancedKits] Loading library examination-api
+[20:05:15 INFO]: [AdvancedKits] Loading library examination-string
+[20:05:15 INFO]: [AdvancedKits] Loading library adventure-text-serializer-legacy
+[20:05:15 INFO]: [AdvancedKits] Loading library adventure-text-minimessage
+[20:05:15 INFO]: [AdvancedKits] Bootstrap completed successfully in 579 ms!
+[20:05:15 INFO]: [AdvancedKits] [NBTAPI] Found Minecraft: 1.21.10! Trying to find NMS support
+[20:05:15 INFO]: [AdvancedKits] [NBTAPI] NMS support 'MC1_21_R6' loaded!
+[20:05:15 INFO]: [AdvancedKits] [NBTAPI] Using the plugin 'AdvancedKits' to create a bStats instance!
+[20:05:15 INFO]: [AdvancedKits] Successfully connected to the YAML database!
+[20:05:15 INFO]: [AdvancedKits] Successfully registered economy with ID EXP!
+[20:05:15 INFO]: [PlaceholderAPI] Successfully registered internal expansion: advancedkits [1.21.29]
+[20:05:15 INFO]: [AdvancedKits] Successfully hooked into PlaceholderAPI (EXPANSION)!
+[20:05:15 INFO]: [AdvancedKits] Successfully hooked into PlaceholderAPI (PLACEHOLDER)!
+[20:05:15 INFO]: [AdvancedKits] Successfully registered economy with ID VAULT!
+[20:05:15 INFO]: [AdvancedKits] Successfully hooked into Vault (ECONOMY) [EssentialsX Economy]!
+[20:05:15 INFO]: [AdvancedKits] Successfully hooked into ItemEdit (ITEM)!
+[20:05:15 INFO]: [AdvancedKits] Successfully registered economy with ID ESSENTIALS!
+[20:05:15 INFO]: [AdvancedKits] Successfully hooked into Essentials (ECONOMY)!
+[20:05:15 INFO]: [AdvancedKits] Successfully hooked into Skulls (ITEM)!
+[20:05:15 INFO]: [AdvancedKits] Successfully registered economy with ID ELITEMOBS!
+[20:05:15 INFO]: [AdvancedKits] Successfully hooked into EliteMobs (ECONOMY)!
+[20:05:15 INFO]: [AdvancedKits] Enabled asynchronous tab completion support with PaperSpigot!
+[20:05:15 INFO]: [AdvancedKits] Successfully enabled in 902 ms!
+[20:05:15 INFO]: [VoidTeleport] Enabling VoidTeleport v2.4.5
+[20:05:15 INFO]: [AdvancedKits] There is not a new update available.
+[20:05:15 INFO]: 
+
+                [1m[9m[38;2;85;85;85m===================================================
+                [0m[1m[38;2;85;85;255m                    VoidTeleport
+                [0m[1m[9m[38;2;85;85;85m===================================================
+
+                [0m[38;2;85;255;85m              Current version: 2.4.5
+                        You are running the latest version!
+
+                [1m[9m[38;2;85;85;85m===================================================
+[0m
+[20:05:15 INFO]: [1m[38;2;85;85;85m[[38;2;0;170;170mVoidTeleport[38;2;85;85;85m] [0m[38;2;85;255;85mDeveloped by EndlessGames.[0m
+[20:05:15 INFO]: [DeepVoid] Enabling DeepVoid v2.22.0
+[20:05:15 INFO]: [DeepVoid] Database tables initialized
+[20:05:15 INFO]: [DeepVoid] Loaded 3 managed worlds and 0 DeepVoid worlds from database
+[20:05:15 INFO]: [DeepVoid] Saved world data to database
+[20:05:15 INFO]: [DeepVoid] Saved world data to database
+[20:05:15 INFO]: [DeepVoid] DeepVoid successfully enabled.
+[20:05:15 INFO]: [zAuctionHouseV3] Enabling zAuctionHouseV3 v3.2.4.0
+[20:05:15 INFO]: [PlaceholderAPI] Successfully registered internal expansion: zauctionhouse [3.2.4.0]
+[20:05:15 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;255;255;85m=== ENABLE START ===[0m
+[20:05:15 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;170;170;170mPlugin Version V[38;2;255;85;85m3.2.4.0[0m
+[20:05:15 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;170;170;170mLoading of 4 price items[0m
+[20:05:15 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;0;170;0m/workspaces/solarking33/servidor_minecraft/plugins/zAuctionHouseV3/blacklistplayers.json loaded successfully ![0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;170;170;170mLoaded config.yml[0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;170;170;170mLoading of 3 tax items[0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;170;170;170mLoaded 4 blacklist items[0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;170;170;170mLoaded 0 whitelist items[0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;170;170;170mLoading the Examples category with 4 materials[0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;170;170;170mLoading the Blocks category with 1166 materials[0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;170;170;170mLoading the Potions category with 17 materials[0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;170;170;170mLoading the Tools category with 20 materials[0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;170;170;170mLoading the Weapons category with 13 materials[0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;0;170;0mLoading 3 inventories[0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;0;170;0mLoading 0 commands[0m
+[20:05:16 INFO]: [zAuctionHouseV3] Using SQLITE for storage
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;170;170;170mLoad SQL...[0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zAuctionHouseV3/patterns/pagination.yml loaded successfully ![0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zAuctionHouseV3/patterns/auction.yml loaded successfully ![0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zAuctionHouseV3/patterns/back.yml loaded successfully ![0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zAuctionHouseV3/patterns/decoration.yml loaded successfully ![0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zAuctionHouseV3/inventories/category.yml loaded successfully ![0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zAuctionHouseV3/inventories/economy.yml loaded successfully ![0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zAuctionHouseV3/inventories/buyconfirminventory.yml loaded successfully ![0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zAuctionHouseV3/inventories/categories.yml loaded successfully ![0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zAuctionHouseV3/inventories/sellshow.yml loaded successfully ![0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zAuctionHouseV3/inventories/adminremove.yml loaded successfully ![0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zAuctionHouseV3/inventories/buying.yml loaded successfully ![0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zAuctionHouseV3/inventories/removeconfirm.yml loaded successfully ![0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zAuctionHouseV3/inventories/search.yml loaded successfully ![0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zAuctionHouseV3/inventories/expire.yml loaded successfully ![0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zAuctionHouseV3/inventories/auction.yml loaded successfully ![0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zAuctionHouseV3/inventories/buyconfirm.yml loaded successfully ![0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zAuctionHouseV3/inventories/sell.yml loaded successfully ![0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zAuctionHouseV3/inventories/show.yml loaded successfully ![0m
+[20:05:16 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mplugins/zAuctionHouseV3/inventories/items.yml loaded successfully ![0m
+[20:05:17 WARN]: [CurrenciesAPI] The framework is not up to date, the latest version is 1.0.7
+[20:05:17 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;170;170;170mRegister VAULT economy with name vault[0m
+[20:05:17 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;170;170;170mRegister ProtocolLib implementation[0m
+[20:05:17 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;255;255;85m=== ENABLE DONE [38;2;170;170;170m([38;2;255;170;0m1120ms[38;2;170;170;170m) [38;2;255;255;85m===[0m
+[20:05:17 INFO]: [AxRewards] Enabling AxRewards v3.7.0
+[20:05:17 INFO]: [PlaceholderAPI] Successfully registered internal expansion: axrewards [1.0.0]
+[20:05:17 INFO]: [38;2;255;238;0m[AxRewards] Hooked into PlaceholderAPI![0m
+[20:05:17 INFO]: [38;2;255;238;0m[AxRewards] Loaded plugin! Using [38;2;255;255;255mH2 [38;2;255;238;0mdatabase to store data![0m
+[20:05:17 INFO]: [EssentialsChat] Enabling EssentialsChat v2.22.0-dev+49-000e6c5
+[20:05:17 INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
+[20:05:17 INFO]: [AdvancedMobs] Enabling AdvancedMobs v1.18.6
+[20:05:17 WARN]: You are using invalid version of Minecraft [1.21.10-R0.1-SNAPSHOT]! Disabling...
+[20:05:17 INFO]: [AdvancedMobs] Loaded 24,661 custom heads
+[20:05:17 INFO]: [AdvancedMobs] Otter.amob model wasn't loaded - it requires ModelEngine: https://mobs.advancedplugins.net/supported-plugins/modelengine 
+[20:05:17 INFO]: [AdvancedMobs] Reindeer.amob model wasn't loaded - it requires ModelEngine: https://mobs.advancedplugins.net/supported-plugins/modelengine 
+[20:05:17 INFO]: [AdvancedMobs] Mammoth.amob model wasn't loaded - it requires ModelEngine: https://mobs.advancedplugins.net/supported-plugins/modelengine 
+[20:05:17 INFO]: [AdvancedMobs] Bear.amob model wasn't loaded - it requires ModelEngine: https://mobs.advancedplugins.net/supported-plugins/modelengine 
+[20:05:17 INFO]: [AdvancedMobs] Loaded 20 mob configurations.
+[20:05:17 INFO]: [AdvancedMobs] Loaded 7 breed-able Mobs
+[20:05:18 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[20:05:18 WARN]: [AdvancedMobs] Loaded 87 mob heads
+[20:05:18 INFO]: [GHolo] Enabling GHolo v2.2.6
+[20:05:18 INFO]: [38;2;170;170;170m[[38;2;255;170;0mGHolo[38;2;170;170;170m][38;2;85;255;85m The plugin was successfully enabled.[0m
+[20:05:18 INFO]: [38;2;170;170;170m[[38;2;255;170;0mGHolo[38;2;170;170;170m][38;2;85;255;85m Link with[38;2;255;170;0m PlaceholderAPI[38;2;85;255;85m successful![0m
+[20:05:18 INFO]: [InfiniteGUI] Enabling InfiniteGUI v1.1.10
+[20:05:18 INFO]: [InfiniteGUI]    
+   ####   ###  ##  ### ###    ####   ###  ##    ####   #### ##  ### ###            ## ##   ##  ###    ####   
+    ##      ## ##   ##  ##     ##      ## ##     ##    # ## ##   ##  ##           ##   ##  ##   ##     ##    
+    ##     # ## #   ##         ##     # ## #     ##      ##      ##               ##       ##   ##     ##    
+    ##     ## ##    ## ##      ##     ## ##      ##      ##      ## ##            ##  ###  ##   ##     ##    
+    ##     ##  ##   ##         ##     ##  ##     ##      ##      ##               ##   ##  ##   ##     ##    
+    ##     ##  ##   ##         ##     ##  ##     ##      ##      ##  ##           ##   ##  ##   ##     ##    
+   ####   ###  ##  ####       ####   ###  ##    ####    ####    ### ###            ## ##    ## ##     ####
+ 
+[20:05:18 INFO]: [NBTAPI] [NBTAPI] Found Minecraft: 1.21.10! Trying to find NMS support
+[20:05:18 WARN]: [NBTAPI] [NBTAPI] This Server-Version(1.21.10-R0.1-SNAPSHOT) is not supported by this NBT-API Version(2.13.1) located in InfiniteGUI. The NBT-API will try to work as good as it can! Some functions may not work!
+[20:05:18 INFO]: [NBTAPI] [NBTAPI] Using the plugin 'InfiniteGUI' to create a bStats instance!
+[20:05:18 INFO]: [PlaceholderAPI] Successfully registered internal expansion: infinitegui [1.1.1]
+[20:05:18 INFO]: [RavenWelcome] Enabling RavenWelcome v1.0
+[20:05:18 INFO]: [PlaceholderAPI] Successfully registered internal expansion: ravenwelcome [1.0]
+[20:05:18 INFO]: [RavenWelcome] PlaceholderAPI expansion registered!
+[20:05:18 INFO]: [SpawnerMeta] Enabling SpawnerMeta v25.5
+[20:05:18 INFO]: [38;2;170;0;170m[[38;2;255;85;255mSpawnerMeta [38;2;85;255;255mv25.4[38;2;170;0;170m][38;2;85;255;85m enabled![0m
+[20:05:18 INFO]: [38;2;170;0;170m[[38;2;255;85;255mSpawnerMeta[38;2;170;0;170m] [38;2;170;170;170mVault has been found, economy enabled![0m
+[20:05:18 INFO]: [BlockRegen] Enabling BlockRegen v2.4
+[20:05:18 ERROR]: [BlockRegen] Multiplier profile 'default' not found in multiplier.yml! The multiplier system will be disabled.
+[20:05:18 INFO]: [BlockRegen] Loaded 11 block configurations from blocks.yml.
+[20:05:18 INFO]: [BlockRegen] BlockRegen has been enabled successfully!
+[20:05:18 INFO]: [EssentialsSpawn] Enabling EssentialsSpawn v2.22.0-dev+49-000e6c5
+[20:05:18 INFO]: [EssentialsSpawn] Starting Metrics. Opt-out using the global bStats config.
+[20:05:18 INFO]: [PhoenixCrates] Enabling PhoenixCrates v4.2.3
+[20:05:18 INFO]: [38;2;255;255;85mLoading cross version adapter...[0m
+[20:05:18 INFO]: [38;2;255;170;0mCraftLegacy not found, skipping. (v1_21_R1)[0m
+[20:05:18 INFO]: [38;2;85;255;255m  ____  [38;2;85;85;255m  ____                               [0m
+[20:05:18 INFO]: [38;2;85;255;255m |  _ \ [38;2;85;85;255m / ___|                              [0m
+[20:05:18 INFO]: [38;2;85;255;255m | |_) |[38;2;85;85;255m| |       [38;2;0;170;0mPhoenix Crates [38;2;85;255;255mv4.2.3      [0m
+[20:05:18 INFO]: [38;2;85;255;255m |  __/ [38;2;85;85;255m| |___    [38;2;85;85;85mhttps://phoenixplugins.com/[0m
+[20:05:18 INFO]: [38;2;85;255;255m |_|    [38;2;85;85;255m \____|                             [0m
+[20:05:18 INFO]:                                                  
+[20:05:18 INFO]: [38;2;255;255;85mLoading settings...[0m
+[20:05:18 INFO]: [38;2;85;255;255mLoading file [38;2;0;170;170m"config.yml"[38;2;85;255;255m.[0m
+[20:05:18 INFO]: [38;2;85;255;255mFile [38;2;0;170;170m"config.yml"[38;2;85;255;255m is up to date. Importing configurations.[0m
+[20:05:18 INFO]: [38;2;255;255;85mValidating license...[0m
+[20:05:18 INFO]: [38;2;85;255;85mGreat news! Your license is valid and active. Enjoy full access to all the features and benefits of this plugin.[0m
+[20:05:18 INFO]: No new version available!
+[20:05:18 INFO]: [38;2;170;170;170mMiniMessage founded. Preparing hook...[0m
+[20:05:18 INFO]: [38;2;255;255;85mChecking for internal patchs...[0m
+[20:05:18 INFO]: [PhoenixCrates] Current patch: #202506251725
+[20:05:18 INFO]: [PhoenixCrates] No patches to run.
+[20:05:18 INFO]: [38;2;170;170;170mVault founded. Preparing Economy...[0m
+[20:05:18 INFO]: [38;2;170;170;170mPlaceholder API founded. Preparing placeholders...[0m
+[20:05:18 INFO]: [PlaceholderAPI] Successfully registered internal expansion: phoenixcrates [1.0.0]
+[20:05:18 INFO]: [38;2;170;170;170mModel Engine is not installed. If you want to support custom models in this plugin install it.[0m
+[20:05:18 INFO]: [38;2;170;170;170m-> (Meg 3) See more at: https://www.spigotmc.org/resources/conxeptworks-legacy-model-engine-1-16-5-1-20.79477/[0m
+[20:05:18 INFO]: [38;2;170;170;170m-> (Meg 4) See more at: https://mythiccraft.io/index.php?resources/20-off-model-engine%E2%80%94ultimate-entity-model-manager-1-19-4-1-20-1.1213/[0m
+[20:05:18 INFO]: [38;2;255;255;85mLoading components...[0m
+[20:05:18 INFO]: [38;2;255;255;85mLoading database...[0m
+[20:05:18 INFO]: [38;2;255;255;85mInitializing sqlite database provider...[0m
+[20:05:18 WARN]: 4 [Server thread] INFO com.phoenixplugins.phoenixcrates.lib.hikari.HikariDataSource - CyberSQLitePool - Starting...
+[20:05:18 WARN]: 22 [Server thread] INFO com.phoenixplugins.phoenixcrates.lib.hikari.HikariDataSource - CyberSQLitePool - Start completed.
+[20:05:18 INFO]: [38;2;255;255;85mLoading menus...[0m
+[20:05:18 INFO]: [38;2;85;255;255mLoading file [38;2;0;170;170m"menus/default_rewards_preview.yml"[38;2;85;255;255m.[0m
+[20:05:18 INFO]: [38;2;85;255;255mFile [38;2;0;170;170m"menus/default_rewards_preview.yml"[38;2;85;255;255m is up to date. Importing configurations.[0m
+[20:05:18 INFO]: [38;2;85;255;255mLoading file [38;2;0;170;170m"menus/default_crate_reroll.yml"[38;2;85;255;255m.[0m
+[20:05:18 INFO]: [38;2;85;255;255mFile [38;2;0;170;170m"menus/default_crate_reroll.yml"[38;2;85;255;255m is up to date. Importing configurations.[0m
+[20:05:18 INFO]: [38;2;85;255;255mLoading file [38;2;0;170;170m"menus/default_select_reward.yml"[38;2;85;255;255m.[0m
+[20:05:18 INFO]: [38;2;85;255;255mFile [38;2;0;170;170m"menus/default_select_reward.yml"[38;2;85;255;255m is up to date. Importing configurations.[0m
+[20:05:18 INFO]: [38;2;255;255;85mLoading players data...[0m
+[20:05:19 INFO]: [38;2;255;255;85mLoading keys...[0m
+[20:05:19 INFO]: [38;2;255;255;85mNo resource with the name [38;2;255;170;0m"key.yml"[38;2;255;255;85m founded.[0m
+[20:05:19 INFO]: [38;2;85;255;255mLoading file [38;2;0;170;170m"keys/example2.yml"[38;2;85;255;255m.[0m
+[20:05:19 INFO]: [38;2;85;255;255mFile [38;2;0;170;170m"keys/example2.yml"[38;2;85;255;255m is up to date. Importing configurations.[0m
+[20:05:19 INFO]: [38;2;255;255;85mNo resource with the name [38;2;255;170;0m"key.yml"[38;2;255;255;85m founded.[0m
+[20:05:19 INFO]: [38;2;85;255;255mLoading file [38;2;0;170;170m"keys/example3.yml"[38;2;85;255;255m.[0m
+[20:05:19 INFO]: [38;2;85;255;255mFile [38;2;0;170;170m"keys/example3.yml"[38;2;85;255;255m is up to date. Importing configurations.[0m
+[20:05:19 INFO]: [38;2;255;255;85mNo resource with the name [38;2;255;170;0m"key.yml"[38;2;255;255;85m founded.[0m
+[20:05:19 INFO]: [38;2;85;255;255mLoading file [38;2;0;170;170m"keys/example1.yml"[38;2;85;255;255m.[0m
+[20:05:19 INFO]: [38;2;85;255;255mFile [38;2;0;170;170m"keys/example1.yml"[38;2;85;255;255m is up to date. Importing configurations.[0m
+[20:05:19 INFO]: [38;2;170;170;170mLoaded 3 keys.[0m
+[20:05:19 INFO]: [38;2;255;255;85mLoading crates...[0m
+[20:05:19 INFO]: [38;2;85;255;255mLoading file [38;2;0;170;170m"locations.yml"[38;2;85;255;255m.[0m
+[20:05:19 INFO]: [38;2;85;255;255mFile [38;2;0;170;170m"locations.yml"[38;2;85;255;255m is up to date. Importing configurations.[0m
+[20:05:19 INFO]: [38;2;170;170;170mLoaded 4 types.[0m
+[20:05:19 INFO]: [38;2;170;170;170mLoaded 0 crates.[0m
+[20:05:19 INFO]: [38;2;255;255;85mLoading commands...[0m
+[20:05:19 INFO]: Enabling extension Extension-5c012d6d-d435-4a5a-95e8-72a9c7655152
+[20:05:19 INFO]: [38;2;85;255;255mLoading file [38;2;0;170;170m"logger.yml"[38;2;85;255;255m.[0m
+[20:05:19 INFO]: [38;2;85;255;255mFile [38;2;0;170;170m"logger.yml"[38;2;85;255;255m is up to date. Importing configurations.[0m
+[20:05:19 INFO]: 
+[20:05:19 INFO]: [38;2;85;255;85mPlugin loaded successfully![0m
+[20:05:19 INFO]: [38;2;170;170;170m[Any questions or problems that may arise, contact us through[0m
+[20:05:19 INFO]: [38;2;170;170;170mthe website or our discord: https://phoenixplugins.com/discord][0m
+[20:05:19 INFO]: 
+[20:05:19 INFO]: [Shopkeepers] Enabling Shopkeepers v2.25.0
+[20:05:19 INFO]: [Shopkeepers] Loading the data of 19 shopkeepers ...
+[20:05:19 INFO]: [CommandTimer] Enabling CommandTimer v8.16.3
+[20:05:19 INFO]: [38;2;85;255;85m[CommandTimer] [38;2;255;255;85mUsing Folia scheduler adapter[0m
+[20:05:19 INFO]: [PlaceholderAPI] Successfully registered internal expansion: commandtimer [8.16.3]
+[20:05:19 INFO]: [38;2;85;255;85m[CommandTimer] [38;2;255;255;85mCommandTimer hooked in PlaceholderAPI[0m
+[20:05:19 INFO]: [38;2;85;255;85m[CommandTimer] Server time :[38;2;255;255;85m 20:05:19[0m
+[20:05:19 INFO]: [38;2;85;255;85m[CommandTimer] Server day :[38;2;255;255;85m WEDNESDAY[0m
+[20:05:19 INFO]: [38;2;85;255;85m[CommandTimer] [38;2;255;255;85m8.16.3[38;2;85;255;85m loaded 0 tasks![0m
+[20:05:19 INFO]: [Simple_RTP] Enabling Simple_RTP v1.0.2-BETA
+[20:05:20 INFO]: [Simple_RTP] [32mPlugin has been enabled![0m
+[20:05:20 INFO]: [Simple_RTP] [32mThank you for using RTP plugin! by Jaeden[0m
+[20:05:20 INFO]: [RealScoreboard] Enabling RealScoreboard v1.5.7
+[20:05:20 INFO]: [RealScoreboard] [38;2;255;85;255m   ____            _ ____                     _                         _[0m
+[20:05:20 INFO]: [RealScoreboard] [38;2;255;85;255m  |  _ \ ___  __ _| / ___|  ___ ___  _ __ ___| |__   ___   __ _ _ __ __| |[0m
+[20:05:20 INFO]: [RealScoreboard] [38;2;255;85;255m  | |_) / _ \/ _` | \___ \ / __/ _ \| '__/ _ \ '_ \ / _ \ / _` | '__/ _` |[0m
+[20:05:20 INFO]: [RealScoreboard] [38;2;255;85;255m  |  _ <  __/ (_| | |___) | (_| (_) | | |  __/ |_) | (_) | (_| | | | (_| |[0m
+[20:05:20 INFO]: [RealScoreboard] [38;2;255;85;255m  |_| \_\___|\__,_|_|____/ \___\___/|_|  \___|_.__/ \___/ \__,_|_|  \__,_|[0m
+[20:05:20 INFO]: [RealScoreboard]   [38;2;85;85;85mMade by: [38;2;85;85;255mJoseGamer_PT 		                      [38;2;85;85;85mVersion: [38;2;85;85;255m1.5.7[0m
+[20:05:20 INFO]: [RealScoreboard] 
+[20:05:20 INFO]: [RealScoreboard] Loaded 2 conditions.
+[20:05:20 INFO]: [RealScoreboard] Loaded 1 scoreboards.
+[20:05:20 INFO]: [RealScoreboard] Server version: 1.21.10-R0.1-SNAPSHOT
+[20:05:20 INFO]: [RealScoreboard] Finished loading in 0.204 seconds.
+[20:05:20 INFO]: [RealScoreboard] <------------------ RealScoreboard v1.5.7 ------------------>
+[20:05:20 INFO]: [XVaults] Enabling XVaults v2.1.2
+[20:05:20 INFO]: [UJobs] Enabling UJobs v1.0.3
+[20:05:20 INFO]: [UJobs] Loaded 13 jobs successfully!
+[20:05:20 INFO]: [UJobs] All managers initialized successfully!
+[20:05:20 INFO]: [PlaceholderAPI] Successfully registered internal expansion: ujobs [1.0.3]
+[20:05:20 INFO]: [UJobs] UJobs has been enabled successfully!
+[20:05:20 INFO]: [BattlePass] Enabling BattlePass v5.0.3
+[20:05:20 INFO]: [CommandTimer] Checking for update...
+[20:05:20 INFO]: [CommandTimer] Update not found
+[20:05:20 INFO]: [BattlePass] Finished loading the week-2 quests. All quests loaded successfully.
+[20:05:20 INFO]: [BattlePass] Finished loading the event-easter quests. All quests loaded successfully.
+[20:05:20 INFO]: [BattlePass] Finished loading the week-1 quests. All quests loaded successfully.
+[20:05:20 INFO]: [BattlePass] Finished loading the week-4 quests. All quests loaded successfully.
+[20:05:20 INFO]: [BattlePass] Finished loading the week-3 quests. All quests loaded successfully.
+[20:05:20 INFO]: [BattlePass] Finished loading the week-pool quests. All quests loaded successfully.
+[20:05:20 INFO]: [BattlePass] Finished loading the daily quests. All quests loaded successfully.
+[20:05:20 INFO]: [BattlePass] Successfully loaded the pass type with the id: free
+[20:05:20 INFO]: [BattlePass] Successfully loaded the pass type with the id: premium
+[20:05:20 INFO]: [BattlePass] Register PlaceholderAPI placeholders
+[20:05:20 INFO]: [PlaceholderAPI] Successfully registered internal expansion: battlepass [1.1]
+[20:05:20 INFO]: [AnimaBossBar] Enabling AnimaBossBar v${project.version}
+[20:05:20 INFO]: [AnimaBossBar] AnimaBossBar enabled.
+[20:05:20 INFO]: [spark] Starting background profiler...
+[20:05:21 INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[20:05:21 INFO]: [38;2;255;170;0m0 placeholder hook(s) registered![0m
+[20:05:21 INFO]: Starting remote control listener
+[20:05:21 INFO]: Thread RCON Listener started
+[20:05:21 INFO]: RCON running on 0.0.0.0:25575
+[20:05:21 INFO]: Running delayed init tasks
+[20:05:21 INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[20:05:21 INFO]: [zAuctionHouseV3] The database connection is valid ! (192.168.10.10)
+[20:05:21 INFO]: [Essentials] [38;2;255;170;0mFetching version information...[0m
+[20:05:21 INFO]: [EliteMobs] Latest public release is 9.6.1
+[20:05:21 INFO]: [EliteMobs] Your version is 9.6.1
+[20:05:21 INFO]: [EliteMobs] You are running the latest version!
+[20:05:21 INFO]: [Vault] Checking for Updates ... 
+[20:05:21 INFO]: [RealScoreboard] The plugin is updated to the latest version.
+[20:05:21 INFO]: [zAuctionHouseV3] Executing SQL: PRAGMA table_info(zauctionhouse_options)
+[20:05:21 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;170;170;170mLoading items[0m
+[20:05:21 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;170;170;170mLoading transactions[0m
+[20:05:21 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;170;170;170mLoading of transactions successfully completed.[0m
+[20:05:21 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;170;170;170mLoading of items successfully completed.[0m
+[20:05:21 INFO]: [BlockRegen] §a[BlockRegen] You are running the latest version.
+[20:05:21 INFO]: [Vault] No new version available
+[20:05:21 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;170;170;170mNew update available. Your version: 3.2.4.0, latest version: 3.2.4.1[0m
+[20:05:21 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzAuctionHouseV3 v3.2.4.0[38;2;85;85;85m] [38;2;170;170;170mDownload plugin here: https://groupez.dev/resources/1[0m
+[20:05:21 INFO]: [38;2;85;85;85m[[38;2;255;255;85mzMenu v1.1.0.7[38;2;85;85;85m] [38;2;170;170;170mNo update available.[0m
+[20:05:22 INFO]: [1m[38;2;221;94;137mS[38;2;227;115;152mk[38;2;233;136;167mu[38;2;239;157;182ml[38;2;245;178;197ml[38;2;251;199;212ms[0m [38;2;85;85;85m» [38;2;85;255;85mLoaded [38;2;255;255;85m102792 [38;2;85;255;85mskulls in [38;2;255;255;255m20,392.720[38;2;85;255;85mms[0m
+[20:06:26 WARN]: [spark] Timed out waiting for world statistics
+[20:07:26 WARN]: [spark] Timed out waiting for world statistics
+[20:07:34 WARN]: [AdvancedEnchantments] Task #50 for AdvancedEnchantments v9.22.0 generated an exception
+java.net.ConnectException: Connection timed out
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:546) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:535) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:659) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:597) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:166) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:516) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:604) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:276) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:380) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:393) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1030) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:963) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:899) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:872) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1377) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1302) ~[?:?]
+	at AdvancedEnchantments-9.22.0[1].jar/net.advancedplugins.ae.Core$2.run(Core.java:388) ~[AdvancedEnchantments-9.22.0[1].jar:?]
+	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:78) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at org.bukkit.craftbukkit.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:474) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1271) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:384) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+[20:07:34 INFO]: [AdvancedMobs] Loaded 0 stacked spawners.
+[20:07:34 INFO]: [BattlePass] [STDOUT] Leaderboards reloaded in 8 ms
+[20:07:34 WARN]: Nag author(s): '[]' of 'BattlePass v5.0.3' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[20:07:35 INFO]: [AuraSkills] Loaded 11 skills with 319 total sources
+[20:07:35 INFO]: [AuraSkills] Loaded 9 stats and 17 traits
+[20:07:35 INFO]: [AuraSkills] Loaded 22 pattern rewards and 0 level rewards
+[20:07:35 INFO]: [AuraSkills] Loaded 53 loot entries in 4 pools and 2 tables
+[20:07:35 INFO]: [AuraSkills] Loaded 7 menus
+[20:07:35 INFO]: [PlaceholderAPI] An update for PlaceholderAPI (v2.11.7) is available at:
+[20:07:35 INFO]: [PlaceholderAPI] https://www.spigotmc.org/resources/placeholderapi.6245/
+[20:07:35 INFO]: Done (193.581s)! For help, type "help"
+[20:07:35 INFO]: [1m[38;2;221;94;137mS[38;2;227;115;152mk[38;2;233;136;167mu[38;2;239;157;182ml[38;2;245;178;197ml[38;2;251;199;212ms[0m [38;2;85;85;85m» [38;2;85;255;85mRunning database check :)[0m
+[20:07:35 INFO]: [AdvancedEnchantments] Successfully hooked into ProtocolLib, AuraSkills, AdvancedEnchantments, WorldGuard, PlaceholderAPI, ProtectionStones, Essentials, Vault, LuckPerms.
+[20:07:35 INFO]: [AdvancedMobs] Successfully hooked into ProtocolLib, AuraSkills, AdvancedEnchantments, WorldGuard, PlaceholderAPI, ProtectionStones, Essentials, Vault, LuckPerms.
+[20:07:35 INFO]: [AdvancedEnchantments] Hooked into AdvancedEnchantments
+[20:07:35 INFO]: [AdvancedMobs] Hooked into AdvancedMobs
+[20:07:35 INFO]: [Shopkeepers] Hooked into Shopkeepers
+[20:07:36 INFO]: [AdvancedMobs] Loaded 0 stacked mobs from previous session.
+[20:07:36 INFO]: [38;2;170;170;170m[AdvancedEnchantments] [38;2;255;255;85mYou're using an outdated version of AdvancedEnchantments. A new version is available: [38;2;255;255;255m9.22.6[0m
+[20:07:36 INFO]: [38;2;170;170;170m[AdvancedEnchantments] Keep your Advanced plugins up to date automatically with [38;2;85;255;255mMintServers[38;2;170;170;170m Unlimited Hosting: [38;2;85;255;255mhttps://mintservers.com/[0m
+[20:07:36 INFO]: [38;2;170;170;170m[AdvancedMobs] [38;2;255;255;85mYou're using an outdated version of AdvancedMobs. A new version is available: [38;2;255;255;255m1.18.12[0m
+[20:07:36 INFO]: [38;2;170;170;170m[AdvancedMobs] Keep your Advanced plugins up to date automatically with [38;2;85;255;255mMintServers[38;2;170;170;170m Unlimited Hosting: [38;2;85;255;255mhttps://mintservers.com/[0m
+[20:07:37 ERROR]: [AdvancedEnchantments] Failed to load the "Cazador de arañas" enchantment! Reason: enchantment name must be fully lower-case!
+[20:07:39 INFO]: [38;2;170;0;170m[[38;2;255;85;255mSpawner Meta [38;2;85;255;255mv25.4[38;2;170;0;170m] [38;2;255;255;85mNew version is available: v25.5! [38;2;255;170;0mTo download visit: https://www.spigotmc.org/resources/spawnermeta.74188/[0m
+[20:07:39 INFO]: [1m[38;2;221;94;137mS[38;2;227;115;152mk[38;2;233;136;167mu[38;2;239;157;182ml[38;2;245;178;197ml[38;2;251;199;212ms[0m [38;2;85;85;85m» [38;2;85;255;85mEverything looks up-to-date, no issues found. Enjoy![0m
+[20:10:43 INFO]: UUID of player apolofs is 9e9c9df8-57aa-3ef3-8bb9-b85629a1c59c
+[20:10:43 INFO]: [HorriblePlayerLoginEventHack] You have plugins listening to the PlayerLoginEvent, this will cause re-configuration APIs to be unavailable: [LuckPerms, EliteMobs, Skulls, ProtocolLib, WorldGuard]
+[20:10:52 ERROR]: Could not pass event PlayerJoinEvent to PhoenixCrates v4.2.3
+java.lang.NoClassDefFoundError: org/bukkit/craftbukkit/v1_21_R1/entity/CraftPlayer
+	at PhoenixCrates-4.2.3.jar/com.phoenixplugins.phoenixcrates.lib.common.nms.v1_21_R1.NMSFactoryImpl.modifyPipeline(NMSFactoryImpl.java:150) ~[PhoenixCrates-4.2.3.jar:?]
+	at PhoenixCrates-4.2.3.jar/com.phoenixplugins.phoenixcrates.lib.common.nms.v1_21_R1.NMSFactoryImpl.injectFakeEntityPacketListener(NMSFactoryImpl.java:112) ~[PhoenixCrates-4.2.3.jar:?]
+	at PhoenixCrates-4.2.3.jar/com.phoenixplugins.phoenixcrates.lib.common.utils.Utilities$2.onPlayerJoin(Utilities.java:109) ~[PhoenixCrates-4.2.3.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:71) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	at net.minecraft.server.players.PlayerList.placeNewPlayer(PlayerList.java:236) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.network.config.PrepareSpawnTask$Ready.spawn(PrepareSpawnTask.java:313) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.network.config.PrepareSpawnTask.spawnPlayer(PrepareSpawnTask.java:139) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.network.ServerConfigurationPacketListenerImpl.handleConfigurationFinished(ServerConfigurationPacketListenerImpl.java:210) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.handle(ServerboundFinishConfigurationPacket.java:22) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.handle(ServerboundFinishConfigurationPacket.java:8) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.network.PacketProcessor$ListenerAndPacket.handle(PacketProcessor.java:99) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.network.PacketProcessor.executeSinglePacket(PacketProcessor.java:33) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1511) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.recordTaskExecutionTimeWhileWaiting(MinecraftServer.java:1229) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1352) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:384) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+Caused by: java.lang.ClassNotFoundException: org.bukkit.craftbukkit.v1_21_R1.entity.CraftPlayer
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:208) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:175) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490) ~[?:?]
+	... 21 more
+[20:10:52 INFO]: [38;2;0;255;0mWelcome apolofs to the server![0m
+[20:10:52 INFO]: apolofs[/192.168.194.149:53549] logged in with entity id 17 at ([spawn2]-2.3522246917993153, 64.0, 11.821699330663357)
+[20:10:52 INFO]: [nLogin] The user apolofs has successfully logged in.
+[20:10:53 INFO]: [EliteMobs] User 9e9c9df8-57aa-3ef3-8bb9-b85629a1c59c data successfully read!
+[20:10:56 INFO]: apolofs issued server command: /ce
+[20:11:39 INFO]: apolofs issued server command: /ce
+[20:12:22 INFO]: apolofs issued server command: /ae reload
+[20:12:26 INFO]: apolofs issued server command: /ae reload
+[20:12:31 INFO]: apolofs issued server command: /plugins
+[20:12:37 INFO]: [EliteMobs] Event treasure_goblin.yml has been queued!
+[20:12:39 INFO]: apolofs issued server command: /realscoreboard on
+[20:12:51 INFO]: apolofs issued server command: /realscoreboard announce
+[20:12:51 WARN]: realscoreboard announce
+[20:13:01 INFO]: apolofs issued server command: /realscoreboard announce 10 server
+[20:13:35 INFO]: apolofs issued server command: /realscoreboard reload
+[20:13:35 INFO]: [RealScoreboard] Loaded 2 conditions.
+[20:13:35 INFO]: [RealScoreboard] Loaded 1 scoreboards.
+[20:15:08 INFO]: apolofs issued server command: /vault apolofs
+[20:15:20 INFO]: apolofs issued server command: /vault 2
+[20:15:27 INFO]: apolofs issued server command: /reward
+[20:15:27 WARN]: com.artillexstudios.axrewards.libs.gui.components.exception.GuiException: Slot 27 is not valid for the gui type - CHEST and rows - 3!
+[20:15:27 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.libs.gui.guis.BaseGui.throwInvalidSlot(BaseGui.java:953)
+[20:15:27 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.libs.gui.guis.BaseGui.validateSlot(BaseGui.java:939)
+[20:15:27 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.libs.gui.guis.BaseGui.setItem(BaseGui.java:163)
+[20:15:27 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.guis.GuiFrame.createItem(GuiFrame.java:58)
+[20:15:27 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.guis.GuiFrame.createItem(GuiFrame.java:47)
+[20:15:27 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.guis.GuiFrame.setGui(GuiFrame.java:30)
+[20:15:27 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.guis.impl.RewardGui.<init>(RewardGui.java:61)
+[20:15:27 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.guis.data.MenuManager.openMenu(MenuManager.java:77)
+[20:15:27 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.commands.subcommands.Open.execute(Open.java:17)
+[20:15:27 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.commands.OpenCommand.open(OpenCommand.java:25)
+[20:17:37 INFO]: [BattlePass] [STDOUT] Leaderboards reloaded in 2 ms
+[20:17:37 WARN]: Nag author(s): '[]' of 'BattlePass v5.0.3' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[20:17:57 INFO]: Thread RCON Client /127.0.0.1 started
+[20:17:57 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:18:20 INFO]: apolofs issued server command: /animabossbar:bbp reload
+[20:18:23 INFO]: Thread RCON Client /127.0.0.1 started
+[20:18:23 INFO]: [38;2;255;238;0m[AxRewards] [38;2;255;238;170mReloading configuration...[0m
+[20:18:23 INFO]: [38;2;255;238;0m╠ [38;2;255;238;170mReloaded [38;2;255;255;255mconfig.yml[38;2;255;238;170m![0m
+[20:18:23 INFO]: [38;2;255;238;0m╠ [38;2;255;238;170mReloaded [38;2;255;255;255mlang.yml[38;2;255;238;170m![0m
+[20:18:23 INFO]: [38;2;255;238;0m╠ [38;2;255;238;170mReloaded [38;2;255;255;255mmenus[38;2;255;238;170m![0m
+[20:18:23 INFO]: [38;2;255;238;0m╚ [38;2;255;238;170mSuccessful reload![0m
+[20:18:23 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:18:28 INFO]: Thread RCON Client /127.0.0.1 started
+[20:18:28 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:18:59 INFO]: apolofs issued server command: /animabossbar:bbp reload
+[20:20:10 INFO]: apolofs issued server command: /animabossbar:bbp reload
+[20:20:28 INFO]: apolofs issued server command: /animabossbar:bbp reload
+[20:20:49 INFO]: apolofs issued server command: /animabossbar:bbp reload
+[20:21:57 INFO]: apolofs issued server command: /animabossbar:bbp reload
+[20:22:37 INFO]: XVaults Data Auto-Saved.
+[20:23:59 INFO]: apolofs issued server command: /animabossbar:bbp reload
+[20:25:23 INFO]: apolofs issued server command: /axreward
+[20:25:27 INFO]: apolofs issued server command: /axreward open
+[20:25:27 WARN]: com.artillexstudios.axrewards.libs.gui.components.exception.GuiException: Slot 27 is not valid for the gui type - CHEST and rows - 3!
+[20:25:27 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.libs.gui.guis.BaseGui.throwInvalidSlot(BaseGui.java:953)
+[20:25:27 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.libs.gui.guis.BaseGui.validateSlot(BaseGui.java:939)
+[20:25:27 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.libs.gui.guis.BaseGui.setItem(BaseGui.java:163)
+[20:25:27 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.guis.GuiFrame.createItem(GuiFrame.java:58)
+[20:25:27 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.guis.GuiFrame.createItem(GuiFrame.java:47)
+[20:25:27 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.guis.GuiFrame.setGui(GuiFrame.java:30)
+[20:25:27 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.guis.impl.RewardGui.<init>(RewardGui.java:61)
+[20:25:27 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.guis.data.MenuManager.openMenu(MenuManager.java:77)
+[20:25:27 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.commands.subcommands.Open.execute(Open.java:17)
+[20:25:27 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.commands.Commands.open(Commands.java:30)
+[20:26:14 INFO]: apolofs issued server command: /reward
+[20:26:14 WARN]: com.artillexstudios.axrewards.libs.gui.components.exception.GuiException: Slot 27 is not valid for the gui type - CHEST and rows - 3!
+[20:26:14 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.libs.gui.guis.BaseGui.throwInvalidSlot(BaseGui.java:953)
+[20:26:14 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.libs.gui.guis.BaseGui.validateSlot(BaseGui.java:939)
+[20:26:14 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.libs.gui.guis.BaseGui.setItem(BaseGui.java:163)
+[20:26:14 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.guis.GuiFrame.createItem(GuiFrame.java:58)
+[20:26:14 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.guis.GuiFrame.createItem(GuiFrame.java:47)
+[20:26:14 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.guis.GuiFrame.setGui(GuiFrame.java:30)
+[20:26:14 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.guis.impl.RewardGui.<init>(RewardGui.java:61)
+[20:26:14 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.guis.data.MenuManager.openMenu(MenuManager.java:77)
+[20:26:14 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.commands.subcommands.Open.execute(Open.java:17)
+[20:26:14 WARN]: 	at AxRewards-3.7.0.jar//com.artillexstudios.axrewards.commands.OpenCommand.open(OpenCommand.java:25)
+[20:26:38 INFO]: apolofs issued server command: /bp
+[20:27:37 INFO]: [BattlePass] [STDOUT] Leaderboards reloaded in 3 ms
+[20:27:37 WARN]: Nag author(s): '[]' of 'BattlePass v5.0.3' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[20:27:54 INFO]: Thread RCON Client /127.0.0.1 started
+[20:27:54 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:29:24 INFO]: Thread RCON Client /127.0.0.1 started
+[20:29:24 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:29:59 INFO]: Thread RCON Client /127.0.0.1 started
+[20:29:59 INFO]: [RealScoreboard] Loaded 2 conditions.
+[20:29:59 INFO]: [RealScoreboard] Loaded 1 scoreboards.
+[20:29:59 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:30:09 INFO]: Thread RCON Client /127.0.0.1 started
+[20:30:09 INFO]: [RealScoreboard] Loaded 2 conditions.
+[20:30:09 INFO]: [RealScoreboard] Loaded 1 scoreboards.
+[20:30:09 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:30:52 INFO]: Thread RCON Client /127.0.0.1 started
+[20:30:52 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:31:03 INFO]: Thread RCON Client /127.0.0.1 started
+[20:31:03 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:31:39 INFO]: apolofs issued server command: /scoreboard players
+[20:31:42 INFO]: apolofs issued server command: /plugins
+[20:31:57 INFO]: apolofs issued server command: /realscoreboard reload
+[20:31:57 INFO]: [RealScoreboard] Loaded 2 conditions.
+[20:31:57 INFO]: [RealScoreboard] Loaded 1 scoreboards.
+[20:32:22 INFO]: Thread RCON Client /127.0.0.1 started
+[20:32:22 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:32:30 INFO]: Thread RCON Client /127.0.0.1 started
+[20:32:30 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:32:35 INFO]: Thread RCON Client /127.0.0.1 started
+[20:32:35 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:32:47 INFO]: apolofs issued server command: /skull
+[20:32:49 INFO]: apolofs issued server command: /skulls
+[20:32:49 INFO]: [NBTAPI] [NBTAPI] Found Minecraft: 1.21.10! Trying to find NMS support
+[20:32:49 WARN]: [NBTAPI] [NBTAPI] This Server-Version(1.21.10-R0.1-SNAPSHOT) is not supported by this NBT-API Version(2.15.1) located in Skulls. The NBT-API will try to work as good as it can! Some functions may not work!
+[20:32:49 INFO]: [NBTAPI] [NBTAPI] Using the plugin 'Skulls' to create a bStats instance!
+[20:32:49 ERROR]: Command exception: /skulls
+org.bukkit.command.CommandException: Unhandled exception executing command 'skulls' in plugin Skulls v3.26.0
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:47) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:83) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:105) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:458) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:364) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:352) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2321) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$12(ServerGamePacketListenerImpl.java:2294) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:176) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1537) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:180) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:150) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1517) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1511) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.recordTaskExecutionTimeWhileWaiting(MinecraftServer.java:1229) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1352) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:384) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+Caused by: java.lang.NoSuchMethodError: 'com.mojang.authlib.properties.PropertyMap com.mojang.authlib.GameProfile.getProperties()'
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.PlayerProfiles.signXSeries(PlayerProfiles.java:271) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.PlayerProfiles.createGameProfile(PlayerProfiles.java:261) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.PlayerProfiles.<clinit>(PlayerProfiles.java:64) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.objects.ProfileInputType$3.getProfile(ProfileInputType.java:84) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.builder.XSkull.<clinit>(XSkull.java:146) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.impl.TexturedSkull.getItemStack(TexturedSkull.java:109) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.manager.SkullManager.getSkullItem(SkullManager.java:154) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.guis.MainGUI.draw(MainGUI.java:61) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.guis.MainGUI.<init>(MainGUI.java:52) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.commands.SkullsCommand.execute(SkullsCommand.java:58) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.command.CommandManager.processRequirements(CommandManager.java:331) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.command.CommandManager.onCommand(CommandManager.java:231) ~[Skulls_-_v3.26.0[1].jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	... 24 more
+[20:33:01 INFO]: apolofs issued server command: /skulls reload
+[20:33:04 INFO]: apolofs issued server command: /skulls
+[20:33:04 ERROR]: Command exception: /skulls
+org.bukkit.command.CommandException: Unhandled exception executing command 'skulls' in plugin Skulls v3.26.0
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:47) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:83) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:105) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:458) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:364) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:352) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2321) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$12(ServerGamePacketListenerImpl.java:2294) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:176) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1537) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:180) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:150) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1517) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1511) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.recordTaskExecutionTimeWhileWaiting(MinecraftServer.java:1229) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1352) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:384) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class ca.tweetzy.skulls.flight.utils.profiles.builder.XSkull
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.impl.TexturedSkull.getItemStack(TexturedSkull.java:109) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.manager.SkullManager.getSkullItem(SkullManager.java:154) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.guis.MainGUI.draw(MainGUI.java:61) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.guis.MainGUI.<init>(MainGUI.java:52) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.commands.SkullsCommand.execute(SkullsCommand.java:58) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.command.CommandManager.processRequirements(CommandManager.java:331) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.command.CommandManager.onCommand(CommandManager.java:231) ~[Skulls_-_v3.26.0[1].jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	... 24 more
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoSuchMethodError: 'com.mojang.authlib.properties.PropertyMap com.mojang.authlib.GameProfile.getProperties()' [in thread "Server thread"]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.PlayerProfiles.signXSeries(PlayerProfiles.java:271) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.PlayerProfiles.createGameProfile(PlayerProfiles.java:261) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.PlayerProfiles.<clinit>(PlayerProfiles.java:64) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.objects.ProfileInputType$3.getProfile(ProfileInputType.java:84) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.builder.XSkull.<clinit>(XSkull.java:146) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.impl.TexturedSkull.getItemStack(TexturedSkull.java:109) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.manager.SkullManager.getSkullItem(SkullManager.java:154) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.guis.MainGUI.draw(MainGUI.java:61) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.guis.MainGUI.<init>(MainGUI.java:52) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.commands.SkullsCommand.execute(SkullsCommand.java:58) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.command.CommandManager.processRequirements(CommandManager.java:331) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.command.CommandManager.onCommand(CommandManager.java:231) ~[Skulls_-_v3.26.0[1].jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	... 24 more
+[20:33:08 INFO]: apolofs issued server command: /skulls inspect
+[20:33:14 INFO]: apolofs issued server command: /skulls inspect apolofs
+[20:33:22 INFO]: apolofs issued server command: /skulls phead apolofs
+[20:33:22 WARN]: [Skulls] Plugin Skulls v3.26.0 generated an exception while executing task 4491
+java.lang.NoClassDefFoundError: Could not initialize class ca.tweetzy.skulls.flight.utils.profiles.builder.XSkull
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.QuickItem.of(QuickItem.java:492) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.commands.PlayerHeadCommand.lambda$execute$0(PlayerHeadCommand.java:70) ~[Skulls_-_v3.26.0[1].jar:?]
+	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:78) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at org.bukkit.craftbukkit.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:57) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22) ~[paper-1.21.10.jar:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoSuchMethodError: 'com.mojang.authlib.properties.PropertyMap com.mojang.authlib.GameProfile.getProperties()' [in thread "Server thread"]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.PlayerProfiles.signXSeries(PlayerProfiles.java:271) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.PlayerProfiles.createGameProfile(PlayerProfiles.java:261) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.PlayerProfiles.<clinit>(PlayerProfiles.java:64) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.objects.ProfileInputType$3.getProfile(ProfileInputType.java:84) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.builder.XSkull.<clinit>(XSkull.java:146) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.impl.TexturedSkull.getItemStack(TexturedSkull.java:109) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.manager.SkullManager.getSkullItem(SkullManager.java:154) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.guis.MainGUI.draw(MainGUI.java:61) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.guis.MainGUI.<init>(MainGUI.java:52) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.commands.SkullsCommand.execute(SkullsCommand.java:58) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.command.CommandManager.processRequirements(CommandManager.java:331) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.command.CommandManager.onCommand(CommandManager.java:231) ~[Skulls_-_v3.26.0[1].jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:83) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:105) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:458) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:364) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:352) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2321) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$12(ServerGamePacketListenerImpl.java:2294) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:176) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1537) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:180) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:150) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1517) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1511) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.recordTaskExecutionTimeWhileWaiting(MinecraftServer.java:1229) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1352) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:384) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	... 1 more
+[20:33:25 INFO]: apolofs issued server command: /skulls phead ap
+[20:33:25 WARN]: [Skulls] Plugin Skulls v3.26.0 generated an exception while executing task 4499
+java.lang.NoClassDefFoundError: Could not initialize class ca.tweetzy.skulls.flight.utils.profiles.builder.XSkull
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.QuickItem.of(QuickItem.java:492) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.commands.PlayerHeadCommand.lambda$execute$0(PlayerHeadCommand.java:70) ~[Skulls_-_v3.26.0[1].jar:?]
+	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:78) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at org.bukkit.craftbukkit.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:57) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22) ~[paper-1.21.10.jar:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoSuchMethodError: 'com.mojang.authlib.properties.PropertyMap com.mojang.authlib.GameProfile.getProperties()' [in thread "Server thread"]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.PlayerProfiles.signXSeries(PlayerProfiles.java:271) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.PlayerProfiles.createGameProfile(PlayerProfiles.java:261) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.PlayerProfiles.<clinit>(PlayerProfiles.java:64) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.objects.ProfileInputType$3.getProfile(ProfileInputType.java:84) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.builder.XSkull.<clinit>(XSkull.java:146) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.impl.TexturedSkull.getItemStack(TexturedSkull.java:109) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.manager.SkullManager.getSkullItem(SkullManager.java:154) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.guis.MainGUI.draw(MainGUI.java:61) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.guis.MainGUI.<init>(MainGUI.java:52) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.commands.SkullsCommand.execute(SkullsCommand.java:58) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.command.CommandManager.processRequirements(CommandManager.java:331) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.command.CommandManager.onCommand(CommandManager.java:231) ~[Skulls_-_v3.26.0[1].jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:83) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:105) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:458) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:364) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:352) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2321) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$12(ServerGamePacketListenerImpl.java:2294) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:176) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1537) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:180) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:150) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1517) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1511) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.recordTaskExecutionTimeWhileWaiting(MinecraftServer.java:1229) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1352) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:384) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	... 1 more
+[20:33:27 INFO]: apolofs issued server command: /skulls phead
+[20:33:27 WARN]: [Skulls] Plugin Skulls v3.26.0 generated an exception while executing task 4503
+java.lang.NoClassDefFoundError: Could not initialize class ca.tweetzy.skulls.flight.utils.profiles.builder.XSkull
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.QuickItem.of(QuickItem.java:492) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.commands.PlayerHeadCommand.lambda$execute$0(PlayerHeadCommand.java:60) ~[Skulls_-_v3.26.0[1].jar:?]
+	at org.bukkit.craftbukkit.scheduler.CraftTask.run(CraftTask.java:78) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at org.bukkit.craftbukkit.scheduler.CraftAsyncTask.run(CraftAsyncTask.java:57) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at com.destroystokyo.paper.ServerSchedulerReportingWrapper.run(ServerSchedulerReportingWrapper.java:22) ~[paper-1.21.10.jar:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoSuchMethodError: 'com.mojang.authlib.properties.PropertyMap com.mojang.authlib.GameProfile.getProperties()' [in thread "Server thread"]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.PlayerProfiles.signXSeries(PlayerProfiles.java:271) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.PlayerProfiles.createGameProfile(PlayerProfiles.java:261) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.PlayerProfiles.<clinit>(PlayerProfiles.java:64) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.objects.ProfileInputType$3.getProfile(ProfileInputType.java:84) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.builder.XSkull.<clinit>(XSkull.java:146) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.impl.TexturedSkull.getItemStack(TexturedSkull.java:109) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.manager.SkullManager.getSkullItem(SkullManager.java:154) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.guis.MainGUI.draw(MainGUI.java:61) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.guis.MainGUI.<init>(MainGUI.java:52) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.commands.SkullsCommand.execute(SkullsCommand.java:58) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.command.CommandManager.processRequirements(CommandManager.java:331) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.command.CommandManager.onCommand(CommandManager.java:231) ~[Skulls_-_v3.26.0[1].jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:83) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:105) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:458) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:364) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:352) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2321) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$12(ServerGamePacketListenerImpl.java:2294) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:176) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1537) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:180) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:150) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1517) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1511) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.recordTaskExecutionTimeWhileWaiting(MinecraftServer.java:1229) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1352) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:384) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	... 1 more
+[20:33:55 INFO]: apolofs issued server command: /skulls reload
+[20:34:01 INFO]: apolofs issued server command: /skulls
+[20:34:01 ERROR]: Command exception: /skulls
+org.bukkit.command.CommandException: Unhandled exception executing command 'skulls' in plugin Skulls v3.26.0
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:47) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:83) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:30) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:13) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:105) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:458) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:364) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:352) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2321) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$12(ServerGamePacketListenerImpl.java:2294) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:176) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1537) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:180) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:150) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1517) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1511) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.recordTaskExecutionTimeWhileWaiting(MinecraftServer.java:1229) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1352) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:384) ~[paper-1.21.10.jar:1.21.10-117-df4b668]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class ca.tweetzy.skulls.flight.utils.profiles.builder.XSkull
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.impl.TexturedSkull.getItemStack(TexturedSkull.java:109) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.manager.SkullManager.getSkullItem(SkullManager.java:154) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.guis.MainGUI.draw(MainGUI.java:61) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.guis.MainGUI.<init>(MainGUI.java:52) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.commands.SkullsCommand.execute(SkullsCommand.java:58) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.command.CommandManager.processRequirements(CommandManager.java:331) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.command.CommandManager.onCommand(CommandManager.java:231) ~[Skulls_-_v3.26.0[1].jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	... 24 more
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoSuchMethodError: 'com.mojang.authlib.properties.PropertyMap com.mojang.authlib.GameProfile.getProperties()' [in thread "Server thread"]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.PlayerProfiles.signXSeries(PlayerProfiles.java:271) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.PlayerProfiles.createGameProfile(PlayerProfiles.java:261) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.PlayerProfiles.<clinit>(PlayerProfiles.java:64) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.objects.ProfileInputType$3.getProfile(ProfileInputType.java:84) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.utils.profiles.builder.XSkull.<clinit>(XSkull.java:146) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.impl.TexturedSkull.getItemStack(TexturedSkull.java:109) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.manager.SkullManager.getSkullItem(SkullManager.java:154) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.guis.MainGUI.draw(MainGUI.java:61) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.guis.MainGUI.<init>(MainGUI.java:52) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.commands.SkullsCommand.execute(SkullsCommand.java:58) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.command.CommandManager.processRequirements(CommandManager.java:331) ~[Skulls_-_v3.26.0[1].jar:?]
+	at Skulls_-_v3.26.0[1].jar/ca.tweetzy.skulls.flight.command.CommandManager.onCommand(CommandManager.java:231) ~[Skulls_-_v3.26.0[1].jar:?]
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:45) ~[paper-api-1.21.10-R0.1-SNAPSHOT.jar:?]
+	... 24 more
+[20:34:36 INFO]: apolofs issued server command: /realscoreboard toggle
+[20:36:10 INFO]: apolofs issued server command: /realscoreboard reload
+[20:36:10 INFO]: [RealScoreboard] Loaded 2 conditions.
+[20:36:10 INFO]: [RealScoreboard] Loaded 1 scoreboards.
+[20:37:37 INFO]: XVaults Data Auto-Saved.
+[20:37:37 INFO]: [BattlePass] [STDOUT] Leaderboards reloaded in 1 ms
+[20:37:37 WARN]: Nag author(s): '[]' of 'BattlePass v5.0.3' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[20:38:37 INFO]: [EliteMobs] Event charms_goblin.yml has been queued!
+[20:39:35 INFO]: apolofs issued server command: /realscoreboard reload
+[20:39:35 INFO]: [RealScoreboard] Loaded 2 conditions.
+[20:39:35 INFO]: [RealScoreboard] Loaded 1 scoreboards.
+[20:39:35 INFO]: [RealScoreboard] Using 1.17+ ping method.
+[20:41:08 INFO]: Thread RCON Client /127.0.0.1 started
+[20:41:08 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:41:14 INFO]: Thread RCON Client /127.0.0.1 started
+[20:41:14 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:41:21 INFO]: Thread RCON Client /127.0.0.1 started
+[20:41:21 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:41:21 INFO]: [PlaceholderAPI] Fetching available expansion information...
+[20:41:27 INFO]: Thread RCON Client /127.0.0.1 started
+[20:41:27 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:41:32 INFO]: Thread RCON Client /127.0.0.1 started
+[20:41:32 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:41:47 INFO]: Thread RCON Client /127.0.0.1 started
+[20:41:47 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:41:47 INFO]: [PlaceholderAPI] Fetching available expansion information...
+[20:41:51 INFO]: Thread RCON Client /127.0.0.1 started
+[20:41:51 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:41:52 INFO]: [PlaceholderAPI] Fetching available expansion information...
+[20:42:01 INFO]: Thread RCON Client /127.0.0.1 started
+[20:42:01 INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[20:42:01 INFO]: [PlaceholderAPI] Fetching available expansion information...
+[20:42:01 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:42:01 INFO]: [PlaceholderAPI] Successfully registered external expansion: vault [1.8.3]
+[20:42:01 INFO]: [PlaceholderAPI] Successfully registered external expansion: luckperms [5.4-R2]
+[20:42:01 INFO]: [PlaceholderAPI] Successfully registered external expansion: essentials [1.5.2]
+[20:42:07 INFO]: Thread RCON Client /127.0.0.1 started
+[20:42:07 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:42:13 INFO]: Thread RCON Client /127.0.0.1 started
+[20:42:13 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:42:21 INFO]: Thread RCON Client /127.0.0.1 started
+[20:42:21 INFO]: [Essentials] Rcon issued server command: /list 
+[20:42:21 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:42:27 INFO]: Thread RCON Client /127.0.0.1 started
+[20:42:27 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:42:35 INFO]: Thread RCON Client /127.0.0.1 started
+[20:42:35 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:42:45 INFO]: apolofs issued server command: /realscoreboard reload
+[20:42:45 INFO]: [RealScoreboard] Loaded 2 conditions.
+[20:42:45 INFO]: [RealScoreboard] Loaded 1 scoreboards.
+[20:47:37 INFO]: [BattlePass] [STDOUT] Leaderboards reloaded in 1 ms
+[20:47:37 WARN]: Nag author(s): '[]' of 'BattlePass v5.0.3' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[20:48:21 INFO]: Thread RCON Client /127.0.0.1 started
+[20:48:21 INFO]: Thread RCON Client /127.0.0.1 shutting down
+[20:52:11 INFO]: apolofs issued server command: /realscoreboard reload
+[20:52:11 INFO]: [RealScoreboard] Loaded 2 conditions.
+[20:52:11 INFO]: [RealScoreboard] Loaded 1 scoreboards.
+[20:52:37 INFO]: XVaults Data Auto-Saved.
+[20:54:11 INFO]: apolofs issued server command: /realscoreboard reload
+[20:54:12 INFO]: [RealScoreboard] Loaded 2 conditions.
+[20:54:12 INFO]: [RealScoreboard] Loaded 1 scoreboards.
+[20:56:18 INFO]: apolofs issued server command: /realscoreboard reload
+[20:56:18 INFO]: [RealScoreboard] Loaded 2 conditions.
+[20:56:18 INFO]: [RealScoreboard] Loaded 1 scoreboards.
+[20:56:33 INFO]: apolofs issued server command: /realscoreboard reload
+[20:56:33 INFO]: [RealScoreboard] Loaded 2 conditions.
+[20:56:33 INFO]: [RealScoreboard] Loaded 1 scoreboards.
+[20:57:37 INFO]: [BattlePass] [STDOUT] Leaderboards reloaded in 1 ms
+[20:57:37 WARN]: Nag author(s): '[]' of 'BattlePass v5.0.3' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[20:57:49 INFO]: apolofs issued server command: /realscoreboard reload
+[20:57:49 INFO]: [RealScoreboard] Loaded 2 conditions.
+[20:57:49 INFO]: [RealScoreboard] Loaded 1 scoreboards.
+[21:04:37 INFO]: [EliteMobs] Event beast_master.yml has been queued!
+[21:07:37 INFO]: XVaults Data Auto-Saved.
+[21:07:37 INFO]: [BattlePass] [STDOUT] Leaderboards reloaded in 1 ms
+[21:07:37 WARN]: Nag author(s): '[]' of 'BattlePass v5.0.3' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[21:17:37 INFO]: [BattlePass] [STDOUT] Leaderboards reloaded in 1 ms
+[21:17:37 WARN]: Nag author(s): '[]' of 'BattlePass v5.0.3' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[21:22:37 INFO]: XVaults Data Auto-Saved.

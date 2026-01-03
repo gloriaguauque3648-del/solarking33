@@ -1,0 +1,85 @@
+# Storage type for player data
+# Available values: json, sqlite
+storage:
+  type: json
+
+# Messages displayed during join/quit/firstjoin events
+# Supports hexadecimal colors (&#RRGGBB). MiniMessage is not supported.
+messages:
+  join: "&#00FF00Welcome %player% to the server!"
+  quit: "&#FF0000%player% has left the server!"
+  first-join: "&#FFD700Welcome %player% for the first time! Enjoy your stay!"
+
+# Reward system for new players
+reward-welcome:
+  # Enable or disable the system
+  enabled: true
+  # Time limit in seconds to execute /welcome
+  time-limit: 60
+  # Commands executed when claiming the reward
+  commands:
+    - "give %player% diamond 5"
+    - "xp add %player% 100"
+  # Random messages broadcast in chat
+  messages:
+    - "Welcome %player%! We're glad to have you here!"
+    - "Hey %player%, welcome to our server!"
+    - "Hello %player%! Enjoy your stay!"
+    - "Welcome aboard, %player%!"
+
+# Custom actions for each event
+# Available action types: SOUND, COMMAND, TITLE, ACTIONBAR
+actions:
+  # Actions when a player joins
+  join:
+    sound:
+      action: SOUND
+      sound: ENTITY_PLAYER_LEVELUP
+      volume: 1.0
+      pitch: 1.0
+  # Actions when a player quits
+  quit:
+    sound:
+      action: SOUND
+      sound: ENTITY_ENDERMAN_TELEPORT
+      volume: 0.5
+      pitch: 0.8
+  # Actions when a player joins for the first time
+  first-join:
+    sound:
+      action: SOUND
+      sound: UI_TOAST_CHALLENGE_COMPLETE
+      volume: 1.0
+      pitch: 1.0
+    title:
+      action: TITLE
+      title: "&#FFD700Welcome!"
+      subtitle: "&#FFFFFF%player%"
+      fade-in: 10
+      stay: 70
+      fade-out: 20
+    commands:
+      action: COMMAND
+      commands:
+        - "give %player% bread 10"
+
+# Plugin Permissions:
+# ravenwelcome.* - Gives access to all RavenWelcome permissions
+# ravenwelcome.use - Allows use of /rw command (default: op)
+# ravenwelcome.reload - Allows reloading the configuration (default: op)
+# ravenwelcome.test - Allows testing messages (default: op)
+# ravenwelcome.edit - Allows editing messages (default: op)
+
+# PlaceholderAPI Placeholders:
+# %ravenwelcome_has_joined_before% - true if the player has joined before
+# %ravenwelcome_is_new_player% - true if the player is new
+# %ravenwelcome_first_join_time% - first join timestamp (ms)
+# %ravenwelcome_first_join_date% - first join date (DD/MM/YYYY)
+# %ravenwelcome_first_join_datetime% - first join date time (DD/MM/YYYY HH:MM:SS)
+# %ravenwelcome_last_join_time% - last join timestamp (ms)
+# %ravenwelcome_last_join_date% - last join date (DD/MM/YYYY)
+# %ravenwelcome_last_join_datetime% - last join date time (DD/MM/YYYY HH:MM:SS)
+# %ravenwelcome_can_claim_reward% - true if the player can claim reward
+# %ravenwelcome_reward_time_left% - seconds left to claim reward
+# %ravenwelcome_reward_time_left_formatted% - formatted time left (e.g. 2m 30s)
+

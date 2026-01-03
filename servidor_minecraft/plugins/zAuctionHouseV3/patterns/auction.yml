@@ -1,0 +1,151 @@
+#
+# This configuration uses zMenu, please refer to zMenu documentation
+# zMenu: https://docs.zmenu.dev/
+# zAuctionHouse: https://zauctionhouse.groupez.dev/
+#
+
+name: "zauctionhouse_auction" # Name of the pattern
+size: 54
+items:
+
+  expireItems:
+    type: INVENTORY
+    plugin: zAuctionHouseV3
+    inventory: expire
+    slot: 47
+    isPermanent: true
+    item:
+      url: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjdhYWRmZjlkZGM1NDZmZGNlYzZlZDU5MTljYzM5ZGZhOGQwYzA3ZmY0YmM2MTNhMTlmMmU2ZDdmMjU5MyJ9fX0="
+      name: ""
+      lore:
+        - "        #92bed8ᴇxᴘɪʀᴇᴅ ɪᴛᴇᴍs"
+        - "              #8c8c8c&m     "
+        - ""
+        - " #e6fff3ʏᴏᴜ ʜᴀᴠᴇ #ffacd5%zauctionhouse_expired_item% #e6fff3ᴇxᴘɪʀᴇᴅ ɪᴛᴇᴍs "
+        - ""
+        - "       #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴏᴘᴇɴ #8c8c8c• "
+
+  buyItem:
+    type: INVENTORY
+    plugin: zAuctionHouseV3
+    inventory: buying
+    slot: 48
+    isPermanent: true
+    item:
+      url: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjM3Y2FlNWM1MWViMTU1OGVhODI4ZjU4ZTBkZmY4ZTZiN2IwYjFhMTgzZDczN2VlY2Y3MTQ2NjE3NjEifX19"
+      name: ""
+      lore:
+        - "         #92bed8ʙᴏᴜɢʜᴛ ɪᴛᴇᴍs"
+        - "              #8c8c8c&m     "
+        - ""
+        - " #e6fff3ʏᴏᴜ ʜᴀᴠᴇ #ffacd5%zauctionhouse_buying_item% #e6fff3ʙᴏᴜɢʜᴛ ɪᴛᴇᴍs "
+        - ""
+        - "       #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴏᴘᴇɴ #8c8c8c• "
+
+  playerItems:
+    type: INVENTORY
+    plugin: zAuctionHouseV3
+    inventory: items
+    slot: 50
+    isPermanent: true
+    item:
+      url: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjU4MDdjYzRjM2I2OTU4YWVhNjE1NmU4NDUxOGQ5MWE0OWM1ZjMyOTcxZTZlYjI2OWEyM2EyNWEyNzE0NSJ9fX0="
+      name: ""
+      lore:
+        - "        #92bed8ʏᴏᴜʀ ɪᴛᴇᴍs"
+        - "            #8c8c8c&m     "
+        - ""
+        - " #e6fff3ʏᴏᴜ ʜᴀᴠᴇ #ffacd5%zauctionhouse_currents_item% #e6fff3ʏᴏᴜʀ ɪᴛᴇᴍs "
+        - ""
+        - "     #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴏᴘᴇɴ #8c8c8c• "
+
+  categories:
+    type: INVENTORY
+    inventory: categories
+    plugin: zAuctionHouseV3
+    slot: 51
+    isPermanent: true
+    item:
+      url: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ=="
+      name: ""
+      lore:
+        - "    #92bed8ᴄᴀᴛᴇɢᴏʀɪᴇs"
+        - "         #8c8c8c&m     "
+        - ""
+        - " #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴏᴘᴇɴ #8c8c8c• "
+  informations:
+    type: ZAUCTIONHOUSE_UPDATE
+    slot: 4
+    isPermanent: true
+    item:
+      material: BELL
+      name: '&f'
+      lore:
+        - "                #92bed8ɪɴғᴏʀᴍᴀᴛɪᴏɴs"
+        - "                      #8c8c8c&m     "
+        - ""
+        - "      #e6fff3ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ᴀᴜᴄᴛɪᴏɴ ʜᴏᴜsᴇ"
+        - " #e6fff3ɪᴛ's ᴀ ᴍᴀʀᴋᴇᴛ ᴡʜᴇʀᴇ ᴀʟʟ ᴛʜᴇ ᴘʟᴀʏᴇʀs "
+        - "          #e6fff3ᴄᴀɴ sᴇʟʟ ᴏʀ ʙᴜʏ ɪᴛᴇᴍs"
+        - ""
+        - "                 #e6fff3→ ᴜsᴀɢᴇ ←"
+        - "       #ffacd5/ᴀʜ sᴇʟʟ #8c8c8c‹&fᴘʀɪᴄᴇ#8c8c8c› #8c8c8c[‹&fᴀᴍᴏᴜɴᴛ#8c8c8c›]"
+        - ""
+        - "             #e6fff3ɴᴜᴍʙᴇʀ ᴏғ ɪᴛᴇᴍs#8c8c8c: #92bed8%zauctionhouse_counts%"
+        - "        #e6fff3sᴏʀᴛ ᴛʏᴘᴇ#8c8c8c: #92bed8%zauctionhouse_sorting%"
+        - ""
+        - "      #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴜᴘᴅᴀᴛᴇ ᴛʜᴇ ɪᴛᴇᴍs #8c8c8c•"
+        - ""
+
+  change-sort:
+    isPermanent: true
+    type: ZAUCTIONHOUSE_CHANGE_SORTING
+    sorting:
+      - sorting: DECREASING_DATE
+        display: "ᴅᴇᴄʀᴇᴀsɪɴɢ ᴅᴀᴛᴇ"
+      - sorting: DECREASING_PRICE
+        display: "ᴅᴇᴄʀᴇᴀsɪɴɢ ᴘʀɪᴄᴇ"
+      - sorting: ASCENDING_DATE
+        display: "ᴀsᴄᴇɴᴅɪɴɢ ᴅᴀᴛᴇ"
+      - sorting: ASCENDING_PRICE
+        display: "ᴀsᴄᴇɴᴅɪɴɢ ᴘʀɪᴄᴇ"
+      - sorting: ALPHABETICAL_NAME
+        display: "ᴀʟᴘʜᴀʙᴇᴛɪᴄᴀʟ ɴᴀᴍᴇ"
+      - sorting: REVERSE_ALPHABETICAL_NAME
+        display: "ʀᴇᴠᴇʀsᴇ ᴀʟᴘʜᴀʙᴇᴛɪᴄᴀʟ ɴᴀᴍᴇ"
+      - sorting: SELLER_NAME_ALPHABETICAL
+        display: "sᴇʟʟᴇʀ ɴᴀᴍᴇ ᴀʟᴘʜᴀʙᴇᴛɪᴄᴀʟ"
+      - sorting: SELLER_NAME_REVERSE_ALPHABETICAL
+        display: "sᴇʟʟᴇʀ ɴᴀᴍᴇ ʀᴇᴠᴇʀsᴇ ᴀʟᴘʜᴀʙᴇᴛɪᴄᴀʟ"
+      - sorting: MATERIAL_TYPE_ALPHABETICAL
+        display: "ᴍᴀᴛᴇʀɪᴀʟ ᴛʏᴘᴇ ᴀʟᴘʜᴀʙᴇᴛɪᴄᴀʟ"
+      - sorting: MATERIAL_TYPE_REVERSE_ALPHABETICAL
+        display: "ᴍᴀᴛᴇʀɪᴀʟ ᴛʏᴘᴇ ʀᴇᴠᴇʀsᴇ ᴀʟᴘʜᴀʙᴇᴛɪᴄᴀʟ"
+      - sorting: ITEM_STACK_SIZE_ASCENDING
+        display: "ɪᴛᴇᴍ sᴛᴀᴄᴋ sɪᴢᴇ ᴀsᴄᴇɴᴅɪɴɢ"
+      - sorting: ITEM_STACK_SIZE_DESCENDING
+        display: "ɪᴛᴇᴍ sᴛᴀᴄᴋ sɪᴢᴇ ᴅᴇsᴄᴇɴᴅɪɴɢ"
+    enableText: ' #e6fff3➜ %sorting%'
+    disableText: ' #8c8c8c➜ %sorting%'
+    slot: 49
+    item:
+      url: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGIyZWRlYjAxY2RjZTFkMTM1MWQ5YmY3ZmI3NTNiNmY1NzNhNTZiODY0NzcyOTlhNTEwMzNjYWFjODkzOTQwOCJ9fX0="
+      name: ""
+      lore:
+        - "                #92bed8sᴏʀᴛ ᴛʏᴘᴇ"
+        - "                    #8c8c8c&m     "
+        - ""
+        - "%DECREASING_DATE%"
+        - "%DECREASING_PRICE%"
+        - "%ASCENDING_DATE%"
+        - "%ASCENDING_PRICE%"
+        - "%ALPHABETICAL_NAME%"
+        - "%REVERSE_ALPHABETICAL_NAME%"
+        - "%SELLER_NAME_ALPHABETICAL%"
+        - "%SELLER_NAME_REVERSE_ALPHABETICAL%"
+        - "%MATERIAL_TYPE_ALPHABETICAL%"
+        - "%MATERIAL_TYPE_REVERSE_ALPHABETICAL%"
+        - "%ITEM_STACK_SIZE_ASCENDING%"
+        - "%ITEM_STACK_SIZE_DESCENDING%"
+        - ""
+        - " #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ᴄʜᴀɴɢᴇ ᴛʜᴇ sᴏʀᴛ ᴛʏᴘᴇ #8c8c8c• "

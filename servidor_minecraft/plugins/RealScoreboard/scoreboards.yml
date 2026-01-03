@@ -1,0 +1,52 @@
+#✦------------------------------------------------------✦
+#|                   Scoreboard Config                   |
+#✦------------------------------------------------------✦
+# RealScoreboard created by joserodpt and maintained by Neziw
+# Parameter explanation:
+# - Default: if the scoreboard is the default one, doesn't require a permission
+# - Default-World: the default world where the scoreboard appears
+# - Display-Name: used for GUI and other purposes.
+# - Refresh-Scoreboard: the main refresh delay for the whole scoreboard
+# - Refresh-Title: refresh delay only for the scoreboard title
+# - Title-Loop-Delay: loop delay for the title animation task
+# - Board-Loop-Delay: loop delay for the bards switching task (if the scoreboard has multiple boards)
+Version: 3
+Scoreboards:
+  default:
+    Default: true
+    Default-World: world
+    Other-Worlds:
+    - 'world_nether'
+    - 'world_the_end'
+    - 'spawn2'
+    - 'spawm'
+    - 'lobby'
+    - 'spawn3'
+    Display-Name: '&fDefault Board'
+    Permission: none
+    Refresh:
+      Scoreboard: 5
+      Title: 10
+      Title-Loop-Delay: 5
+      Board-Loop-Delay: 30
+    Boards:
+      Board1:
+        Title:
+        - '&#000000&ls&#120000&lᴜ&#240000&lʀ&#370000&lᴠ&#490000&lɪ&#5B0000&lᴠ&#6D0000&lᴀ&#800000&lʟ &#A40000&lᴄ&#B60000&lᴜ&#C80000&ls&#DB0000&lᴛ&#ED0000&lᴏ&#FF0000&lᴍ '
+      
+        Lines:
+        - '&#BF0000     ☁ %day%&#BF0000   '
+        - '%blank%'
+        - ' &#000000▐ &#4E0000ɴ&#6C0D0Dᴏ&#891A1Aᴍ&#A72727ʙ&#C43434ʀ&#E24141ᴇ&#FF4E4E: &#BF4444%playername%'
+        - ' &#000000▐ &#4E0000ʀ&#711010ᴀ&#951F1Fɴ&#B82F2Fɢ&#DC3E3Eᴏ&#FF4E4E: &#FFFFFF%luckperms_prefix%'
+        - ' &#000000▐ &#4E0000ᴄ&#7A1414ʟ&#A72727ᴀ&#D33B3Bɴ&#FF4E4E: &#BF4444%clan%'
+        - '%blank%'
+        - ' &#000000▐ &#4E0000ᴅ&#6C0D0Dɪ&#891A1Aɴ&#A72727ᴇ&#C43434ʀ&#E24141ᴏ&#FF4E4E: &#BF4444%vault_eco_balance%'
+        - ' &#000000▐ &#4E0000ᴋ&#711010ɪ&#951F1Fʟ&#B82F2Fʟ&#DC3E3Es&#FF4E4E: &#BF4444%kills%'
+        - ' &#000000▐ &#4E0000ᴍ&#670B0Bᴜ&#811616ᴇ&#9A2121ʀ&#B32D2Dᴛ&#CC3838ᴇ&#E64343s&#FF4E4E: &#BF4444%deaths%'
+        - ' &#000000▐ &#4E0000ʜ&#5C0606ᴏ&#690C0Cʀ&#771212ᴀ&#841818s&#FF4E4E: &#BF4444%statistic_time_played:hours%'
+        - ' &#000000▐ &#4E0000ʟ&#640A0Aᴀ&#7A1414ᴛ&#901D1Dᴇ&#A72727ɴ&#BD3131ᴄ&#D33B3Bɪ&#E94444ᴀ&#FF4E4E: &#BF7777%ping%'
+        - '%blank%'
+        - ' &#000000▐ &#4E0000ᴏ&#6C0D0Dɴ&#891A1Aʟ&#A72727ɪ&#C43434ɴ&#E24141ᴇ&#FF4E4E: &#BF4444%online%&#600000/&#BF4444100'
+        - ' &#000000▐ &#4E0000ᴠ&#620909ᴏ&#751111ᴛ&#891A1Aᴇ &#B02B2Bᴘ&#C43434ᴀ&#D83D3Dʀ&#EB4545ᴛ&#FF4E4Eʏ&#FF4E4E: &#BF0000'
+      

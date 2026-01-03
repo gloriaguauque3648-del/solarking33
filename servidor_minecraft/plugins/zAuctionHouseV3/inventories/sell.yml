@@ -1,0 +1,37 @@
+#
+# This configuration uses zMenu, please refer to zMenu documentation
+# zMenu: https://docs.zmenu.dev/
+# zAuctionHouse: https://zauctionhouse.groupez.dev/
+#
+
+name: '&8sᴇʟʟ ɪɴᴠᴇɴᴛᴏʀʏ'
+size: 54
+
+patterns:
+  - "zauctionhouse_decoration"
+
+items:
+  items:
+    type: ZAUCTIONHOUSE_SELL_INVENTORY_SLOT
+    slots:
+    - 10-16
+    - 19-25
+    - 28-34
+    - 37-43
+  cancel:
+    slot: 48
+    closeInventory: true
+    item:
+      material: RED_STAINED_GLASS_PANE
+      name: ""
+      lore:
+        - "          #c42323ᴄᴀɴᴄᴇʟ"
+        - "            #8c8c8c&m     "
+        - ""
+        - " #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ɢᴏ ᴄᴀɴᴄᴇʟ #8c8c8c• "
+  accept:
+    type: ZAUCTIONHOUSE_SELL_INVENTORY_ACCEPT
+    slot: 50
+    item:
+      material: GREEN_STAINED_GLASS_PANE
+      name: '&fSell content'

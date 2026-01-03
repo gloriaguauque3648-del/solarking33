@@ -1,0 +1,136 @@
+title: '&9Edit rows'
+rows: 5
+empty-fill:
+  enabled: true
+  slots:
+  - 0-8
+  - 9
+  - 18
+  - 27
+  - 36-44
+  - 35
+  - 26
+  - 17
+  - 8
+  item:
+    name: '&r'
+    lore: []
+    type: MAGENTA_STAINED_GLASS_PANE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+custom-fill:
+  enabled: true
+  slots:
+  - all
+  item:
+    name: '&r'
+    lore: []
+    type: ORANGE_STAINED_GLASS_PANE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+exit:
+  enabled: true
+  slot: 44
+  item:
+    name: '&cBack'
+    lore:
+    - '&7Go back to editing the Gui.'
+    type: ARROW
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+row-1:
+  enabled: true
+  slot: 11
+  item:
+    name: '&eRow 1'
+    lore:
+    - '&7Set the number of rows to 1'
+    type: REDSTONE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+row-2:
+  enabled: true
+  slot: 13
+  item:
+    name: '&eRow 2'
+    lore:
+    - '&7Set the number of rows to 2'
+    type: REDSTONE
+    amount: 2
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+row-3:
+  enabled: true
+  slot: 15
+  item:
+    name: '&eRow 3'
+    lore:
+    - '&7Set the number of rows to 3'
+    type: REDSTONE
+    amount: 3
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+row-4:
+  enabled: true
+  slot: 21
+  item:
+    name: '&eRow 4'
+    lore:
+    - '&7Set the number of rows to 4'
+    type: REDSTONE
+    amount: 4
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+row-5:
+  enabled: true
+  slot: 23
+  item:
+    name: '&eRow 5'
+    lore:
+    - '&7Set the number of rows to 5'
+    type: REDSTONE
+    amount: 5
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+row-6:
+  enabled: true
+  slot: 31
+  item:
+    name: '&eRow 6'
+    lore:
+    - '&7Set the number of rows to 6'
+    type: REDSTONE
+    amount: 6
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0

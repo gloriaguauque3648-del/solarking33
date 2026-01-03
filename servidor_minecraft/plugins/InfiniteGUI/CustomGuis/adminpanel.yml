@@ -1,0 +1,252 @@
+id: adminpanel
+rows: 3
+type: chest
+title: §cAdmin Panel
+commandAlias: adminpanel
+scenes:
+  '0':
+    delay: 0
+    items:
+      '1':
+        slot: 0
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '2':
+        slot: 1
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '3':
+        slot: 2
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '4':
+        slot: 3
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '5':
+        slot: 4
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '6':
+        slot: 5
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '7':
+        slot: 6
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '8':
+        slot: 7
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '9':
+        slot: 8
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '10':
+        slot: 9
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '11':
+        slot: 10
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '12':
+        slot: 11
+        item: DAMAGED_ANVIL
+        amount: 1
+        conditionFailMessage: §cYou can't do that!
+        item-name: §cBan User
+        item-lore:
+        - ''
+        - §7Is someone breaking the
+        - §7rules? or want them gone?
+        - ''
+        - §cClick to ban
+        item-flags: []
+        unbreakable: false
+        conditions:
+          87ab8413-0c3f-4089-abcb-598b48d0eab3:
+            condition: has-permission
+            permission: gui.ban.user
+        click-events:
+          7d37c558-5132-4c11-bd70-f0d7f3ca7680:
+            type: player-picker-command
+            command: ban %player% Banned by %executor%
+          e1f67cc8-4e42-44bf-a88a-66ee9331319c:
+            type: message
+            message: §bYou have §cbanned §7%player%§b!
+      '13':
+        slot: 12
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '14':
+        slot: 13
+        item: ELYTRA
+        amount: 1
+        item-name: §eKick User
+        item-flags: []
+        unbreakable: false
+        conditionFailMessage: §cYou can't do that!
+        item-lore:
+        - ''
+        - §7Want to kick a user?
+        - §7you have come to right
+        - §7place!
+        - ''
+        - §eClick to kick
+        conditions:
+          383261c3-b8ca-45b3-a3cb-c9e080757e1b:
+            condition: has-permission
+            permission: gui.kick.user
+        click-events:
+          c56f3835-7c72-4311-8b61-46822e1ebf4e:
+            type: player-picker-command
+            command: kick %player% You have been kicked by %executor%
+          814035de-fa53-4e3d-95b7-4ed7daadea81:
+            type: message
+            message: §eYou have kicked §7%player%§e!
+      '15':
+        slot: 14
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '16':
+        slot: 15
+        item: LECTERN
+        amount: 1
+        item-name: §aPardon User
+        item-flags: []
+        unbreakable: false
+        item-lore:
+        - ''
+        - §7You can unban/pardon a
+        - §7user!
+        - ''
+        - §bClick to pardon
+        conditions:
+          3bc917ad-7f45-4072-ac5e-0bd77972211e:
+            condition: has-permission
+            permission: gui.pardon.user
+        click-events:
+          5a234709-577e-49b7-bac6-798bd06327b1:
+            type: offline-player-picker-command
+            command: unban %player%
+          e29a5f07-ce3c-4c40-a747-6dfd8770609d:
+            type: message
+            message: §aYou have successfully unbanned §7%player%§a!
+      '17':
+        slot: 16
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '18':
+        slot: 17
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '19':
+        slot: 18
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '20':
+        slot: 19
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '21':
+        slot: 20
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '22':
+        slot: 21
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '23':
+        slot: 22
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '24':
+        slot: 23
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '25':
+        slot: 24
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '26':
+        slot: 25
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false
+      '27':
+        slot: 26
+        item: RED_STAINED_GLASS_PANE
+        amount: 1
+        item-name: ''
+        item-flags: []
+        unbreakable: false

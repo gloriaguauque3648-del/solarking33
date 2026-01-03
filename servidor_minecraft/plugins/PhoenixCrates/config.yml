@@ -1,0 +1,27 @@
+product-license: JPL3K-0VJAL-9C557-XZA02
+language: UNDEFINED
+notify-if-new-version: true
+database:
+  type: sqlite
+  address: localhost
+  name: phoenixcrates_db
+  port: 3306
+  username: phoenixuser
+  password: phoenixpassword
+  table-prefix: pc
+  hikari:
+    maximumPoolSize: 20
+    minimumIdle: 5
+    idleTimeout: 600000
+    maxLifetime: 1800000
+    connectionTimeout: 30000
+    fetch-timeout: 5000
+performance:
+  thread-pool-size: 10
+  thread-pool-timeout-millis: 10000
+  crate-render-radius: 15
+  hologram-refresh-rate: 10
+debug: false
+crates:
+  knockback: 0.6
+  quick-open: true

@@ -1,0 +1,34 @@
+menu-title: '&6%event%'
+menu-rows: 5
+
+quest-slots:
+  slots: '11...15, 20...24'
+
+menu:
+  '39':
+    item:
+      material: arrow:0
+      name: '&eᴘᴀɢɪɴᴀ ᴀɴᴛᴇʀɪᴏʀ '
+      lore:
+        - ''
+        - '&e(( Hᴀɢᴀ ᴄʟɪᴄ ᴘᴀʀᴀ ɪʀ ᴀ ʟᴀ ᴘᴀ́ɢɪɴᴀ ᴀɴᴛᴇʀɪᴏʀ ))'
+    actions:
+      - '[menu](page = 1) {event-list}'
+      - '[menu](page ! 1) {previous-page}'
+  '40':
+    item:
+      material: book:0
+      name: '&6Iɴғᴏʀᴍᴀᴄɪᴏ́ɴ ᴅᴇʟ ᴇᴠᴇɴᴛᴏ'
+      lore:
+        - '%event_info%'
+    actions:
+      - "[menu] {close}"
+  '41':
+    item:
+      material: arrow:0
+      name: '&eᴘᴀɢɪɴᴀ sɪɢᴜɪᴇɴᴛᴇ'
+      lore:
+        - ''
+        - '&e(( Hᴀɢᴀ ᴄʟɪᴄ ᴘᴀʀᴀ ɪʀ ᴀ ʟᴀ ᴘᴀ́ɢɪɴᴀ sɪɢᴜɪᴇɴᴛᴇ. ))'
+    actions:
+      - '[menu] {next-page}'

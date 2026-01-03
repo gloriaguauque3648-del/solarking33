@@ -1,0 +1,44 @@
+title: Confirm &cGui Delete &8(%gui_id%)
+rows: 3
+empty-fill:
+  enabled: true
+  slots:
+  - all
+  item:
+    name: '&r'
+    lore: []
+    type: RED_STAINED_GLASS_PANE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+confirm:
+  enabled: true
+  slot: 12
+  item:
+    name: '&a&lConfirm'
+    lore:
+    - '&7Click to confirm the &cdeletion&7.'
+    type: GREEN_WOOL
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+cancel:
+  enabled: true
+  slot: 14
+  item:
+    name: '&c&lCancel'
+    lore:
+    - '&7Click to &ecancel &7the &adeletion&7.'
+    type: RED_WOOL
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0

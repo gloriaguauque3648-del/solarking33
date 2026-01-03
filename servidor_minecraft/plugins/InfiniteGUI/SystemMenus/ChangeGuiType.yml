@@ -1,0 +1,93 @@
+# Format for enchantments as follows
+# enchantments:
+#   - "DAMAGE_ALL:1" -> ENCHANTMENT:LEVEL
+# You can find ids for all enchantments at https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/enchantments/Enchantment.html
+# Ids may vary depending on your server version
+
+# Something else to note would be, never change the ids for default items! or else you will break the GUIs
+title: Gui Type
+rows: 3
+empty-fill:
+  enabled: true
+  slots:
+  - all
+  item:
+    name: '&r'
+    lore: []
+    type: GREEN_STAINED_GLASS_PANE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+chest-gui:
+  enabled: true
+  slot: 10
+  item:
+    name: '&e&lChest GUI'
+    lore:
+    - '&7Click to set type a chest GUI.'
+    type: CHEST
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+dispenser-gui:
+  enabled: true
+  slot: 12
+  item:
+    name: '&e&lDispenser GUI'
+    lore:
+    - '&7Click to set type a dispenser GUI.'
+    type: DISPENSER
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+dropper-gui:
+  enabled: true
+  slot: 14
+  item:
+    name: '&e&lDropper GUI'
+    lore:
+    - '&7Click to set type a dropper GUI.'
+    type: DROPPER
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+hopper-gui:
+  enabled: true
+  slot: 16
+  item:
+    name: '&e&lHopper GUI'
+    lore:
+    - '&7Click to set type a hopper GUI.'
+    type: HOPPER
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+exit:
+  enabled: true
+  slot: 26
+  item:
+    name: '&cBack'
+    lore: []
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzUxY2VkMmU2NDczNjZmOGYzYWQyZGZlNDE1Y2NhODU2NTFiZmFmOTczOWE5NWNkNTdiNmYyMWNiYTA1MyJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0

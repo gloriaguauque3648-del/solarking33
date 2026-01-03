@@ -1,0 +1,43 @@
+#
+# This configuration uses zMenu, please refer to zMenu documentation
+# zMenu: https://docs.zmenu.dev/
+# zAuctionHouse: https://zauctionhouse.groupez.dev/
+#
+
+name: '&8ʙᴏᴜɢʜᴛ ɪᴛᴇᴍs &8(&f%page%&8/&f%maxPage%&8)'  # Title of the menu, supports color codes and placeholders
+
+size: 54  # Size of the Minecraft inventory menu, must be a multiple of 9 (6 rows in this case)
+
+patterns: # List of pattern identifiers used in the menu
+  - "zauctionhouse_decoration"  # Pattern for decorative elements
+  - "zauctionhouse_pagination"  # Pattern for navigation between menu pages
+  - "zauctionhouse_back"  # Pattern for a back button or return functionality
+
+items:
+  removeall:
+    type: ZAUCTIONHOUSE_REMOVE_ALL_BUYING  # Type for the action of removing all items that are being bought
+    isPermanent: true  # Indicates that this item will always be displayed and not dynamically updated
+    slot: 48  # The slot in the menu where this item will be placed
+    item:
+      url: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGQyYWNkOWYyZGZjMmUwNWY2OWQ5NDFmZTk5NzBlOGMzZjA1NTI3YTAyYTkzODExNTc4OTFjOGRkYjhjZjMifX19"  # Custom texture URL for the item
+      name: ''  # No name specified for the item
+      lore:
+        - "         #92bed8ʀᴇᴍᴏᴠᴇ ᴇᴠᴇʀʏᴛʜɪɴɢ"  # Lore text with color code, indicating the action to remove everything
+        - "                  #8c8c8c&m     "  # Lore text for decoration
+        - ""
+        - " #8c8c8c• #92bed8ᴄʟɪᴄᴋ #e6fff3ᴛᴏ ʀᴇᴍᴏᴠᴇ ᴇᴠᴇʀʏᴛʜɪɴɢ #8c8c8c• "  # Instructions for the remove all action
+
+  items:
+    type: ZAUCTIONHOUSE_BUYING  # Type for displaying items that are currently being bought
+    isPermanent: true  # Indicates that these items will always be displayed and not dynamically updated
+    slots:
+      - 10-16  # Items occupy slots 10 through 16
+      - 19-25  # Items occupy slots 19 through 25
+      - 28-34  # Items occupy slots 28 through 34
+      - 37-43  # Items occupy slots 37 through 43
+    else:
+      slots:
+        - 22
+      item:
+        material: BARRIER
+        name: '&c&nNo Items Found'

@@ -1,0 +1,118 @@
+title: Edit Commands
+rows: 5
+empty-fill:
+  enabled: true
+  slots:
+  - 0-8
+  - 9
+  - 18
+  - 27
+  - 36-44
+  - 35
+  - 26
+  - 17
+  item:
+    name: '&r'
+    lore: []
+    type: BLUE_STAINED_GLASS_PANE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+up:
+  enabled: true
+  slot: 20
+  item:
+    name: '&eUp'
+    lore:
+    - '&7Click to go up a command in the list of commands.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTU3YTViZGY0MmYxNTIxNzhkMTU0YmIyMjM3ZDlmZDM1NzcyYTdmMzJiY2ZkMzNiZWViOGVkYzQ4MjBiYSJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+down:
+  enabled: true
+  slot: 21
+  item:
+    name: '&eDown'
+    lore:
+    - '&7Click to go down a command in the list of commands.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTZhMDExZTYyNmI3MWNlYWQ5ODQxOTM1MTFlODJlNjVjMTM1OTU2NWYwYTJmY2QxMTg0ODcyZjg5ZDkwOGM2NSJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+display-item:
+  enabled: true
+  slot: 22
+  selected-command-format: '&d--> &r%command% &r&d<--'
+# Cannot configure the 'item' here! auto set-up by the plugin
+add-new:
+  enabled: true
+  slot: 23
+  item:
+    name: '&eAdd Line'
+    lore:
+    - '&7Click to add a new command to the list of commands.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTNjMzcwOWIzYjViZTE4NTQ3YTA4NzNmYmM3MjIzNjRjZWRlYzAwOTc2NDkzN2FjNmUxOGFjYzUyY2RkNTcyYiJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+remove-line:
+  enabled: true
+  slot: 24
+  item:
+    name: '&cRemove Line'
+    lore:
+    - '&7Click to &cremove &7the selected command from the list of commands.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTljZGI5YWYzOGNmNDFkYWE1M2JjOGNkYTc2NjVjNTA5NjMyZDE0ZTY3OGYwZjE5ZjI2M2Y0NmU1NDFkOGEzMCJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+edit-line:
+  enabled: true
+  slot: 31
+  item:
+    name: '&eEdit Line'
+    lore:
+    - '&7Click to edit the selected command in the list of commands.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWM3OTZiNTkzZjRjZDJhNDFiNDUyNzQzYTRmM2UyNTY2MzY5M2UxNjM3MzJlODcwYWY3ZDdhMTFjZDg2In19fQ==
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+exit:
+  enabled: true
+  slot: 44
+  item:
+    name: '&cBack'
+    lore:
+    - '&7Click to go back.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWE2NzhlZWU4MTNlZDU2MDgyOTZiYjI1YTg5YzY3MGMwODRhNGE4MzgxZjI2YTMxYzViNWM2ZTQ5OTE0MSJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0

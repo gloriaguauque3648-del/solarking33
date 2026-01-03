@@ -1,0 +1,32 @@
+title: Set new item
+rows: 3
+empty-fill:
+  enabled: true
+  slots:
+  - all
+  ignore-slots:
+  - 13
+  item:
+    name: '&r'
+    lore: []
+    type: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+exit:
+  enabled: true
+  slot: 26
+  item:
+    name: '&aDone'
+    lore:
+    - '&7Click to set & go back to the item editor.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGYwOTc4YTc1MDg3NWMzMmE3M2JhOGRjZWM0MmQ3YmMzNjIwMDc2NGUyOWQ1OThhZGVmZGI4ODE5YzI4ZWFhOSJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0

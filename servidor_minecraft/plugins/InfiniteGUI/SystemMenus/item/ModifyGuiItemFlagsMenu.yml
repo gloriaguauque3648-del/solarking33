@@ -1,0 +1,184 @@
+title: Modify Item's Flags
+rows: 5
+hide-message: '&c&lhide'
+show-message: '&a&lshow'
+
+
+empty-fill:
+  enabled: true
+  slots:
+  - 0-8
+  - 9
+  - 18
+  - 27
+  - 36-44
+  - 35
+  - 26
+  - 17
+  - 8
+  item:
+    name: '&r'
+    lore: []
+    type: RED_STAINED_GLASS_PANE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+custom-fill:
+  enabled: true
+  slots:
+  - all
+  item:
+    name: '&r'
+    lore: []
+    type: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+exit:
+  enabled: true
+  slot: 44
+  item:
+    name: '&cBack'
+    lore:
+    - '&7Go back to modify gui item.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzUxY2VkMmU2NDczNjZmOGYzYWQyZGZlNDE1Y2NhODU2NTFiZmFmOTczOWE5NWNkNTdiNmYyMWNiYTA1MyJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+hide-enchants:
+  enabled: true
+  slot: 11
+  item:
+    name: '&b&lHide Enchants'
+    lore:
+    - '&7Click to %status%&r &7the enchantments.'
+    type: ENCHANTED_BOOK
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+hide-attributes:
+  enabled: true
+  slot: 19
+  item:
+    name: '&b&lHide Attributes'
+    lore:
+    - '&7Click to %status%&r &7the attributes.'
+    type: SHIELD
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+hide-unbreakable:
+  enabled: true
+  slot: 29
+  item:
+    name: '&b&lHide Unbreakable'
+    lore:
+    - '&7Click to %status%&r &7the unbreakable.'
+    type: OBSIDIAN
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+hide-destroys:
+  enabled: true
+  slot: 21
+  item:
+    name: '&b&lHide Destroys'
+    lore:
+    - '&7Click to %status%&r &7the destroys.'
+    type: DIAMOND_PICKAXE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+hide-placed-on:
+  enabled: true
+  slot: 15
+  item:
+    name: '&b&lHide Placed On'
+    lore:
+    - '&7Click to %status%&r &7the placed on.'
+    type: GRASS_BLOCK
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+hide-potion-effects:
+  enabled: true
+  slot: 23
+  item:
+    name: '&b&lHide Potion Effects'
+    lore:
+    - '&7Click to %status%&r &7the potion effects.'
+    type: POTION
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+hide-dye:
+  enabled: true
+  slot: 25
+  item:
+    name: '&b&lHide Dye'
+    lore:
+    - '&7Click to %status%&r &7the dye.'
+    type: BLUE_DYE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+hide-armor-trim:
+  enabled: true
+  slot: 33
+  item:
+    name: '&b&lHide Armor Trim'
+    lore:
+    - '&7Click to %status%&r &7the armor trim.'
+    type: LEATHER_CHESTPLATE
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
+toggle-all:
+  enabled: true
+  slot: 0
+  item:
+    name: '&b&lToggle All'
+    lore:
+    - '&7Click to %status%&r &7 all the item flags.'
+    type: PLAYER_HEAD
+    texture-base64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmJkMmJlYzVlYmI0Njc1Y2YyOTA2YjVmNGMyMjE4OTgyMjM2NTYzZmQ3YjQyYjg1OGIyOWRmZGU2Y2VmYzQyOCJ9fX0=
+    amount: 1
+    item-flags:
+    - all
+    unbreakable: false
+    enchantments: []
+    custom-model-data: 0
